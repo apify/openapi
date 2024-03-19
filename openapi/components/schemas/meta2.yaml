@@ -1,0 +1,8 @@
+title: meta2
+required:
+  - origin
+type: object
+properties:
+  origin:
+    type: string
+    example: API

@@ -1,0 +1,12 @@
+title: SERVICE_USAGE_ITEM
+required:
+  - quantity
+  - baseAmountUsd
+type: object
+properties:
+  quantity:
+    type: number
+    example: 60
+  baseAmountUsd:
+    type: number
+    example: 0.0003

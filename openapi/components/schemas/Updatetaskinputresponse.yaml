@@ -1,0 +1,15 @@
+title: Updatetaskinputresponse
+type: object
+properties:
+  myField1:
+    type: string
+    nullable: true
+    example: some-value
+  myField2:
+    type: string
+    nullable: true
+    example: updated-value
+  myField3:
+    type: number
+    nullable: true
+    example: 1

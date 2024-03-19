@@ -1,0 +1,7 @@
+title: Deleterequestsresponse
+type: object
+properties:
+  data:
+    allOf:
+      - $ref: ./data20.yaml
+      - {}

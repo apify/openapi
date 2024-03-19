@@ -1,0 +1,15 @@
+title: Gettaskinputresponse
+type: object
+properties:
+  myField1:
+    type: string
+    nullable: true
+    example: some-value
+  myField2:
+    type: string
+    nullable: true
+    example: another-value
+  myField3:
+    type: number
+    nullable: true
+    example: 1

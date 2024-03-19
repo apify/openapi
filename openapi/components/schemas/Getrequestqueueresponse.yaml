@@ -1,0 +1,9 @@
+title: Getrequestqueueresponse
+required:
+  - data
+type: object
+properties:
+  data:
+    allOf:
+      - $ref: ./RequestQueue.yaml
+      - {}

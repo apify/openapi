@@ -1,0 +1,10 @@
+title: Getschedulelogresponse
+required:
+  - data
+type: object
+properties:
+  data:
+    type: array
+    items:
+      $ref: ./data25.yaml
+    description: ''

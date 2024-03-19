@@ -1,0 +1,9 @@
+title: Testwebhookresponse
+required:
+  - data
+type: object
+properties:
+  data:
+    allOf:
+      - $ref: ./WebhookDispatch.yaml
+      - {}

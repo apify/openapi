@@ -1,0 +1,26 @@
+title: data18
+required:
+  - limit
+  - queueModifiedAt
+  - hadMultipleClients
+  - lockSecs
+  - items
+type: object
+properties:
+  limit:
+    type: number
+    example: 1000
+  queueModifiedAt:
+    type: string
+    example: '2018-03-14T23:00:00.000Z'
+  hadMultipleClients:
+    type: boolean
+    example: true
+  lockSecs:
+    type: number
+    example: 60
+  items:
+    type: array
+    items:
+      $ref: ./items2.yaml
+    description: ''

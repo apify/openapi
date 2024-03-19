@@ -1,0 +1,28 @@
+title: BuildShort2
+required:
+  - id
+  - startedAt
+  - finishedAt
+  - status
+  - usageTotalUsd
+type: object
+properties:
+  id:
+    type: string
+    example: HG7ML7M8z78YcAPEB
+  startedAt:
+    type: string
+    example: '2019-12-12T07:34:14.202Z'
+  finishedAt:
+    type: string
+    example: '2019-12-13T08:36:13.202Z'
+  status:
+    type: string
+    example: FAILED
+  usageTotalUsd:
+    type: number
+    example: 0.105
+  meta:
+    allOf:
+      - $ref: ./meta2.yaml
+      - {}

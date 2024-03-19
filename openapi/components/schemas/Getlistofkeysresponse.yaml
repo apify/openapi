@@ -1,0 +1,9 @@
+title: Getlistofkeysresponse
+required:
+  - data
+type: object
+properties:
+  data:
+    allOf:
+      - $ref: ./data12.yaml
+      - {}

@@ -1,0 +1,12 @@
+title: stats6
+required:
+  - durationMillis
+  - runTimeSecs
+type: object
+properties:
+  durationMillis:
+    type: number
+    example: 1000
+  runTimeSecs:
+    type: number
+    example: 5.718

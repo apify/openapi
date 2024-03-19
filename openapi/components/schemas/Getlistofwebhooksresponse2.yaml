@@ -1,0 +1,9 @@
+title: Getlistofwebhooksresponse2
+required:
+  - data
+type: object
+properties:
+  data:
+    allOf:
+      - $ref: ./data21.yaml
+      - {}

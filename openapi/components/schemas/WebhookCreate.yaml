@@ -1,0 +1,51 @@
+title: WebhookCreate
+required:
+  - eventTypes
+  - condition
+  - requestUrl
+type: object
+properties:
+  isAdHoc:
+    type: boolean
+    nullable: true
+    example: false
+  eventTypes:
+    type: array
+    items:
+      type: string
+    description: ''
+  condition:
+    allOf:
+      - $ref: ./condition2.yaml
+      - {}
+  idempotencyKey:
+    type: string
+    nullable: true
+    example: fdSJmdP3nfs7sfk3y
+  ignoreSslErrors:
+    type: boolean
+    nullable: true
+    example: false
+  doNotRetry:
+    type: boolean
+    nullable: true
+    example: false
+  requestUrl:
+    type: string
+    example: 'http://example.com/'
+  payloadTemplate:
+    type: string
+    nullable: true
+    example: '{\n \"userId\": {{userId}}...'
+  headersTemplate:
+    type: string
+    nullable: true
+    example: '{\n \"Authorization\": Bearer...'
+  description:
+    type: string
+    nullable: true
+    example: this is webhook description
+  shouldInterpolateStrings:
+    type: boolean
+    nullable: true
+    example: false

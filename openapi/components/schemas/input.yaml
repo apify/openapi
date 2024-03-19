@@ -1,0 +1,7 @@
+title: input
+type: object
+properties:
+  hello:
+    type: string
+    nullable: true
+    example: world

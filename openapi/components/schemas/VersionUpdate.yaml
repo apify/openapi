@@ -1,0 +1,48 @@
+title: VersionUpdate
+type: object
+properties:
+  versionNumber:
+    type: string
+    nullable: true
+    example: '0.0'
+  sourceType:
+    allOf:
+      - oneOf:
+          - nullable: true
+          - $ref: ./VersionSourceType.yaml
+      - {}
+  envVars:
+    type: array
+    items:
+      $ref: ./envVars.yaml
+    description: ''
+    nullable: true
+  applyEnvVarsToBuild:
+    type: boolean
+    nullable: true
+    example: false
+  buildTag:
+    type: string
+    nullable: true
+    example: latest
+  sourceFiles:
+    type: array
+    items:
+      type: string
+    description: |-
+      -(object)
+          - name: `src/main.js`                                   (string, required)
+          - format: `TEXT`                                        (string, required)
+          - content: `console.log('This is the main.js file');`   (string, required)
+      -(object)
+          - name: `package.json`                                  (string, required)
+          - format: `TEXT`                                        (string, required)
+          - content: `name: "My Scraper"`                         (string, required)
+      -(object)
+          - name: `Dockerfile`                                    (string, required)
+          - format: `TEXT`                                        (string, required)
+          - content: ` # Dockerfile contains instructions ...`                 (string, required)
+          -(object)
+          - name: `README.md`                                     (string, required)
+          - format: `TEXT`                                        (string, required)
+          - content: `My Actor scrapes the web`                   (string, required)

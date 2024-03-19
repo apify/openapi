@@ -1,0 +1,14 @@
+title: proxy
+required:
+  - password
+  - groups
+type: object
+properties:
+  password:
+    type: string
+    example: ad78knd9Jkjd86
+  groups:
+    type: array
+    items:
+      type: string
+    description: ''

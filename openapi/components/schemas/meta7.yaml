@@ -1,0 +1,24 @@
+title: meta7
+required:
+  - origin
+  - userAgent
+  - scheduleId
+  - scheduledAt
+type: object
+properties:
+  origin:
+    type: string
+    example: WEB
+  clientIp:
+    type: string
+    nullable: true
+    example: 172.234.12.34
+  userAgent:
+    type: string
+    example: Mozilla/5.0 (iPad)
+  scheduleId:
+    type: string
+    example: dWazFsPpxMigMSqHL
+  scheduledAt:
+    type: string
+    example: '2019-06-10T11:40:00.000Z'

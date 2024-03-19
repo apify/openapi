@@ -1,0 +1,9 @@
+title: Getuserbuildslistresponse
+required:
+  - data
+type: object
+properties:
+  data:
+    allOf:
+      - $ref: ./data4.yaml
+      - {}

@@ -1,0 +1,9 @@
+title: Getlistofwebhooksresponse
+required:
+  - data
+type: object
+properties:
+  data:
+    allOf:
+      - $ref: ./data3.yaml
+      - {}

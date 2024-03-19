@@ -1,0 +1,9 @@
+title: Getlistofenvironmentvariablesresponse
+required:
+  - data
+type: object
+properties:
+  data:
+    allOf:
+      - $ref: ./data2.yaml
+      - {}

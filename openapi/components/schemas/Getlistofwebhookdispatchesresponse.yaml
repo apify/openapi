@@ -1,0 +1,9 @@
+title: Getlistofwebhookdispatchesresponse
+required:
+  - data
+type: object
+properties:
+  data:
+    allOf:
+      - $ref: ./data22.yaml
+      - {}

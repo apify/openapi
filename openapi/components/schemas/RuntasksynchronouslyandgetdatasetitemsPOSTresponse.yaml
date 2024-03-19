@@ -1,0 +1,9 @@
+title: RuntasksynchronouslyandgetdatasetitemsPOSTresponse
+required:
+  - error
+type: object
+properties:
+  error:
+    allOf:
+      - $ref: ./error.yaml
+      - {}

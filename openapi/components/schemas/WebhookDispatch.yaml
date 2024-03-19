@@ -1,0 +1,39 @@
+title: WebhookDispatch
+required:
+  - id
+  - userId
+  - webhookId
+  - createdAt
+  - status
+  - eventType
+  - eventData
+type: object
+properties:
+  id:
+    type: string
+    example: asdLZtadYvn4mBZmm
+  userId:
+    type: string
+    example: wRsJZtadYvn4mBZmm
+  webhookId:
+    type: string
+    example: asdLZtadYvn4mBZmm
+  createdAt:
+    type: string
+    example: '2019-12-12T07:34:14.202Z'
+  status:
+    type: string
+    example: SUCCEEDED
+  eventType:
+    type: string
+    example: ACTOR.RUN.SUCCEEDED
+  eventData:
+    allOf:
+      - $ref: ./eventData.yaml
+      - {}
+  calls:
+    type: array
+    items:
+      $ref: ./calls.yaml
+    description: ''
+    nullable: true

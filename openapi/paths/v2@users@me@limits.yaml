@@ -1,0 +1,89 @@
+get:
+  tags:
+    - Users
+  summary: Get limits
+  description: >-
+    Returns a complete summary of your account's limits. It is the same
+    information you will see on your account's
+
+    [Limits page](https://console.apify.com/billing#/limits). The returned data
+    includes the current usage cycle,
+
+    a summary of your limits, and your current usage.
+  operationId: Getlimits
+  parameters:
+    - name: token
+      in: query
+      description: API authentication token.
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: string
+        example: rWLaYmvZeK55uatRrZib4xbZf
+  responses:
+    '200':
+      description: ''
+      headers: {}
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: ../components/schemas/Getlimitsresponse.yaml
+              - example:
+                  data:
+                    monthlyUsageCycle:
+                      startAt: '2022-10-02T00:00:00.000Z'
+                      endAt: '2022-11-01T23:59:59.999Z'
+                    limits:
+                      maxMonthlyUsageUsd: 300
+                      maxMonthlyActorComputeUnits: 1000
+                      maxMonthlyExternalDataTransferGbytes: 7
+                      maxMonthlyProxySerps: 50
+                      maxMonthlyResidentialProxyGbytes: 0.5
+                      maxActorMemoryGbytes: 16
+                      maxActorCount: 100
+                      maxActorTaskCount: 1000
+                      maxConcurrentActorJobs: 256
+                      maxTeamAccountSeatCount: 9
+                      dataRetentionDays: 90
+                    current:
+                      monthlyUsageUsd: 43
+                      monthlyActorComputeUnits: 500.784475
+                      monthlyExternalDataTransferGbytes: 3.0086190393194556
+                      monthlyProxySerps: 34
+                      monthlyResidentialProxyGbytes: 0.4
+                      actorMemoryGbytes: 8
+                      actorCount: 31
+                      actorTaskCount: 130
+                      activeActorJobCount: 0
+                      teamAccountSeatCount: 5
+          example:
+            data:
+              monthlyUsageCycle:
+                startAt: '2022-10-02T00:00:00.000Z'
+                endAt: '2022-11-01T23:59:59.999Z'
+              limits:
+                maxMonthlyUsageUsd: 300
+                maxMonthlyActorComputeUnits: 1000
+                maxMonthlyExternalDataTransferGbytes: 7
+                maxMonthlyProxySerps: 50
+                maxMonthlyResidentialProxyGbytes: 0.5
+                maxActorMemoryGbytes: 16
+                maxActorCount: 100
+                maxActorTaskCount: 1000
+                maxConcurrentActorJobs: 256
+                maxTeamAccountSeatCount: 9
+                dataRetentionDays: 90
+              current:
+                monthlyUsageUsd: 43
+                monthlyActorComputeUnits: 500.784475
+                monthlyExternalDataTransferGbytes: 3.0086190393194556
+                monthlyProxySerps: 34
+                monthlyResidentialProxyGbytes: 0.4
+                actorMemoryGbytes: 8
+                actorCount: 31
+                actorTaskCount: 130
+                activeActorJobCount: 0
+                teamAccountSeatCount: 5
+  deprecated: false

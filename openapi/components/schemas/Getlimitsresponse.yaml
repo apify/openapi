@@ -1,0 +1,9 @@
+title: Getlimitsresponse
+required:
+  - data
+type: object
+properties:
+  data:
+    allOf:
+      - $ref: ./AccountLimits.yaml
+      - {}

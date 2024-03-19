@@ -1,0 +1,9 @@
+title: taggedBuilds
+type: object
+properties:
+  latest:
+    allOf:
+      - oneOf:
+          - nullable: true
+          - $ref: ./latest.yaml
+      - {}

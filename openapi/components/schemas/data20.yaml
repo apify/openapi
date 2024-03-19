@@ -1,0 +1,13 @@
+title: data20
+type: object
+properties:
+  processedRequests:
+    type: array
+    items:
+      $ref: ./RequestBatchDelete.yaml
+    description: ''
+  unprocessedRequests:
+    type: array
+    items:
+      $ref: ./RequestBatchDelete2.yaml
+    description: ''

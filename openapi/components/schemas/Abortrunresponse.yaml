@@ -1,0 +1,9 @@
+title: Abortrunresponse
+required:
+  - data
+type: object
+properties:
+  data:
+    allOf:
+      - $ref: ./RunAborted.yaml
+      - {}

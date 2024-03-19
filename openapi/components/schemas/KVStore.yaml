@@ -1,0 +1,34 @@
+title: KVStore
+required:
+  - id
+  - name
+  - userId
+  - createdAt
+  - modifiedAt
+  - accessedAt
+type: object
+properties:
+  id:
+    type: string
+    example: WkzbQMuFYuamGv3YF
+  name:
+    type: string
+    example: d7b9MDYsbtX5L7XAj
+  userId:
+    type: string
+    example: wRsJZtadYvn4mBZmm
+  createdAt:
+    type: string
+    example: '2019-12-12T07:34:14.202Z'
+  modifiedAt:
+    type: string
+    example: '2019-12-13T08:36:13.202Z'
+  accessedAt:
+    type: string
+    example: '2019-12-14T08:36:13.202Z'
+  actId:
+    type: object
+    nullable: true
+  actRunId:
+    type: object
+    nullable: true

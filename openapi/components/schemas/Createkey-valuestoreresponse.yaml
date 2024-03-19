@@ -1,0 +1,9 @@
+title: Createkey-valuestoreresponse
+required:
+  - data
+type: object
+properties:
+  data:
+    allOf:
+      - $ref: ./KVStore.yaml
+      - {}

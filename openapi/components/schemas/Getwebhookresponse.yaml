@@ -1,0 +1,9 @@
+title: Getwebhookresponse
+required:
+  - data
+type: object
+properties:
+  data:
+    allOf:
+      - $ref: ./Webhook.yaml
+      - {}

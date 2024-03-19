@@ -1,0 +1,9 @@
+title: Runtaskresponse
+required:
+  - data
+type: object
+properties:
+  data:
+    allOf:
+      - $ref: ./TaskRun.yaml
+      - {}

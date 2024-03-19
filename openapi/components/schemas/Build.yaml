@@ -1,0 +1,73 @@
+title: Build
+required:
+  - id
+  - actId
+  - userId
+  - startedAt
+  - status
+  - meta
+  - buildNumber
+type: object
+properties:
+  id:
+    type: string
+    example: HG7ML7M8z78YcAPEB
+  actId:
+    type: string
+    example: janedoe~my-actor
+  userId:
+    type: string
+    example: klmdEpoiojmdEMlk3
+  startedAt:
+    type: string
+    example: '2019-11-30T07:34:24.202Z'
+  finishedAt:
+    type: string
+    nullable: true
+    example: '2019-12-12T09:30:12.202Z'
+  status:
+    type: string
+    example: SUCCEEDED
+  meta:
+    allOf:
+      - $ref: ./meta.yaml
+      - {}
+  stats:
+    allOf:
+      - oneOf:
+          - nullable: true
+          - $ref: ./stats5.yaml
+      - {}
+  options:
+    allOf:
+      - oneOf:
+          - nullable: true
+          - $ref: ./options3.yaml
+      - {}
+  usage:
+    allOf:
+      - oneOf:
+          - nullable: true
+          - $ref: ./usage.yaml
+      - {}
+  usageTotalUsd:
+    type: number
+    nullable: true
+    example: 0.02
+  usageUsd:
+    allOf:
+      - oneOf:
+          - nullable: true
+          - $ref: ./usageUsd.yaml
+      - {}
+  inputSchema:
+    type: string
+    nullable: true
+    example: '{\n  \"title\": \"Schema for ... }'
+  readme:
+    type: string
+    nullable: true
+    example: '# Magic actor\nThis actor is magic.'
+  buildNumber:
+    type: string
+    example: 0.1.1

@@ -1,0 +1,9 @@
+title: Getlistofrequestqueuesresponse
+required:
+  - data
+type: object
+properties:
+  data:
+    allOf:
+      - $ref: ./data14.yaml
+      - {}

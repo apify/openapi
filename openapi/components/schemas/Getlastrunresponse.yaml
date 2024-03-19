@@ -1,0 +1,9 @@
+title: Getlastrunresponse
+required:
+  - data
+type: object
+properties:
+  data:
+    allOf:
+      - $ref: ./Run.yaml
+      - {}

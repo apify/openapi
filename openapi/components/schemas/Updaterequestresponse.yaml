@@ -1,0 +1,9 @@
+title: Updaterequestresponse
+required:
+  - data
+type: object
+properties:
+  data:
+    allOf:
+      - $ref: ./RequestOperationInfo.yaml
+      - {}

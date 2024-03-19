@@ -1,0 +1,9 @@
+title: Getlistofdatasetsresponse
+required:
+  - data
+type: object
+properties:
+  data:
+    allOf:
+      - $ref: ./data13.yaml
+      - {}

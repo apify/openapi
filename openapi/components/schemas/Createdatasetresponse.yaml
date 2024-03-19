@@ -1,0 +1,9 @@
+title: Createdatasetresponse
+required:
+  - data
+type: object
+properties:
+  data:
+    allOf:
+      - $ref: ./Dataset.yaml
+      - {}

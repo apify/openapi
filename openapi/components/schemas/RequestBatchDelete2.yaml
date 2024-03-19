@@ -1,0 +1,8 @@
+title: RequestBatchDelete2
+required:
+  - id
+type: object
+properties:
+  id:
+    type: string
+    example: sbJ7klsdf7ujN9l

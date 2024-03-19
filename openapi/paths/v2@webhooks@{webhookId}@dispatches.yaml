@@ -1,0 +1,80 @@
+get:
+  tags:
+    - Webhooks
+  summary: Get collection
+  description: Gets a given webhook's list of dispatches.
+  operationId: Getcollection
+  parameters:
+    - name: webhookId
+      in: path
+      description: ID number of the webhook.
+      required: true
+      style: simple
+      schema:
+        type: string
+        example: pVJtoTelgYUq4qJOt
+    - name: token
+      in: query
+      description: API authentication token.
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: string
+        example: soSkq9ekdmfOslopH
+  responses:
+    '200':
+      description: ''
+      headers: {}
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: ../components/schemas/Getcollectionresponse.yaml
+              - example:
+                  data:
+                    total: 2
+                    offset: 0
+                    limit: 1000
+                    desc: false
+                    count: 2
+                    items:
+                      - id: asdLZtadYvn4mBZmm
+                        userId: wRsJZtadYvn4mBZmm
+                        webhookId: asdLZtadYvn4mBZmm
+                        createdAt: '2019-12-12T07:34:14.202Z'
+                        status: SUCCEEDED
+                        eventType: ACTOR.RUN.SUCCEEDED
+                        eventData:
+                          actorId: vvE7iMKuMc5qTHHsR
+                          actorRunId: JgwXN9BdwxGcu9MMF
+                        calls:
+                          - startedAt: '2019-12-12T07:34:14.202Z'
+                            finishedAt: '2019-12-12T07:34:14.202Z'
+                            errorMessage: Cannot send request
+                            responseStatus: 200
+                            responseBody: '{ "foo": "bar" }'
+          example:
+            data:
+              total: 2
+              offset: 0
+              limit: 1000
+              desc: false
+              count: 2
+              items:
+                - id: asdLZtadYvn4mBZmm
+                  userId: wRsJZtadYvn4mBZmm
+                  webhookId: asdLZtadYvn4mBZmm
+                  createdAt: '2019-12-12T07:34:14.202Z'
+                  status: SUCCEEDED
+                  eventType: ACTOR.RUN.SUCCEEDED
+                  eventData:
+                    actorId: vvE7iMKuMc5qTHHsR
+                    actorRunId: JgwXN9BdwxGcu9MMF
+                  calls:
+                    - startedAt: '2019-12-12T07:34:14.202Z'
+                      finishedAt: '2019-12-12T07:34:14.202Z'
+                      errorMessage: Cannot send request
+                      responseStatus: 200
+                      responseBody: '{ "foo": "bar" }'
+  deprecated: false

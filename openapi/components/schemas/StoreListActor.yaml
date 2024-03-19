@@ -1,0 +1,46 @@
+title: StoreListActor
+required:
+  - id
+  - title
+  - name
+  - username
+  - stats
+  - currentPricingInfo
+type: object
+properties:
+  id:
+    type: string
+    example: zdc3Pyhyz3m8vjDeM
+  title:
+    type: string
+    example: My Public Actor
+  name:
+    type: string
+    example: my-public-actor
+  username:
+    type: string
+    example: jane35
+  description:
+    type: string
+    nullable: true
+    example: My public actor!
+  pictureUrl:
+    type: string
+    nullable: true
+    example: 'https://...'
+  userPictureUrl:
+    type: string
+    nullable: true
+    example: 'https://...'
+  url:
+    type: string
+    nullable: true
+    example: 'https://...'
+  stats:
+    allOf:
+      - $ref: ./stats.yaml
+      - {}
+  currentPricingInfo:
+    allOf:
+      - $ref: ./currentPricingInfo.yaml
+      - {}

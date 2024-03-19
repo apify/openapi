@@ -1,0 +1,7 @@
+title: condition2
+type: object
+properties:
+  actorTaskId:
+    type: string
+    nullable: true
+    example: asdLZtadYvn4mBZmm

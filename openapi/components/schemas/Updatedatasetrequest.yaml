@@ -1,0 +1,9 @@
+title: Updatedatasetrequest
+required:
+  - name
+type: object
+properties:
+  name:
+    type: string
+example:
+  name: new-dataset-name

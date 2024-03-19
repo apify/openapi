@@ -1,0 +1,14 @@
+title: data1
+required:
+  - total
+  - items
+type: object
+properties:
+  total:
+    type: number
+    example: 5
+  items:
+    type: array
+    items:
+      $ref: ./ListOfVersions.yaml
+    description: ''

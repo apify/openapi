@@ -1,0 +1,9 @@
+title: monthlyServiceUsage
+required:
+  - USAGE_ITEM
+type: object
+properties:
+  USAGE_ITEM:
+    allOf:
+      - $ref: ./USAGE_ITEM.yaml
+      - {}

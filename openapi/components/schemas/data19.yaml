@@ -1,0 +1,13 @@
+title: data19
+type: object
+properties:
+  processedRequests:
+    type: array
+    items:
+      $ref: ./RequestOperationInfo.yaml
+    description: ''
+  unprocessedRequests:
+    type: array
+    items:
+      $ref: ./RequestWithoutId.yaml
+    description: ''

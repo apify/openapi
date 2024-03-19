@@ -1,0 +1,6 @@
+title: Runtaskrequest
+type: object
+properties:
+  foo:
+    type: string
+    example: bar

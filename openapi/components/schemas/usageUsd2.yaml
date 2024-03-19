@@ -1,0 +1,51 @@
+title: usageUsd2
+type: object
+properties:
+  ACTOR_COMPUTE_UNITS:
+    type: number
+    nullable: true
+    example: 0.072
+  DATASET_READS:
+    type: number
+    nullable: true
+    example: 0.0004
+  DATASET_WRITES:
+    type: number
+    nullable: true
+    example: 0.0002
+  KEY_VALUE_STORE_READS:
+    type: number
+    nullable: true
+    example: 0.0006
+  KEY_VALUE_STORE_WRITES:
+    type: number
+    nullable: true
+    example: 0.002
+  KEY_VALUE_STORE_LISTS:
+    type: number
+    nullable: true
+    example: 0.004
+  REQUEST_QUEUE_READS:
+    type: number
+    nullable: true
+    example: 0.005
+  REQUEST_QUEUE_WRITES:
+    type: number
+    nullable: true
+    example: 0.02
+  DATA_TRANSFER_INTERNAL_GBYTES:
+    type: number
+    nullable: true
+    example: 0.0004
+  DATA_TRANSFER_EXTERNAL_GBYTES?:
+    type: number
+    nullable: true
+    example: 0.0002
+  PROXY_RESIDENTIAL_TRANSFER_GBYTES:
+    type: number
+    nullable: true
+    example: 0.16
+  PROXY_SERPS:
+    type: number
+    nullable: true
+    example: 0.0006

@@ -1,0 +1,9 @@
+title: Getversionresponse
+required:
+  - data
+type: object
+properties:
+  data:
+    allOf:
+      - $ref: ./Version.yaml
+      - {}

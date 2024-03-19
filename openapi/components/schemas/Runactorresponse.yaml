@@ -1,0 +1,9 @@
+title: Runactorresponse
+required:
+  - data
+type: object
+properties:
+  data:
+    allOf:
+      - $ref: ./Run.yaml
+      - {}

@@ -1,0 +1,9 @@
+title: GetlistofActorsinstoreresponse
+required:
+  - data
+type: object
+properties:
+  data:
+    allOf:
+      - $ref: ./data26.yaml
+      - {}

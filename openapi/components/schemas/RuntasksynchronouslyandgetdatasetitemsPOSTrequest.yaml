@@ -1,0 +1,6 @@
+title: RuntasksynchronouslyandgetdatasetitemsPOSTrequest
+type: object
+properties:
+  foo:
+    type: string
+    example: bar

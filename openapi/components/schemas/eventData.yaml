@@ -1,0 +1,12 @@
+title: eventData
+required:
+  - actorId
+  - actorRunId
+type: object
+properties:
+  actorId:
+    type: string
+    example: vvE7iMKuMc5qTHHsR
+  actorRunId:
+    type: string
+    example: JgwXN9BdwxGcu9MMF

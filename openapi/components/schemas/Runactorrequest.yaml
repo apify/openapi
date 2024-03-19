@@ -1,0 +1,6 @@
+title: Runactorrequest
+type: object
+properties:
+  foo:
+    type: string
+    example: bar

@@ -1,0 +1,7 @@
+title: Updatetaskinputrequest
+type: object
+properties:
+  myField2:
+    type: string
+    nullable: true
+    example: updated-value
