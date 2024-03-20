@@ -1,6 +1,6 @@
 # Apify API v2 OpenAPI Definition
 
-## Working on your OpenAPI Definition
+## Working on OpenAPI Definition
 
 ### Install
 
