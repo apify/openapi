@@ -3,17 +3,17 @@ get:
     - Actors
   summary: Get list of versions
   description: >-
-    Gets the list of versions of a specific actor. The response is a JSON object
+    Gets the list of versions of a specific Actor. The response is a JSON object
     with the list
 
     of [Version objects](#reference/actors/version-object), where each
 
     contains basic information about a single version.
-  operationId: Getlistofversions
+  operationId: GetListOfVersions
   parameters:
     - name: actorId
       in: path
-      description: Actor ID or a tilde-separated owner's username and actor name.
+      description: Actor ID or a tilde-separated owner's username and Actor name.
       required: true
       style: simple
       schema:
@@ -99,7 +99,7 @@ post:
     - Actors
   summary: Create version
   description: >-
-    Creates a version of an actor using values specified in a [Version
+    Creates a version of an Actor using values specified in a [Version
     object](#reference/actors/version-object) passed as JSON in the POST
     payload.
 
@@ -137,11 +137,11 @@ post:
     returned by the
 
     [Get version](#reference/actors/version-object/get-version) endpoint.
-  operationId: Createversion
+  operationId: CreateVersion
   parameters:
     - name: actorId
       in: path
-      description: Actor ID or a tilde-separated owner's username and actor name.
+      description: Actor ID or a tilde-separated owner's username and Actor name.
       required: true
       style: simple
       schema:

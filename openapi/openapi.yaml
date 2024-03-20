@@ -611,7 +611,7 @@ paths:
   '/v2/acts/{actorId}':
     $ref: 'paths/actors/acts@{actorId}.yaml'
   '/v2/acts/{actorId}/versions':
-    $ref: 'paths/v2@acts@{actorId}@versions.yaml'
+    $ref: 'paths/actors/acts@{actorId}@versions.yaml'
   '/v2/acts/{actorId}/versions/{versionNumber}':
     $ref: 'paths/actors/acts@{actorId}@versions@{versionNumber}.yaml'
   '/v2/acts/{actorId}/versions/{versionNumber}/env-vars':
