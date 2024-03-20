@@ -3,20 +3,20 @@ post:
     - Actors
   summary: With input
   description: >-
-    Runs a specific actor and returns its output.
+    Runs a specific Actor and returns its output.
 
 
     The POST payload including its `Content-Type` header is passed as `INPUT` to
-    the actor (usually <code>application/json</code>).
+    the Actor (usually <code>application/json</code>).
 
-    The HTTP response contains actor's `OUTPUT` record from its default
+    The HTTP response contains Actors `OUTPUT` record from its default
     key-value store.
 
 
-    The actor is started with the default options; you can override them using
+    The Actor is started with the default options; you can override them using
     various URL query parameters.
 
-    If the actor run exceeds 300<!-- MAX_ACTOR_JOB_SYNC_WAIT_SECS --> seconds,
+    If the Actor run exceeds 300<!-- MAX_ACTOR_JOB_SYNC_WAIT_SECS --> seconds,
 
     the HTTP response will have status 408 (Request Timeout).
 
@@ -31,13 +31,13 @@ post:
     and its status.
 
 
-    To run the actor asynchronously, use the [Run
-    actor](#reference/actors/run-collection/run-actor) API endpoint instead.
-  operationId: Withinput
+    To run the Actor asynchronously, use the [Run
+    Actor](#reference/actors/run-collection/run-actor) API endpoint instead.
+  operationId: WithInput
   parameters:
     - name: actorId
       in: path
-      description: Actor ID or a tilde-separated owner's username and actor name.
+      description: Actor ID or a tilde-separated owner's username and Actor name.
       required: true
       style: simple
       schema:
@@ -46,7 +46,7 @@ post:
     - name: token
       in: query
       description: >-
-        API authentication token. Public actors that are configured to be
+        API authentication token. Public Actors that are configured to be
         anonymously runnable do not require token parameter.
       style: form
       explode: true
@@ -67,7 +67,7 @@ post:
       in: query
       description: >-
         Optional timeout for the run, in seconds. By default, the run uses a
-        timeout specified in the default run configuration for the actor.
+        timeout specified in the default run configuration for the Actor.
       style: form
       explode: true
       schema:
@@ -79,7 +79,7 @@ post:
       description: >-
         Memory limit for the run, in megabytes. The amount of memory can be set
         to a power of 2 with a minimum of 128. By default, the run uses a memory
-        limit specified in the default run configuration for the actor.
+        limit specified in the default run configuration for the Actor.
       style: form
       explode: true
       schema:
@@ -89,10 +89,10 @@ post:
     - name: maxItems
       in: query
       description: >-
-        The maximum number of items that the actor run should return. This is
-        useful for pay-per-result actors, as it allows you to limit the number
+        The maximum number of items that the Actor run should return. This is
+        useful for pay-per-result Actors, as it allows you to limit the number
         of results that will be charged to your subscription. You can access the
-        maximum number of items in your actor by using the
+        maximum number of items in your Actor by using the
         `ACTOR_MAX_PAID_DATASET_ITEMS` environment variable.
       style: form
       explode: true
@@ -103,9 +103,9 @@ post:
     - name: build
       in: query
       description: >-
-        Specifies the actor build to run. It can be either a build tag or build
+        Specifies the Actor build to run. It can be either a build tag or build
         number. By default, the run uses the build specified in the default run
-        configuration for the actor (typically `latest`).
+        configuration for the Actor (typically `latest`).
       style: form
       explode: true
       schema:
@@ -114,10 +114,10 @@ post:
     - name: webhooks
       in: query
       description: >-
-        Specifies optional webhooks associated with the actor run, which can be
+        Specifies optional webhooks associated with the Actor run, which can be
         used to receive a notification
 
-        e.g. when the actor finished or failed. The value is a Base64-encoded
+        e.g. when the Actor finished or failed. The value is a Base64-encoded
         JSON array of objects defining the webhooks. For more information, see
 
         [Webhooks
@@ -133,7 +133,7 @@ post:
       application/json:
         schema:
           allOf:
-            - $ref: ../components/schemas/Withinputrequest.yaml
+            - $ref: ../../components/schemas/Withinputrequest.yaml
             - example:
                 foo: bar
         example:
@@ -147,7 +147,7 @@ post:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Withinputresponse.yaml
+              - $ref: ../../components/schemas/Withinputresponse.yaml
               - example:
                   bar: foo
           example:
@@ -159,7 +159,7 @@ post:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Withinputresponse1.yaml
+              - $ref: ../../components/schemas/Withinputresponse1.yaml
               - example:
                   error:
                     type: run-failed
@@ -179,7 +179,7 @@ post:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Withinputresponse1.yaml
+              - $ref: ../../components/schemas/Withinputresponse1.yaml
               - example:
                   error:
                     type: run-timeout-exceeded
@@ -196,12 +196,12 @@ get:
     - Actors
   summary: Without input
   description: >-
-    Runs a specific actor and returns its output.
+    Runs a specific Actor and returns its output.
 
     The run must finish in 300<!-- MAX_ACTOR_JOB_SYNC_WAIT_SECS --> seconds
     otherwise the API endpoint returns a timeout error.
 
-    The actor is not passed any input.
+    The Actor is not passed any input.
 
 
     Beware that it might be impossible to maintain an idle HTTP connection for a
@@ -214,13 +214,13 @@ get:
     and its status.
 
 
-    To run the actor asynchronously, use the [Run
-    actor](#reference/actors/run-collection/run-actor) API endpoint instead.
-  operationId: Withoutinput
+    To run the Actor asynchronously, use the [Run
+    Actor](#reference/actors/run-collection/run-actor) API endpoint instead.
+  operationId: WithoutInput
   parameters:
     - name: actorId
       in: path
-      description: Actor ID or a tilde-separated owner's username and actor name.
+      description: Actor ID or a tilde-separated owner's username and Actor name.
       required: true
       style: simple
       schema:
@@ -229,7 +229,7 @@ get:
     - name: token
       in: query
       description: >-
-        API authentication token. Public actors that are configured to be
+        API authentication token. Public Actors that are configured to be
         anonymously runnable do not require token parameter.
       style: form
       explode: true
@@ -250,7 +250,7 @@ get:
       in: query
       description: >-
         Optional timeout for the run, in seconds. By default, the run uses a
-        timeout specified in the default run configuration for the actor.
+        timeout specified in the default run configuration for the Actor.
       style: form
       explode: true
       schema:
@@ -262,7 +262,7 @@ get:
       description: >-
         Memory limit for the run, in megabytes. The amount of memory can be set
         to a power of 2 with a minimum of 128. By default, the run uses a memory
-        limit specified in the default run configuration for the actor.
+        limit specified in the default run configuration for the Actor.
       style: form
       explode: true
       schema:
@@ -272,10 +272,10 @@ get:
     - name: maxItems
       in: query
       description: >-
-        The maximum number of items that the actor run should return. This is
-        useful for pay-per-result actors, as it allows you to limit the number
+        The maximum number of items that the Actor run should return. This is
+        useful for pay-per-result Actors, as it allows you to limit the number
         of results that will be charged to your subscription. You can access the
-        maximum number of items in your actor by using the
+        maximum number of items in your Actor by using the
         `ACTOR_MAX_PAID_DATASET_ITEMS` environment variable.
       style: form
       explode: true
@@ -286,9 +286,9 @@ get:
     - name: build
       in: query
       description: >-
-        Specifies the actor build to run. It can be either a build tag or build
+        Specifies the Actor build to run. It can be either a build tag or build
         number. By default, the run uses the build specified in the default run
-        configuration for the actor (typically `latest`).
+        configuration for the Actor (typically `latest`).
       style: form
       explode: true
       schema:
@@ -297,10 +297,10 @@ get:
     - name: webhooks
       in: query
       description: >-
-        Specifies optional webhooks associated with the actor run, which can be
+        Specifies optional webhooks associated with the Actor run, which can be
         used to receive a notification
 
-        e.g. when the actor finished or failed. The value is a Base64-encoded
+        e.g. when the Actor finished or failed. The value is a Base64-encoded
         JSON array of objects defining the webhooks. For more information, see
 
         [Webhooks
@@ -318,7 +318,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Withoutinputresponse.yaml
+              - $ref: ../../components/schemas/Withoutinputresponse.yaml
               - example:
                   foo: bar
           example:
@@ -330,7 +330,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Withoutinputresponse1.yaml
+              - $ref: ../../components/schemas/Withoutinputresponse1.yaml
               - example:
                   error:
                     type: run-failed
@@ -350,7 +350,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Withoutinputresponse1.yaml
+              - $ref: ../../components/schemas/Withoutinputresponse1.yaml
               - example:
                   error:
                     type: run-timeout-exceeded

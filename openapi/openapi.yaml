@@ -630,7 +630,7 @@ paths:
   '/v2/acts/{actorId}/runs':
     $ref: 'paths/v2@acts@{actorId}@runs.yaml'
   '/v2/acts/{actorId}/run-sync':
-    $ref: 'paths/v2@acts@{actorId}@run-sync.yaml'
+    $ref: 'paths/actors/acts@{actorId}@run-sync.yaml'
   '/v2/acts/{actorId}/run-sync-get-dataset-items':
     $ref: 'paths/v2@acts@{actorId}@run-sync-get-dataset-items.yaml'
   '/v2/acts/{actorId}/runs/{runId}':
