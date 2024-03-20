@@ -4,15 +4,15 @@ get:
   summary: Get environment variable
   description: >-
     Gets a [EnvVar object](#reference/actors/environment-variable-object) that
-    contains all the details about a specific environment variable of an actor.
+    contains all the details about a specific environment variable of an Actor.
 
 
     If `isSecret` is set to `true`, then `value` will never be returned.
-  operationId: Getenvironmentvariable
+  operationId: GetEnvironmentVariable
   parameters:
     - name: actorId
       in: path
-      description: Actor ID or a tilde-separated owner's username and actor name.
+      description: Actor ID or a tilde-separated owner's username and Actor name.
       required: true
       style: simple
       schema:
@@ -68,7 +68,7 @@ put:
     - Actors
   summary: Update environment variable
   description: >-
-    Updates actor environment variable using values specified by a [EnvVar
+    Updates Actor environment variable using values specified by a [EnvVar
     object](#reference/actors/environment-variable-object)
 
     passed as JSON in the POST payload.
@@ -92,11 +92,11 @@ put:
     [Get environment
     variable](#reference/actors/environment-variable-object/get-environment-variable)
     endpoint.
-  operationId: Updateenvironmentvariable
+  operationId: UpdateEnvironmentVariable
   parameters:
     - name: actorId
       in: path
-      description: Actor ID or a tilde-separated owner's username and actor name.
+      description: Actor ID or a tilde-separated owner's username and Actor name.
       required: true
       style: simple
       schema:
@@ -168,11 +168,11 @@ delete:
     - Actors
   summary: Delete environment variable
   description: Deletes a specific environment variable.
-  operationId: Deleteenvironmentvariable
+  operationId: DeleteEnvironmentVariable
   parameters:
     - name: actorId
       in: path
-      description: Actor ID or a tilde-separated owner's username and actor name.
+      description: Actor ID or a tilde-separated owner's username and Actor name.
       required: true
       style: simple
       schema:
