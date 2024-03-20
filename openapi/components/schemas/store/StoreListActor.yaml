@@ -4,6 +4,8 @@ required:
   - title
   - name
   - username
+  - userFullName
+  - description
   - stats
   - currentPricingInfo
 type: object
@@ -21,13 +23,10 @@ properties:
     type: string
     example: jane35
   userFullName:
-    # TODO required?
     type: string
     example: Jane H. Doe
   description:
-    # TODO required?
     type: string
-    nullable: true
     example: My public actor!
   categories:
     type: array
@@ -53,4 +52,4 @@ properties:
   stats:
     $ref: ../stats.yaml
   currentPricingInfo:
-    $ref: ./currentPricingInfo.yaml
+    $ref: ./CurrentPricingInfo.yaml
