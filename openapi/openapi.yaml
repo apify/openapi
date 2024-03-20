@@ -617,8 +617,7 @@ paths:
   '/v2/acts/{actorId}/versions/{versionNumber}/env-vars':
     $ref: 'paths/actors/acts@{actorId}@versions@{versionNumber}@env-vars.yaml'
   '/v2/acts/{actorId}/versions/{versionNumber}/env-vars/{envVarName}':
-    $ref: >-
-      paths/actors/acts@{actorId}@versions@{versionNumber}@env-vars@{envVarName}.yaml
+    $ref: 'paths/actors/acts@{actorId}@versions@{versionNumber}@env-vars@{envVarName}.yaml'
   '/v2/acts/{actorId}/webhooks':
     $ref: 'paths/actors/acts@{actorId}@webhooks.yaml'
   '/v2/acts/{actorId}/builds':
@@ -628,7 +627,7 @@ paths:
   '/v2/acts/{actorId}/builds/{buildId}/abort':
     $ref: 'paths/actors/acts@{actorId}@builds@{buildId}@abort.yaml'
   '/v2/acts/{actorId}/runs':
-    $ref: 'paths/v2@acts@{actorId}@runs.yaml'
+    $ref: 'paths/actors/acts@{actorId}@runs.yaml'
   '/v2/acts/{actorId}/run-sync':
     $ref: 'paths/actors/acts@{actorId}@run-sync.yaml'
   '/v2/acts/{actorId}/run-sync-get-dataset-items':

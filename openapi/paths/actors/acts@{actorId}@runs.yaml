@@ -26,11 +26,11 @@ get:
 
     parameter. You can also filter runs by status ([available
     statuses](https://docs.apify.com/platform/actors/running/runs-and-builds#lifecycle)).
-  operationId: Getlistofruns
+  operationId: GetListOfRuns
   parameters:
     - name: actorId
       in: path
-      description: Actor ID or a tilde-separated owner's username and actor name.
+      description: Actor ID or a tilde-separated owner's username and Actor name.
       required: true
       style: simple
       schema:
@@ -130,7 +130,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Getlistofrunsresponse.yaml
+              - $ref: ../../components/schemas/Getlistofrunsresponse.yaml
               - example:
                   data:
                     total: 2
@@ -207,15 +207,15 @@ get:
 post:
   tags:
     - Actors
-  summary: Run actor
+  summary: Run Actor
   description: >-
-    Runs an actor and immediately returns without waiting for the run to finish.
+    Runs an Actor and immediately returns without waiting for the run to finish.
 
 
     The POST payload including its `Content-Type` header is passed as `INPUT` to
-    the actor (usually `application/json`).
+    the Actor (usually `application/json`).
 
-    The actor is started with the default options; you can override them using
+    The Actor is started with the default options; you can override them using
     various URL query parameters.
 
 
@@ -225,25 +225,25 @@ post:
 
 
     If you want to wait for the run to finish and receive the actual output of
-    the actor as the response,
+    the Actor as the response,
 
-    please use one of the [Run actor
+    please use one of the [Run Actor
     synchronously](#reference/actors/run-actor-synchronously) API endpoints
     instead.
 
 
-    To fetch the actor run results that are typically stored in the default
+    To fetch the Actor run results that are typically stored in the default
     dataset,
 
     you'll need to pass the ID received in the `defaultDatasetId` field
 
     received in the response JSON to the [Get
     items](#reference/datasets/item-collection/get-items) API endpoint.
-  operationId: Runactor
+  operationId: RunActor
   parameters:
     - name: actorId
       in: path
-      description: Actor ID or a tilde-separated owner's username and actor name.
+      description: Actor ID or a tilde-separated owner's username and Actor name.
       required: true
       style: simple
       schema:
@@ -252,7 +252,7 @@ post:
     - name: token
       in: query
       description: >-
-        API authentication token. Public actors that are configured to be
+        API authentication token. Public Actors that are configured to be
         anonymously runnable do not require the token.
       style: form
       explode: true
@@ -263,7 +263,7 @@ post:
       in: query
       description: >-
         Optional timeout for the run, in seconds. By default, the run uses a
-        timeout specified in the default run configuration for the actor.
+        timeout specified in the default run configuration for the Actor.
       style: form
       explode: true
       schema:
@@ -275,7 +275,7 @@ post:
       description: >-
         Memory limit for the run, in megabytes. The amount of memory can be set
         to a power of 2 with a minimum of 128. By default, the run uses a memory
-        limit specified in the default run configuration for the actor.
+        limit specified in the default run configuration for the Actor.
       style: form
       explode: true
       schema:
@@ -285,10 +285,10 @@ post:
     - name: maxItems
       in: query
       description: >-
-        The maximum number of items that the actor run should return. This is
-        useful for pay-per-result actors, as it allows you to limit the number
+        The maximum number of items that the Actor run should return. This is
+        useful for pay-per-result Actors, as it allows you to limit the number
         of results that will be charged to your subscription. You can access the
-        maximum number of items in your actor by using the
+        maximum number of items in your Actor by using the
         `ACTOR_MAX_PAID_DATASET_ITEMS` environment variable.
       style: form
       explode: true
@@ -299,9 +299,9 @@ post:
     - name: build
       in: query
       description: >-
-        Specifies the actor build to run. It can be either a build tag or build
+        Specifies the Actor build to run. It can be either a build tag or build
         number. By default, the run uses the build specified in the default run
-        configuration for the actor (typically `latest`).
+        configuration for the Actor (typically `latest`).
       style: form
       explode: true
       schema:
@@ -324,10 +324,10 @@ post:
     - name: webhooks
       in: query
       description: >-
-        Specifies optional webhooks associated with the actor run, which can be
+        Specifies optional webhooks associated with the Actor run, which can be
         used to receive a notification
 
-        e.g. when the actor finished or failed. The value is a Base64-encoded
+        e.g. when the Actor finished or failed. The value is a Base64-encoded
         JSON array of objects defining the webhooks. For more information, see
 
         [Webhooks
@@ -371,7 +371,7 @@ post:
       application/json:
         schema:
           allOf:
-            - $ref: ../components/schemas/Runactorrequest.yaml
+            - $ref: ../../components/schemas/Runactorrequest.yaml
             - example:
                 foo: bar
         example:
@@ -392,7 +392,7 @@ post:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Runactorresponse.yaml
+              - $ref: ../../components/schemas/Runactorresponse.yaml
               - example:
                   data:
                     id: HG7ML7M8z78YcAPEB
