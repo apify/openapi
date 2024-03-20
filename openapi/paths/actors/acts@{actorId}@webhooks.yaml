@@ -3,7 +3,7 @@ get:
     - Actors
   summary: Get list of webhooks
   description: >-
-    Gets the list of webhooks of a specific actor. The response is a JSON with
+    Gets the list of webhooks of a specific Actor. The response is a JSON with
     the list of objects, where each object
 
     contains basic information about a single webhook.
@@ -17,11 +17,11 @@ get:
     order,
 
     to sort the records in descending order, use the `desc=1` parameter.
-  operationId: Getlistofwebhooks
+  operationId: GetListOfWebhooks
   parameters:
     - name: actorId
       in: path
-      description: Actor ID or a tilde-separated owner's username and actor name.
+      description: Actor ID or a tilde-separated owner's username and Actor name.
       required: true
       style: simple
       schema:
