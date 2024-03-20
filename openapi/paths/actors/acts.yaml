@@ -1,14 +1,14 @@
 get:
   tags:
     - Actors
-  summary: Get list of actors
+  summary: Get list of Actors
   description: >-
-    Gets the list of all actors that the user created or used. The response is a
+    Gets the list of all Actors that the user created or used. The response is a
     list of objects, where each object
 
-    contains a basic information about a single actor.
+    contains a basic information about a single Actor.
 
-    To only get actors created by the user, add the `my=1` query parameter.
+    To only get Actors created by the user, add the `my=1` query parameter.
 
 
     The endpoint supports pagination using the `limit` and `offset` parameters
@@ -18,13 +18,13 @@ get:
     By default, the records are sorted by the `createdAt` field in ascending
     order,
 
-    therefore you can use pagination to incrementally fetch all actors while new
+    therefore you can use pagination to incrementally fetch all Actors while new
 
     ones are still being created. To sort the records in descending order, use
     the `desc=1`
 
     parameter.
-  operationId: Getlistofactors
+  operationId: GetListOfActors
   parameters:
     - name: token
       in: query
@@ -38,7 +38,7 @@ get:
     - name: my
       in: query
       description: >-
-        If `true` or `1` then the returned list only contains actors owned by
+        If `true` or `1` then the returned list only contains Actors owned by
         the user. The default value is `false`.
       style: form
       explode: true
@@ -85,7 +85,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Getlistofactorsresponse.yaml
+              - $ref: ../../components/schemas/Getlistofactorsresponse.yaml
               - example:
                   data:
                     total: 2
@@ -126,32 +126,32 @@ get:
 post:
   tags:
     - Actors
-  summary: Create actor
+  summary: Create Actor
   description: >-
-    Creates a new actor with settings specified in an Actor object passed as
+    Creates a new Actor with settings specified in an Actor object passed as
     JSON in the POST payload.
 
-    The response is the full actor object as returned by the
+    The response is the full Actor object as returned by the
 
-    [Get actor](#reference/actors/actor-object/get-actor) endpoint.
+    [Get Actor](#reference/actors/actor-object/get-actor) endpoint.
 
 
     The HTTP request must have the `Content-Type: application/json` HTTP header!
 
 
-    The actor needs to define at least one version of the source code.
+    The Actor needs to define at least one version of the source code.
 
     For more information, see [Version
     object](#reference/actors/version-object).
 
 
-    If you want to make your actor
+    If you want to make your Actor
     [public](https://docs.apify.com/platform/actors/publishing) using `isPublic:
-    true`, you will need to provide the actor's `title` and the `categories`
-    under which that actor will be classified in Apify Store. For this, it's
+    true`, you will need to provide the Actor's `title` and the `categories`
+    under which that Actor will be classified in Apify Store. For this, it's
     best to use the [constants from our `apify-shared-js`
     package](https://github.com/apify/apify-shared-js/blob/2d43ebc41ece9ad31cd6525bd523fb86939bf860/packages/consts/src/consts.ts#L452-L471).
-  operationId: Createactor
+  operationId: CreateActor
   parameters:
     - name: token
       in: query
@@ -196,14 +196,14 @@ post:
       application/json:
         schema:
           allOf:
-            - $ref: ../components/schemas/ActCreate.yaml
+            - $ref: ../../components/schemas/ActCreate.yaml
             - example:
                 name: MyActor
-                description: My favourite actor!
-                title: My actor
+                description: My favourite Actor!
+                title: My Actor
                 isPublic: false
-                seoTitle: My actor
-                seoDescription: My actor is the best
+                seoTitle: My Actor
+                seoDescription: My Actor is the best
                 restartOnError: false
                 versions:
                   - versionNumber: '0.0'
@@ -225,11 +225,11 @@ post:
                   memoryMbytes: 2048
         example:
           name: MyActor
-          description: My favourite actor!
-          title: My actor
+          description: My favourite Actor!
+          title: My Actor
           isPublic: false
-          seoTitle: My actor
-          seoDescription: My actor is the best
+          seoTitle: My Actor
+          seoDescription: My Actor is the best
           restartOnError: false
           versions:
             - versionNumber: '0.0'
@@ -264,14 +264,14 @@ post:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Createactorresponse.yaml
+              - $ref: ../../components/schemas/Createactorresponse.yaml
               - example:
                   data:
                     id: zdc3Pyhyz3m8vjDeM
                     userId: wRsJZtadYvn4mBZmm
                     name: MyActor
                     username: jane35
-                    description: My favourite actor!
+                    description: My favourite Actor!
                     restartOnError: false
                     isPublic: false
                     createdAt: '2019-07-08T11:27:57.401Z'
@@ -331,7 +331,7 @@ post:
               userId: wRsJZtadYvn4mBZmm
               name: MyActor
               username: jane35
-              description: My favourite actor!
+              description: My favourite Actor!
               restartOnError: false
               isPublic: false
               createdAt: '2019-07-08T11:27:57.401Z'

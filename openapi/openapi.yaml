@@ -607,7 +607,7 @@ servers:
     variables: {}
 paths:
   /v2/acts:
-    $ref: paths/v2@acts.yaml
+    $ref: paths/actors/acts.yaml
   '/v2/acts/{actorId}':
     $ref: 'paths/actors/acts@{actorId}.yaml'
   '/v2/acts/{actorId}/versions':
