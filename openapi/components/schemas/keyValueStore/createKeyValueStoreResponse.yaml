@@ -1,9 +1,9 @@
-title: Getlistofkey-valuestoresresponse
+title: createKeyValueStoreResponse
 required:
   - data
 type: object
 properties:
   data:
     allOf:
-      - $ref: ./data11.yaml
+      - $ref: ../KVStore.yaml
       - {}

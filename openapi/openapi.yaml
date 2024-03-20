@@ -676,7 +676,7 @@ paths:
   '/v2/actor-builds/{buildId}/log':
     $ref: 'paths/v2@actor-builds@{buildId}@log.yaml'
   /v2/key-value-stores:
-    $ref: paths/v2@key-value-stores.yaml
+    $ref: paths/key-value-stores.yaml
   '/v2/key-value-stores/{storeId}':
     $ref: 'paths/v2@key-value-stores@{storeId}.yaml'
   '/v2/key-value-stores/{storeId}/keys':

@@ -1,4 +1,4 @@
-title: data11
+title: GetListOfKeyValueStoresResponse
 required:
   - total
   - offset
@@ -26,5 +26,5 @@ properties:
   items:
     type: array
     items:
-      $ref: ./KVStoreShort1.yaml
-    description: ''
+      $ref: ./keyValueStore.yaml
+    description: ""

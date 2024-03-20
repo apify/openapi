@@ -25,7 +25,7 @@ get:
     the `desc=1`
 
     parameter.
-  operationId: Getlistofkey-valuestores
+  operationId: getListOfKeyValueStores
   parameters:
     - name: token
       in: query
@@ -93,7 +93,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Getlistofkey-valuestoresresponse.yaml
+              - $ref: ../components/schemas/keyValueStore/getListOfKeyValueStoresResponse.yaml
               - example:
                   data:
                     total: 2
@@ -166,7 +166,7 @@ post:
 
     If there is another store with the same name, the endpoint does not create a
     new one and returns the existing object instead.
-  operationId: Createkey-valuestore
+  operationId: createKeyValueStore
   parameters:
     - name: token
       in: query
@@ -227,7 +227,7 @@ post:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Createkey-valuestoreresponse.yaml
+              - $ref: ../components/schemas/createKeyValueStoreResponse.yaml
               - example:
                   data:
                     id: WkzbQMuFYuamGv3YF

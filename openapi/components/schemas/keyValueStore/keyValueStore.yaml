@@ -1,4 +1,4 @@
-title: KVStoreShort1
+title: KeyValueStore
 required:
   - id
   - name
@@ -23,16 +23,18 @@ properties:
     example: janedoe
   createdAt:
     type: string
-    example: '2019-12-12T07:34:14.202Z'
+    example: "2019-12-12T07:34:14.202Z"
   modifiedAt:
     type: string
-    example: '2019-12-13T08:36:13.202Z'
+    example: "2019-12-13T08:36:13.202Z"
   accessedAt:
     type: string
-    example: '2019-12-14T08:36:13.202Z'
+    example: "2019-12-14T08:36:13.202Z"
   actId:
-    type: object
+    type: string
     nullable: true
   actRunId:
-    type: object
+    type: string
     nullable: true
+  stats:
+    $ref: ./keyValueStoreStats.yaml
