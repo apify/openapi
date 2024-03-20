@@ -633,7 +633,7 @@ paths:
   '/v2/acts/{actorId}/run-sync-get-dataset-items':
     $ref: 'paths/actors/acts@{actorId}@run-sync-get-dataset-items.yaml'
   '/v2/acts/{actorId}/runs/{runId}':
-    $ref: 'paths/v2@acts@{actorId}@runs@{runId}.yaml'
+    $ref: 'paths/actors/acts@{actorId}@runs@{runId}.yaml'
   '/v2/acts/{actorId}/runs/{runId}/abort':
     $ref: 'paths/v2@acts@{actorId}@runs@{runId}@abort.yaml'
   '/v2/acts/{actorId}/runs/{runId}/metamorph':
