@@ -1,20 +1,18 @@
 post:
   tags:
     - Actor runs
-  summary: Reboot run
+  summary: Abort run
   description: >-
-    Reboots an actor run and returns an object that contains all the details
-    about the rebooted run.
+    Aborts an actor run and returns an object that contains all the details
+    about the run.
 
-    Only runs that are running, i.e. runs with status `RUNNING` can be rebooted.
-
-    The run's container will be restarted, so any data not persisted in the
-    key-value store, dataset, or request queue will be lost.
-  operationId: Rebootrun
+    Only runs that are starting or running are aborted. For runs with status
+    `FINISHED`, `FAILED`, `ABORTING` and `TIMED-OUT` this call does nothing.
+  operationId: PostAbortRun
   parameters:
     - name: runId
       in: path
-      description: Actor run ID.
+      description: Run ID.
       required: true
       style: simple
       schema:
@@ -29,6 +27,17 @@ post:
       schema:
         type: string
         example: soSkq9ekdmfOslopH
+    - name: gracefully
+      in: query
+      description: |-
+        If true passed, the actor run will abort gracefully.
+                                                It will send `aborting` and `persistState` event into run and force-stop the run after 30 seconds.
+                                                It is helpful in cases where you plan to resurrect the run later.
+      style: form
+      explode: true
+      schema:
+        type: boolean
+        example: true
   responses:
     '200':
       description: ''
@@ -37,18 +46,18 @@ post:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Rebootrunresponse.yaml
+              - $ref: ../../components/schemas/actor-runs/AbortRunResponse.yaml
               - example:
                   data:
                     id: HG7ML7M8z78YcAPEB
-                    actId: HDSasDasz78YcAPEB
-                    userId: 7sT5jcggjjA9fNcxF
-                    actorTaskId: KJHSKHausidyaJKHs
+                    actId: janedoe~my-actor
+                    userId: BPWZBd7Z9c746JAng
+                    actorTaskId: rANaydYhUxjsnA3oz
                     startedAt: '2019-11-30T07:34:24.202Z'
                     finishedAt: '2019-12-12T09:30:12.202Z'
-                    status: RUNNING
-                    statusMessage: Actor is running
-                    isStatusMessageTerminal: false
+                    status: ABORTED
+                    statusMessage: Actor was aborted
+                    isStatusMessageTerminal: true
                     meta:
                       origin: WEB
                       clientIp: 172.234.12.34
@@ -56,19 +65,19 @@ post:
                     stats:
                       inputBodyLen: 240
                       restartCount: 0
-                      resurrectCount: 2
-                      memAvgBytes: 267874071.9
-                      memMaxBytes: 404713472
+                      resurrectCount: 1
+                      memAvgBytes: 35914228.4
+                      memMaxBytes: 38244352
                       memCurrentBytes: 0
-                      cpuAvgUsage: 33.75321011075384
-                      cpuMaxUsage: 169.65073553494125
+                      cpuAvgUsage: 0.00955965
+                      cpuMaxUsage: 3.1546
                       cpuCurrentUsage: 0
-                      netRxBytes: 103508042
-                      netTxBytes: 4854600
-                      durationMillis: 248472
-                      runTimeSecs: 248.472
+                      netRxBytes: 2652
+                      netTxBytes: 1338
+                      durationMillis: 26239
+                      runTimeSecs: 26.239
                       metamorph: 0
-                      computeUnits: 0.13804
+                      computeUnits: 0.0072886
                     options:
                       build: latest
                       timeoutSecs: 300
@@ -79,9 +88,7 @@ post:
                     defaultKeyValueStoreId: eJNzqsbPiopwJcgGQ
                     defaultDatasetId: wmKPijuyDnPZAPRMk
                     defaultRequestQueueId: FL35cSF7jrxr3BY39
-                    buildNumber: 0.0.36
-                    containerUrl: 'https://g8kd8kbc5ge8.runs.apify.net'
-                    isContainerServerReady: true
+                    isContainerServerReady: false
                     gitBranchName: master
                     usage:
                       ACTOR_COMPUTE_UNITS: 3
@@ -113,14 +120,14 @@ post:
           example:
             data:
               id: HG7ML7M8z78YcAPEB
-              actId: HDSasDasz78YcAPEB
-              userId: 7sT5jcggjjA9fNcxF
-              actorTaskId: KJHSKHausidyaJKHs
+              actId: janedoe~my-actor
+              userId: BPWZBd7Z9c746JAng
+              actorTaskId: rANaydYhUxjsnA3oz
               startedAt: '2019-11-30T07:34:24.202Z'
               finishedAt: '2019-12-12T09:30:12.202Z'
-              status: RUNNING
-              statusMessage: Actor is running
-              isStatusMessageTerminal: false
+              status: ABORTED
+              statusMessage: Actor was aborted
+              isStatusMessageTerminal: true
               meta:
                 origin: WEB
                 clientIp: 172.234.12.34
@@ -128,19 +135,19 @@ post:
               stats:
                 inputBodyLen: 240
                 restartCount: 0
-                resurrectCount: 2
-                memAvgBytes: 267874071.9
-                memMaxBytes: 404713472
+                resurrectCount: 1
+                memAvgBytes: 35914228.4
+                memMaxBytes: 38244352
                 memCurrentBytes: 0
-                cpuAvgUsage: 33.75321011075384
-                cpuMaxUsage: 169.65073553494125
+                cpuAvgUsage: 0.00955965
+                cpuMaxUsage: 3.1546
                 cpuCurrentUsage: 0
-                netRxBytes: 103508042
-                netTxBytes: 4854600
-                durationMillis: 248472
-                runTimeSecs: 248.472
+                netRxBytes: 2652
+                netTxBytes: 1338
+                durationMillis: 26239
+                runTimeSecs: 26.239
                 metamorph: 0
-                computeUnits: 0.13804
+                computeUnits: 0.0072886
               options:
                 build: latest
                 timeoutSecs: 300
@@ -151,9 +158,7 @@ post:
               defaultKeyValueStoreId: eJNzqsbPiopwJcgGQ
               defaultDatasetId: wmKPijuyDnPZAPRMk
               defaultRequestQueueId: FL35cSF7jrxr3BY39
-              buildNumber: 0.0.36
-              containerUrl: 'https://g8kd8kbc5ge8.runs.apify.net'
-              isContainerServerReady: true
+              isContainerServerReady: false
               gitBranchName: master
               usage:
                 ACTOR_COMPUTE_UNITS: 3

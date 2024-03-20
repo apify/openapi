@@ -117,7 +117,7 @@ get:
 
     This endpoint does not require the authentication token. The calls are
     authenticated using a hard-to-guess ID of the run.
-  operationId: Getrun1
+  operationId: GetRun
   parameters:
     - name: runId
       in: path
@@ -158,7 +158,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Getrunresponse.yaml
+              - $ref: ../../components/schemas/actor-runs/GetRunResponse.yaml
               - example:
                   data:
                     id: HG7ML7M8z78YcAPEB
@@ -390,7 +390,7 @@ put:
       application/json:
         schema:
           allOf:
-            - $ref: ../components/schemas/StatusMessageUpdate.yaml
+            - $ref: ../../components/schemas/actor-runs/UpdateStatusMessage.yaml
             - example:
                 runId: 3KH8gEpp4d8uQSe8T
                 statusMessage: Actor has finished
@@ -408,7 +408,7 @@ put:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Updatestatusmessageresponse.yaml
+              - $ref: ../../components/schemas/actor-runs/GetRunResponse.yaml
               - example:
                   data:
                     id: HG7ML7M8z78YcAPEB

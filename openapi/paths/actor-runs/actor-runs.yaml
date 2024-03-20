@@ -26,7 +26,7 @@ get:
 
     parameter. You can also filter runs by status ([available
     statuses](https://docs.apify.com/platform/actors/running/runs-and-builds#lifecycle)).
-  operationId: Getuserrunslist
+  operationId: GetUserRunsList
   parameters:
     - name: token
       in: query
@@ -80,6 +80,7 @@ get:
         type: string
         example: SUCCEEDED
   responses:
+    # todo 404?
     '200':
       description: ''
       headers: {}
@@ -87,7 +88,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Getuserrunslistresponse.yaml
+              - $ref: ../../components/schemas/actor-runs/GetUserRunsListResponse.yaml 
               - example:
                   data:
                     total: 2
