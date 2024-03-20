@@ -3,18 +3,18 @@ get:
     - Actors
   summary: Get list of environment variables
   description: >-
-    Gets the list of environment variables for a specific version of an actor.
+    Gets the list of environment variables for a specific version of an Actor.
     The response is a JSON object with the list
 
     of [EnvVar objects](#reference/actors/environment-variable-object), where
     each
 
     contains basic information about a single environment variable.
-  operationId: Getlistofenvironmentvariables
+  operationId: GetListOfEnvironmentVariables
   parameters:
     - name: actorId
       in: path
-      description: Actor ID or a tilde-separated owner's username and actor name.
+      description: Actor ID or a tilde-separated owner's username and Actor name.
       required: true
       style: simple
       schema:
@@ -51,7 +51,7 @@ post:
     - Actors
   summary: Create environment variable
   description: >-
-    Creates an environment variable of an actor using values specified in a
+    Creates an environment variable of an Actor using values specified in a
     [EnvVar object](#reference/actors/environment-variable-object) passed as
     JSON in the POST payload.
 
@@ -76,11 +76,11 @@ post:
     [Get environment
     variable](#reference/actors/environment-variable-object/get-environment-variable)
     endpoint.
-  operationId: Createenvironmentvariable
+  operationId: CreateEnvironmentVariable
   parameters:
     - name: actorId
       in: path
-      description: Actor ID or a tilde-separated owner's username and actor name.
+      description: Actor ID or a tilde-separated owner's username and Actor name.
       required: true
       style: simple
       schema:
