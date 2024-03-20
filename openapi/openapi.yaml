@@ -624,7 +624,7 @@ paths:
   '/v2/acts/{actorId}/builds':
     $ref: 'paths/actors/acts@{actorId}@builds.yaml'
   '/v2/acts/{actorId}/builds/{buildId}':
-    $ref: 'paths/v2@acts@{actorId}@builds@{buildId}.yaml'
+    $ref: 'paths/actors/acts@{actorId}@builds@{buildId}.yaml'
   '/v2/acts/{actorId}/builds/{buildId}/abort':
     $ref: 'paths/v2@acts@{actorId}@builds@{buildId}@abort.yaml'
   '/v2/acts/{actorId}/runs':

@@ -3,25 +3,25 @@ get:
     - Actors
   summary: Get build
   description: >-
-    **[DEPRECATED]** API endpoints related to build of the actor were moved
+    **[DEPRECATED]** API endpoints related to build of the Actor were moved
     under new namespace [`actor-builds`](#reference/actor-builds).Gets an object
-    that contains all the details about a specific build of an actor.
+    that contains all the details about a specific build of an Actor.
 
 
     By passing the optional `waitForFinish` parameter the API endpoint will
     synchronously wait for the build to finish.
 
-    This is useful to avoid periodic polling when waiting for an actor build to
+    This is useful to avoid periodic polling when waiting for an Actor build to
     finish.
 
 
     This endpoint does not require the authentication token. The calls are
     authenticated using a hard-to-guess ID of the build.
-  operationId: Getbuild
+  operationId: GetBuild
   parameters:
     - name: actorId
       in: path
-      description: Actor ID or a tilde-separated owner's username and actor name.
+      description: Actor ID or a tilde-separated owner's username and Actor name.
       required: true
       style: simple
       schema:
@@ -52,8 +52,8 @@ get:
     - name: token
       in: query
       description: |-
-        API authentication token. It is only required for private actors.
-        Builds of public actors can be queried without any token.
+        API authentication token. It is only required for private Actors.
+        Builds of public Actors can be queried without any token.
       style: form
       explode: true
       schema:
@@ -67,7 +67,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Getbuildresponse.yaml
+              - $ref: ../../components/schemas/Getbuildresponse.yaml
               - example:
                   data:
                     id: HG7ML7M8z78YcAPEB
@@ -95,7 +95,7 @@ get:
                     usageUsd:
                       ACTOR_COMPUTE_UNITS: 0.02
                     inputSchema: '{\n  \"title\": \"Schema for ... }'
-                    readme: '# Magic actor\nThis actor is magic.'
+                    readme: '# Magic Actor\nThis Actor is magic.'
                     buildNumber: 0.1.1
           example:
             data:
@@ -124,6 +124,6 @@ get:
               usageUsd:
                 ACTOR_COMPUTE_UNITS: 0.02
               inputSchema: '{\n  \"title\": \"Schema for ... }'
-              readme: '# Magic actor\nThis actor is magic.'
+              readme: '# Magic Actor\nThis Actor is magic.'
               buildNumber: 0.1.1
   deprecated: false
