@@ -36,7 +36,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Getlistofversionsresponse.yaml
+              - $ref: ../../components/schemas/Getlistofversionsresponse.yaml
               - example:
                   data:
                     total: 5
@@ -162,7 +162,7 @@ post:
       application/json:
         schema:
           allOf:
-            - $ref: ../components/schemas/VersionUpdate.yaml
+            - $ref: ../../components/schemas/VersionUpdate.yaml
             - example:
                 versionNumber: '0.1'
                 sourceType: GIT_REPO

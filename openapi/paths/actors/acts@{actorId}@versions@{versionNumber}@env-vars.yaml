@@ -109,7 +109,7 @@ post:
       application/json:
         schema:
           allOf:
-            - $ref: ../components/schemas/EnvVarUpdate.yaml
+            - $ref: ../../components/schemas/EnvVarUpdate.yaml
             - example:
                 name: ENV_VAR_NAME
                 value: my-env-var
@@ -132,7 +132,7 @@ post:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Createenvironmentvariableresponse.yaml
+              - $ref: ../../components/schemas/Createenvironmentvariableresponse.yaml
               - example:
                   data:
                     name: MY_ENV_VAR
