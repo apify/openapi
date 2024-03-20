@@ -622,7 +622,7 @@ paths:
   '/v2/acts/{actorId}/webhooks':
     $ref: 'paths/v2@acts@{actorId}@webhooks.yaml'
   '/v2/acts/{actorId}/builds':
-    $ref: 'paths/v2@acts@{actorId}@builds.yaml'
+    $ref: 'paths/actors/acts@{actorId}@builds.yaml'
   '/v2/acts/{actorId}/builds/{buildId}':
     $ref: 'paths/v2@acts@{actorId}@builds@{buildId}.yaml'
   '/v2/acts/{actorId}/builds/{buildId}/abort':
