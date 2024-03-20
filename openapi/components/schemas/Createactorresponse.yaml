@@ -1,4 +1,4 @@
-title: Createactorresponse
+title: CreateActorResponse
 required:
   - data
 type: object

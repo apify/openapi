@@ -115,7 +115,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../../components/schemas/Getlistofbuildsresponse.yaml
+            $ref: ../../components/schemas/GetListOfBuildsResponse.yaml
   deprecated: false
 post:
   tags:
@@ -233,7 +233,7 @@ post:
         application/json:
           schema:
             allOf:
-              - $ref: ../../components/schemas/Buildactorresponse.yaml
+              - $ref: ../../components/schemas/BuildActorResponse.yaml
               - example:
                   data:
                     id: HG7ML7M8z78YcAPEB

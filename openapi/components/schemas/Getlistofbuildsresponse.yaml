@@ -1,4 +1,4 @@
-title: Getlistofbuildsresponse
+title: GetListOfBuildsResponse
 required:
   - data
 type: object

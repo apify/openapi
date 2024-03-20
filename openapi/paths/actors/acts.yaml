@@ -85,7 +85,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../../components/schemas/Getlistofactorsresponse.yaml
+              - $ref: ../../components/schemas/GetListOfActorsResponse.yaml
               - example:
                   data:
                     total: 2
@@ -264,7 +264,7 @@ post:
         application/json:
           schema:
             allOf:
-              - $ref: ../../components/schemas/Createactorresponse.yaml
+              - $ref: ../../components/schemas/CreateActorResponse.yaml
               - example:
                   data:
                     id: zdc3Pyhyz3m8vjDeM

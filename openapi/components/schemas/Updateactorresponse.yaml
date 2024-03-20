@@ -1,4 +1,4 @@
-title: Updateactorresponse
+title: UpdateActorResponse
 required:
   - data
 type: object

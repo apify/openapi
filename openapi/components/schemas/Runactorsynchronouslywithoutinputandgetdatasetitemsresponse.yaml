@@ -1,4 +1,4 @@
-title: Runactorsynchronouslywithoutinputandgetdatasetitemsresponse
+title: RunActorSynchronouslyWithoutInputAndGetDatasetItemsResponse
 required:
   - error
 type: object

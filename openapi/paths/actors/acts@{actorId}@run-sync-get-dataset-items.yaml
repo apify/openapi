@@ -364,7 +364,7 @@ post:
       application/json:
         schema:
           allOf:
-            - $ref: ../../components/schemas/Runactorsynchronouslywithinputandgetdatasetitemsrequest.yaml
+            - $ref: ../../components/schemas/RunActorSynchronouslyWithInputAndGetDatasetItemsRequest.yaml
             - example:
                 foo: bar
         example:
@@ -415,7 +415,7 @@ post:
         application/json:
           schema:
             allOf:
-              - $ref: ../../components/schemas/Runactorsynchronouslywithinputandgetdatasetitemsresponse.yaml
+              - $ref: ../../components/schemas/RunActorSynchronouslyWithInputAndGetDatasetItemsResponse.yaml
               - example:
                   error:
                     type: run-failed
@@ -435,7 +435,7 @@ post:
         application/json:
           schema:
             allOf:
-              - $ref: ../../components/schemas/Runactorsynchronouslywithinputandgetdatasetitemsresponse.yaml
+              - $ref: ../../components/schemas/RunActorSynchronouslyWithInputAndGetDatasetItemsResponse.yaml
               - example:
                   error:
                     type: run-timeout-exceeded
@@ -842,7 +842,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../../components/schemas/Runactorsynchronouslywithoutinputandgetdatasetitemsresponse.yaml
+              - $ref: ../../components/schemas/RunActorSynchronouslyWithoutInputAndGetDatasetItemsResponse.yaml
               - example:
                   error:
                     type: run-failed
@@ -862,7 +862,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../../components/schemas/Runactorsynchronouslywithoutinputandgetdatasetitemsresponse.yaml
+              - $ref: ../../components/schemas/RunActorSynchronouslyWithoutInputAndGetDatasetItemsResponse.yaml
               - example:
                   error:
                     type: run-timeout-exceeded

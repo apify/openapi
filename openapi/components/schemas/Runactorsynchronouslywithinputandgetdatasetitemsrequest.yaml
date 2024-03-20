@@ -1,4 +1,4 @@
-title: Runactorsynchronouslywithinputandgetdatasetitemsrequest
+title: RunActorSynchronouslyWithInputAndGetDatasetItemsRequest
 type: object
 properties:
   foo:

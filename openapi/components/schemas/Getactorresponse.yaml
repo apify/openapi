@@ -1,4 +1,4 @@
-title: Getactorresponse
+title: GetActorResponse
 required:
   - data
 type: object

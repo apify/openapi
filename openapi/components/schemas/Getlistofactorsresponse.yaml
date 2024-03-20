@@ -1,4 +1,4 @@
-title: Getlistofactorsresponse
+title: GetListOfActorsResponse
 required:
   - data
 type: object

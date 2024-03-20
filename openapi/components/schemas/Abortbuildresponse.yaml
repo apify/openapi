@@ -1,4 +1,4 @@
-title: Abortbuildresponse
+title: AbortBuildResponse
 required:
   - data
 type: object

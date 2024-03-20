@@ -30,7 +30,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../../components/schemas/Getactorresponse.yaml
+              - $ref: ../../components/schemas/GetActorResponse.yaml
               - example:
                   data:
                     id: zdc3Pyhyz3m8vjDeM
@@ -271,7 +271,7 @@ put:
         application/json:
           schema:
             allOf:
-              - $ref: ../../components/schemas/Updateactorresponse.yaml
+              - $ref: ../../components/schemas/UpdateActorResponse.yaml
               - example:
                   data:
                     id: zdc3Pyhyz3m8vjDeM
