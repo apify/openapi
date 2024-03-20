@@ -4,26 +4,16 @@ get:
   summary: Get user builds list
   description: >-
     Gets a list of all builds for a user. The response is a JSON array of
-    objects, where each object
-
-    contains basic information about a single build.
-
+    objects, where each object contains basic information about a single build.
 
     The endpoint supports pagination using the `limit` and `offset` parameters
     and it will not return more than 1000 records.
 
-
     By default, the records are sorted by the `startedAt` field in ascending
-    order.
-
-    Therefore, you can use pagination to incrementally fetch all builds while
-    new
-
-    ones are still being started. To sort the records in descending order, use
-    the `desc=1`
-
-    parameter.
-  operationId: Getuserbuildslist
+    order. Therefore, you can use pagination to incrementally fetch all builds while
+    new ones are still being started. To sort the records in descending order, use
+    the `desc=1` parameter.
+  operationId: GetBuildList
   parameters:
     - name: token
       in: query
@@ -73,5 +63,5 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/Getuserbuildslistresponse.yaml
+            $ref: ../../components/schemas/actor-builds/GetBuildListResponse.yaml
   deprecated: false

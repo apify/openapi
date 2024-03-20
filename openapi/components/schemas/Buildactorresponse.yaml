@@ -5,5 +5,5 @@ type: object
 properties:
   data:
     allOf:
-      - $ref: ./Build.yaml
+      - $ref: ./actor-builds/Build.yaml
       - {}

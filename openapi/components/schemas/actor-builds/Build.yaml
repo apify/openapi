@@ -30,25 +30,25 @@ properties:
     example: SUCCEEDED
   meta:
     allOf:
-      - $ref: ./meta.yaml
+      - $ref: ../meta.yaml
       - {}
   stats:
     allOf:
       - oneOf:
           - nullable: true
-          - $ref: ./stats5.yaml
+          - $ref: ../stats5.yaml
       - {}
   options:
     allOf:
       - oneOf:
           - nullable: true
-          - $ref: ./options3.yaml
+          - $ref: ../options3.yaml
       - {}
   usage:
     allOf:
       - oneOf:
           - nullable: true
-          - $ref: ./usage.yaml
+          - $ref: ../usage.yaml
       - {}
   usageTotalUsd:
     type: number
@@ -58,7 +58,7 @@ properties:
     allOf:
       - oneOf:
           - nullable: true
-          - $ref: ./usageUsd.yaml
+          - $ref: ../usageUsd.yaml
       - {}
   inputSchema:
     type: string

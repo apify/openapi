@@ -3,7 +3,7 @@ get:
     - Actor builds
   summary: Get log
   description: 'Check out [Logs](#reference/logs) for full reference.'
-  operationId: Getlog
+  operationId: GetLog
   parameters:
     - name: buildId
       in: path
