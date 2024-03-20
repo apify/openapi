@@ -1,9 +1,9 @@
-title: Getuserrunslistresponse
+title: GetUserRunsListResponse
 required:
   - data
 type: object
 properties:
   data:
     allOf:
-      - $ref: ./data5.yaml
+      - $ref: ../data5.yaml
       - {}

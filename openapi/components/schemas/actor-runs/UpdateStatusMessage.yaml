@@ -1,4 +1,4 @@
-title: StatusMessageUpdate
+title: UpdateStatusMessage
 required:
   - runId
   - statusMessage

@@ -1,9 +1,9 @@
-title: Abortrunresponse
+title: GetRunResponse
 required:
   - data
 type: object
 properties:
   data:
     allOf:
-      - $ref: ./RunAborted.yaml
+      - $ref: ../Run.yaml
       - {}
