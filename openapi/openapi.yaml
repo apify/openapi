@@ -635,7 +635,7 @@ paths:
   '/v2/acts/{actorId}/runs/{runId}':
     $ref: 'paths/actors/acts@{actorId}@runs@{runId}.yaml'
   '/v2/acts/{actorId}/runs/{runId}/abort':
-    $ref: 'paths/v2@acts@{actorId}@runs@{runId}@abort.yaml'
+    $ref: 'paths/actors/acts@{actorId}@runs@{runId}@abort.yaml'
   '/v2/acts/{actorId}/runs/{runId}/metamorph':
     $ref: 'paths/actors/acts@{actorId}@runs@{runId}@metamorph.yaml'
   '/v2/acts/{actorId}/runs/{runId}/resurrect':
