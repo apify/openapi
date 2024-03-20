@@ -10,6 +10,9 @@ properties:
   id:
     type: string
     example: HG7ML7M8z78YcAPEB
+  actId:
+    type: string
+    example: janedoe~my-actor
   status:
     type: string
     example: SUCCEEDED
