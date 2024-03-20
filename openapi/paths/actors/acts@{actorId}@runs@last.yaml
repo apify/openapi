@@ -6,7 +6,7 @@ get:
     This is not a single endpoint, but an entire group of endpoints that lets
     you to
 
-    retrieve and manage the last run of given actor or any of its default
+    retrieve and manage the last run of given Actor or any of its default
     storages.
 
     All the endpoints require an authentication token.
@@ -16,7 +16,7 @@ get:
 
     the respective storage endpoints.
 
-    The base path represents the last actor run object is:
+    The base path represents the last Actor run object is:
 
 
     `/v2/acts/{actorId}/runs/last{?token,status}`
@@ -31,7 +31,7 @@ get:
     are the same as in the [Run object](#reference/actors/run-object) endpoint.
 
 
-    In order to access the default storages of the last actor run, i.e. log,
+    In order to access the default storages of the last Actor run, i.e. log,
     key-value store, dataset and request queue,
 
     use the following endpoints:
@@ -99,7 +99,7 @@ get:
     head](#reference/request-queues/queue-head)
 
 
-    For example, to download data from a dataset of the last succeeded actor run
+    For example, to download data from a dataset of the last succeeded Actor run
     in XML format,
 
     send HTTP GET request to the following URL:
@@ -114,11 +114,11 @@ get:
 
     In order to save new items to the dataset, send HTTP POST request with JSON
     payload to the same URL.
-  operationId: Getlastrun
+  operationId: GetLastRun
   parameters:
     - name: actorId
       in: path
-      description: Actor ID or a tilde-separated owner's username and actor name.
+      description: Actor ID or a tilde-separated owner's username and Actor name.
       required: true
       style: simple
       schema:
@@ -149,7 +149,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Getlastrunresponse.yaml
+              - $ref: ../../components/schemas/Getlastrunresponse.yaml
               - example:
                   data:
                     id: HG7ML7M8z78YcAPEB
