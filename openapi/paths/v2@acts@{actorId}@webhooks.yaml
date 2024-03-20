@@ -17,7 +17,7 @@ get:
     order,
 
     to sort the records in descending order, use the `desc=1` parameter.
-  operationId: Getlistofwebhooks
+  operationId: GetListOfWebhooks
   parameters:
     - name: actorId
       in: path
@@ -76,7 +76,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Getlistofwebhooksresponse.yaml
+              - $ref: ../components/schemas/webhooks/GetListOfWebhooksResponse.yaml
               - example:
                   data:
                     total: 2

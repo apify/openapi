@@ -706,11 +706,11 @@ paths:
   '/v2/request-queues/{queueId}/requests/batch':
     $ref: 'paths/v2@request-queues@{queueId}@requests@batch.yaml'
   /v2/webhooks:
-    $ref: paths/v2@webhooks.yaml
+    $ref: paths/webhooks/webhooks.yaml
   '/v2/webhooks/{webhookId}':
-    $ref: 'paths/v2@webhooks@{webhookId}.yaml'
+    $ref: 'paths/webhooks/webhooks@{webhookId}.yaml'
   '/v2/webhooks/{webhookId}/test':
-    $ref: 'paths/v2@webhooks@{webhookId}@test.yaml'
+    $ref: 'paths/webhooks/webhooks@{webhookId}@test.yaml'
   '/v2/webhooks/{webhookId}/dispatches':
     $ref: 'paths/v2@webhooks@{webhookId}@dispatches.yaml'
   /v2/webhook-dispatches:
