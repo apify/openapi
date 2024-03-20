@@ -48,10 +48,10 @@ properties:
     type: number
     example: 50
   actId:
-    type: object
+    type: string
     nullable: true
   actRunId:
-    type: object
+    type: string
     nullable: true
   hadMultipleClients:
     type: boolean
