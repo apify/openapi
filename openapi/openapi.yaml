@@ -684,11 +684,11 @@ paths:
   '/v2/key-value-stores/{storeId}/records/{recordKey}':
     $ref: 'paths/v2@key-value-stores@{storeId}@records@{recordKey}.yaml'
   /v2/datasets:
-    $ref: paths/v2@datasets.yaml
+    $ref: paths/datasets.yaml
   '/v2/datasets/{datasetId}':
-    $ref: 'paths/v2@datasets@{datasetId}.yaml'
+    $ref: 'paths/datasets@{datasetId}.yaml'
   '/v2/datasets/{datasetId}/items':
-    $ref: 'paths/v2@datasets@{datasetId}@items.yaml'
+    $ref: 'paths/datasets@{datasetId}@items.yaml'
   /v2/request-queues:
     $ref: paths/v2@request-queues.yaml
   '/v2/request-queues/{queueId}':

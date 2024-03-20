@@ -1,4 +1,4 @@
-title: Updatedatasetrequest
+title: UpdateDatasetRequest
 required:
   - name
 type: object

@@ -35,10 +35,10 @@ properties:
     type: number
     example: 5
   actId:
-    type: object
+    type: string
     nullable: true
   actRunId:
-    type: object
+    type: string
     nullable: true
   fields:
     type: array
