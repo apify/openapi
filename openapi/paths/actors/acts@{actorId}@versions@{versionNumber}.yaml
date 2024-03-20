@@ -4,7 +4,7 @@ get:
   summary: Get version
   description: >-
     The **Version object** contains the source code of a specific version of an
-    actor.
+    Actor.
 
     The `sourceType` property indicates where the source code is hosted, and
     based
@@ -46,16 +46,16 @@ get:
     </table>
 
 
-    For more information about source code and actor versions, see [Source
+    For more information about source code and Actor versions, see [Source
     code](https://docs.apify.com/platform/actors/development/actor-definition/source-code)
     in Actors documentation.Gets a [Version
     object](#reference/actors/version-object) that contains all the details
-    about a specific version of an actor.
-  operationId: Getversion
+    about a specific version of an Actor.
+  operationId: GetVersion
   parameters:
     - name: actorId
       in: path
-      description: Actor ID or a tilde-separated owner's username and actor name.
+      description: Actor ID or a tilde-separated owner's username and Actor name.
       required: true
       style: simple
       schema:
@@ -63,7 +63,7 @@ get:
         example: janedoe~my-actor
     - name: versionNumber
       in: path
-      description: Actor major and minor version of the actor.
+      description: Actor major and minor version of the Actor.
       required: true
       style: simple
       schema:
@@ -93,7 +93,7 @@ put:
   summary: Update version
   description: >-
     The **Version object** contains the source code of a specific version of an
-    actor.
+    Actor.
 
     The `sourceType` property indicates where the source code is hosted, and
     based
@@ -135,9 +135,9 @@ put:
     </table>
 
 
-    For more information about source code and actor versions, see [Source
+    For more information about source code and Actor versions, see [Source
     code](https://docs.apify.com/platform/actors/development/actor-definition/source-code)
-    in Actors documentation.Updates actor version using values specified by a
+    in Actors documentation.Updates Actor version using values specified by a
     [Version object](#reference/actors/version-object)
 
     passed as JSON in the POST payload.
@@ -159,11 +159,11 @@ put:
     returned by the
 
     [Get version](#reference/actors/version-object/get-version) endpoint.
-  operationId: Updateversion
+  operationId: UpdateVersion
   parameters:
     - name: actorId
       in: path
-      description: Actor ID or a tilde-separated owner's username and actor name.
+      description: Actor ID or a tilde-separated owner's username and Actor name.
       required: true
       style: simple
       schema:
@@ -171,7 +171,7 @@ put:
         example: janedoe~my-actor
     - name: versionNumber
       in: path
-      description: Actor major and minor version of the actor.
+      description: Actor major and minor version of the Actor.
       required: true
       style: simple
       schema:
@@ -235,7 +235,7 @@ delete:
   summary: Delete version
   description: >-
     The **Version object** contains the source code of a specific version of an
-    actor.
+    Actor.
 
     The `sourceType` property indicates where the source code is hosted, and
     based
@@ -277,14 +277,14 @@ delete:
     </table>
 
 
-    For more information about source code and actor versions, see [Source
+    For more information about source code and Actor versions, see [Source
     code](https://docs.apify.com/platform/actors/development/actor-definition/source-code)
-    in Actors documentation.Deletes a specific version of actor's source code.
-  operationId: Deleteversion
+    in Actors documentation.Deletes a specific version of Actor's source code.
+  operationId: DeleteVersion
   parameters:
     - name: actorId
       in: path
-      description: Actor ID or a tilde-separated owner's username and actor name.
+      description: Actor ID or a tilde-separated owner's username and Actor name.
       required: true
       style: simple
       schema:
@@ -292,7 +292,7 @@ delete:
         example: janedoe~my-actor
     - name: versionNumber
       in: path
-      description: Actor major and minor version of the actor.
+      description: Actor major and minor version of the Actor.
       required: true
       style: simple
       schema:
