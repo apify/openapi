@@ -2,6 +2,7 @@ get:
   tags:
     - Actor builds
   summary: Get log
+  # TODO: Fix description once /logs is cleaned up as well
   description: 'Check out [Logs](#reference/logs) for full reference.'
   operationId: GetLog
   parameters:
