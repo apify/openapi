@@ -85,7 +85,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/Getversionresponse.yaml
+            $ref: ../../components/schemas/Getversionresponse.yaml
   deprecated: false
 put:
   tags:
@@ -192,7 +192,7 @@ put:
       application/json:
         schema:
           allOf:
-            - $ref: ../components/schemas/VersionUpdate.yaml
+            - $ref: ../../components/schemas/VersionUpdate.yaml
             - example:
                 versionNumber: '0.0'
                 sourceType: SOURCE_FILES
@@ -227,7 +227,7 @@ put:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/Updateversionresponse.yaml
+            $ref: ../../components/schemas/Updateversionresponse.yaml
   deprecated: false
 delete:
   tags:

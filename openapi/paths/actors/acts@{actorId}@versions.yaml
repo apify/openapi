@@ -185,5 +185,5 @@ post:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/Createversionresponse.yaml
+            $ref: ../../components/schemas/Createversionresponse.yaml
   deprecated: false
