@@ -20,10 +20,24 @@ properties:
   username:
     type: string
     example: jane35
+  userFullName:
+    # TODO required?
+    type: string
+    example: Jane H. Doe
   description:
+    # TODO required?
     type: string
     nullable: true
     example: My public actor!
+  categories:
+    type: array
+    items: 
+      type: string
+    example:
+      - "MARKETING"
+      - "LEAD_GENERATION"
+  notice:
+    type: string
   pictureUrl:
     type: string
     nullable: true
@@ -37,10 +51,6 @@ properties:
     nullable: true
     example: 'https://...'
   stats:
-    allOf:
-      - $ref: ./stats.yaml
-      - {}
+    $ref: ../stats.yaml
   currentPricingInfo:
-    allOf:
-      - $ref: ./currentPricingInfo.yaml
-      - {}
+    $ref: ./currentPricingInfo.yaml
