@@ -32,11 +32,11 @@ post:
 
     For more information, see the [Actor
     docs](https://docs.apify.com/platform/actors/development/programming-interface/metamorph).
-  operationId: Metamorphrun
+  operationId: MetamorphRun
   parameters:
     - name: actorId
       in: path
-      description: Actor ID or a tilde-separated owner's username and actor name.
+      description: Actor ID or a tilde-separated owner's username and Actor name.
       required: true
       style: simple
       schema:
@@ -61,7 +61,7 @@ post:
         example: soSkq9ekdmfOslopH
     - name: targetActorId
       in: query
-      description: ID of a target actor that the run should be transformed into.
+      description: ID of a target Actor that the run should be transformed into.
       required: true
       style: form
       explode: true
@@ -71,11 +71,11 @@ post:
     - name: build
       in: query
       description: >-
-        Optional build of the target actor.
+        Optional build of the target Actor.
 
         It can be either a build tag or build number. By default, the run uses
         the build specified in the default run configuration for the target
-        actor (typically `latest`).
+        Actor (typically `latest`).
       style: form
       explode: true
       schema:
