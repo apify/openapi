@@ -3,9 +3,9 @@ post:
     - Actors
   summary: Resurrect run
   description: >-
-    **[DEPRECATED]** API endpoints related to run of the actor were moved under
+    **[DEPRECATED]** API endpoints related to run of the Actor were moved under
     new namespace [`actor-runs`](#reference/actor-runs).Resurrects a finished
-    actor run and returns an object that contains all the details about the
+    Actor run and returns an object that contains all the details about the
     resurrected run.
 
     Only finished runs, i.e. runs with status `FINISHED`, `FAILED`, `ABORTED`
@@ -19,11 +19,11 @@ post:
 
     For more information, see the [Actor
     docs](https://docs.apify.com/platform/actors/running/runs-and-builds#resurrection-of-finished-run).
-  operationId: Resurrectrun
+  operationId: ResurrectRun
   parameters:
     - name: actorId
       in: path
-      description: Actor ID or a tilde-separated owner's username and actor name.
+      description: Actor ID or a tilde-separated owner's username and Actor name.
       required: true
       style: simple
       schema:
@@ -49,7 +49,7 @@ post:
     - name: build
       in: query
       description: >-
-        Specifies the actor build to run. It can be either a build tag or build
+        Specifies the Actor build to run. It can be either a build tag or build
         number. By default, the run uses the build specified in the run that is
         being resurrected (typically `latest`).
       style: form

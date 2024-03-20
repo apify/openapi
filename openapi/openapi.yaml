@@ -639,7 +639,7 @@ paths:
   '/v2/acts/{actorId}/runs/{runId}/metamorph':
     $ref: 'paths/v2@acts@{actorId}@runs@{runId}@metamorph.yaml'
   '/v2/acts/{actorId}/runs/{runId}/resurrect':
-    $ref: 'paths/v2@acts@{actorId}@runs@{runId}@resurrect.yaml'
+    $ref: 'paths/actors/acts@{actorId}@runs@{runId}@resurrect.yaml'
   '/v2/acts/{actorId}/runs/last/':
     $ref: 'paths/actors/acts@{actorId}@runs@last.yaml'
   /v2/actor-tasks:
