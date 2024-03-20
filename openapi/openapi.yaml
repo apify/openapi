@@ -609,7 +609,7 @@ paths:
   /v2/acts:
     $ref: paths/v2@acts.yaml
   '/v2/acts/{actorId}':
-    $ref: 'paths/v2@acts@{actorId}.yaml'
+    $ref: 'paths/actors/acts@{actorId}.yaml'
   '/v2/acts/{actorId}/versions':
     $ref: 'paths/v2@acts@{actorId}@versions.yaml'
   '/v2/acts/{actorId}/versions/{versionNumber}':
