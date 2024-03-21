@@ -51,7 +51,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../../components/schemas/Getenvironmentvariableresponse.yaml
+              - $ref: ../../components/schemas/GetEnvironmentVariableResponse.yaml
               - example:
                   data:
                     name: MY_ENV_VAR
@@ -151,7 +151,7 @@ put:
         application/json:
           schema:
             allOf:
-              - $ref: ../../components/schemas/Updateenvironmentvariableresponse.yaml
+              - $ref: ../../components/schemas/UpdateEnvironmentVariableResponse.yaml
               - example:
                   data:
                     name: MY_ENV_VAR

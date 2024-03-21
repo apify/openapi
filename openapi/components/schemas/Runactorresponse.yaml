@@ -1,4 +1,4 @@
-title: Runactorresponse
+title: RunActorResponse
 required:
   - data
 type: object

@@ -1,4 +1,4 @@
-title: Getenvironmentvariableresponse
+title: GetEnvironmentVariableResponse
 required:
   - data
 type: object

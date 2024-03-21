@@ -1,4 +1,4 @@
-title: Withinputresponse
+title: WithInputResponse
 type: object
 properties:
   bar:

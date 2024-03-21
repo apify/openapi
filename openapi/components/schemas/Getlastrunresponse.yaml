@@ -1,4 +1,4 @@
-title: Getlastrunresponse
+title: GetLastRunResponse
 required:
   - data
 type: object

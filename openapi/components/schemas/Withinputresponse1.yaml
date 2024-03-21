@@ -1,4 +1,4 @@
-title: Withinputresponse1
+title: WithInputResponse1
 required:
   - error
 type: object

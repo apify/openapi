@@ -1,4 +1,4 @@
-title: Getlistofrunsresponse
+title: GetListOfRunsResponse
 required:
   - data
 type: object

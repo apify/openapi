@@ -1,4 +1,4 @@
-title: Getversionresponse
+title: GetVersionResponse
 required:
   - data
 type: object

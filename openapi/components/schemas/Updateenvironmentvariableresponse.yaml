@@ -1,4 +1,4 @@
-title: Updateenvironmentvariableresponse
+title: UpdateEnvironmentVariableResponse
 required:
   - data
 type: object

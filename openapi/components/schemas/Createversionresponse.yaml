@@ -1,4 +1,4 @@
-title: Createversionresponse
+title: CreateVersionResponse
 required:
   - data
 type: object

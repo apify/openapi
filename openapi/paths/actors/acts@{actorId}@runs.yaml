@@ -130,7 +130,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../../components/schemas/Getlistofrunsresponse.yaml
+              - $ref: ../../components/schemas/GetListOfRunsResponse.yaml
               - example:
                   data:
                     total: 2
@@ -371,7 +371,7 @@ post:
       application/json:
         schema:
           allOf:
-            - $ref: ../../components/schemas/Runactorrequest.yaml
+            - $ref: ../../components/schemas/RunActorRequest.yaml
             - example:
                 foo: bar
         example:
@@ -392,7 +392,7 @@ post:
         application/json:
           schema:
             allOf:
-              - $ref: ../../components/schemas/Runactorresponse.yaml
+              - $ref: ../../components/schemas/RunActorResponse.yaml
               - example:
                   data:
                     id: HG7ML7M8z78YcAPEB

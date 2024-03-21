@@ -1,4 +1,4 @@
-title: Updateversionresponse
+title: UpdateVersionResponse
 required:
   - data
 type: object

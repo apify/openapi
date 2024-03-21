@@ -1,4 +1,4 @@
-title: Metamorphrunresponse
+title: MetamorphRunResponse
 required:
   - data
 type: object

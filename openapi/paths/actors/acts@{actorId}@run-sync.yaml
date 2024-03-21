@@ -133,7 +133,7 @@ post:
       application/json:
         schema:
           allOf:
-            - $ref: ../../components/schemas/Withinputrequest.yaml
+            - $ref: ../../components/schemas/WithInputRequest.yaml
             - example:
                 foo: bar
         example:
@@ -147,7 +147,7 @@ post:
         application/json:
           schema:
             allOf:
-              - $ref: ../../components/schemas/Withinputresponse.yaml
+              - $ref: ../../components/schemas/WithInputResponse.yaml
               - example:
                   bar: foo
           example:
@@ -159,7 +159,7 @@ post:
         application/json:
           schema:
             allOf:
-              - $ref: ../../components/schemas/Withinputresponse1.yaml
+              - $ref: ../../components/schemas/WithInputResponse1.yaml
               - example:
                   error:
                     type: run-failed
@@ -179,7 +179,7 @@ post:
         application/json:
           schema:
             allOf:
-              - $ref: ../../components/schemas/Withinputresponse1.yaml
+              - $ref: ../../components/schemas/WithInputResponse1.yaml
               - example:
                   error:
                     type: run-timeout-exceeded
@@ -318,7 +318,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../../components/schemas/Withoutinputresponse.yaml
+              - $ref: ../../components/schemas/WithoutInputResponse.yaml
               - example:
                   foo: bar
           example:
@@ -330,7 +330,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../../components/schemas/Withoutinputresponse1.yaml
+              - $ref: ../../components/schemas/WithoutInputResponse1.yaml
               - example:
                   error:
                     type: run-failed
@@ -350,7 +350,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../../components/schemas/Withoutinputresponse1.yaml
+              - $ref: ../../components/schemas/WithoutInputResponse1.yaml
               - example:
                   error:
                     type: run-timeout-exceeded

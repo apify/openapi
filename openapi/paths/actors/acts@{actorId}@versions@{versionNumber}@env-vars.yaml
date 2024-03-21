@@ -44,7 +44,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../../components/schemas/Getlistofenvironmentvariablesresponse.yaml
+            $ref: ../../components/schemas/GetListOfEnvironmentVariablesResponse.yaml
   deprecated: false
 post:
   tags:
@@ -132,7 +132,7 @@ post:
         application/json:
           schema:
             allOf:
-              - $ref: ../../components/schemas/Createenvironmentvariableresponse.yaml
+              - $ref: ../../components/schemas/CreateEnvironmentVariableResponse.yaml
               - example:
                   data:
                     name: MY_ENV_VAR

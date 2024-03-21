@@ -85,7 +85,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../../components/schemas/Getversionresponse.yaml
+            $ref: ../../components/schemas/GetVersionResponse.yaml
   deprecated: false
 put:
   tags:
@@ -227,7 +227,7 @@ put:
       content:
         application/json:
           schema:
-            $ref: ../../components/schemas/Updateversionresponse.yaml
+            $ref: ../../components/schemas/UpdateVersionResponse.yaml
   deprecated: false
 delete:
   tags:

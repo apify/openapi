@@ -36,7 +36,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../../components/schemas/Getlistofversionsresponse.yaml
+              - $ref: ../../components/schemas/GetListOfVersionsResponse.yaml
               - example:
                   data:
                     total: 5
@@ -185,5 +185,5 @@ post:
       content:
         application/json:
           schema:
-            $ref: ../../components/schemas/Createversionresponse.yaml
+            $ref: ../../components/schemas/CreateVersionResponse.yaml
   deprecated: false

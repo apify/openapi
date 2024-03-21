@@ -1,4 +1,4 @@
-title: Withinputrequest
+title: WithInputRequest
 type: object
 properties:
   foo:

@@ -1,4 +1,4 @@
-title: Runactorrequest
+title: RunActorRequest
 type: object
 properties:
   foo:
