@@ -1,32 +1,11 @@
-title: Webhook
+title: WebhookCreate
 required:
-  - id
-  - createdAt
-  - modifiedAt
-  - userId
   - eventTypes
   - condition
-  - ignoreSslErrors
   - requestUrl
 type: object
 properties:
-  id:
-    type: string
-    example: YiKoxjkaS9gjGTqhF
-  createdAt:
-    type: string
-    example: '2019-12-12T07:34:14.202Z'
-  modifiedAt:
-    type: string
-    example: '2019-12-13T08:36:13.202Z'
-  userId:
-    type: string
-    example: wRsJZtadYvn4mBZmm
   isAdHoc:
-    type: boolean
-    nullable: true
-    example: false
-  shouldInterpolateStrings:
     type: boolean
     nullable: true
     example: false
@@ -37,10 +16,15 @@ properties:
     description: ''
   condition:
     allOf:
-      - $ref: ./condition.yaml
+      - $ref: ./WebhookCondition.yaml
       - {}
+  idempotencyKey:
+    type: string
+    nullable: true
+    example: fdSJmdP3nfs7sfk3y
   ignoreSslErrors:
     type: boolean
+    nullable: true
     example: false
   doNotRetry:
     type: boolean
@@ -61,15 +45,7 @@ properties:
     type: string
     nullable: true
     example: this is webhook description
-  lastDispatch:
-    allOf:
-      - oneOf:
-          - nullable: true
-          - $ref: ./lastDispatch.yaml
-      - {}
-  stats:
-    allOf:
-      - oneOf:
-          - nullable: true
-          - $ref: ./stats11.yaml
-      - {}
+  shouldInterpolateStrings:
+    type: boolean
+    nullable: true
+    example: false

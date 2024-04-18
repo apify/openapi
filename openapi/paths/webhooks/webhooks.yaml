@@ -13,7 +13,7 @@ get:
     order. To sort the records in descending order, use the `desc=1`
 
     parameter.
-  operationId: Getlistofwebhooks2
+  operationId: GetListOfWebhooks
   parameters:
     - name: token
       in: query
@@ -64,7 +64,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Getlistofwebhooksresponse2.yaml
+              - $ref: ../../components/schemas/webhooks/GetListOfWebhooksResponse2.yaml
               - example:
                   data:
                     total: 2
@@ -165,7 +165,7 @@ get:
 post:
   tags:
     - Webhooks
-  summary: Create webhook
+  summary: Create a webhook
   description: >-
     Creates a new webhook with settings provided by the webhook object passed as
     JSON in the payload.
@@ -237,7 +237,7 @@ post:
 
     **Important**: The request must specify the `Content-Type: application/json`
     HTTP header.
-  operationId: Createwebhook
+  operationId: CreateWebhook
   parameters:
     - name: token
       in: query
@@ -275,7 +275,7 @@ post:
       application/json:
         schema:
           allOf:
-            - $ref: ../components/schemas/WebhookCreate.yaml
+            - $ref: ../../components/schemas/webhooks/WebhookCreate.yaml
             - example:
                 isAdHoc: false
                 eventTypes:
@@ -319,7 +319,7 @@ post:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Createwebhookresponse.yaml
+              - $ref: ../../components/schemas/webhooks/CreateWebhookResponse.yaml
               - example:
                   data:
                     id: YiKoxjkaS9gjGTqhF

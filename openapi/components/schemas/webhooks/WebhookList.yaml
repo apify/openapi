@@ -1,4 +1,4 @@
-title: data21
+title: WebhookList
 required:
   - total
   - offset
@@ -26,5 +26,5 @@ properties:
   items:
     type: array
     items:
-      $ref: ./WebhookShort.yaml
+      $ref: ./Webhook.yaml
     description: ''

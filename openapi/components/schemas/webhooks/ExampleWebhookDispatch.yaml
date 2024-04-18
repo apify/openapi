@@ -1,4 +1,4 @@
-title: lastDispatch
+title: ExampleWebhookDispatch
 required:
   - status
   - finishedAt

@@ -3,7 +3,7 @@ get:
     - Webhooks
   summary: Get webhook
   description: Gets webhook object with all details.
-  operationId: Getwebhook
+  operationId: GetWebhook
   parameters:
     - name: webhookId
       in: path
@@ -30,7 +30,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Getwebhookresponse.yaml
+              - $ref: ../../components/schemas/webhooks/GetWebhookResponse.yaml
               - example:
                   data:
                     id: YiKoxjkaS9gjGTqhF
@@ -106,7 +106,7 @@ put:
     When providing your API authentication token, we recommend using the
     request's `Authorization` header, rather than the URL. ([More
     info](#introduction/authentication)).
-  operationId: Updatewebhook
+  operationId: UpdateWebhook
   parameters:
     - name: webhookId
       in: path
@@ -131,7 +131,7 @@ put:
       application/json:
         schema:
           allOf:
-            - $ref: ../components/schemas/WebhookUpdate.yaml
+            - $ref: ../../components/schemas/webhooks/WebhookUpdate.yaml
             - example:
                 isAdHoc: false
                 eventTypes:
@@ -167,7 +167,7 @@ put:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Updatewebhookresponse.yaml
+              - $ref: ../../components/schemas/webhooks/UpdateWebhookResponse.yaml
               - example:
                   data:
                     id: YiKoxjkaS9gjGTqhF
@@ -224,7 +224,7 @@ delete:
     - Webhooks
   summary: Delete webhook
   description: Deletes a webhook.
-  operationId: Deletewebhook
+  operationId: DeleteWebhook
   parameters:
     - name: webhookId
       in: path

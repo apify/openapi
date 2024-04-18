@@ -3,7 +3,7 @@ post:
     - Webhooks
   summary: Test webhook
   description: Tests a webhook. Creates a webhook dispatch with a dummy payload.
-  operationId: Testwebhook
+  operationId: TestWebhook
   parameters:
     - name: webhookId
       in: path
@@ -30,7 +30,7 @@ post:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Testwebhookresponse.yaml
+              - $ref: ../../components/schemas/webhooks/TestWebhookResponse.yaml
               - example:
                   data:
                     id: asdLZtadYvn4mBZmm

@@ -38,7 +38,7 @@ properties:
     description: ''
   condition:
     allOf:
-      - $ref: ./condition.yaml
+      - $ref: ./WebhookCondition.yaml
       - {}
   ignoreSslErrors:
     type: boolean
@@ -53,11 +53,11 @@ properties:
     allOf:
       - oneOf:
           - nullable: true
-          - $ref: ./lastDispatch.yaml
+          - $ref: ./ExampleWebhookDispatch.yaml
       - {}
   stats:
     allOf:
       - oneOf:
           - nullable: true
-          - $ref: ./stats11.yaml
+          - $ref: ./WebhookStats.yaml
       - {}

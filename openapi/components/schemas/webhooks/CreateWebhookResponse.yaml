@@ -1,4 +1,4 @@
-title: Createwebhookresponse
+title: CreateWebhookResponse
 required:
   - data
 type: object
