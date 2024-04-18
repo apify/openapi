@@ -4,6 +4,8 @@ required:
   - title
   - name
   - username
+  - userFullName
+  - description
   - stats
   - currentPricingInfo
 type: object
@@ -20,10 +22,21 @@ properties:
   username:
     type: string
     example: jane35
+  userFullName:
+    type: string
+    example: Jane H. Doe
   description:
     type: string
-    nullable: true
     example: My public actor!
+  categories:
+    type: array
+    items: 
+      type: string
+    example:
+      - "MARKETING"
+      - "LEAD_GENERATION"
+  notice:
+    type: string
   pictureUrl:
     type: string
     nullable: true
@@ -37,10 +50,6 @@ properties:
     nullable: true
     example: 'https://...'
   stats:
-    allOf:
-      - $ref: ./stats.yaml
-      - {}
+    $ref: ../stats.yaml
   currentPricingInfo:
-    allOf:
-      - $ref: ./currentPricingInfo.yaml
-      - {}
+    $ref: ./CurrentPricingInfo.yaml
