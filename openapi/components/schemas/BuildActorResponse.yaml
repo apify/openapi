@@ -1,4 +1,4 @@
-title: GetBuildResponse
+title: BuildActorResponse
 required:
   - data
 type: object

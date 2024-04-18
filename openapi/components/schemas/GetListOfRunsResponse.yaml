@@ -1,9 +1,9 @@
-title: GetBuildResponse
+title: GetListOfRunsResponse
 required:
   - data
 type: object
 properties:
   data:
     allOf:
-      - $ref: ./Build.yaml
+      - $ref: ./data5.yaml
       - {}

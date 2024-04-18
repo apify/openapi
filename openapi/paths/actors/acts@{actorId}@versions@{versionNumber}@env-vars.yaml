@@ -1,0 +1,146 @@
+get:
+  tags:
+    - Actors
+  summary: Get list of environment variables
+  description: >-
+    Gets the list of environment variables for a specific version of an Actor.
+    The response is a JSON object with the list
+
+    of [EnvVar objects](#reference/actors/environment-variable-object), where
+    each
+
+    contains basic information about a single environment variable.
+  operationId: GetListOfEnvironmentVariables
+  parameters:
+    - name: actorId
+      in: path
+      description: Actor ID or a tilde-separated owner's username and Actor name.
+      required: true
+      style: simple
+      schema:
+        type: string
+        example: janedoe~my-actor
+    - name: versionNumber
+      in: path
+      description: Actor version
+      required: true
+      style: simple
+      schema:
+        type: string
+        example: '0.1'
+    - name: token
+      in: query
+      description: API authentication token.
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: string
+        example: soSkq9ekdmfOslopH
+  responses:
+    '200':
+      description: ''
+      headers: {}
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/GetListOfEnvironmentVariablesResponse.yaml
+  deprecated: false
+post:
+  tags:
+    - Actors
+  summary: Create environment variable
+  description: >-
+    Creates an environment variable of an Actor using values specified in a
+    [EnvVar object](#reference/actors/environment-variable-object) passed as
+    JSON in the POST payload.
+
+
+    The request must specify `name` and `value` parameters (as strings) in the
+    JSON payload and a `Content-Type: application/json` HTTP header.
+
+
+    ```
+
+    {
+        "name": "ENV_VAR_NAME",
+        "value": "my-env-var"
+    }
+
+    ```
+
+
+    The response is the [EnvVar
+    object](#reference/actors/environment-variable-object) as returned by the
+
+    [Get environment
+    variable](#reference/actors/environment-variable-object/get-environment-variable)
+    endpoint.
+  operationId: CreateEnvironmentVariable
+  parameters:
+    - name: actorId
+      in: path
+      description: Actor ID or a tilde-separated owner's username and Actor name.
+      required: true
+      style: simple
+      schema:
+        type: string
+        example: janedoe~my-actor
+    - name: versionNumber
+      in: path
+      description: Actor version
+      required: true
+      style: simple
+      schema:
+        type: string
+        example: '0.1'
+    - name: token
+      in: query
+      description: API authentication token.
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: string
+        example: soSkq9ekdmfOslopH
+  requestBody:
+    description: ''
+    content:
+      application/json:
+        schema:
+          allOf:
+            - $ref: ../../components/schemas/EnvVarUpdate.yaml
+            - example:
+                name: ENV_VAR_NAME
+                value: my-env-var
+        example:
+          name: ENV_VAR_NAME
+          value: my-env-var
+    required: true
+  responses:
+    '201':
+      description: ''
+      headers:
+        Location:
+          content:
+            text/plain:
+              schema:
+                type: string
+              example: >-
+                https://api.apify.com/v2/acts/zdc3Pyhyz3m8vjDeM/versions/1.0/env-vars/ENV_VAR_NAME
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: ../../components/schemas/CreateEnvironmentVariableResponse.yaml
+              - example:
+                  data:
+                    name: MY_ENV_VAR
+                    value: my-value
+                    isSecret: false
+          example:
+            data:
+              name: MY_ENV_VAR
+              value: my-value
+              isSecret: false
+  deprecated: false

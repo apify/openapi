@@ -1,4 +1,4 @@
-title: Getlistofwebhooksresponse
+title: GetListOfWebhooksResponse
 required:
   - data
 type: object
