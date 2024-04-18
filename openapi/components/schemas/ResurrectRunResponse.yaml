@@ -1,4 +1,4 @@
-title: GetRunResponse
+title: ResurrectRunResponse
 required:
   - data
 type: object

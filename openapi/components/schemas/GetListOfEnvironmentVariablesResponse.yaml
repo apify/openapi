@@ -1,9 +1,9 @@
-title: GetRunResponse
+title: GetListOfEnvironmentVariablesResponse
 required:
   - data
 type: object
 properties:
   data:
     allOf:
-      - $ref: ./Run.yaml
+      - $ref: ./data2.yaml
       - {}

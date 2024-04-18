@@ -1,6 +1,0 @@
-title: Withinputresponse
-type: object
-properties:
-  bar:
-    type: string
-    example: foo

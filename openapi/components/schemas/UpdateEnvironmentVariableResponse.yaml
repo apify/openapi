@@ -1,9 +1,9 @@
-title: GetRunResponse
+title: UpdateEnvironmentVariableResponse
 required:
   - data
 type: object
 properties:
   data:
     allOf:
-      - $ref: ./Run.yaml
+      - $ref: ./EnvVar.yaml
       - {}

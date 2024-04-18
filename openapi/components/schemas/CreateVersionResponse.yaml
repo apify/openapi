@@ -1,9 +1,9 @@
-title: GetRunResponse
+title: CreateVersionResponse
 required:
   - data
 type: object
 properties:
   data:
     allOf:
-      - $ref: ./Run.yaml
+      - $ref: ./Version.yaml
       - {}

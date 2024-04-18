@@ -1,17 +1,13 @@
-title: RequestQueueShort1
+title: DatasetListItem
 required:
   - id
   - name
   - userId
-  - username
   - createdAt
   - modifiedAt
   - accessedAt
-  - expireAt
-  - totalRequestCount
-  - handledRequestCount
-  - pendingRequestCount
-  - hadMultipleClients
+  - itemCount
+  - cleanItemCount
 type: object
 properties:
   id:
@@ -19,13 +15,10 @@ properties:
     example: WkzbQMuFYuamGv3YF
   name:
     type: string
-    example: some-name
+    example: d7b9MDYsbtX5L7XAj
   userId:
     type: string
-    example: wRsJZtadYvn4mBZmm
-  username:
-    type: string
-    example: janedoe
+    example: tbXmWu7GCxnyYtSiL
   createdAt:
     type: string
     example: '2019-12-12T07:34:14.202Z'
@@ -35,24 +28,15 @@ properties:
   accessedAt:
     type: string
     example: '2019-12-14T08:36:13.202Z'
-  expireAt:
-    type: string
-    example: '2019-06-02T17:15:06.751Z'
-  totalRequestCount:
+  itemCount:
     type: number
-    example: 100
-  handledRequestCount:
+    example: 7
+  cleanItemCount:
     type: number
-    example: 50
-  pendingRequestCount:
-    type: number
-    example: 50
+    example: 5
   actId:
     type: string
     nullable: true
   actRunId:
     type: string
     nullable: true
-  hadMultipleClients:
-    type: boolean
-    example: true

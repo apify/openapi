@@ -1,9 +1,9 @@
-title: GetRunResponse
+title: BuildActorResponse
 required:
   - data
 type: object
 properties:
   data:
     allOf:
-      - $ref: ./Run.yaml
+      - $ref: ./actor-builds/Build.yaml
       - {}

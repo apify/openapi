@@ -40,10 +40,10 @@ properties:
     type: number
     example: 70
   actId:
-    type: object
+    type: string
     nullable: true
   actRunId:
-    type: object
+    type: string
     nullable: true
   hadMultipleClients:
     type: boolean

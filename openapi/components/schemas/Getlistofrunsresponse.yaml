@@ -1,9 +1,0 @@
-title: Getlistofrunsresponse
-required:
-  - data
-type: object
-properties:
-  data:
-    allOf:
-      - $ref: ./data5.yaml
-      - {}
