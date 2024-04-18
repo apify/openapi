@@ -1,9 +1,9 @@
-title: Getwebhookresponse
+title: TestWebhookResponse
 required:
   - data
 type: object
 properties:
   data:
     allOf:
-      - $ref: ./Webhook.yaml
+      - $ref: ../WebhookDispatch.yaml
       - {}

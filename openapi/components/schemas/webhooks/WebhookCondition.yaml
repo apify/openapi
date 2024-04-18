@@ -1,4 +1,4 @@
-title: condition
+title: WebhookCondition
 type: object
 properties:
   actorId:

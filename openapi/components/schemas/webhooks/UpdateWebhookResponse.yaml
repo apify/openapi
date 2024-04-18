@@ -1,9 +1,9 @@
-title: GetListOfWebhooksResponse
+title: UpdateWebhookResponse
 required:
   - data
 type: object
 properties:
   data:
     allOf:
-      - $ref: ./data3.yaml
+      - $ref: ./Webhook.yaml
       - {}

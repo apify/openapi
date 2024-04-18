@@ -15,7 +15,7 @@ properties:
     allOf:
       - oneOf:
           - nullable: true
-          - $ref: ./condition2.yaml
+          - $ref: ./WebhookCondition.yaml
       - {}
   ignoreSslErrors:
     type: boolean

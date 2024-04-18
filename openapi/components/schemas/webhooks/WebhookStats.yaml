@@ -1,4 +1,4 @@
-title: stats11
+title: WebhookStats
 required:
   - totalDispatches
 type: object
