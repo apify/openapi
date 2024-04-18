@@ -8,7 +8,7 @@ get:
   parameters:
     - name: buildId
       in: path
-      description: ID of the actor build.
+      description: ID of the Actor build.
       required: true
       style: simple
       schema:

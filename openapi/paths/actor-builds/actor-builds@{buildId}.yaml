@@ -4,11 +4,11 @@ get:
   summary: Get build
   description: >-
     Gets an object that contains all the details about a specific build of an
-    actor.
+    Actor.
 
     By passing the optional `waitForFinish` parameter the API endpoint will
     synchronously wait for the build to finish. This is useful to avoid periodic 
-    polling when waiting for an actor build to finish.
+    polling when waiting for an Actor build to finish.
 
     This endpoint does not require the authentication token. The calls are
     authenticated using a hard-to-guess ID of the build.
@@ -41,8 +41,8 @@ get:
     - name: token
       in: query
       description: |-
-        API authentication token. It is only required for private actors.
-        Builds of public actors can be queried without any token.
+        API authentication token. It is only required for private Actors.
+        Builds of public Actors can be queried without any token.
       style: form
       explode: true
       schema:
