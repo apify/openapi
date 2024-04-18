@@ -90,7 +90,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/store/GetListOfActorsResponse.yaml
+            $ref: "../components/schemas/store/GetListOfActorsInStoreResponse.yaml"
           example:
             data:
               total: 100
