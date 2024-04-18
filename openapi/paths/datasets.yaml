@@ -21,7 +21,7 @@ get:
     parameters and it will not return more than 1000
 
     array elements.
-  operationId: Getlistofdatasets
+  operationId: getListOfDatasets
   parameters:
     - name: token
       in: query
@@ -88,36 +88,7 @@ get:
       content:
         application/json:
           schema:
-            allOf:
-              - $ref: ../components/schemas/Getlistofdatasetsresponse.yaml
-              - example:
-                  data:
-                    total: 2
-                    offset: 0
-                    limit: 1000
-                    desc: false
-                    count: 2
-                    items:
-                      - id: WkzbQMuFYuamGv3YF
-                        name: d7b9MDYsbtX5L7XAj
-                        userId: tbXmWu7GCxnyYtSiL
-                        createdAt: '2019-12-12T07:34:14.202Z'
-                        modifiedAt: '2019-12-13T08:36:13.202Z'
-                        accessedAt: '2019-12-14T08:36:13.202Z'
-                        itemCount: 7
-                        cleanItemCount: 5
-                        actId: null
-                        actRunId: null
-                      - id: YiKoxjkaS9gjGTqhF
-                        name: eshop-items
-                        userId: tbXmWu7GCxnyYtSiL
-                        createdAt: '2019-12-12T07:34:14.202Z'
-                        modifiedAt: '2019-12-13T08:36:13.202Z'
-                        accessedAt: '2019-12-14T08:36:13.202Z'
-                        itemCount: 2
-                        cleanItemCount: 2
-                        actId: null
-                        actRunId: null
+            $ref: ../components/schemas/datasets/GetListOfDatasetsResponse.yaml
           example:
             data:
               total: 2
@@ -126,8 +97,8 @@ get:
               desc: false
               count: 2
               items:
-                - id: WkzbQMuFYuamGv3YF
-                  name: d7b9MDYsbtX5L7XAj
+                - id: wkzbqmufyuamgv3yf
+                  name: d7b9mdysbtx5l7xaj
                   userId: tbXmWu7GCxnyYtSiL
                   createdAt: '2019-12-12T07:34:14.202Z'
                   modifiedAt: '2019-12-13T08:36:13.202Z'
@@ -161,7 +132,7 @@ post:
     It creates a dataset with the given name if the parameter name is used.
 
     If a dataset with the given name already exists then returns its object.
-  operationId: Createdataset
+  operationId: createDataset
   parameters:
     - name: token
       in: query
@@ -221,21 +192,7 @@ post:
       content:
         application/json:
           schema:
-            allOf:
-              - $ref: ../components/schemas/Createdatasetresponse.yaml
-              - example:
-                  data:
-                    id: WkzbQMuFYuamGv3YF
-                    name: d7b9MDYsbtX5L7XAj
-                    userId: wRsJZtadYvn4mBZmm
-                    createdAt: '2019-12-12T07:34:14.202Z'
-                    modifiedAt: '2019-12-13T08:36:13.202Z'
-                    accessedAt: '2019-12-14T08:36:13.202Z'
-                    itemCount: 7
-                    cleanItemCount: 5
-                    actId: null
-                    actRunId: null
-                    fields: []
+            $ref: ../components/schemas/datasets/CreateDatasetResponse.yaml
           example:
             data:
               id: WkzbQMuFYuamGv3YF

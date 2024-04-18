@@ -1,4 +1,4 @@
-title: Getitemsresponse
+title: GetItemsResponse
 type: object
 properties:
   format:

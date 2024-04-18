@@ -1,4 +1,4 @@
-title: Putitemsrequest
+title: PutItemsRequest
 required:
   - foo
 type: object

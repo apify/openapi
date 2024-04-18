@@ -26,5 +26,5 @@ properties:
   items:
     type: array
     items:
-      $ref: ./DatasetShort1.yaml
+      $ref: ./DatasetListItem.yaml
     description: ''

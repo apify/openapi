@@ -226,7 +226,7 @@ get:
 
     Note that only the order of **Items** is reversed, but not the order of the
     `unwind` array elements.
-  operationId: Getitems
+  operationId: getItems
   parameters:
     - name: datasetId
       in: path
@@ -514,7 +514,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/Getitemsresponse.yaml
+            $ref: ../components/schemas/datasets/GetItemsResponse.yaml
   deprecated: false
 post:
   tags:
@@ -531,7 +531,7 @@ post:
     the array exceeds the size,
 
     you'll need to split it into a number of smaller arrays.
-  operationId: Putitems
+  operationId: putItems
   parameters:
     - name: datasetId
       in: path
@@ -690,7 +690,7 @@ post:
         schema:
           type: array
           items:
-            $ref: ../components/schemas/Putitemsrequest.yaml
+            $ref: ../components/schemas/datasets/PutItemsRequest.yaml
           description: ''
           example:
             - foo: bar
