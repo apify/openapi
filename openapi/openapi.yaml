@@ -667,13 +667,13 @@ paths:
   '/v2/actor-runs/{runId}/reboot':
     $ref: 'paths/v2@actor-runs@{runId}@reboot.yaml'
   /v2/actor-builds:
-    $ref: paths/v2@actor-builds.yaml
+    $ref: paths/actor-builds/actor-builds.yaml
   '/v2/actor-builds/{buildId}':
-    $ref: 'paths/v2@actor-builds@{buildId}.yaml'
+    $ref: 'paths/actor-builds/actor-builds@{buildId}.yaml'
   '/v2/actor-builds/{buildId}/abort':
-    $ref: 'paths/v2@actor-builds@{buildId}@abort.yaml'
+    $ref: 'paths/actor-builds/actor-builds@{buildId}@abort.yaml'
   '/v2/actor-builds/{buildId}/log':
-    $ref: 'paths/v2@actor-builds@{buildId}@log.yaml'
+    $ref: 'paths/actor-builds/actor-builds@{buildId}@log.yaml'
   /v2/key-value-stores:
     $ref: paths/v2@key-value-stores.yaml
   '/v2/key-value-stores/{storeId}':

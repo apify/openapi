@@ -1,9 +1,0 @@
-title: AbortBuildResponse
-required:
-  - data
-type: object
-properties:
-  data:
-    allOf:
-      - $ref: ./BuildAborted.yaml
-      - {}
