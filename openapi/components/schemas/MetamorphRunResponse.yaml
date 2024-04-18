@@ -1,9 +1,9 @@
-title: GetBuildResponse
+title: MetamorphRunResponse
 required:
   - data
 type: object
 properties:
   data:
     allOf:
-      - $ref: ./Build.yaml
+      - $ref: ./RunMetamorphed.yaml
       - {}

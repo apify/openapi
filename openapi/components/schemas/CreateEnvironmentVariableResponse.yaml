@@ -1,9 +1,9 @@
-title: GetBuildResponse
+title: CreateEnvironmentVariableResponse
 required:
   - data
 type: object
 properties:
   data:
     allOf:
-      - $ref: ./Build.yaml
+      - $ref: ./EnvVar.yaml
       - {}

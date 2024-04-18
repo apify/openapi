@@ -1,0 +1,7 @@
+title: CreateDatasetResponse
+required:
+  - data
+type: object
+properties:
+  data:
+    $ref: ./Dataset.yaml

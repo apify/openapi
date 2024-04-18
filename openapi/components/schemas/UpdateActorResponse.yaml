@@ -1,9 +1,9 @@
-title: GetBuildResponse
+title: UpdateActorResponse
 required:
   - data
 type: object
 properties:
   data:
     allOf:
-      - $ref: ./Build.yaml
+      - $ref: ./Actor.yaml
       - {}

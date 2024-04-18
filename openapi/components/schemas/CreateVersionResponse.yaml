@@ -1,9 +1,9 @@
-title: GetBuildResponse
+title: CreateVersionResponse
 required:
   - data
 type: object
 properties:
   data:
     allOf:
-      - $ref: ./Build.yaml
+      - $ref: ./Version.yaml
       - {}
