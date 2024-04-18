@@ -67,7 +67,7 @@ properties:
   readme:
     type: string
     nullable: true
-    example: '# Magic actor\nThis actor is magic.'
+    example: '# Magic Actor\nThis Actor is magic.'
   buildNumber:
     type: string
     example: 0.1.1
@@ -97,5 +97,5 @@ example:
   usageUsd:
     ACTOR_COMPUTE_UNITS: 0.02
   inputSchema: '{\n  \"title\": \"Schema for ... }'
-  readme: '# Magic actor\nThis actor is magic.'
+  readme: '# Magic Actor\nThis Actor is magic.'
   buildNumber: 0.1.1
