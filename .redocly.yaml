@@ -12,3 +12,9 @@ referenceDocs:
     colors:
       primary:
         main: "#32329f"
+plugins:
+  - ./plugins/code-examples.js
+
+decorators:
+  code-examples/add:
+    - curl
