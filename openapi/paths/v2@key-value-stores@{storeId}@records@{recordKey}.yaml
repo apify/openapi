@@ -32,7 +32,7 @@ get:
       style: simple
       schema:
         type: string
-        example: some key
+        example: some-key
     - name: token
       in: query
       description: >-
@@ -113,7 +113,7 @@ put:
       style: simple
       schema:
         type: string
-        example: some key
+        example: some-key
     - name: token
       in: query
       description: API authentication token.
@@ -185,7 +185,7 @@ delete:
       style: simple
       schema:
         type: string
-        example: some key
+        example: some-key
     - name: token
       in: query
       description: API authentication token.
