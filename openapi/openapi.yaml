@@ -603,7 +603,7 @@ info:
   contact: {}
   version: '1.0'
 servers:
-  - url: 'https://api.apify.com/'
+  - url: 'https://api.apify.com'
     variables: {}
 paths:
   /v2/acts:
