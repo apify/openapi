@@ -911,7 +911,7 @@ tags:
       finishes or fails.
 
       For more information see <a
-      href="https://docs.apify.com/platform/webhooks">Webhooks
+      href="https://docs.apify.com/platform/integrations/webhooks">Webhooks
       documentation</a>.
   - name: Webhook dispatches
     description: This section describes API endpoints to get webhook dispatches.
