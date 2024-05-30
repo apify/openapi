@@ -1,0 +1,39 @@
+name: Publish to NPM
+
+on:
+    push:
+        branches:
+            - master
+
+jobs:
+    deploy:
+        name: Publish to NPM
+        runs-on: ubuntu-latest
+        steps:
+            -   uses: actions/checkout@v3
+            -   uses: actions/setup-node@v3
+                with:
+                    node-version: 20
+                    registry-url: https://registry.npmjs.org/
+            -   name: Install, lint and build
+                run: |
+                    npm install
+                    npm version patch --git-tag-version=false
+                    npm run build
+
+            -   name: Publish to NPM
+                run: |
+                    echo "access=public" > .npmrc
+                    echo "//registry.npmjs.org/:_authToken=${{ secrets.APIFY_SERVICE_ACCOUNT_NPM_TOKEN }}" >> .npmrc
+                    npm publish
+                env:
+                    NODE_AUTH_TOKEN: ${{ secrets.APIFY_SERVICE_ACCOUNT_NPM_TOKEN }}
+
+    rebuild-docs:
+        needs: deploy
+        runs-on: ubuntu-latest
+        steps:
+            - env:
+                  GITHUB_TOKEN: ${{ secrets.APIFY_SERVICE_ACCOUNT_GITHUB_TOKEN }}
+              run: |
+                  gh workflow run docs.yaml --repo apify/apify-docs
