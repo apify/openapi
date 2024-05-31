@@ -3,12 +3,13 @@ name: Publish to NPM
 on:
     push:
         branches:
-            - master
+            - main
 
 jobs:
     deploy:
         name: Publish to NPM
         runs-on: ubuntu-latest
+        if: ${{ !contains(github.event.head_commit.message, '[skip ci]') }}
         steps:
             -   uses: actions/checkout@v3
             -   uses: actions/setup-node@v3
@@ -28,6 +29,12 @@ jobs:
                     npm publish
                 env:
                     NODE_AUTH_TOKEN: ${{ secrets.APIFY_SERVICE_ACCOUNT_NPM_TOKEN }}
+
+            -   name: Update version in git
+                run: |
+                    git add .
+                    git diff-index --quiet HEAD || git commit -m 'chore: bump version [skip ci]'
+                    git push
 
     rebuild-docs:
         needs: deploy
