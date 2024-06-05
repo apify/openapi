@@ -689,21 +689,21 @@ paths:
   '/v2/datasets/{datasetId}/items':
     $ref: 'paths/datasets@{datasetId}@items.yaml'
   /v2/request-queues:
-    $ref: paths/v2@request-queues.yaml
+    $ref: paths/request-queues/request-queues.yaml
   '/v2/request-queues/{queueId}':
-    $ref: 'paths/v2@request-queues@{queueId}.yaml'
+    $ref: 'paths/request-queues/request-queues@{queueId}.yaml'
   '/v2/request-queues/{queueId}/requests':
-    $ref: 'paths/v2@request-queues@{queueId}@requests.yaml'
+    $ref: 'paths/request-queues/request-queues@{queueId}@requests.yaml'
   '/v2/request-queues/{queueId}/requests/{requestId}':
-    $ref: 'paths/v2@request-queues@{queueId}@requests@{requestId}.yaml'
+    $ref: 'paths/request-queues/request-queues@{queueId}@requests@{requestId}.yaml'
   '/v2/request-queues/{queueId}/requests/{requestId}/lock':
-    $ref: 'paths/v2@request-queues@{queueId}@requests@{requestId}@lock.yaml'
+    $ref: 'paths/request-queues/request-queues@{queueId}@requests@{requestId}@lock.yaml'
   '/v2/request-queues/{queueId}/head':
-    $ref: 'paths/v2@request-queues@{queueId}@head.yaml'
+    $ref: 'paths/request-queues/request-queues@{queueId}@head.yaml'
   '/v2/request-queues/{queueId}/head/lock':
-    $ref: 'paths/v2@request-queues@{queueId}@head@lock.yaml'
+    $ref: 'paths/request-queues/request-queues@{queueId}@head@lock.yaml'
   '/v2/request-queues/{queueId}/requests/batch':
-    $ref: 'paths/v2@request-queues@{queueId}@requests@batch.yaml'
+    $ref: 'paths/request-queues/request-queues@{queueId}@requests@batch.yaml'
   /v2/webhooks:
     $ref: paths/webhooks/webhooks.yaml
   '/v2/webhooks/{webhookId}':
