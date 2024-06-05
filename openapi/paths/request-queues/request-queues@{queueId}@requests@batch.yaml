@@ -17,7 +17,7 @@ post:
 
     If a request with the same `uniqueKey` was already present in the queue,
     then it returns an ID of the existing request.
-  operationId: Addrequests
+  operationId: addRequests
   parameters:
     - name: queueId
       in: path
@@ -130,7 +130,7 @@ delete:
 
     Each request is identified by its ID or uniqueKey parameter. You can use
     either of them to identify the request.
-  operationId: Deleterequests
+  operationId: deleteRequests
   parameters:
     - name: queueId
       in: path

@@ -13,7 +13,7 @@ get:
     This field is used by [Apify SDK](https://sdk.apify.com) to determine
     whether the local cache is consistent with the request queue, and thus
     optimize performance of certain operations.
-  operationId: Gethead
+  operationId: getHead
   parameters:
     - name: queueId
       in: path

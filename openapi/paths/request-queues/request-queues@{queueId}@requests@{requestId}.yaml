@@ -3,7 +3,7 @@ get:
     - Request queues
   summary: Get request
   description: Returns request from queue.
-  operationId: Getrequest
+  operationId: getRequest
   parameters:
     - name: queueId
       in: path
@@ -97,7 +97,7 @@ put:
 
 
     If `handledAt` is set, the request will be removed from head of the queue.
-  operationId: Updaterequest
+  operationId: updateRequest
   parameters:
     - name: queueId
       in: path
@@ -213,7 +213,7 @@ delete:
     - Request queues
   summary: Delete request
   description: Deletes given request from queue.
-  operationId: Deleterequest
+  operationId: deleteRequest
   parameters:
     - name: queueId
       in: path
