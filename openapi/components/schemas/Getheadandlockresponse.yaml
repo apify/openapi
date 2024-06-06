@@ -1,9 +1,0 @@
-title: Getheadandlockresponse
-required:
-  - data
-type: object
-properties:
-  data:
-    allOf:
-      - $ref: ./data18.yaml
-      - {}

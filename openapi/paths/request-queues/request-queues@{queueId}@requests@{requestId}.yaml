@@ -53,7 +53,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Getrequestresponse.yaml
+              - $ref: ../../components/schemas/request-queues/Getrequestresponse.yaml
               - example:
                   data:
                     id: dnjkDMKLmdlkmlkmld
@@ -156,7 +156,7 @@ put:
       application/json:
         schema:
           allOf:
-            - $ref: ../components/schemas/Request1.yaml
+            - $ref: ../../components/schemas/request-queues/Request1.yaml
             - example:
                 id: dnjkDMKLmdlkmlkmld
                 retryCount: 0
@@ -196,7 +196,7 @@ put:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Updaterequestresponse.yaml
+              - $ref: ../../components/schemas/request-queues/Updaterequestresponse.yaml
               - example:
                   data:
                     requestId: YiKoxjkaS9gjGTqhF

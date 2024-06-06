@@ -1,9 +1,0 @@
-title: Getheadresponse
-required:
-  - data
-type: object
-properties:
-  data:
-    allOf:
-      - $ref: ./data17.yaml
-      - {}

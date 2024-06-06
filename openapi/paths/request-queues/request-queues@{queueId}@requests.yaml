@@ -73,7 +73,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Listrequestsresponse.yaml
+              - $ref: ../../components/schemas/request-queues/Listrequestsresponse.yaml
               - example:
                   data:
                     items:
@@ -220,7 +220,7 @@ post:
       application/json:
         schema:
           allOf:
-            - $ref: ../components/schemas/RequestWithoutId.yaml
+            - $ref: ../../components/schemas/request-queues/RequestWithoutId.yaml
             - example:
                 uniqueKey: 'http://example.com'
                 url: 'http://example.com'
@@ -238,7 +238,7 @@ post:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Addrequestresponse.yaml
+              - $ref: ../../components/schemas/request-queues/Addrequestresponse.yaml
               - example:
                   data:
                     requestId: YiKoxjkaS9gjGTqhF

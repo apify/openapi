@@ -63,7 +63,7 @@ post:
         schema:
           type: array
           items:
-            $ref: ../components/schemas/RequestWithoutId.yaml
+            $ref: ../../components/schemas/request-queues/RequestWithoutId.yaml
           description: ''
           example:
             - uniqueKey: 'http://example.com'
@@ -88,7 +88,7 @@ post:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Addrequestsresponse.yaml
+              - $ref: ../../components/schemas/request-queues/Addrequestsresponse.yaml
               - example:
                   data:
                     processedRequests:
@@ -184,7 +184,7 @@ delete:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Deleterequestsresponse.yaml
+              - $ref: ../../components/schemas/request-queues/Deleterequestsresponse.yaml
               - example:
                   data:
                     processedRequests:
