@@ -88,11 +88,12 @@ post:
         application/json:
           schema:
             allOf:
-              - $ref: ../../components/schemas/request-queues/Addrequestsresponse.yaml
+              - $ref: ../../components/schemas/request-queues/BatchOperationResponse.yaml
               - example:
                   data:
                     processedRequests:
                       - requestId: YiKoxjkaS9gjGTqhF
+                        uniqueKey: 'http://example.com/2'
                         wasAlreadyPresent: true
                         wasAlreadyHandled: false
                     unprocessedRequests:
@@ -184,13 +185,18 @@ delete:
         application/json:
           schema:
             allOf:
-              - $ref: ../../components/schemas/request-queues/Deleterequestsresponse.yaml
+              - $ref: ../../components/schemas/request-queues/BatchOperationResponse.yaml
               - example:
                   data:
                     processedRequests:
-                      - uniqueKey: 'http://example.com'
+                      - requestId: YiKoxjkaS9gjGTqhF
+                        uniqueKey: 'http://example.com/2'
+                        wasAlreadyPresent: true
+                        wasAlreadyHandled: false
                     unprocessedRequests:
-                      - id: sbJ7klsdf7ujN9l
+                      - uniqueKey: 'http://example.com/2'
+                        url: 'http://example.com/2'
+                        method: GET
           example:
             data:
               processedRequests:
