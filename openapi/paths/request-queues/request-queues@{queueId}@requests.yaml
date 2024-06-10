@@ -5,7 +5,7 @@ get:
   description: >-
     Returns a list of requests. This endpoint is paginated using
     exclusiveStartId and limit parameters.
-  operationId: Listrequests
+  operationId: listRequests
   parameters:
     - name: queueId
       in: path
@@ -73,7 +73,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Listrequestsresponse.yaml
+              - $ref: ../../components/schemas/request-queues/Listrequestsresponse.yaml
               - example:
                   data:
                     items:
@@ -154,7 +154,7 @@ post:
 
     If request with same `uniqueKey` was already present in the queue then
     returns an ID of existing request.
-  operationId: Addrequest
+  operationId: addRequest
   parameters:
     - name: queueId
       in: path
@@ -220,7 +220,7 @@ post:
       application/json:
         schema:
           allOf:
-            - $ref: ../components/schemas/RequestWithoutId.yaml
+            - $ref: ../../components/schemas/request-queues/RequestWithoutId.yaml
             - example:
                 uniqueKey: 'http://example.com'
                 url: 'http://example.com'
@@ -238,7 +238,7 @@ post:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Addrequestresponse.yaml
+              - $ref: ../../components/schemas/request-queues/Addrequestresponse.yaml
               - example:
                   data:
                     requestId: YiKoxjkaS9gjGTqhF

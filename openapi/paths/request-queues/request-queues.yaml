@@ -20,7 +20,7 @@ get:
     parameters and it will not return more than 1000
 
     array elements.
-  operationId: Getlistofrequestqueues
+  operationId: getListOfRequestQueues
   parameters:
     - name: token
       in: query
@@ -87,7 +87,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/Getlistofrequestqueuesresponse.yaml
+            $ref: ../../components/schemas/request-queues/Getlistofrequestqueuesresponse.yaml
   deprecated: false
 post:
   tags:
@@ -104,7 +104,7 @@ post:
     with the given name already exists then the endpoint returns
 
     its object.
-  operationId: Createrequestqueue
+  operationId: createRequestQueue
   parameters:
     - name: name
       in: query
@@ -166,7 +166,7 @@ post:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Createrequestqueueresponse.yaml
+              - $ref: ../../components/schemas/request-queues/Createrequestqueueresponse.yaml
               - example:
                   data:
                     id: WkzbQMuFYuamGv3YF

@@ -3,7 +3,7 @@ get:
     - Request queues
   summary: Get request
   description: Returns request from queue.
-  operationId: Getrequest
+  operationId: getRequest
   parameters:
     - name: queueId
       in: path
@@ -53,7 +53,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Getrequestresponse.yaml
+              - $ref: ../../components/schemas/request-queues/Getrequestresponse.yaml
               - example:
                   data:
                     id: dnjkDMKLmdlkmlkmld
@@ -97,7 +97,7 @@ put:
 
 
     If `handledAt` is set, the request will be removed from head of the queue.
-  operationId: Updaterequest
+  operationId: updateRequest
   parameters:
     - name: queueId
       in: path
@@ -156,7 +156,7 @@ put:
       application/json:
         schema:
           allOf:
-            - $ref: ../components/schemas/Request1.yaml
+            - $ref: ../../components/schemas/request-queues/Request1.yaml
             - example:
                 id: dnjkDMKLmdlkmlkmld
                 retryCount: 0
@@ -196,7 +196,7 @@ put:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Updaterequestresponse.yaml
+              - $ref: ../../components/schemas/request-queues/Updaterequestresponse.yaml
               - example:
                   data:
                     requestId: YiKoxjkaS9gjGTqhF
@@ -213,7 +213,7 @@ delete:
     - Request queues
   summary: Delete request
   description: Deletes given request from queue.
-  operationId: Deleterequest
+  operationId: deleteRequest
   parameters:
     - name: queueId
       in: path

@@ -1,4 +1,4 @@
-title: Getrequestqueueresponse
+title: UpdateRequestQueueResponse
 required:
   - data
 type: object

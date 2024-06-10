@@ -1,9 +1,0 @@
-title: Updaterequestqueueresponse
-required:
-  - data
-type: object
-properties:
-  data:
-    allOf:
-      - $ref: ./RequestQueue.yaml
-      - {}

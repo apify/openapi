@@ -1,9 +1,9 @@
-title: Getlistofrequestqueuesresponse
+title: AddRequestResponse
 required:
   - data
 type: object
 properties:
   data:
     allOf:
-      - $ref: ./data14.yaml
+      - $ref: ./RequestOperationInfo.yaml
       - {}

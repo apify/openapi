@@ -3,7 +3,7 @@ get:
     - Request queues
   summary: Get request queue
   description: Returns queue object for given queue ID.
-  operationId: Getrequestqueue
+  operationId: getRequestQueue
   parameters:
     - name: queueId
       in: path
@@ -31,7 +31,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Getrequestqueueresponse.yaml
+              - $ref: ../../components/schemas/request-queues/Getrequestqueueresponse.yaml
               - example:
                   data:
                     id: WkzbQMuFYuamGv3YF
@@ -71,7 +71,7 @@ put:
     [Get request
     queue](#reference/request-queues/queue-collection/get-request-queue) API
     endpoint.
-  operationId: Updaterequestqueue
+  operationId: updateRequestQueue
   parameters:
     - name: queueId
       in: path
@@ -96,7 +96,7 @@ put:
       application/json:
         schema:
           allOf:
-            - $ref: ../components/schemas/Updaterequestqueuerequest.yaml
+            - $ref: ../../components/schemas/request-queues/Updaterequestqueuerequest.yaml
             - example:
                 name: new-request-queue-name
         example:
@@ -110,7 +110,7 @@ put:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Updaterequestqueueresponse.yaml
+              - $ref: ../../components/schemas/request-queues/Updaterequestqueueresponse.yaml
               - example:
                   data:
                     id: WkzbQMuFYuamGv3YF
@@ -141,7 +141,7 @@ delete:
     - Request queues
   summary: Delete request queue
   description: Deletes given queue.
-  operationId: Deleterequestqueue
+  operationId: deleteRequestQueue
   parameters:
     - name: queueId
       in: path

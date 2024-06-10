@@ -1,19 +1,10 @@
-title: items2
+title: UnprocessedRequest
 required:
-  - id
-  - retryCount
   - uniqueKey
   - url
   - method
-  - lockExpiresAt
 type: object
 properties:
-  id:
-    type: string
-    example: 8OamqXBCpPHxyj9
-  retryCount:
-    type: number
-    example: 0
   uniqueKey:
     type: string
     example: 'http://example.com'
@@ -23,6 +14,3 @@ properties:
   method:
     type: string
     example: GET
-  lockExpiresAt:
-    type: string
-    example: '2022-06-14T23:00:00.000Z'

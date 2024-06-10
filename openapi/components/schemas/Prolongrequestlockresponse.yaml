@@ -1,7 +1,0 @@
-title: Prolongrequestlockresponse
-type: object
-properties:
-  data:
-    allOf:
-      - $ref: ./data16.yaml
-      - {}

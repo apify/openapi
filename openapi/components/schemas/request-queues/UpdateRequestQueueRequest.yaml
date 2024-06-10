@@ -1,4 +1,4 @@
-title: Updaterequestqueuerequest
+title: UpdateRequestQueueRequest
 required:
   - name
 type: object

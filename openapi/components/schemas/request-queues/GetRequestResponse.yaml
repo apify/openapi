@@ -1,9 +1,9 @@
-title: Getheadandlockresponse
+title: GetRequestResponse
 required:
   - data
 type: object
 properties:
   data:
     allOf:
-      - $ref: ./data18.yaml
+      - $ref: ./Request1.yaml
       - {}
