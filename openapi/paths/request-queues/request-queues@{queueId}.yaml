@@ -31,7 +31,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../../components/schemas/request-queues/Getrequestqueueresponse.yaml
+              - $ref: ../../components/schemas/request-queues/GetRequestQueueResponse.yaml
               - example:
                   data:
                     id: WkzbQMuFYuamGv3YF
@@ -96,7 +96,7 @@ put:
       application/json:
         schema:
           allOf:
-            - $ref: ../../components/schemas/request-queues/Updaterequestqueuerequest.yaml
+            - $ref: ../../components/schemas/request-queues/UpdateRequestQueueRequest.yaml
             - example:
                 name: new-request-queue-name
         example:
@@ -110,7 +110,7 @@ put:
         application/json:
           schema:
             allOf:
-              - $ref: ../../components/schemas/request-queues/Updaterequestqueueresponse.yaml
+              - $ref: ../../components/schemas/request-queues/UpdateRequestQueueResponse.yaml
               - example:
                   data:
                     id: WkzbQMuFYuamGv3YF

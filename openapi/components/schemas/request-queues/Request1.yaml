@@ -44,7 +44,7 @@ properties:
     nullable: true
   userData:
     allOf:
-      - $ref: ./userData.yaml
+      - $ref: ./UserData.yaml
       - {}
   handledAt:
     type: string

@@ -74,7 +74,7 @@ put:
         application/json:
           schema:
             allOf:
-              - $ref: ../../components/schemas/request-queues/Prolongrequestlockresponse.yaml
+              - $ref: ../../components/schemas/request-queues/ProlongRequestLockResponse.yaml
               - example:
                   data:
                     lockExpiresAt: '2022-01-01T00:00:00.000Z'

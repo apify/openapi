@@ -87,7 +87,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../../components/schemas/request-queues/Getlistofrequestqueuesresponse.yaml
+            $ref: ../../components/schemas/request-queues/GetListOfRequestQueuesResponse.yaml
   deprecated: false
 post:
   tags:
@@ -166,7 +166,7 @@ post:
         application/json:
           schema:
             allOf:
-              - $ref: ../../components/schemas/request-queues/Createrequestqueueresponse.yaml
+              - $ref: ../../components/schemas/request-queues/CreateRequestQueueResponse.yaml
               - example:
                   data:
                     id: WkzbQMuFYuamGv3YF
