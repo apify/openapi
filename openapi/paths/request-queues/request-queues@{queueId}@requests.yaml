@@ -73,7 +73,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../../components/schemas/request-queues/Listrequestsresponse.yaml
+              - $ref: ../../components/schemas/request-queues/ListRequestsResponse.yaml
               - example:
                   data:
                     items:
@@ -238,7 +238,7 @@ post:
         application/json:
           schema:
             allOf:
-              - $ref: ../../components/schemas/request-queues/Addrequestresponse.yaml
+              - $ref: ../../components/schemas/request-queues/AddRequestResponse.yaml
               - example:
                   data:
                     requestId: YiKoxjkaS9gjGTqhF

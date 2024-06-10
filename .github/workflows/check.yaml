@@ -1,0 +1,12 @@
+name: Check
+on:
+  push:
+
+jobs:
+  build:
+    name: Build the specification file
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm install
+      - run: npm run build

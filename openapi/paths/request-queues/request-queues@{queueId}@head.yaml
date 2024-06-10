@@ -65,7 +65,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../../components/schemas/request-queues/Getheadresponse.yaml
+              - $ref: ../../components/schemas/request-queues/GetHeadResponse.yaml
               - example:
                   data:
                     limit: 1000
