@@ -1,9 +1,9 @@
-title: Updaterequestresponse
+title: UpdateRequestQueueResponse
 required:
   - data
 type: object
 properties:
   data:
     allOf:
-      - $ref: ./RequestOperationInfo.yaml
+      - $ref: ./RequestQueue.yaml
       - {}

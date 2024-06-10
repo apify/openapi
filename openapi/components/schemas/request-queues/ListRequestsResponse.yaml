@@ -1,4 +1,4 @@
-title: Listrequestsresponse
+title: ListRequestsResponse
 required:
   - data
 type: object

@@ -1,9 +1,9 @@
-title: Getrequestresponse
+title: GetRequestQueueResponse
 required:
   - data
 type: object
 properties:
   data:
     allOf:
-      - $ref: ./Request1.yaml
+      - $ref: ./RequestQueue.yaml
       - {}

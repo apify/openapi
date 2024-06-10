@@ -1,4 +1,4 @@
-title: Getheadresponse
+title: GetHeadResponse
 required:
   - data
 type: object

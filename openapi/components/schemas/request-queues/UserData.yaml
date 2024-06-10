@@ -1,4 +1,4 @@
-title: userData
+title: UserData
 type: object
 properties:
   label:

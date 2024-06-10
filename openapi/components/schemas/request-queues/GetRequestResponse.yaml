@@ -1,9 +1,9 @@
-title: Addrequestresponse
+title: GetRequestResponse
 required:
   - data
 type: object
 properties:
   data:
     allOf:
-      - $ref: ./RequestOperationInfo.yaml
+      - $ref: ./Request1.yaml
       - {}

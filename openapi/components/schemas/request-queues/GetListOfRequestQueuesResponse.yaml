@@ -1,4 +1,4 @@
-title: Getlistofrequestqueuesresponse
+title: GetListOfRequestQueuesResponse
 required:
   - data
 type: object

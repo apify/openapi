@@ -1,4 +1,4 @@
-title: Createrequestqueueresponse
+title: CreateRequestQueueResponse
 required:
   - data
 type: object
