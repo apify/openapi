@@ -5,5 +5,6 @@ on:
 jobs:
   build:
     name: Build the specification file
+    runs-on: ubuntu-latest
     steps:
       - run: yarn build
