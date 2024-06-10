@@ -1,0 +1,9 @@
+name: Check
+on:
+  push:
+
+jobs:
+  build:
+    name: Build the specification file
+    steps:
+      - run: yarn build
