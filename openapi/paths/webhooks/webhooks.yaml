@@ -13,7 +13,7 @@ get:
     order. To sort the records in descending order, use the `desc=1`
 
     parameter.
-  operationId: GetListOfWebhooks
+  operationId: getListOfWebhooks
   parameters:
     - name: token
       in: query
@@ -237,7 +237,7 @@ post:
 
     **Important**: The request must specify the `Content-Type: application/json`
     HTTP header.
-  operationId: CreateWebhook
+  operationId: createWebhook
   parameters:
     - name: token
       in: query
