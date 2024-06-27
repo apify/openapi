@@ -46,7 +46,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../../components/schemas/GetListOfKeysResponse.yaml
+              - $ref: ../../components/schemas/key-value-stores/GetListOfKeysResponse.yaml
               - example:
                   data:
                     items:

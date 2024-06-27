@@ -13,5 +13,5 @@ properties:
           items:
             type: array
             items:
-              $ref: ./keyValueStore.yaml
+              $ref: ./KeyValueStore.yaml
             description: ''

@@ -37,4 +37,4 @@ properties:
     type: string
     nullable: true
   stats:
-    $ref: ./keyValueStoreStats.yaml
+    $ref: ./KeyValueStoreStats.yaml

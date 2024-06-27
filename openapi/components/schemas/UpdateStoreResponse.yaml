@@ -5,5 +5,5 @@ type: object
 properties:
   data:
     allOf:
-      - $ref: ./keyValueStore/keyValueStore.yaml
+      - $ref: ./keyValueStore/KeyValueStore.yaml
       - {}
