@@ -170,13 +170,6 @@ delete:
       schema:
         type: string
         example: client-abc
-    - name: forefront
-      in: query
-      description: ''
-      style: form
-      explode: true
-      schema:
-        type: string
   responses:
     '204':
       description: ''
