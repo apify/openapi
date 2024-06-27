@@ -5,5 +5,5 @@ type: object
 properties:
   SERVICE_USAGE_ITEM:
     allOf:
-      - $ref: ./SERVICE_USAGE_ITEM.yaml
+      - $ref: ./UsageItem.yaml
       - {}

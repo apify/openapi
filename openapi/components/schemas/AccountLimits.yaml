@@ -7,13 +7,13 @@ type: object
 properties:
   monthlyUsageCycle:
     allOf:
-      - $ref: ./monthlyUsageCycle.yaml
+      - $ref: ./MonthlyUsageCycle.yaml
       - {}
   limits:
     allOf:
-      - $ref: ./limits.yaml
+      - $ref: ./Limits.yaml
       - {}
   current:
     allOf:
-      - $ref: ./current.yaml
+      - $ref: ./Current.yaml
       - {}

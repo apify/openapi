@@ -1,4 +1,4 @@
-title: availableProxyGroups
+title: AvailableProxyGroups
 required:
   - SOMEGROUP
   - ANOTHERGROUP

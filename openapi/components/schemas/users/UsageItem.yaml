@@ -1,4 +1,4 @@
-title: USAGE_ITEM
+title: UsageItem
 required:
   - quantity
   - baseAmountUsd

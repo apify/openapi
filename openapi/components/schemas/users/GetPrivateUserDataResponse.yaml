@@ -1,9 +1,9 @@
-title: Getmonthlyusageresponse
+title: GetPrivateUserDataResponse
 required:
   - data
 type: object
 properties:
   data:
     allOf:
-      - $ref: ./MonthlyUsage.yaml
+      - $ref: ./UserPrivateInfo.yaml
       - {}

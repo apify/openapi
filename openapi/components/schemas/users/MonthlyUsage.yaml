@@ -9,16 +9,16 @@ type: object
 properties:
   usageCycle:
     allOf:
-      - $ref: ./usageCycle.yaml
+      - $ref: ./UsageCycle.yaml
       - {}
   monthlyServiceUsage:
     allOf:
-      - $ref: ./monthlyServiceUsage.yaml
+      - $ref: ./MonthlyServiceUsage.yaml
       - {}
   dailyServiceUsages:
     type: array
     items:
-      $ref: ./dailyServiceUsages.yaml
+      $ref: ./DailyServiceUsages.yaml
     description: ''
   totalUsageCreditsUsdBeforeVolumeDiscount:
     type: number

@@ -8,6 +8,7 @@
   "scripts": {
     "start": "openapi preview-docs",
     "build": "openapi bundle -o dist",
+    "build-json": "openapi bundle --format json -o dist",
     "test": "openapi lint"
   }
 }

@@ -7,7 +7,7 @@ get:
     and private information.
 
     The user account is identified by the provided authentication token.
-  operationId: Getprivateuserdata
+  operationId: GetPrivateUserData
   parameters:
     - name: token
       in: query
@@ -26,7 +26,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Getprivateuserdataresponse.yaml
+              - $ref: ../../components/schemas/users/GetPrivateUserDataResponse.yaml
               - example:
                   data:
                     id: YiKoxjkaS9gjGTqhF
