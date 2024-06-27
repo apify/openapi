@@ -48,13 +48,6 @@ get:
         type: number
         format: double
         example: 100
-    - name: forefront
-      in: query
-      description: ''
-      style: form
-      explode: true
-      schema:
-        type: string
   responses:
     '200':
       description: ''
@@ -180,20 +173,6 @@ post:
       schema:
         type: string
         example: 'false'
-    - name: limit
-      in: query
-      description: ''
-      style: form
-      explode: true
-      schema:
-        type: string
-    - name: exclusiveStartId
-      in: query
-      description: ''
-      style: form
-      explode: true
-      schema:
-        type: string
   requestBody:
     description: ''
     content:
