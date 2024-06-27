@@ -28,6 +28,6 @@ properties:
   actions:
     type: array
     items:
-      $ref: ./actions2.yaml
+      $ref: ../actions2.yaml
     description: ''
     nullable: true

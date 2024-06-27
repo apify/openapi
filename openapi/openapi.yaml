@@ -717,11 +717,11 @@ paths:
   '/v2/webhook-dispatches/{dispatchId}':
     $ref: 'paths/v2@webhook-dispatches@{dispatchId}.yaml'
   /v2/schedules:
-    $ref: paths/v2@schedules.yaml
+    $ref: 'paths/schedules/schedules.yaml'
   '/v2/schedules/{scheduleId}':
-    $ref: 'paths/v2@schedules@{scheduleId}.yaml'
+    $ref: 'paths/schedules/schedules@{scheduleId}.yaml'
   '/v2/schedules/{scheduleId}/log':
-    $ref: 'paths/v2@schedules@{scheduleId}@log.yaml'
+    $ref: 'paths/schedules/schedules@{scheduleId}@log.yaml'
   /v2/store:
     $ref: paths/store.yaml
   '/v2/logs/{buildOrRunId}':

@@ -54,5 +54,5 @@ properties:
   actions:
     type: array
     items:
-      $ref: ./actions1.yaml
+      $ref: ../actions1.yaml
     description: ''

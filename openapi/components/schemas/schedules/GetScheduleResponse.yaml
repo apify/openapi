@@ -1,9 +1,9 @@
-title: Getlistofschedulesresponse
+title: GetScheduleResponse
 required:
   - data
 type: object
 properties:
   data:
     allOf:
-      - $ref: ./data24.yaml
+      - $ref: ./Schedule.yaml
       - {}
