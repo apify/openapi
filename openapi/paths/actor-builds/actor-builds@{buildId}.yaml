@@ -14,8 +14,8 @@ get:
     authenticated using a hard-to-guess ID of the build.
   operationId: getBuild
   security:
-    - apiKeyPublicActors: []
-    - httpBearerPublicActors: []
+    - apiKeyActorBuilds: []
+    - httpBearerActorBuilds: []
   parameters:
     - name: buildId
       in: path

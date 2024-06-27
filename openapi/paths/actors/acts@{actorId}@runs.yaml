@@ -232,8 +232,8 @@ post:
     items](#reference/datasets/item-collection/get-items) API endpoint.
   operationId: RunActor
   security:
-    - apiKeyAnonymouslyRunnable: []
-    - httpBearerAnonymouslyRunnable: []
+    - apiKeyActorRuns: []
+    - httpBearerActorRuns: []
   parameters:
     - name: actorId
       in: path
