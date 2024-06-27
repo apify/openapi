@@ -21,15 +21,6 @@ get:
       schema:
         type: string
         example: janedoe~my-task
-    - name: token
-      in: query
-      description: API authentication token.
-      required: true
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
     - name: offset
       in: query
       description: >-

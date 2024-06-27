@@ -1,0 +1,4 @@
+type: apiKey
+name: token
+in: query
+description: API authentication token. Public Actors that are configured to be anonymously runnable do not require token parameter.

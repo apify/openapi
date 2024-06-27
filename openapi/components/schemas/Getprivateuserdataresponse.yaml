@@ -1,9 +1,0 @@
-title: Getprivateuserdataresponse
-required:
-  - data
-type: object
-properties:
-  data:
-    allOf:
-      - $ref: ./UserPrivateInfo.yaml
-      - {}

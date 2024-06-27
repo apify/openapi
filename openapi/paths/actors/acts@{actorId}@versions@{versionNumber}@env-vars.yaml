@@ -28,15 +28,6 @@ get:
       schema:
         type: string
         example: '0.1'
-    - name: token
-      in: query
-      description: API authentication token.
-      required: true
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
   responses:
     '200':
       description: ''
@@ -94,15 +85,6 @@ post:
       schema:
         type: string
         example: '0.1'
-    - name: token
-      in: query
-      description: API authentication token.
-      required: true
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
   requestBody:
     description: ''
     content:
