@@ -1,13 +1,16 @@
-<<<<<<<< HEAD:openapi/components/schemas/actor-runs/GetUserRunsListResponse.yaml
 title: GetUserRunsListResponse
-========
-title: AbortRunResponse
->>>>>>>> main:openapi/components/schemas/AbortRunResponse.yaml
 required:
   - data
 type: object
 properties:
   data:
     allOf:
-      - $ref: ../data5.yaml
-      - {}
+      - $ref: "../common/PaginationResponse.yaml"
+      - type: object
+        required:
+          - items
+        properties:
+          items:
+            type: array
+            items:
+              $ref: "../actor-runs/RunShort.yaml"

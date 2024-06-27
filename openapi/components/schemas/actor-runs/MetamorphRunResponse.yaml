@@ -5,6 +5,5 @@ type: object
 properties:
   data:
     allOf:
-      # TODO: can be merged with ../Run.yaml?
-      - $ref: ../RunMetamorphed.yaml
+      - $ref: ./Run.yaml
       - {}

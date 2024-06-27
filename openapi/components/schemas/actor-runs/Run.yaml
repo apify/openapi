@@ -49,15 +49,15 @@ properties:
     example: false
   meta:
     allOf:
-      - $ref: ./meta.yaml
+      - $ref: ../meta.yaml
       - {}
   stats:
     allOf:
-      - $ref: ./stats7.yaml
+      - $ref: ../stats7.yaml
       - {}
   options:
     allOf:
-      - $ref: ./options5.yaml
+      - $ref: ../options5.yaml
       - {}
   buildId:
     type: string
