@@ -8,14 +8,14 @@ required:
   - items
 type: object
 properties:
-  allOf:
-  - $ref: ../common/PaginationResponse.yaml
-  - type: object
-    required:
-      - items
-    properties:
-      items:
-        type: array
+  data:
+    allOf:
+    - $ref: ./common/PaginationResponse.yaml
+    - type: object
+      required:
+        - items
+      properties:
         items:
-          $ref: ./WebhookDispatch.yaml
-        description: ''
+          type: array
+          items:
+            $ref: ./WebhookDispatch.yaml
