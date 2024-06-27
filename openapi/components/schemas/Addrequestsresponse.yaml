@@ -1,7 +1,0 @@
-title: Addrequestsresponse
-type: object
-properties:
-  data:
-    allOf:
-      - $ref: ./data19.yaml
-      - {}

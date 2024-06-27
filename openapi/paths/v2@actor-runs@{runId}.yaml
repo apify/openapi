@@ -158,7 +158,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Getrunresponse.yaml
+              - $ref: "../components/schemas/GetRunResponse.yaml"
               - example:
                   data:
                     id: HG7ML7M8z78YcAPEB

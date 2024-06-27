@@ -1,8 +1,0 @@
-title: RequestBatchDelete
-required:
-  - uniqueKey
-type: object
-properties:
-  uniqueKey:
-    type: string
-    example: 'http://example.com'

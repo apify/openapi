@@ -1,9 +1,0 @@
-title: Updatewebhookresponse
-required:
-  - data
-type: object
-properties:
-  data:
-    allOf:
-      - $ref: ./Webhook.yaml
-      - {}

@@ -1,0 +1,6 @@
+title: GetItemsResponse
+type: object
+properties:
+  format:
+    type: string
+    example: json

@@ -1,0 +1,9 @@
+title: GetListOfVersionsResponse
+required:
+  - data
+type: object
+properties:
+  data:
+    allOf:
+      - $ref: ./data1.yaml
+      - {}

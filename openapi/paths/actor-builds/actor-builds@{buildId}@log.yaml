@@ -1,0 +1,64 @@
+get:
+  tags:
+    - Actor builds
+  summary: Get log
+  # TODO: Fix description once /logs is cleaned up as well
+  description: 'Check out [Logs](#reference/logs) for full reference.'
+  operationId: GetLog
+  parameters:
+    - name: buildId
+      in: path
+      description: ID of the Actor build.
+      required: true
+      style: simple
+      schema:
+        type: string
+        example: HG7ML7M8z78YcAPEB
+    - name: token
+      in: query
+      description: API authentication token.
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: string
+        example: soSkq9ekdmfOslopH
+    - name: stream
+      in: query
+      description: >-
+        If `true` or `1` then the logs will be streamed as long as the run or
+        build is running.
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: boolean
+        example: false
+    - name: download
+      in: query
+      description: >-
+        If `true` or `1` then the web browser will download the log file rather
+        than open it in a tab.
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: boolean
+        example: false
+  responses:
+    '200':
+      description: ''
+      headers: {}
+      content:
+        text/plain:
+          schema:
+            type: string
+            example: |-
+              2017-07-14T06:00:49.733Z Application started.
+              2017-07-14T06:00:49.741Z Input: { test: 123 }
+              2017-07-14T06:00:49.752Z Some useful debug information follows.
+          example: |-
+            2017-07-14T06:00:49.733Z Application started.
+            2017-07-14T06:00:49.741Z Input: { test: 123 }
+            2017-07-14T06:00:49.752Z Some useful debug information follows.
+  deprecated: false
