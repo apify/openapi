@@ -9,7 +9,18 @@ properties:
   items:
     type: array
     items:
-      $ref: ./items.yaml
+      type: object
+      title: items
+      required:
+        - key
+        - size
+      properties:
+        key:
+          type: string
+          example: second-key
+        size:
+          type: number
+          example: 36
     description: ''
   count:
     type: number
