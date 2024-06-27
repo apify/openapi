@@ -1,4 +1,4 @@
-title: plan
+title: Plan
 required:
   - id
   - description
@@ -74,7 +74,7 @@ properties:
     example: 14
   availableProxyGroups:
     allOf:
-      - $ref: ./availableProxyGroups.yaml
+      - $ref: ./AvailableProxyGroups.yaml
       - {}
   teamAccountSeatCount:
     type: number

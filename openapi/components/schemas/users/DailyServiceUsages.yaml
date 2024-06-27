@@ -1,4 +1,4 @@
-title: dailyServiceUsages
+title: DailyServiceUsages
 required:
   - date
   - serviceUsage
@@ -10,7 +10,7 @@ properties:
     example: '2022-10-02T00:00:00.000Z'
   serviceUsage:
     allOf:
-      - $ref: ./serviceUsage.yaml
+      - $ref: ./ServiceUsage.yaml
       - {}
   totalUsageCreditsUsd:
     type: number

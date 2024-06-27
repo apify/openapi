@@ -1,4 +1,4 @@
-title: proxy
+title: Proxy
 required:
   - password
   - groups
@@ -10,5 +10,4 @@ properties:
   groups:
     type: array
     items:
-      type: string
-    description: ''
+      - $ref: ./ProxyGroup.yaml

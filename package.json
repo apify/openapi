@@ -10,6 +10,7 @@
   "scripts": {
     "start": "openapi preview-docs",
     "build": "openapi bundle -o openapi",
+    "build-json": "openapi bundle --format json -o openapi",
     "test": "openapi lint"
   },
   "packageManager": "yarn@1.22.22"

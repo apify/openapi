@@ -1,9 +1,9 @@
-title: Getlimitsresponse
+title: GetPrivateUserDataResponse
 required:
   - data
 type: object
 properties:
   data:
     allOf:
-      - $ref: ./AccountLimits.yaml
+      - $ref: ./UserPrivateInfo.yaml
       - {}

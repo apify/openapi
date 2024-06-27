@@ -1,4 +1,4 @@
-title: USAGE_ITEM
+title: UsageItem
 required:
   - quantity
   - baseAmountUsd
@@ -22,5 +22,5 @@ properties:
   priceTiers:
     type: array
     items:
-      $ref: ./priceTiers.yaml
+      $ref: ./PriceTiers.yaml
     description: ''

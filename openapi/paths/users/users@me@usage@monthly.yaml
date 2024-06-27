@@ -42,7 +42,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Getmonthlyusageresponse.yaml
+              - $ref: ../../components/schemas/users/GetMonthlyUsageResponse.yaml
               - example:
                   data:
                     usageCycle:

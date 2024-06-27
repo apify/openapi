@@ -1,4 +1,4 @@
-title: profile
+title: Profile
 type: object
 properties:
   bio:
