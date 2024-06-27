@@ -641,7 +641,7 @@ paths:
   '/v2/acts/{actorId}/runs/{runId}/resurrect':
     $ref: 'paths/actors/acts@{actorId}@runs@{runId}@resurrect.yaml'
   '/v2/acts/{actorId}/runs/last':
-    $ref: 'paths/actors/acts@{actorId}@runs@last@.yaml'
+    $ref: 'paths/actors/acts@{actorId}@runs@last.yaml'
   /v2/actor-tasks:
     $ref: 'paths/actor-tasks/actor-tasks.yaml'
   '/v2/actor-tasks/{actorTaskId}':

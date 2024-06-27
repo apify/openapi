@@ -5,5 +5,5 @@ type: object
 properties:
   data:
     allOf:
-      - $ref: "./actor-runs/Run.yaml"
+      - $ref: "./Run.yaml"
       - {}
