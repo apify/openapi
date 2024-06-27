@@ -1,9 +1,9 @@
-title: Getprivateuserdataresponse
+title: GetPublicUserDataResponse
 required:
   - data
 type: object
 properties:
   data:
     allOf:
-      - $ref: ./UserPrivateInfo.yaml
+      - $ref: ./UserPublicInfo.yaml
       - {}

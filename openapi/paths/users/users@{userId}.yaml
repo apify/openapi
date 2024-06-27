@@ -25,7 +25,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Getpublicuserdataresponse.yaml
+              - $ref: ../../components/schemas/users/GetPublicUserDataResponse.yaml
               - example:
                   data:
                     username: d7b9MDYsbtX5L7XAj

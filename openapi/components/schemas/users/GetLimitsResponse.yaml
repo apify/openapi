@@ -1,9 +1,9 @@
-title: Getmonthlyusageresponse
+title: GetLimitsResponse
 required:
   - data
 type: object
 properties:
   data:
     allOf:
-      - $ref: ./MonthlyUsage.yaml
+      - $ref: ./AccountLimits.yaml
       - {}

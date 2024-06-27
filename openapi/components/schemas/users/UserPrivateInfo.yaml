@@ -16,16 +16,16 @@ properties:
     example: myusername
   profile:
     allOf:
-      - $ref: ./profile.yaml
+      - $ref: ./Profile.yaml
       - {}
   email:
     type: string
     example: bob@example.com
   proxy:
     allOf:
-      - $ref: ./proxy.yaml
+      - $ref: ./Proxy.yaml
       - {}
   plan:
     allOf:
-      - $ref: ./plan.yaml
+      - $ref: ./Plan.yaml
       - {}

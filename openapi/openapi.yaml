@@ -727,13 +727,13 @@ paths:
   '/v2/logs/{buildOrRunId}':
     $ref: 'paths/logs/logs@{buildOrRunId}.yaml'
   '/v2/users/{userId}':
-    $ref: 'paths/v2@users@{userId}.yaml'
+    $ref: 'paths/users/users@{userId}.yaml'
   /v2/users/me:
-    $ref: paths/v2@users@me.yaml
+    $ref: paths/users/users@me.yaml
   /v2/users/me/usage/monthly:
-    $ref: paths/v2@users@me@usage@monthly.yaml
+    $ref: paths/users/users@me@usage@monthly.yaml
   /v2/users/me/limits:
-    $ref: paths/v2@users@me@limits.yaml
+    $ref: paths/users/users@me@limits.yaml
 components:
   securitySchemes:
     httpBearer:

@@ -1,4 +1,4 @@
-title: priceTiers
+title: PriceTiers
 required:
   - quantityAbove
   - discountPercent

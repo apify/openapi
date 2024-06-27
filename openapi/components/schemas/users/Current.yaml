@@ -1,4 +1,4 @@
-title: current
+title: Current
 required:
   - monthlyUsageUsd
   - monthlyActorComputeUnits
