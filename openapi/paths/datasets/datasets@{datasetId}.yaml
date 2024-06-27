@@ -4,13 +4,8 @@ get:
   summary: Get dataset
   description: >-
     Returns dataset object for given dataset ID.
-
-
-    **NOTE:** Keep in mind that attributes `itemCount` and `cleanItemCount` are
-    not propagated right away after data are pushed into a dataset.
-
-    There is a short period (up to 5 seconds) during which these counters may
-    not match with exact counts in dataset items.
+    **NOTE:** Keep in mind that attributes `itemCount` and `cleanItemCount` are not propagated right away after data are pushed into a dataset.
+    There is a short period (up to 5 seconds) during which these counters may not match with exact counts in dataset items.
   operationId: getDataset
   parameters:
     - name: datasetId
@@ -24,8 +19,7 @@ get:
     - name: token
       in: query
       description: >-
-        API authentication token. It is required only when using the
-        `username~dataset-name` format for `datasetId`.
+        API authentication token. It is required only when using the `username~dataset-name` format for `datasetId`.
       style: form
       explode: true
       schema:
@@ -38,7 +32,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/datasets/GetDatasetResponse.yaml
+            $ref: ../../components/schemas/datasets/GetDatasetResponse.yaml
           example:
             data:
               id: WkzbQMuFYuamGv3YF
@@ -58,14 +52,8 @@ put:
     - Datasets
   summary: Update dataset
   description: >-
-    Updates a dataset's name using a value specified by a JSON object passed in
-    the PUT payload.
-
-
-    The response is the updated dataset object, as returned by the
-
-    [Get dataset](#reference/datasets/dataset-collection/get-dataset) API
-    endpoint.
+    Updates a dataset's name using a value specified by a JSON object passed in the PUT payload.
+    The response is the updated dataset object, as returned by the [Get dataset](#reference/datasets/dataset-collection/get-dataset) API endpoint.
   operationId: updateDataset
   parameters:
     - name: datasetId
@@ -90,7 +78,7 @@ put:
     content:
       application/json:
         schema:
-          $ref: ../components/schemas/datasets/UpdateDatasetRequest.yaml
+          $ref: ../../components/schemas/datasets/UpdateDatasetRequest.yaml
         example:
           name: new-dataset-name
     required: true
@@ -101,7 +89,7 @@ put:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/datasets/UpdateDatasetResponse.yaml
+            $ref: ../../components/schemas/datasets/UpdateDatasetResponse.yaml
           example:
             data:
               id: WkzbQMuFYuamGv3YF

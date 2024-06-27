@@ -4,23 +4,12 @@ get:
   summary: Get list of datasets
   description: >-
     Lists all of a user's datasets. The response is a JSON array of objects,
-    where each object
-
-    contains basic information about one dataset.
-
-
+    where each object contains basic information about one dataset.
     By default, the objects are sorted by the `createdAt` field in ascending
-    order,
-
-    therefore you can use pagination to incrementally fetch all datasets while
-    new
-
+    order, therefore you can use pagination to incrementally fetch all datasets while new
     ones are still being created. To sort them in descending order, use `desc=1`
-
     parameter. The endpoint supports pagination using `limit` and `offset`
-    parameters and it will not return more than 1000
-
-    array elements.
+    parameters and it will not return more than 1000 array elements.
   operationId: getListOfDatasets
   parameters:
     - name: token
@@ -88,7 +77,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/datasets/GetListOfDatasetsResponse.yaml
+            $ref: ../../components/schemas/datasets/GetListOfDatasetsResponse.yaml
           example:
             data:
               total: 2
@@ -124,13 +113,8 @@ post:
   summary: Create dataset
   description: >-
     Creates a dataset and returns its object.
-
-    Keep in mind that data stored under unnamed dataset follows [data retention
-    period](https://docs.apify.com/platform/storage#data-retention).
-
-
+    Keep in mind that data stored under unnamed dataset follows [data retention period](https://docs.apify.com/platform/storage#data-retention).
     It creates a dataset with the given name if the parameter name is used.
-
     If a dataset with the given name already exists then returns its object.
   operationId: createDataset
   parameters:
@@ -192,7 +176,7 @@ post:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/datasets/CreateDatasetResponse.yaml
+            $ref: ../../components/schemas/datasets/CreateDatasetResponse.yaml
           example:
             data:
               id: WkzbQMuFYuamGv3YF
