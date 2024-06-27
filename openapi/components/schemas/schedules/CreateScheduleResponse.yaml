@@ -1,4 +1,4 @@
-title: Getscheduleresponse
+title: CreateScheduleResponse
 required:
   - data
 type: object

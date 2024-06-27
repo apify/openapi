@@ -1,9 +1,13 @@
-title: actions2
+title: ScheduleActions
 required:
+  - id
   - type
   - actorId
 type: object
 properties:
+  id:
+    type: string
+    example: c6KfSgoQzFhMk3etc
   type:
     type: string
     example: RUN_ACTOR
@@ -14,11 +18,11 @@ properties:
     allOf:
       - oneOf:
           - nullable: true
-          - $ref: ./runInput.yaml
+          - $ref: ../runInput.yaml
       - {}
   runOptions:
     allOf:
       - oneOf:
           - nullable: true
-          - $ref: ./runOptions.yaml
+          - $ref: ../runOptions.yaml
       - {}

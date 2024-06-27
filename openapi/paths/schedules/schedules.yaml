@@ -13,7 +13,7 @@ get:
     order. To sort the records in descending order, use the `desc=1`
 
     parameter.
-  operationId: Getlistofschedules
+  operationId: GetListOfSchedules
   parameters:
     - name: token
       in: query
@@ -63,7 +63,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/Getlistofschedulesresponse.yaml
+            $ref: ../../components/schemas/schedules/GetListOfSchedulesResponse.yaml
   deprecated: false
 post:
   tags:
@@ -83,7 +83,7 @@ post:
     When providing your API authentication token, we recommend using the
     request's `Authorization` header, rather than the URL. ([More
     info](#introduction/authentication)).
-  operationId: Createschedule
+  operationId: CreateSchedule
   parameters:
     - name: token
       in: query
@@ -121,7 +121,7 @@ post:
       application/json:
         schema:
           allOf:
-            - $ref: ../components/schemas/ScheduleCreate.yaml
+            - $ref: ../../components/schemas/schedules/ScheduleCreate.yaml
             - {}
     required: true
   responses:
@@ -137,5 +137,5 @@ post:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/Createscheduleresponse.yaml
+            $ref: ../../components/schemas/schedules/CreateScheduleResponse.yaml
   deprecated: false
