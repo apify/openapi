@@ -50,5 +50,5 @@ properties:
   actions:
     type: array
     items:
-      $ref: ../actions.yaml
+      $ref: ./ScheduleActions2.yaml
     description: ''
