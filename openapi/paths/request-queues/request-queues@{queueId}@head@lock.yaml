@@ -33,15 +33,6 @@ post:
         type: number
         format: double
         example: 60
-    - name: token
-      in: query
-      description: API authentication token.
-      required: true
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
     - name: limit
       in: query
       description: How many items from the queue should be returned.

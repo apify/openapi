@@ -11,16 +11,6 @@ get:
 
     a summary of your limits, and your current usage.
   operationId: Getlimits
-  parameters:
-    - name: token
-      in: query
-      description: API authentication token.
-      required: true
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: rWLaYmvZeK55uatRrZib4xbZf
   responses:
     '200':
       description: ''
