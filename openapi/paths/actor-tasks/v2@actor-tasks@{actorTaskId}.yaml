@@ -30,7 +30,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Gettaskresponse.yaml
+              - $ref: ../../components/schemas/Gettaskresponse.yaml
               - example:
                   data:
                     id: zdc3Pyhyz3m8vjDeM
@@ -116,7 +116,7 @@ put:
       application/json:
         schema:
           allOf:
-            - $ref: ../components/schemas/TaskUpdate.yaml
+            - $ref: ../../components/schemas/TaskUpdate.yaml
             - example:
                 id: ZxLNxrRaZrSjuhT9y
                 userId: BPWZBd7Z9c746JAnF
@@ -160,7 +160,7 @@ put:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Updatetaskresponse.yaml
+              - $ref: ../../components/schemas/Updatetaskresponse.yaml
               - example:
                   data:
                     id: zdc3Pyhyz3m8vjDeM
