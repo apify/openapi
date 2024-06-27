@@ -1,9 +1,9 @@
-title: Getstoreresponse
+title: GetListOfKeysResponse
 required:
   - data
 type: object
 properties:
   data:
     allOf:
-      - $ref: ./keyValueStore/keyValueStore.yaml
+      - $ref: ./data12.yaml
       - {}
