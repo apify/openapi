@@ -1,4 +1,4 @@
-title: monthlyUsageCycle
+title: MonthlyUsageCycle
 required:
   - startAt
   - endAt

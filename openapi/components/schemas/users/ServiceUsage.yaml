@@ -1,4 +1,4 @@
-title: serviceUsage
+title: ServiceUsage
 required:
   - SERVICE_USAGE_ITEM
 type: object

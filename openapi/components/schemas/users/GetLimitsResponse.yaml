@@ -1,4 +1,4 @@
-title: Getlimitsresponse
+title: GetLimitsResponse
 required:
   - data
 type: object

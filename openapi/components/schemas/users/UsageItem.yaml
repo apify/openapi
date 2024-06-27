@@ -22,5 +22,5 @@ properties:
   priceTiers:
     type: array
     items:
-      $ref: ./priceTiers.yaml
+      $ref: ./PriceTiers.yaml
     description: ''
