@@ -8,16 +8,6 @@ get:
 
     The user account is identified by the provided authentication token.
   operationId: Getprivateuserdata
-  parameters:
-    - name: token
-      in: query
-      description: API authentication token.
-      required: true
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
   responses:
     '200':
       description: ''

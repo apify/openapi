@@ -50,14 +50,6 @@ post:
       schema:
         type: string
         example: janedoe~my-task
-    - name: token
-      in: query
-      description: API authentication token.
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
     - name: timeout
       in: query
       description: >-
@@ -212,14 +204,6 @@ get:
       schema:
         type: string
         example: janedoe~my-task
-    - name: token
-      in: query
-      description: API authentication token.
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
     - name: timeout
       in: query
       description: >-

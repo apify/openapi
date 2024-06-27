@@ -36,15 +36,6 @@ get:
       schema:
         type: string
         example: janedoe~my-actor
-    - name: token
-      in: query
-      description: API authentication token.
-      required: true
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
     - name: offset
       in: query
       description: >-
@@ -240,6 +231,9 @@ post:
     received in the response JSON to the [Get
     items](#reference/datasets/item-collection/get-items) API endpoint.
   operationId: RunActor
+  security:
+    - apiKeyAnonymouslyRunnable: []
+    - httpBearerAnonymouslyRunnable: []
   parameters:
     - name: actorId
       in: path
@@ -249,16 +243,6 @@ post:
       schema:
         type: string
         example: janedoe~my-actor
-    - name: token
-      in: query
-      description: >-
-        API authentication token. Public Actors that are configured to be
-        anonymously runnable do not require the token.
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
     - name: timeout
       in: query
       description: >-

@@ -16,6 +16,9 @@ get:
     client with decompression support, the `Accept-Encoding` header is set by
     the client and body is decompressed automatically.
   operationId: Getrecord
+  security:
+    - apiKeyStoreId: []
+    - httpBearerStoreId: []
   parameters:
     - name: storeId
       in: path
@@ -33,16 +36,6 @@ get:
       schema:
         type: string
         example: some key
-    - name: token
-      in: query
-      description: >-
-        API authentication token. It is required only when using the
-        `username~store-name` format for `storeId`.
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
   responses:
     '200':
       description: ''
@@ -114,15 +107,6 @@ put:
       schema:
         type: string
         example: some key
-    - name: token
-      in: query
-      description: API authentication token.
-      required: true
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
     - name: Content-Encoding
       in: header
       description: ''
@@ -186,15 +170,6 @@ delete:
       schema:
         type: string
         example: some key
-    - name: token
-      in: query
-      description: API authentication token.
-      required: true
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
   responses:
     '204':
       description: ''

@@ -15,15 +15,6 @@ get:
     parameter.
   operationId: GetListOfSchedules
   parameters:
-    - name: token
-      in: query
-      description: API authentication token.
-      required: true
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
     - name: offset
       in: query
       description: >-
@@ -85,15 +76,6 @@ post:
     info](#introduction/authentication)).
   operationId: CreateSchedule
   parameters:
-    - name: token
-      in: query
-      description: API authentication token.
-      required: true
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
     - name: limit
       in: query
       description: ''

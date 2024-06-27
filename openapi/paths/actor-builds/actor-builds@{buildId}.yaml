@@ -13,6 +13,9 @@ get:
     This endpoint does not require the authentication token. The calls are
     authenticated using a hard-to-guess ID of the build.
   operationId: getBuild
+  security:
+    - apiKeyPublicActors: []
+    - httpBearerPublicActors: []
   parameters:
     - name: buildId
       in: path
@@ -38,16 +41,6 @@ get:
         type: number
         format: double
         example: 60
-    - name: token
-      in: query
-      description: |-
-        API authentication token. It is only required for private Actors.
-        Builds of public Actors can be queried without any token.
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
   responses:
     '200':
       description: ''
@@ -74,15 +67,6 @@ delete:
       description: 'ID of the build you want to get, found in the build''s `Info` tab.'
       required: true
       style: simple
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
-    - name: token
-      in: query
-      description: API authentication token.
-      required: true
-      style: form
-      explode: true
       schema:
         type: string
         example: soSkq9ekdmfOslopH

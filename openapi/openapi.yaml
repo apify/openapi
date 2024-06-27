@@ -738,9 +738,24 @@ components:
   securitySchemes:
     httpBearer:
       $ref: components/securitySchemes/httpBearer.yaml
+    httpBearerAnonymouslyRunnable:
+      $ref: components/securitySchemes/httpBearerAnonymouslyRunnable.yaml
+    httpBearerPublicActors:
+        $ref: components/securitySchemes/httpBearerPublicActors.yaml
+    httpBearerStoreId:
+      $ref: components/securitySchemes/httpBearerStoreId.yaml
+    httpBearerQueueId:
+      $ref: components/securitySchemes/httpBearerQueueId.yaml
     apiKey:
       $ref: components/securitySchemes/apiKey.yaml
-
+    apiKeyAnonymouslyRunnable:
+      $ref: components/securitySchemes/apiKeyAnonymouslyRunnable.yaml
+    apiKeyPublicActors:
+      $ref: components/securitySchemes/apiKeyPublicActors.yaml
+    apiKeyStoreId:
+      $ref: components/securitySchemes/apiKeyStoreId.yaml
+    apiKeyQueueId:
+      $ref: components/securitySchemes/apiKeyQueueId.yaml
 security:
   - httpBearer: []
   - apiKey: []

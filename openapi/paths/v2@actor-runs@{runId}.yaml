@@ -127,15 +127,6 @@ get:
       schema:
         type: string
         example: 3KH8gEpp4d8uQSe8T
-    - name: token
-      in: query
-      description: API authentication token.
-      required: true
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
     - name: waitForFinish
       in: query
       description: >-
@@ -321,15 +312,6 @@ delete:
       schema:
         type: string
         example: 3KH8gEpp4d8uQSe8T
-    - name: token
-      in: query
-      description: API authentication token.
-      required: true
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
   responses:
     '204':
       description: ''
@@ -354,15 +336,6 @@ put:
     platform will try to substitute sensible defaults.
   operationId: Updatestatusmessage
   parameters:
-    - name: token
-      in: query
-      description: API authentication token.
-      required: true
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
     - name: runId
       in: path
       description: ''
