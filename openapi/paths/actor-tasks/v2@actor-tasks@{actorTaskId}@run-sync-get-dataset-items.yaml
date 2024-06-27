@@ -370,7 +370,7 @@ post:
         schema:
           allOf:
             - $ref: >-
-                ../components/schemas/RuntasksynchronouslyandgetdatasetitemsPOSTrequest.yaml
+                ../../components/schemas/RuntasksynchronouslyandgetdatasetitemsPOSTrequest.yaml
             - example:
                 foo: bar
         example:
@@ -422,7 +422,7 @@ post:
           schema:
             allOf:
               - $ref: >-
-                  ../components/schemas/RuntasksynchronouslyandgetdatasetitemsPOSTresponse.yaml
+                  ../../components/schemas/RuntasksynchronouslyandgetdatasetitemsPOSTresponse.yaml
               - example:
                   error:
                     type: run-failed
@@ -829,7 +829,7 @@ get:
           schema:
             allOf:
               - $ref: >-
-                  ../components/schemas/RuntasksynchronouslyandgetdatasetitemsGETresponse.yaml
+                  ../../components/schemas/RuntasksynchronouslyandgetdatasetitemsGETresponse.yaml
               - example:
                   error:
                     type: run-failed
@@ -850,7 +850,7 @@ get:
           schema:
             allOf:
               - $ref: >-
-                  ../components/schemas/RuntasksynchronouslyandgetdatasetitemsGETresponse.yaml
+                  ../../components/schemas/RuntasksynchronouslyandgetdatasetitemsGETresponse.yaml
               - example:
                   error:
                     type: run-timeout-exceeded
