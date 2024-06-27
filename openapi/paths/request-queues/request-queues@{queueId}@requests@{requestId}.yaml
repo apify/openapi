@@ -4,6 +4,9 @@ get:
   summary: Get request
   description: Returns request from queue.
   operationId: getRequest
+  security:
+    - apiKeyQueueId: []
+    - httpBearerQueueId: []
   parameters:
     - name: queueId
       in: path
@@ -21,16 +24,6 @@ get:
       schema:
         type: string
         example: xpsmkDlspokDSmklS
-    - name: token
-      in: query
-      description: >-
-        API authentication token.  It is required only when using the
-        `username~queue-name` format for `queueId`.
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
     - name: forefront
       in: query
       description: ''
@@ -115,15 +108,6 @@ put:
       schema:
         type: string
         example: xpsmkDlspokDSmklS
-    - name: token
-      in: query
-      description: API authentication token.
-      required: true
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
     - name: forefront
       in: query
       description: >-
@@ -231,15 +215,6 @@ delete:
       schema:
         type: string
         example: xpsmkDlspokDSmklS
-    - name: token
-      in: query
-      description: API authentication token.
-      required: true
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
     - name: clientKey
       in: query
       description: >-

@@ -32,15 +32,6 @@ get:
       schema:
         type: string
         example: janedoe~my-actor
-    - name: token
-      in: query
-      description: API authentication token.
-      required: true
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
     - name: offset
       in: query
       description: >-
@@ -135,15 +126,6 @@ post:
       schema:
         type: string
         example: janedoe~my-actor
-    - name: token
-      in: query
-      description: API authentication token.
-      required: true
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
     - name: version
       in: query
       description: Actor version number to be built.
