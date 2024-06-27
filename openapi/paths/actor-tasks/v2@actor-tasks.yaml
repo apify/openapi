@@ -70,7 +70,7 @@ get:
             properties:
               data:
                 allOf:
-                  - $ref: ../components/common/paginationResponse.yaml
+                  - $ref: ../../components/schemas/common/PaginationResponse.yaml
                   - type: object
                     required:
                       - items
@@ -78,7 +78,7 @@ get:
                       items:
                         type: array
                         items:
-                          $ref: ../components/schemas/actor-tasks/TaskShort.yaml
+                          $ref: ../../components/schemas/actor-tasks/TaskShort.yaml
           example:
             data:
               total: 2
@@ -168,7 +168,7 @@ post:
       application/json:
         schema:
           allOf:
-            - $ref: ../components/schemas/TaskCreate.yaml
+            - $ref: ../../components/schemas/TaskCreate.yaml
             - example:
                 actId: asADASadYvn4mBZmm
                 name: my-task
@@ -202,7 +202,7 @@ post:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Createtaskresponse.yaml
+              - $ref: ../../components/schemas/Createtaskresponse.yaml
               - example:
                   data:
                     id: zdc3Pyhyz3m8vjDeM

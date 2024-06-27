@@ -138,7 +138,7 @@ post:
       application/json:
         schema:
           allOf:
-            - $ref: ../components/schemas/RuntasksynchronouslyPOSTrequest.yaml
+            - $ref: ../../components/schemas/RuntasksynchronouslyPOSTrequest.yaml
             - example:
                 foo: bar
         example:
@@ -152,7 +152,7 @@ post:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/RuntasksynchronouslyPOSTresponse.yaml
+              - $ref: ../../components/schemas/RuntasksynchronouslyPOSTresponse.yaml
               - example:
                   bar: foo
           example:
@@ -164,7 +164,7 @@ post:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/RuntasksynchronouslyPOSTresponse1.yaml
+              - $ref: ../../components/schemas/RuntasksynchronouslyPOSTresponse1.yaml
               - example:
                   error:
                     type: run-failed
@@ -302,7 +302,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/RuntasksynchronouslyGETresponse.yaml
+              - $ref: ../../components/schemas/RuntasksynchronouslyGETresponse.yaml
               - example:
                   bar: foo
           example:
@@ -314,7 +314,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/RuntasksynchronouslyGETresponse1.yaml
+              - $ref: ../../components/schemas/RuntasksynchronouslyGETresponse1.yaml
               - example:
                   error:
                     type: run-failed
@@ -334,7 +334,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/RuntasksynchronouslyGETresponse1.yaml
+              - $ref: ../../components/schemas/RuntasksynchronouslyGETresponse1.yaml
               - example:
                   error:
                     type: run-timeout-exceeded

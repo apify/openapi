@@ -130,7 +130,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Getlistoftaskrunsresponse.yaml
+              - $ref: ../../components/schemas/Getlistoftaskrunsresponse.yaml
               - example:
                   data:
                     total: 2
@@ -381,7 +381,7 @@ post:
       application/json:
         schema:
           allOf:
-            - $ref: ../components/schemas/Runtaskrequest.yaml
+            - $ref: ../../components/schemas/Runtaskrequest.yaml
             - example:
                 foo: bar
         example:
@@ -402,7 +402,7 @@ post:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Runtaskresponse.yaml
+              - $ref: ../../components/schemas/Runtaskresponse.yaml
               - example:
                   data:
                     id: HG7ML7M8z78YcAPEB
