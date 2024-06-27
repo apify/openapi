@@ -643,19 +643,19 @@ paths:
   '/v2/acts/{actorId}/runs/last':
     $ref: 'paths/actors/acts@{actorId}@runs@last.yaml'
   /v2/actor-tasks:
-    $ref: paths/actor-tasks/v2@actor-tasks.yaml
+    $ref: 'paths/actor-tasks/actor-tasks.yaml'
   '/v2/actor-tasks/{actorTaskId}':
-    $ref: 'paths/actor-tasks/v2@actor-tasks@{actorTaskId}.yaml'
+    $ref: 'paths/actor-tasks/actor-tasks@{actorTaskId}.yaml'
   '/v2/actor-tasks/{actorTaskId}/input':
-    $ref: 'paths/actor-tasks/v2@actor-tasks@{actorTaskId}@input.yaml'
+    $ref: 'paths/actor-tasks/actor-tasks@{actorTaskId}@input.yaml'
   '/v2/actor-tasks/{actorTaskId}/webhooks':
-    $ref: 'paths/actor-tasks/v2@actor-tasks@{actorTaskId}@webhooks.yaml'
+    $ref: 'paths/actor-tasks/actor-tasks@{actorTaskId}@webhooks.yaml'
   '/v2/actor-tasks/{actorTaskId}/runs':
-    $ref: 'paths/actor-tasks/v2@actor-tasks@{actorTaskId}@runs.yaml'
+    $ref: 'paths/actor-tasks/actor-tasks@{actorTaskId}@runs.yaml'
   '/v2/actor-tasks/{actorTaskId}/run-sync':
-    $ref: 'paths/actor-tasks/v2@actor-tasks@{actorTaskId}@run-sync.yaml'
+    $ref: 'paths/actor-tasks/actor-tasks@{actorTaskId}@run-sync.yaml'
   '/v2/actor-tasks/{actorTaskId}/run-sync-get-dataset-items':
-    $ref: 'paths/actor-tasks/v2@actor-tasks@{actorTaskId}@run-sync-get-dataset-items.yaml'
+    $ref: 'paths/actor-tasks/actor-tasks@{actorTaskId}@run-sync-get-dataset-items.yaml'
   /v2/actor-runs:
     $ref: paths/v2@actor-runs.yaml
   '/v2/actor-runs/{runId}':
