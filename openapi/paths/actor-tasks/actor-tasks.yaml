@@ -19,8 +19,7 @@ get:
     - name: offset
       in: query
       description: >-
-        Number of records that should be skipped at the start. The default value
-        is `0`.
+        Number of records that should be skipped at the start. The default value is `0`.
       style: form
       explode: true
       schema:
@@ -30,8 +29,7 @@ get:
     - name: limit
       in: query
       description: >-
-        Maximum number of records to return. The default value as well as the
-        maximum is `1000`.
+        Maximum number of records to return. The default value as well as the maximum is `1000`.
       style: form
       explode: true
       schema:
@@ -112,36 +110,12 @@ post:
     The response is the full task object as returned by the
     [Get task](#reference/tasks/task-object/get-task) endpoint.
 
-
-    The request needs to specify the `Content-Type: application/json` HTTP
-    header!
+    The request needs to specify the `Content-Type: application/json` HTTP header!
 
     When providing your API authentication token, we recommend using the
     request's `Authorization` header, rather than the URL. ([More
     info](#introduction/authentication)).
   operationId: Createtask
-  parameters:
-    - name: offset
-      in: query
-      description: ''
-      style: form
-      explode: true
-      schema:
-        type: string
-    - name: limit
-      in: query
-      description: ''
-      style: form
-      explode: true
-      schema:
-        type: string
-    - name: desc
-      in: query
-      description: ''
-      style: form
-      explode: true
-      schema:
-        type: string
   requestBody:
     description: ''
     content:
