@@ -227,7 +227,7 @@ post:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/createKeyValueStoreResponse.yaml
+              - $ref: ../components/schemas/keyValueStore/createKeyValueStoreResponse.yaml
               - example:
                   data:
                     id: WkzbQMuFYuamGv3YF
