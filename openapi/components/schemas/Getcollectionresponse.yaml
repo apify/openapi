@@ -5,5 +5,5 @@ type: object
 properties:
   data:
     allOf:
-      - $ref: ./data22.yaml
+      - $ref: ./WebhookDispatchList.yaml
       - {}
