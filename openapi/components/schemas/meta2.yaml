@@ -5,4 +5,4 @@ type: object
 properties:
   origin:
     type: string
-    example: API
+    enum: [DEVELOPMENT, WEB, API, SCHEDULER, TEST, WEBHOOK, ACTOR, CLI, STANDBY]
