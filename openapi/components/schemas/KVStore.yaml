@@ -27,8 +27,8 @@ properties:
     type: string
     example: '2019-12-14T08:36:13.202Z'
   actId:
-    type: object
+    type: string
     nullable: true
   actRunId:
-    type: object
+    type: string
     nullable: true

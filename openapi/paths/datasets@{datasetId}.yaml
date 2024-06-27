@@ -1,0 +1,148 @@
+get:
+  tags:
+    - Datasets
+  summary: Get dataset
+  description: >-
+    Returns dataset object for given dataset ID.
+
+
+    **NOTE:** Keep in mind that attributes `itemCount` and `cleanItemCount` are
+    not propagated right away after data are pushed into a dataset.
+
+    There is a short period (up to 5 seconds) during which these counters may
+    not match with exact counts in dataset items.
+  operationId: getDataset
+  parameters:
+    - name: datasetId
+      in: path
+      description: Dataset ID or `username~dataset-name`.
+      required: true
+      style: simple
+      schema:
+        type: string
+        example: WkzbQMuFYuamGv3YF
+    - name: token
+      in: query
+      description: >-
+        API authentication token. It is required only when using the
+        `username~dataset-name` format for `datasetId`.
+      style: form
+      explode: true
+      schema:
+        type: string
+        example: soSkq9ekdmfOslopH
+  responses:
+    '200':
+      description: ''
+      headers: {}
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/datasets/GetDatasetResponse.yaml
+          example:
+            data:
+              id: WkzbQMuFYuamGv3YF
+              name: d7b9MDYsbtX5L7XAj
+              userId: wRsJZtadYvn4mBZmm
+              createdAt: '2019-12-12T07:34:14.202Z'
+              modifiedAt: '2019-12-13T08:36:13.202Z'
+              accessedAt: '2019-12-14T08:36:13.202Z'
+              itemCount: 7
+              cleanItemCount: 5
+              actId: null
+              actRunId: null
+              fields: []
+  deprecated: false
+put:
+  tags:
+    - Datasets
+  summary: Update dataset
+  description: >-
+    Updates a dataset's name using a value specified by a JSON object passed in
+    the PUT payload.
+
+
+    The response is the updated dataset object, as returned by the
+
+    [Get dataset](#reference/datasets/dataset-collection/get-dataset) API
+    endpoint.
+  operationId: updateDataset
+  parameters:
+    - name: datasetId
+      in: path
+      description: Dataset ID or `username~dataset-name`.
+      required: true
+      style: simple
+      schema:
+        type: string
+        example: WkzbQMuFYuamGv3YF
+    - name: token
+      in: query
+      description: API authentication token.
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: string
+        example: soSkq9ekdmfOslopH
+  requestBody:
+    description: ''
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/datasets/UpdateDatasetRequest.yaml
+        example:
+          name: new-dataset-name
+    required: true
+  responses:
+    '200':
+      description: ''
+      headers: {}
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/datasets/UpdateDatasetResponse.yaml
+          example:
+            data:
+              id: WkzbQMuFYuamGv3YF
+              name: d7b9MDYsbtX5L7XAj
+              userId: wRsJZtadYvn4mBZmm
+              createdAt: '2019-12-12T07:34:14.202Z'
+              modifiedAt: '2019-12-13T08:36:13.202Z'
+              accessedAt: '2019-12-14T08:36:13.202Z'
+              itemCount: 7
+              cleanItemCount: 5
+              actId: null
+              actRunId: null
+              fields: []
+  deprecated: false
+delete:
+  tags:
+    - Datasets
+  summary: Delete dataset
+  description: Deletes a specific dataset.
+  operationId: deleteDataset
+  parameters:
+    - name: datasetId
+      in: path
+      description: Dataset ID or `username~dataset-name`.
+      required: true
+      style: simple
+      schema:
+        type: string
+        example: WkzbQMuFYuamGv3YF
+    - name: token
+      in: query
+      description: API authentication token.
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: string
+        example: soSkq9ekdmfOslopH
+  responses:
+    '204':
+      description: ''
+      headers: {}
+      content: {}
+  deprecated: false

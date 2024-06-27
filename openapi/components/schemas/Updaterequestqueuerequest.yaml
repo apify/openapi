@@ -1,9 +1,0 @@
-title: Updaterequestqueuerequest
-required:
-  - name
-type: object
-properties:
-  name:
-    type: string
-example:
-  name: new-request-queue-name

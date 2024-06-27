@@ -74,7 +74,7 @@ post:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Metamorphrunresponse.yaml
+              - $ref: "../components/schemas/MetamorphRunResponse.yaml"
               - example:
                   data:
                     id: HG7ML7M8z78YcAPEB

@@ -23,8 +23,6 @@ Validates the definition.
 **TL;DR**: Add your schema to `openapi/components/schemas` and your path to `openapi/paths` and reference them in `openapi.yaml`. 
 Open pull request into `main` branch.
 
-See the [guide](https://www.notion.so/apify/Contribution-guide-32c7dc4a7f9245dca438a730dcedfb7e) on how to contribute Apify repositories.
-
 NOTE: The `.redocly.yaml` controls settings for various
 tools including the lint tool and the reference
 docs engine.  Open it to find examples and
