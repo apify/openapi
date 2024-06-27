@@ -737,10 +737,13 @@ paths:
 components:
   securitySchemes:
     httpBearer:
-      type: http
-      scheme: bearer
+      $ref: components/securitySchemes/httpBearer.yaml
+    apiKey:
+      $ref: components/securitySchemes/apiKey.yaml
+
 security:
   - httpBearer: []
+  - apiKey: []
 tags:
   - name: Actors
     description: >-
