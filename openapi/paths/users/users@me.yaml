@@ -1,0 +1,118 @@
+get:
+  tags:
+    - Users
+  summary: Get private user data
+  description: >-
+    Returns information about the current user account, including both public
+    and private information.
+
+    The user account is identified by the provided authentication token.
+  operationId: GetPrivateUserData
+  parameters:
+    - name: token
+      in: query
+      description: API authentication token.
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: string
+        example: soSkq9ekdmfOslopH
+  responses:
+    '200':
+      description: ''
+      headers: {}
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: ../../components/schemas/users/GetPrivateUserDataResponse.yaml
+              - example:
+                  data:
+                    id: YiKoxjkaS9gjGTqhF
+                    username: myusername
+                    profile:
+                      bio: I started web scraping in 1985 using Altair BASIC.
+                      name: Jane Doe
+                      pictureUrl: /img/anonymous_user_picture.png
+                      githubUsername: torvalds.
+                      websiteUrl: 'http://www.example.com'
+                      twitterUsername: '@BillGates'
+                    email: bob@example.com
+                    proxy:
+                      password: ad78knd9Jkjd86
+                      groups: []
+                    plan:
+                      id: Personal
+                      description: >-
+                        Cost-effective plan for freelancers, developers and
+                        students.
+                      isEnabled: true
+                      monthlyBasePriceUsd: 49
+                      monthlyUsageCreditsUsd: 49
+                      usageDiscountPercent: 0
+                      enabledPlatformFeatures:
+                        - - ACTORS
+                        - - STORAGE
+                        - - PROXY_SERPS
+                        - - SCHEDULER
+                        - - WEBHOOKS
+                      maxMonthlyUsageUsd: 9999
+                      maxActorMemoryGbytes: 32
+                      maxMonthlyActorComputeUnits: 1000
+                      maxMonthlyResidentialProxyGbytes: 10
+                      maxMonthlyProxySerps: 30000
+                      maxMonthlyExternalDataTransferGbytes: 1000
+                      maxActorCount: 100
+                      maxActorTaskCount: 1000
+                      dataRetentionDays: 14
+                      availableProxyGroups:
+                        SOMEGROUP: 20
+                        ANOTHERGROUP: 200
+                      teamAccountSeatCount: 1
+                      supportLevel: COMMUNITY
+                      availableAddOns: []
+          example:
+            data:
+              id: YiKoxjkaS9gjGTqhF
+              username: myusername
+              profile:
+                bio: I started web scraping in 1985 using Altair BASIC.
+                name: Jane Doe
+                pictureUrl: /img/anonymous_user_picture.png
+                githubUsername: torvalds.
+                websiteUrl: 'http://www.example.com'
+                twitterUsername: '@BillGates'
+              email: bob@example.com
+              proxy:
+                password: ad78knd9Jkjd86
+                groups: []
+              plan:
+                id: Personal
+                description: 'Cost-effective plan for freelancers, developers and students.'
+                isEnabled: true
+                monthlyBasePriceUsd: 49
+                monthlyUsageCreditsUsd: 49
+                usageDiscountPercent: 0
+                enabledPlatformFeatures:
+                  - - ACTORS
+                  - - STORAGE
+                  - - PROXY_SERPS
+                  - - SCHEDULER
+                  - - WEBHOOKS
+                maxMonthlyUsageUsd: 9999
+                maxActorMemoryGbytes: 32
+                maxMonthlyActorComputeUnits: 1000
+                maxMonthlyResidentialProxyGbytes: 10
+                maxMonthlyProxySerps: 30000
+                maxMonthlyExternalDataTransferGbytes: 1000
+                maxActorCount: 100
+                maxActorTaskCount: 1000
+                dataRetentionDays: 14
+                availableProxyGroups:
+                  SOMEGROUP: 20
+                  ANOTHERGROUP: 200
+                teamAccountSeatCount: 1
+                supportLevel: COMMUNITY
+                availableAddOns: []
+  deprecated: false

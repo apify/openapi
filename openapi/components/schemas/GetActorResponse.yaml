@@ -1,0 +1,9 @@
+title: GetActorResponse
+required:
+  - data
+type: object
+properties:
+  data:
+    allOf:
+      - $ref: ./Actor.yaml
+      - {}

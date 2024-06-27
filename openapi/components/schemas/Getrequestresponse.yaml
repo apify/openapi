@@ -1,9 +1,0 @@
-title: Getrequestresponse
-required:
-  - data
-type: object
-properties:
-  data:
-    allOf:
-      - $ref: ./Request1.yaml
-      - {}

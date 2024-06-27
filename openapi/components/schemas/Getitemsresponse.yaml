@@ -1,6 +1,0 @@
-title: Getitemsresponse
-type: object
-properties:
-  format:
-    type: string
-    example: json

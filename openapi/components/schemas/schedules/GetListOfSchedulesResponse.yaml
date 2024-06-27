@@ -1,0 +1,9 @@
+title: GetListOfSchedulesResponse
+required:
+  - data
+type: object
+properties:
+  data:
+    allOf:
+      - $ref: ./ScheduleFilters.yaml
+      - {}

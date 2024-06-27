@@ -1,0 +1,9 @@
+title: UpdateScheduleResponse
+required:
+  - data
+type: object
+properties:
+  data:
+    allOf:
+      - $ref: ./Schedule.yaml
+      - {}

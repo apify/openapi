@@ -1,0 +1,6 @@
+title: RunActorSynchronouslyWithInputAndGetDatasetItemsRequest
+type: object
+properties:
+  foo:
+    type: string
+    example: bar
