@@ -7,20 +7,13 @@ get:
     response is a list of objects in which each object contains essential
     information about a single task.
 
-
     The endpoint supports pagination using the `limit` and `offset` parameters,
     and it does not return more than a 1000 records.
 
-
     By default, the records are sorted by the `createdAt` field in ascending
-    order;
-
-    therefore you can use pagination to incrementally fetch all tasks while new
-
+    order; therefore you can use pagination to incrementally fetch all tasks while new
     ones are still being created. To sort the records in descending order, use
-    the `desc=1`
-
-    parameter.
+    the `desc=1` parameter.
   operationId: Getlistoftasks
   parameters:
     - name: token
@@ -71,38 +64,21 @@ get:
       content:
         application/json:
           schema:
-            allOf:
-              - $ref: ../components/schemas/Getlistoftasksresponse.yaml
-              - example:
-                  data:
-                    total: 2
-                    offset: 0
-                    limit: 1000
-                    desc: false
-                    count: 2
-                    items:
-                      - id: zdc3Pyhyz3m8vjDeM
-                        userId: wRsJZtadYvn4mBZmm
-                        actId: asADASadYvn4mBZmm
-                        actName: my-actor
-                        name: my-task
-                        username: janedoe
-                        actUsername: janedoe
-                        createdAt: '2018-10-26T07:23:14.855Z'
-                        modifiedAt: '2018-10-26T13:30:49.578Z'
-                        stats:
-                          totalRuns: 15
-                      - id: aWE3asdas3m8vjDeM
-                        userId: wRsJZtadYvn4mBZmm
-                        actId: asADASadYvn4mBZmm
-                        actName: my-actor
-                        actUsername: janedoe
-                        name: my-task-2
-                        username: janedoe
-                        createdAt: '2018-10-26T07:23:14.855Z'
-                        modifiedAt: '2018-10-26T13:30:49.578Z'
-                        stats:
-                          totalRuns: 4
+            type: object
+            required:
+              - data
+            properties:
+              data:
+                allOf:
+                  - $ref: ../components/common/paginationResponse.yaml
+                  - type: object
+                    required:
+                      - items
+                    properties:
+                      items:
+                        type: array
+                        items:
+                          $ref: ../components/schemas/actor-tasks/TaskShort.yaml
           example:
             data:
               total: 2
