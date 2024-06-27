@@ -1,9 +1,0 @@
-title: serviceUsage
-required:
-  - SERVICE_USAGE_ITEM
-type: object
-properties:
-  SERVICE_USAGE_ITEM:
-    allOf:
-      - $ref: ./SERVICE_USAGE_ITEM.yaml
-      - {}

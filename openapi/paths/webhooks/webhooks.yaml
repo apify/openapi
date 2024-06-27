@@ -15,15 +15,6 @@ get:
     parameter.
   operationId: getListOfWebhooks
   parameters:
-    - name: token
-      in: query
-      description: API authentication token.
-      required: true
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
     - name: offset
       in: query
       description: >-
@@ -239,15 +230,6 @@ post:
     HTTP header.
   operationId: createWebhook
   parameters:
-    - name: token
-      in: query
-      description: API authentication token.
-      required: true
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
     - name: limit
       in: query
       description: ''
