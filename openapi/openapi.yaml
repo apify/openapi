@@ -725,7 +725,7 @@ paths:
   /v2/store:
     $ref: paths/store.yaml
   '/v2/logs/{buildOrRunId}':
-    $ref: 'paths/v2@logs@{buildOrRunId}.yaml'
+    $ref: 'paths/logs/logs@{buildOrRunId}.yaml'
   '/v2/users/{userId}':
     $ref: 'paths/v2@users@{userId}.yaml'
   /v2/users/me:
