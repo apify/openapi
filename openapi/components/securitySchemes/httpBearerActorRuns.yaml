@@ -1,3 +1,0 @@
-type: http
-scheme: bearer
-description: API authentication token. Public Actors that are configured to be anonymously runnable do not require token parameter.
