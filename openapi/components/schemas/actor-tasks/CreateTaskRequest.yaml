@@ -1,4 +1,4 @@
-title: TaskCreate
+title: CreateTaskRequest
 required:
   - actId
   - name
@@ -14,11 +14,11 @@ properties:
     allOf:
       - oneOf:
           - nullable: true
-          - $ref: ./options.yaml
+          - $ref: ../options.yaml
       - {}
   input:
     allOf:
       - oneOf:
           - nullable: true
-          - $ref: ./input.yaml
+          - $ref: ../input.yaml
       - {}

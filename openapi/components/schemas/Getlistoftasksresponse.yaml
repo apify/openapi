@@ -1,9 +1,0 @@
-title: Getlistoftasksresponse
-required:
-  - data
-type: object
-properties:
-  data:
-    allOf:
-      - $ref: ./data6.yaml
-      - {}

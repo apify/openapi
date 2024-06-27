@@ -1,4 +1,4 @@
-title: TaskUpdate
+title: UpdateTaskRequest
 required:
   - id
   - userId
@@ -37,17 +37,17 @@ properties:
     allOf:
       - oneOf:
           - nullable: true
-          - $ref: ./stats1.yaml
+          - $ref: ../stats1.yaml
       - {}
   options:
     allOf:
       - oneOf:
           - nullable: true
-          - $ref: ./options.yaml
+          - $ref: ../options.yaml
       - {}
   input:
     allOf:
       - oneOf:
           - nullable: true
-          - $ref: ./input.yaml
+          - $ref: ../input.yaml
       - {}

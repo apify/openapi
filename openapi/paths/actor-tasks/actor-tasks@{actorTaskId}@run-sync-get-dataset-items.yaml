@@ -6,41 +6,31 @@ post:
     Runs an actor task and synchronously returns its dataset items.
 
     The run must finish in 300<!-- MAX_ACTOR_JOB_SYNC_WAIT_SECS --> seconds
-    otherwise the API endpoint returns a timeout error.
-
+    otherwise the HTTP request fails with a timeout error (this won't abort
+    the run itself).
 
     Optionally, you can override the actor input configuration by passing a JSON
-    object as the POST payload
-
-    and setting the `Content-Type: application/json` HTTP header.
+    object as the POST payload and setting the `Content-Type: application/json` HTTP header.
 
     Note that if the object in the POST payload does not define a particular
-    input property,
-
-    the actor run uses the default value defined by the task (or the actor's
+    input property, the actor run uses the default value defined by the task (or the actor's
     input schema if not defined by the task).
-
 
     You can send all the same options in parameters as the [Get Dataset
     Items](#reference/datasets/item-collection/get-items) API endpoint.
 
-
     Beware that it might be impossible to maintain an idle HTTP connection for
-    an extended period,
-
-    due to client timeout or network conditions. Make sure your HTTP client is
+    an extended period, due to client timeout or network conditions. Make sure your HTTP client is
     configured to have a long enough connection timeout.
 
     If the connection breaks, you will not receive any information about the run
     and its status.
-
 
     Input fields from actor task configuration can be overloaded with values
     passed as the POST payload.
 
     Just make sure to specify the `Content-Type` header as `application/json`
     and that the input is an object.
-
 
     To run the task asynchronously, use the [Run
     task](#reference/actor-tasks/run-collection/run-task) API endpoint instead.
@@ -360,11 +350,7 @@ post:
     content:
       application/json:
         schema:
-          allOf:
-            - $ref: >-
-                ../../components/schemas/RuntasksynchronouslyandgetdatasetitemsPOSTrequest.yaml
-            - example:
-                foo: bar
+          type: object
         example:
           foo: bar
     required: true
@@ -400,12 +386,6 @@ post:
         application/json:
           schema:
             type: object
-            example:
-              - myValue: some value
-                myOtherValue: some other value
-          example:
-            - myValue: some value
-              myOtherValue: some other value
     '400':
       description: ''
       headers: {}
@@ -413,20 +393,7 @@ post:
         application/json:
           schema:
             allOf:
-              - $ref: >-
-                  ../../components/schemas/RuntasksynchronouslyandgetdatasetitemsPOSTresponse.yaml
-              - example:
-                  error:
-                    type: run-failed
-                    message: >-
-                      Actor run did not succeed (run ID: 55uatRrZib4xbZs,
-                      status: FAILED)
-          example:
-            error:
-              type: run-failed
-              message: >-
-                Actor run did not succeed (run ID: 55uatRrZib4xbZs, status:
-                FAILED)
+              - $ref: "../../components/schemas/common/ErrorResponse.yaml"
   deprecated: false
 get:
   tags:
@@ -436,22 +403,18 @@ get:
     Run a specific task and return its dataset items.
 
     The run must finish in 300<!-- MAX_ACTOR_JOB_SYNC_WAIT_SECS --> seconds
-    otherwise the API endpoint returns a timeout error.
-
+    otherwise the HTTP request fails with a timeout error (this won't abort
+    the run itself).
 
     You can send all the same options in parameters as the [Get Dataset
     Items](#reference/datasets/item-collection/get-items) API endpoint.
 
-
     Beware that it might be impossible to maintain an idle HTTP connection for
-    an extended period,
-
-    due to client timeout or network conditions. Make sure your HTTP client is
+    an extended period, due to client timeout or network conditions. Make sure your HTTP client is
     configured to have a long enough connection timeout.
 
     If the connection breaks, you will not receive any information about the run
     and its status.
-
 
     To run the Task asynchronously, use the [Run task
     asynchronously](#reference/actor-tasks/run-collection/run-task) endpoint
@@ -799,12 +762,6 @@ get:
         application/json:
           schema:
             type: object
-            example:
-              - myValue: some value
-                myOtherValue: some other value
-          example:
-            - myValue: some value
-              myOtherValue: some other value
     '400':
       description: ''
       headers: {}
@@ -812,37 +769,13 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: >-
-                  ../../components/schemas/RuntasksynchronouslyandgetdatasetitemsGETresponse.yaml
-              - example:
-                  error:
-                    type: run-failed
-                    message: >-
-                      Actor run did not succeed (run ID: 55uatRrZib4xbZs,
-                      status: FAILED)
-          example:
-            error:
-              type: run-failed
-              message: >-
-                Actor run did not succeed (run ID: 55uatRrZib4xbZs, status:
-                FAILED)
+              - $ref: "../../components/schemas/common/ErrorResponse.yaml"
     '408':
-      description: ''
+      description: 'Request Timeout: the HTTP request exceeded the 300 second limit'
       headers: {}
       content:
         application/json:
           schema:
             allOf:
-              - $ref: >-
-                  ../../components/schemas/RuntasksynchronouslyandgetdatasetitemsGETresponse.yaml
-              - example:
-                  error:
-                    type: run-timeout-exceeded
-                    message: >-
-                      Actor run exceeded timeout of 300 seconds for this API
-                      endpoint
-          example:
-            error:
-              type: run-timeout-exceeded
-              message: Actor run exceeded timeout of 300 seconds for this API endpoint
+              - $ref: "../../components/schemas/common/ErrorResponse.yaml"
   deprecated: false

@@ -6,37 +6,28 @@ post:
     Runs an actor task and synchronously returns its output.
 
     The run must finish in 300<!-- MAX_ACTOR_JOB_SYNC_WAIT_SECS --> seconds
-    otherwise the API endpoint returns a timeout error.
-
+    otherwise the HTTP request fails with a timeout error (this won't abort
+    the run itself).
 
     Optionally, you can override the actor input configuration by passing a JSON
-    object as the POST payload
-
-    and setting the `Content-Type: application/json` HTTP header.
+    object as the POST payload and setting the `Content-Type: application/json` HTTP header.
 
     Note that if the object in the POST payload does not define a particular
-    input property,
-
-    the actor run uses the default value defined by the task (or actor's input
+    input property, the actor run uses the default value defined by the task (or actor's input
     schema if not defined by the task).
 
-
     Beware that it might be impossible to maintain an idle HTTP connection for
-    an extended period,
-
-    due to client timeout or network conditions. Make sure your HTTP client is
+    an extended period, due to client timeout or network conditions. Make sure your HTTP client is
     configured to have a long enough connection timeout.
 
     If the connection breaks, you will not receive any information about the run
     and its status.
-
 
     Input fields from actor task configuration can be overloaded with values
     passed as the POST payload.
 
     Just make sure to specify `Content-Type` header to be `application/json` and
     input to be an object.
-
 
     To run the task asynchronously, use the [Run
     task](#reference/actor-tasks/run-collection/run-task) API endpoint instead.
@@ -129,10 +120,7 @@ post:
     content:
       application/json:
         schema:
-          allOf:
-            - $ref: ../../components/schemas/RuntasksynchronouslyPOSTrequest.yaml
-            - example:
-                foo: bar
+          type: object
         example:
           foo: bar
     required: true
@@ -143,10 +131,7 @@ post:
       content:
         application/json:
           schema:
-            allOf:
-              - $ref: ../../components/schemas/RuntasksynchronouslyPOSTresponse.yaml
-              - example:
-                  bar: foo
+            type: object
           example:
             bar: foo
     '400':
@@ -156,19 +141,7 @@ post:
         application/json:
           schema:
             allOf:
-              - $ref: ../../components/schemas/RuntasksynchronouslyPOSTresponse1.yaml
-              - example:
-                  error:
-                    type: run-failed
-                    message: >-
-                      Actor run did not succeed (run ID: 55uatRrZib4xbZs,
-                      status: FAILED)
-          example:
-            error:
-              type: run-failed
-              message: >-
-                Actor run did not succeed (run ID: 55uatRrZib4xbZs, status:
-                FAILED)
+              - $ref: "../../components/schemas/common/ErrorResponse.yaml"
   deprecated: false
 get:
   tags:
@@ -178,22 +151,19 @@ get:
     Run a specific task and return its output.
 
     The run must finish in 300<!-- MAX_ACTOR_JOB_SYNC_WAIT_SECS --> seconds
-    otherwise the API endpoint returns a timeout error.
-
+    otherwise the HTTP request fails with a timeout error (this won't abort
+    the run itself).
 
     Beware that it might be impossible to maintain an idle HTTP connection for
-    an extended period,
-
-    due to client timeout or network conditions. Make sure your HTTP client is
+    an extended period, due to client timeout or network conditions. Make sure your HTTP client is
     configured to have a long enough connection timeout.
 
     If the connection breaks, you will not receive any information about the run
     and its status.
 
-
-    To run the Task asynchronously, use the [Run task
-    asynchronously](#reference/actor-tasks/run-collection/run-task) endpoint
-    instead.
+    To run the Task asynchronously, use the 
+    [Run task asynchronously](#reference/actor-tasks/run-collection/run-task) 
+    endpoint instead.
   operationId: Runtasksynchronously(GET)
   parameters:
     - name: actorTaskId
@@ -285,10 +255,7 @@ get:
       content:
         application/json:
           schema:
-            allOf:
-              - $ref: ../../components/schemas/RuntasksynchronouslyGETresponse.yaml
-              - example:
-                  bar: foo
+            type: object
           example:
             bar: foo
     '400':
@@ -298,35 +265,13 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../../components/schemas/RuntasksynchronouslyGETresponse1.yaml
-              - example:
-                  error:
-                    type: run-failed
-                    message: >-
-                      Actor run did not succeed (run ID: 55uatRrZib4xbZs,
-                      status: FAILED)
-          example:
-            error:
-              type: run-failed
-              message: >-
-                Actor run did not succeed (run ID: 55uatRrZib4xbZs, status:
-                FAILED)
+              - $ref: "../../components/schemas/common/ErrorResponse.yaml"
     '408':
-      description: ''
+      description: 'Request Timeout: the HTTP request exceeded the 300 second limit'
       headers: {}
       content:
         application/json:
           schema:
             allOf:
-              - $ref: ../../components/schemas/RuntasksynchronouslyGETresponse1.yaml
-              - example:
-                  error:
-                    type: run-timeout-exceeded
-                    message: >-
-                      Actor run exceeded timeout of 300 seconds for this API
-                      endpoint
-          example:
-            error:
-              type: run-timeout-exceeded
-              message: Actor run exceeded timeout of 300 seconds for this API endpoint
+              - $ref: "../../components/schemas/common/ErrorResponse.yaml"
   deprecated: false

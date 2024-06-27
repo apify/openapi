@@ -93,7 +93,7 @@ properties:
     allOf:
       - oneOf:
           - nullable: true
-          - $ref: ./usage2.yaml
+          - $ref: ../usage2.yaml
       - {}
   usageTotalUsd:
     type: number
@@ -103,5 +103,5 @@ properties:
     allOf:
       - oneOf:
           - nullable: true
-          - $ref: ./usageUsd2.yaml
+          - $ref: ../usageUsd2.yaml
       - {}

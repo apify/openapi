@@ -13,7 +13,7 @@ get:
 
     The endpoint supports pagination using the `limit` and `offset` parameters.
     It will not return more than 1,000 records.
-  operationId: getListOfActorsInStore
+  operationId: GetListOfActorsInStore
   parameters:
     - name: limit
       in: query
@@ -90,7 +90,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: "../components/schemas/store/GetListOfActorsInStoreResponse.yaml"
+            $ref: "../../components/schemas/store/GetListOfActorsInStoreResponse.yaml"
           example:
             data:
               total: 100
