@@ -723,7 +723,7 @@ paths:
   '/v2/schedules/{scheduleId}/log':
     $ref: 'paths/schedules/schedules@{scheduleId}@log.yaml'
   /v2/store:
-    $ref: paths/store.yaml
+    $ref: paths/store/store.yaml
   '/v2/logs/{buildOrRunId}':
     $ref: 'paths/logs/logs@{buildOrRunId}.yaml'
   '/v2/users/{userId}':
