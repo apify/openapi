@@ -740,8 +740,6 @@ components:
       $ref: components/securitySchemes/httpBearer.yaml
     httpBearerActorBuilds:
       $ref: components/securitySchemes/httpBearerActorBuilds.yaml
-    httpBearerActorRuns:
-        $ref: components/securitySchemes/httpBearerActorRuns.yaml
     httpBearerStoreId:
       $ref: components/securitySchemes/httpBearerStoreId.yaml
     httpBearerQueueId:
@@ -750,8 +748,6 @@ components:
       $ref: components/securitySchemes/apiKey.yaml
     apiKeyActorBuilds:
       $ref: components/securitySchemes/apiKeyActorBuilds.yaml
-    apiKeyActorRuns:
-      $ref: components/securitySchemes/apiKeyActorRuns.yaml
     apiKeyStoreId:
       $ref: components/securitySchemes/apiKeyStoreId.yaml
     apiKeyQueueId:
