@@ -9,7 +9,7 @@ required:
 type: object
 properties:
   allOf:
-  - $ref: ../components/common/paginationResponse.yaml
+  - $ref: ../common/paginationResponse.yaml
   - type: object
     required:
       - items
