@@ -37,15 +37,6 @@ post:
       schema:
         type: string
         example: 3KH8gEpp4d8uQSe8T
-    - name: token
-      in: query
-      description: API authentication token.
-      required: true
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
     - name: build
       in: query
       description: >-

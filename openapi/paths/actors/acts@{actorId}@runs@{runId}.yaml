@@ -54,13 +54,6 @@ get:
         type: number
         format: double
         example: 60
-    - name: token
-      in: query
-      description: ''
-      style: form
-      explode: true
-      schema:
-        type: string
   responses:
     '200':
       description: ''

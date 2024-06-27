@@ -6,6 +6,9 @@ get:
     Gets an object that contains all the details about a specific key-value
     store.
   operationId: Getstore
+  security:
+    - apiKeyStoreId: []
+    - httpBearerStoreId: []
   parameters:
     - name: storeId
       in: path
@@ -15,16 +18,6 @@ get:
       schema:
         type: string
         example: WkzbQMuFYuamGv3YF
-    - name: token
-      in: query
-      description: >-
-        API authentication token. It is required only when using the
-        `username~store-name` format for `storeId`.
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
   responses:
     '200':
       description: ''
@@ -76,15 +69,6 @@ put:
       schema:
         type: string
         example: WkzbQMuFYuamGv3YF
-    - name: token
-      in: query
-      description: API authentication token.
-      required: true
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
   requestBody:
     description: ''
     content:
@@ -142,15 +126,6 @@ delete:
       schema:
         type: string
         example: WkzbQMuFYuamGv3YF
-    - name: token
-      in: query
-      description: API authentication token.
-      required: true
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
   responses:
     '204':
       description: ''

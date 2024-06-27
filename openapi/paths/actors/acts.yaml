@@ -26,15 +26,6 @@ get:
     parameter.
   operationId: GetListOfActors
   parameters:
-    - name: token
-      in: query
-      description: API authentication token.
-      required: true
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
     - name: my
       in: query
       description: >-
@@ -153,15 +144,6 @@ post:
     package](https://github.com/apify/apify-shared-js/blob/2d43ebc41ece9ad31cd6525bd523fb86939bf860/packages/consts/src/consts.ts#L452-L471).
   operationId: CreateActor
   parameters:
-    - name: token
-      in: query
-      description: API authentication token.
-      required: true
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
     - name: offset
       in: query
       description: ''

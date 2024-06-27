@@ -26,5 +26,5 @@ properties:
   items:
     type: array
     items:
-      $ref: ./RunShort1.yaml
+      $ref: "./actor-runs/RunShort.yaml"
     description: ''

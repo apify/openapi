@@ -9,6 +9,9 @@ get:
     This endpoint is paginated using `exclusiveStartKey` and `limit` parameters
     - see [Pagination](#introduction/response-structure) for more details.
   operationId: Getlistofkeys
+  security:
+    - apiKeyStoreId: []
+    - httpBearerStoreId: []
   parameters:
     - name: storeId
       in: path
@@ -35,16 +38,6 @@ get:
         type: number
         format: double
         example: 100
-    - name: token
-      in: query
-      description: >-
-        API authentication token. It is required only when using the
-        `username~store-name` format for `storeId`.
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
   responses:
     '200':
       description: ''

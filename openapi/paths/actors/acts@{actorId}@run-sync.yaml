@@ -34,6 +34,9 @@ post:
     To run the Actor asynchronously, use the [Run
     Actor](#reference/actors/run-collection/run-actor) API endpoint instead.
   operationId: WithInput
+  security:
+    - apiKeyActorRuns: []
+    - httpBearerActorRuns: []
   parameters:
     - name: actorId
       in: path
@@ -43,16 +46,6 @@ post:
       schema:
         type: string
         example: janedoe~my-actor
-    - name: token
-      in: query
-      description: >-
-        API authentication token. Public Actors that are configured to be
-        anonymously runnable do not require token parameter.
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
     - name: outputRecordKey
       in: query
       description: |-
@@ -217,6 +210,9 @@ get:
     To run the Actor asynchronously, use the [Run
     Actor](#reference/actors/run-collection/run-actor) API endpoint instead.
   operationId: WithoutInput
+  security:
+    - apiKeyActorRuns: []
+    - httpBearerActorRuns: []
   parameters:
     - name: actorId
       in: path
@@ -226,16 +222,6 @@ get:
       schema:
         type: string
         example: janedoe~my-actor
-    - name: token
-      in: query
-      description: >-
-        API authentication token. Public Actors that are configured to be
-        anonymously runnable do not require token parameter.
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
     - name: outputRecordKey
       in: query
       description: |-

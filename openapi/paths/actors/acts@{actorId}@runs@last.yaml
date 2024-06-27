@@ -124,15 +124,6 @@ get:
       schema:
         type: string
         example: janedoe~my-actor
-    - name: token
-      in: query
-      description: API authentication token.
-      required: true
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
     - name: status
       in: query
       description: Filter for the run status.

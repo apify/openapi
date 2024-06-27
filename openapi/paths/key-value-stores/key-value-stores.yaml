@@ -27,15 +27,6 @@ get:
     parameter.
   operationId: getListOfKeyValueStores
   parameters:
-    - name: token
-      in: query
-      description: API authentication token.
-      required: true
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
     - name: offset
       in: query
       description: >-
@@ -168,15 +159,6 @@ post:
     new one and returns the existing object instead.
   operationId: createKeyValueStore
   parameters:
-    - name: token
-      in: query
-      description: API authentication token.
-      required: true
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
     - name: name
       in: query
       description: Custom unique name to easily identify the store in the future.
