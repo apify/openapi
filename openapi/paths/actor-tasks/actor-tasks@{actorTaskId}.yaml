@@ -20,26 +20,13 @@ get:
       content:
         application/json:
           schema:
-            allOf:
-              - $ref: ../../components/schemas/Gettaskresponse.yaml
-              - example:
-                  data:
-                    id: zdc3Pyhyz3m8vjDeM
-                    userId: wRsJZtadYvn4mBZmm
-                    actId: asADASadYvn4mBZmm
-                    name: my-task
-                    username: janedoe
-                    createdAt: '2018-10-26T07:23:14.855Z'
-                    modifiedAt: '2018-10-26T13:30:49.578Z'
-                    removedAt: null
-                    stats:
-                      totalRuns: 15
-                    options:
-                      build: latest
-                      timeoutSecs: 300
-                      memoryMbytes: 128
-                    input:
-                      hello: world
+            type: object
+            required:
+              - data
+            properties:
+              data:
+                allOf:
+                  - $ref: "../../components/schemas/actor-tasks/Task.yaml"
           example:
             data:
               id: zdc3Pyhyz3m8vjDeM
@@ -69,15 +56,11 @@ put:
 
     If the object does not define a specific property, its value is not updated.
 
-
     The response is the full task object as returned by the
-
     [Get task](#reference/tasks/task-object/get-task) endpoint.
-
 
     The request needs to specify the `Content-Type: application/json` HTTP
     header!
-
 
     When providing your API authentication token, we recommend using the
     request's `Authorization` header, rather than the URL. ([More
@@ -98,24 +81,7 @@ put:
       application/json:
         schema:
           allOf:
-            - $ref: ../../components/schemas/TaskUpdate.yaml
-            - example:
-                id: ZxLNxrRaZrSjuhT9y
-                userId: BPWZBd7Z9c746JAnF
-                actId: asADASadYvn4mBZmm
-                name: my-task
-                username: janedoe
-                createdAt: '2018-10-26T07:23:14.855Z'
-                modifiedAt: '2018-10-26T13:30:49.578Z'
-                removedAt: null
-                stats:
-                  totalRuns: 15
-                options:
-                  build: latest
-                  timeoutSecs: 300
-                  memoryMbytes: 128
-                input:
-                  hello: world
+            - $ref: "../../components/schemas/actor-tasks/UpdateTaskRequest.yaml"
         example:
           id: ZxLNxrRaZrSjuhT9y
           userId: BPWZBd7Z9c746JAnF
@@ -141,26 +107,13 @@ put:
       content:
         application/json:
           schema:
-            allOf:
-              - $ref: ../../components/schemas/Updatetaskresponse.yaml
-              - example:
-                  data:
-                    id: zdc3Pyhyz3m8vjDeM
-                    userId: wRsJZtadYvn4mBZmm
-                    actId: asADASadYvn4mBZmm
-                    name: my-task
-                    username: janedoe
-                    createdAt: '2018-10-26T07:23:14.855Z'
-                    modifiedAt: '2018-10-26T13:30:49.578Z'
-                    removedAt: null
-                    stats:
-                      totalRuns: 15
-                    options:
-                      build: latest
-                      timeoutSecs: 300
-                      memoryMbytes: 128
-                    input:
-                      hello: world
+            type: object
+            required:
+              - data
+            properties:
+              data:
+                allOf:
+                  - $ref: "../../components/schemas/actor-tasks/Task.yaml"
           example:
             data:
               id: zdc3Pyhyz3m8vjDeM
@@ -203,6 +156,5 @@ delete:
         application/json:
           schema:
             type: object
-            example: {}
           example: {}
   deprecated: false

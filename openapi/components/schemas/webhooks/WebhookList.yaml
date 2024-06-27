@@ -1,3 +1,4 @@
+# TODO: Get rid of this & replace it with the generic PaginationResponse
 title: WebhookList
 required:
   - total

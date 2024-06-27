@@ -20,12 +20,7 @@ get:
       content:
         application/json:
           schema:
-            allOf:
-              - $ref: ../../components/schemas/Gettaskinputresponse.yaml
-              - example:
-                  myField1: some-value
-                  myField2: another-value
-                  myField3: 1
+            type: object
           example:
             myField1: some-value
             myField2: another-value
@@ -41,15 +36,12 @@ put:
 
     If the object does not define a specific property, its value is not updated.
 
-
     The response is the full task input as returned by the
-
-    [Get task](#reference/tasks/task-input-object/get-task-input) endpoint.
+    [Get task input](#reference/tasks/task-input-object/get-task-input) endpoint.
 
 
     The request needs to specify the `Content-Type: application/json` HTTP
     header!
-
 
     When providing your API authentication token, we recommend using the
     request's `Authorization` header, rather than the URL. ([More
@@ -69,10 +61,7 @@ put:
     content:
       application/json:
         schema:
-          allOf:
-            - $ref: ../../components/schemas/Updatetaskinputrequest.yaml
-            - example:
-                myField2: updated-value
+            type: object
         example:
           myField2: updated-value
     required: true
@@ -83,12 +72,7 @@ put:
       content:
         application/json:
           schema:
-            allOf:
-              - $ref: ../../components/schemas/Updatetaskinputresponse.yaml
-              - example:
-                  myField1: some-value
-                  myField2: updated-value
-                  myField3: 1
+            type: object
           example:
             myField1: some-value
             myField2: updated-value

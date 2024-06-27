@@ -1,4 +1,4 @@
-title: RunShort1
+title: RunShort
 required:
   - id
   - actId
@@ -41,7 +41,7 @@ properties:
     example: 0.0.2
   meta:
     allOf:
-      - $ref: ./meta2.yaml
+      - $ref: ../meta2.yaml
       - {}
   usageTotalUsd:
     type: number
