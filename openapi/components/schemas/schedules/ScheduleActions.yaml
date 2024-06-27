@@ -1,4 +1,4 @@
-title: actions1
+title: ScheduleActions
 required:
   - id
   - type
@@ -18,11 +18,11 @@ properties:
     allOf:
       - oneOf:
           - nullable: true
-          - $ref: ./runInput.yaml
+          - $ref: ../runInput.yaml
       - {}
   runOptions:
     allOf:
       - oneOf:
           - nullable: true
-          - $ref: ./runOptions.yaml
+          - $ref: ../runOptions.yaml
       - {}
