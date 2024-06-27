@@ -64,7 +64,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Getlistofwebhookdispatchesresponse.yaml
+              - $ref: ../components/schemas/GetListOfWebhookDispatchesResponse.yaml
               - example:
                   data:
                     total: 2

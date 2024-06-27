@@ -713,9 +713,9 @@ paths:
   '/v2/webhooks/{webhookId}/dispatches':
     $ref: 'paths/v2@webhooks@{webhookId}@dispatches.yaml'
   /v2/webhook-dispatches:
-    $ref: paths/v2@webhook-dispatches.yaml
+    $ref: paths/webhook-dispatches/webhook-dispatches.yaml
   '/v2/webhook-dispatches/{dispatchId}':
-    $ref: 'paths/v2@webhook-dispatches@{dispatchId}.yaml'
+    $ref: 'paths/webhook-dispatches/webhook-dispatches@{dispatchId}.yaml'
   /v2/schedules:
     $ref: paths/v2@schedules.yaml
   '/v2/schedules/{scheduleId}':

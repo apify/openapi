@@ -1,4 +1,4 @@
-title: data22
+title: WebhookDispatchList
 required:
   - total
   - offset

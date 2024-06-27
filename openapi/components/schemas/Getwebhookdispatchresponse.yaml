@@ -1,4 +1,4 @@
-title: Getwebhookdispatchresponse
+title: GetWebhookDispatchResponse
 required:
   - data
 type: object

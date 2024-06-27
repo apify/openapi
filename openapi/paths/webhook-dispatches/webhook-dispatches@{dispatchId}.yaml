@@ -30,7 +30,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Getwebhookdispatchresponse.yaml
+              - $ref: ../components/schemas/GetWebhookDispatchResponse.yaml
               - example:
                   data:
                     id: asdLZtadYvn4mBZmm
