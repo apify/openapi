@@ -1,4 +1,4 @@
-title: ShortScheduleActions
+title: GetListOfSchedulesResponseDataItemsActions
 required:
   - id
   - type
