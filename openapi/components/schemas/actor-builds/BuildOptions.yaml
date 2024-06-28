@@ -1,4 +1,4 @@
-title: options3
+title: BuildOptions
 type: object
 properties:
   useCache:
