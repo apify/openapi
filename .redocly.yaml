@@ -13,3 +13,7 @@ theme:
   colors:
    primary:
      main: "#32329f"
+plugins:
+  - plugins/apify.js
+decorators:
+  apify/legacy-doc-url-decorator: on

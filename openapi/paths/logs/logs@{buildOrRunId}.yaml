@@ -2,6 +2,7 @@ get:
   tags:
     - Logs
   summary: Get log
+  x-legacy-doc-url: https://docs.apify.com/api/v2#/reference/logs/log/get-log
   description: ''
   operationId: Getlog1
   parameters:
