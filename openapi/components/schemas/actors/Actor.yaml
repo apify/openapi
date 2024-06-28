@@ -43,24 +43,18 @@ properties:
     type: string
     example: '2019-07-08T14:01:05.546Z'
   stats:
-    allOf:
-      - $ref: ./stats.yaml
-      - {}
+    $ref: ../stats.yaml
   versions:
     type: array
     items:
-      $ref: ./ListOfVersions.yaml
+      $ref: "./Version.yaml"
     description: ''
   defaultRunOptions:
-    allOf:
-      - $ref: ./defaultRunOptions.yaml
-      - {}
+      $ref: ./DefaultRunOptions.yaml
   exampleRunInput:
-    allOf:
-      - oneOf:
-          - nullable: true
-          - $ref: ./exampleRunInput.yaml
-      - {}
+    oneOf:
+      - nullable: true
+      - $ref: ./ExampleRunInput.yaml
   isDeprecated:
     type: boolean
     nullable: true
@@ -73,8 +67,6 @@ properties:
     nullable: true
     example: My Actor
   taggedBuilds:
-    allOf:
-      - oneOf:
-          - nullable: true
-          - $ref: ./taggedBuilds.yaml
-      - {}
+    oneOf:
+      - nullable: true
+      - $ref: ./TaggedBuilds.yaml

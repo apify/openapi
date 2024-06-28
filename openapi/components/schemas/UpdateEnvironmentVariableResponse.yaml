@@ -1,9 +1,0 @@
-title: UpdateEnvironmentVariableResponse
-required:
-  - data
-type: object
-properties:
-  data:
-    allOf:
-      - $ref: ./EnvVar.yaml
-      - {}

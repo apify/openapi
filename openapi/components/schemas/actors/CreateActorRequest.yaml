@@ -1,19 +1,21 @@
-title: ActUpdate
-required:
-  - name
-  - isPublic
-  - versions
+title: CreateActorRequest
 type: object
 properties:
   name:
     type: string
+    nullable: true
     example: MyActor
   description:
     type: string
     nullable: true
     example: My favourite actor!
+  title:
+    type: string
+    nullable: true
+    example: My actor
   isPublic:
     type: boolean
+    nullable: true
     example: false
   seoTitle:
     type: string
@@ -23,10 +25,6 @@ properties:
     type: string
     nullable: true
     example: My actor is the best
-  title:
-    type: string
-    nullable: true
-    example: My Actor
   restartOnError:
     type: boolean
     nullable: true
@@ -34,8 +32,9 @@ properties:
   versions:
     type: array
     items:
-      $ref: ./VersionUpdate.yaml
+      $ref: "./Version.yaml"
     description: ''
+    nullable: true
   categories:
     type: array
     items:
@@ -43,8 +42,6 @@ properties:
     description: ''
     nullable: true
   defaultRunOptions:
-    allOf:
-      - oneOf:
-          - nullable: true
-          - $ref: ./defaultRunOptions.yaml
-      - {}
+    oneOf:
+      - nullable: true
+      - $ref: ./DefaultRunOptions.yaml
