@@ -37,17 +37,17 @@ properties:
     allOf:
       - oneOf:
           - nullable: true
-          - $ref: ../stats1.yaml
+          - $ref: ./TaskStats.yaml
       - {}
   options:
     allOf:
       - oneOf:
           - nullable: true
-          - $ref: ../options.yaml
+          - $ref: ./TaskOptions.yaml
       - {}
   input:
     allOf:
       - oneOf:
           - nullable: true
-          - $ref: ../input.yaml
+          - $ref: ./TaskInput.yaml
       - {}

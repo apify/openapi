@@ -29,26 +29,24 @@ properties:
     type: string
     example: SUCCEEDED
   meta:
-    allOf:
-      - $ref: ../meta.yaml
-      - {}
+    $ref: ./BuildsMeta.yaml
   stats:
     allOf:
       - oneOf:
           - nullable: true
-          - $ref: ../stats5.yaml
+          - $ref: ./BuildStats.yaml
       - {}
   options:
     allOf:
       - oneOf:
           - nullable: true
-          - $ref: ../options3.yaml
+          - $ref: ./BuildOptions.yaml
       - {}
   usage:
     allOf:
       - oneOf:
           - nullable: true
-          - $ref: ../usage.yaml
+          - $ref: ./BuildUsage.yaml
       - {}
   usageTotalUsd:
     type: number
@@ -58,7 +56,7 @@ properties:
     allOf:
       - oneOf:
           - nullable: true
-          - $ref: ../usageUsd.yaml
+          - $ref: ./BuildUsage.yaml
       - {}
   inputSchema:
     type: string

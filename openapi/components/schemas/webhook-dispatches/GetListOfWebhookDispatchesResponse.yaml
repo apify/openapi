@@ -1,0 +1,7 @@
+title: GetListOfWebhookDispatchesResponse
+required:
+  - data
+type: object
+properties:
+  data:
+    $ref: ./WebhookDispatchList.yaml

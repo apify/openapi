@@ -1,9 +1,0 @@
-title: RunActorSynchronouslyWithInputAndGetDatasetItemsResponse
-required:
-  - error
-type: object
-properties:
-  error:
-    allOf:
-      - $ref: ./error.yaml
-      - {}

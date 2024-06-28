@@ -1,6 +1,6 @@
 {
   "name": "@apify/openapi",
-  "version": "0.0.33",
+  "version": "0.0.39",
   "files": [
     "openapi.yaml"
   ],

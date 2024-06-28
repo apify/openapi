@@ -1,9 +1,0 @@
-title: Getwebhookdispatchresponse
-required:
-  - data
-type: object
-properties:
-  data:
-    allOf:
-      - $ref: ./webhooks/WebhookDispatch.yaml
-      - {}

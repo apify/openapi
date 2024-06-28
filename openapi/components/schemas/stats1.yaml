@@ -1,8 +1,0 @@
-title: stats1
-required:
-  - totalRuns
-type: object
-properties:
-  totalRuns:
-    type: number
-    example: 15
