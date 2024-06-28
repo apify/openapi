@@ -4,24 +4,17 @@ get:
   summary: Get list of builds
   description: >-
     Gets the list of builds of a specific Actor. The response is a JSON with the
-    list of objects, where each object
-
-    contains basic information about a single build.
+    list of objects, where each object contains basic information about a single build.
 
 
     The endpoint supports pagination using the `limit` and `offset` parameters
     and it will not return more than 1000 records.
 
 
-    By default, the records are sorted by the `startedAt` field in ascending
-    order,
-
+    By default, the records are sorted by the `startedAt` field in ascending order,
     therefore you can use pagination to incrementally fetch all builds while new
-
     ones are still being started. To sort the records in descending order, use
-    the `desc=1`
-
-    parameter.
+    the `desc=1` parameter.
   operationId: act_builds_get
   parameters:
     - name: actorId
@@ -35,8 +28,7 @@ get:
     - name: offset
       in: query
       description: >-
-        Number of records that should be skipped at the start. The default value
-        is `0`.
+        Number of records that should be skipped at the start. The default value is `0`.
       style: form
       explode: true
       schema:
@@ -46,8 +38,7 @@ get:
     - name: limit
       in: query
       description: >-
-        Maximum number of records to return. The default value as well as the
-        maximum is `1000`.
+        Maximum number of records to return. The default value as well as the maximum is `1000`.
       style: form
       explode: true
       schema:
@@ -64,41 +55,6 @@ get:
       schema:
         type: boolean
         example: true
-    - name: waitForFinish
-      in: query
-      description: ''
-      style: form
-      explode: true
-      schema:
-        type: string
-    - name: version
-      in: query
-      description: ''
-      style: form
-      explode: true
-      schema:
-        type: string
-    - name: useCache
-      in: query
-      description: ''
-      style: form
-      explode: true
-      schema:
-        type: string
-    - name: betaPackages
-      in: query
-      description: ''
-      style: form
-      explode: true
-      schema:
-        type: string
-    - name: tag
-      in: query
-      description: ''
-      style: form
-      explode: true
-      schema:
-        type: string
   responses:
     '200':
       description: ''
@@ -171,35 +127,14 @@ post:
         The maximum number of seconds the server waits for the build to finish.
         By default it is `0`, the maximum value is `60`. <!--
         MAX_ACTOR_JOB_ASYNC_WAIT_SECS -->
-                                              If the build finishes in time then the returned build object will have a terminal status (e.g. `SUCCEEDED`),
-                                              otherwise it will have a transitional status (e.g. `RUNNING`).
+        If the build finishes in time then the returned build object will have a terminal status (e.g. `SUCCEEDED`),
+        otherwise it will have a transitional status (e.g. `RUNNING`).
       style: form
       explode: true
       schema:
         type: number
         format: double
         example: 60
-    - name: offset
-      in: query
-      description: ''
-      style: form
-      explode: true
-      schema:
-        type: string
-    - name: limit
-      in: query
-      description: ''
-      style: form
-      explode: true
-      schema:
-        type: string
-    - name: desc
-      in: query
-      description: ''
-      style: form
-      explode: true
-      schema:
-        type: string
   responses:
     '201':
       description: ''
