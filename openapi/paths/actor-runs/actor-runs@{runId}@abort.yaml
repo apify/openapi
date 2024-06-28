@@ -22,8 +22,8 @@ post:
       in: query
       description: |-
         If true passed, the actor run will abort gracefully.
-                                                It will send `aborting` and `persistState` event into run and force-stop the run after 30 seconds.
-                                                It is helpful in cases where you plan to resurrect the run later.
+        It will send `aborting` and `persistState` event into run and force-stop the run after 30 seconds.
+        It is helpful in cases where you plan to resurrect the run later.
       style: form
       explode: true
       schema:
@@ -36,7 +36,7 @@ post:
       content:
         application/json:
           schema:
-            $ref: ../../components/schemas/actor-runs/AbortRunResponse.yaml
+            $ref: ../../components/schemas/actor-runs/RunResponse.yaml
           example:
             data:
               id: HG7ML7M8z78YcAPEB
