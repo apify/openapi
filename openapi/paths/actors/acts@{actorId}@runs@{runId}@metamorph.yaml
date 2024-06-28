@@ -80,7 +80,7 @@ post:
         application/json:
           schema:
             allOf:
-              - $ref: ../../components/schemas/actor-runs/MetamorphRunResponse.yaml
+              - $ref: ../../components/schemas/actor-runs/RunResponse.yaml
               - example:
                   data:
                     id: HG7ML7M8z78YcAPEB
