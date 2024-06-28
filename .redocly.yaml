@@ -5,6 +5,7 @@ apis:
 extends:
   - recommended
 rules:
+  spec: warn
   no-unused-components: warn
 theme:
   htmlTemplate: ./docs/index.html
