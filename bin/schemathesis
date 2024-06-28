@@ -1,9 +1,16 @@
 #!/bin/bash
-
-if [ ! -f ../.env ]
+if dotenv_path=`readlink -f .env`
 then
-  export $(cat .env | xargs)
+  if [ -f $dotenv_path ]
+  echo "booboo"
+  then
+    export $(cat $dotenv_path | xargs)
+  fi
 fi
+
+echo "ACTOR_ID ENV VAR:"
+echo $ACTOR_ID
+
 
 export SCHEMATHESIS_HOOKS=schemathesis_hooks
 st run \
@@ -24,8 +31,8 @@ st run \
 --sanitize-output=False \
 --operation-id="^GetListOfActors$" \
 --operation-id="^GetActor$" \
+--hypothesis-seed=28117382055022786765831981020336604324
 openapi.yaml
 
 # --output-truncate=false
-
 
