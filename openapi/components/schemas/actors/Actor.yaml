@@ -43,7 +43,7 @@ properties:
     type: string
     example: '2019-07-08T14:01:05.546Z'
   stats:
-    $ref: ../stats.yaml
+    $ref: ./ActorStats.yaml
   versions:
     type: array
     items:
