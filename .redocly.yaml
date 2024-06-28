@@ -11,8 +11,8 @@ rules:
 theme:
   htmlTemplate: ./docs/index.html
   colors:
-   primary:
-     main: "#32329f"
+    primary:
+      main: "#32329f"
 plugins:
   - plugins/apify.js
 decorators:
