@@ -12,13 +12,6 @@ post:
     see the [Actor docs](https://docs.apify.com/platform/actors/running/runs-and-builds#resurrection-of-finished-run).
   operationId: PostResurrectRun
   parameters:
-    - name: actorId
-      in: path
-      required: true
-      schema:
-        type: string
-      example: janedoe~my-actor
-      description: Actor ID or a tilde-separated owner's username and actor name.
     - name: runId
       in: path
       required: true
@@ -151,7 +144,3 @@ delete:
       headers: {}
       content: {}
   deprecated: false
-put:
-  tags:
-    - Actor runs
-  summary: Update status message
