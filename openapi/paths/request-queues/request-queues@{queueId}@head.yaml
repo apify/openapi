@@ -23,15 +23,6 @@ get:
       schema:
         type: string
         example: WkzbQMuFYuamGv3YF
-    - name: token
-      in: query
-      description: API authentication token.
-      required: true
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
     - name: limit
       in: query
       description: How many items from queue should be returned.

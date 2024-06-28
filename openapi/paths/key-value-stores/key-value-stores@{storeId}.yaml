@@ -1,0 +1,134 @@
+get:
+  tags:
+    - Key-value stores
+  summary: Get store
+  description: >-
+    Gets an object that contains all the details about a specific key-value
+    store.
+  operationId: Getstore
+  security:
+    - apiKeyStoreId: []
+    - httpBearerStoreId: []
+  parameters:
+    - name: storeId
+      in: path
+      description: Key-value store ID or `username~store-name`.
+      required: true
+      style: simple
+      schema:
+        type: string
+        example: WkzbQMuFYuamGv3YF
+  responses:
+    '200':
+      description: ''
+      headers: {}
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: ../../components/schemas/key-value-stores/GetStoreResponse.yaml
+              - example:
+                  data:
+                    id: WkzbQMuFYuamGv3YF
+                    name: d7b9MDYsbtX5L7XAj
+                    userId: wRsJZtadYvn4mBZmm
+                    createdAt: '2019-12-12T07:34:14.202Z'
+                    modifiedAt: '2019-12-13T08:36:13.202Z'
+                    accessedAt: '2019-12-14T08:36:13.202Z'
+                    actId: null
+                    actRunId: null
+          example:
+            data:
+              id: WkzbQMuFYuamGv3YF
+              name: d7b9MDYsbtX5L7XAj
+              userId: wRsJZtadYvn4mBZmm
+              createdAt: '2019-12-12T07:34:14.202Z'
+              modifiedAt: '2019-12-13T08:36:13.202Z'
+              accessedAt: '2019-12-14T08:36:13.202Z'
+              actId: null
+              actRunId: null
+  deprecated: false
+put:
+  tags:
+    - Key-value stores
+  summary: Update store
+  description: >-
+    Updates a key-value store's name using a value specified by a JSON object
+    passed in the PUT payload.
+
+
+    The response is the updated key-value store object, as returned by the [Get
+    store](#reference/key-value-stores/store-object/get-store) API endpoint.
+  operationId: Updatestore
+  parameters:
+    - name: storeId
+      in: path
+      description: Key-value store ID or `username~store-name`.
+      required: true
+      style: simple
+      schema:
+        type: string
+        example: WkzbQMuFYuamGv3YF
+  requestBody:
+    description: ''
+    content:
+      application/json:
+        schema:
+          allOf:
+            - $ref: ../../components/schemas/UpdateStoreRequest.yaml
+            - example:
+                name: new-store-name
+        example:
+          name: new-store-name
+    required: true
+  responses:
+    '200':
+      description: ''
+      headers: {}
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: ../../components/schemas/key-value-stores/UpdateStoreResponse.yaml
+              - example:
+                  data:
+                    id: WkzbQMuFYuamGv3YF
+                    name: d7b9MDYsbtX5L7XAj
+                    userId: wRsJZtadYvn4mBZmm
+                    createdAt: '2019-12-12T07:34:14.202Z'
+                    modifiedAt: '2019-12-13T08:36:13.202Z'
+                    accessedAt: '2019-12-14T08:36:13.202Z'
+                    actId: null
+                    actRunId: null
+          example:
+            data:
+              id: WkzbQMuFYuamGv3YF
+              name: d7b9MDYsbtX5L7XAj
+              userId: wRsJZtadYvn4mBZmm
+              createdAt: '2019-12-12T07:34:14.202Z'
+              modifiedAt: '2019-12-13T08:36:13.202Z'
+              accessedAt: '2019-12-14T08:36:13.202Z'
+              actId: null
+              actRunId: null
+  deprecated: false
+delete:
+  tags:
+    - Key-value stores
+  summary: Delete store
+  description: Deletes a key-value store.
+  operationId: Deletestore
+  parameters:
+    - name: storeId
+      in: path
+      description: Key-value store ID or `username~store-name`.
+      required: true
+      style: simple
+      schema:
+        type: string
+        example: WkzbQMuFYuamGv3YF
+  responses:
+    '204':
+      description: ''
+      headers: {}
+      content: {}
+  deprecated: false

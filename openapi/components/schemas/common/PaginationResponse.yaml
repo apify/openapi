@@ -22,3 +22,11 @@ properties:
   count:
     type: number
     example: 2
+<<<<<<<< HEAD:openapi/components/schemas/common/PaginationResponse.yaml
+========
+  items:
+    type: array
+    items:
+      $ref: ./webhooks/WebhookDispatch.yaml
+    description: ''
+>>>>>>>> origin/main:openapi/components/schemas/data22.yaml

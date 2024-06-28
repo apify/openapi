@@ -47,16 +47,6 @@ post:
       schema:
         type: string
         example: janedoe~my-actor
-    - name: token
-      in: query
-      description: >-
-        API authentication token. Public Actors that are configured to be
-        anonymously runnable do not require token parameter.
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
     - name: timeout
       in: query
       description: >-
@@ -363,10 +353,7 @@ post:
     content:
       application/json:
         schema:
-          allOf:
-            - $ref: ../../components/schemas/RunActorSynchronouslyWithInputAndGetDatasetItemsRequest.yaml
-            - example:
-                foo: bar
+          type: object
         example:
           foo: bar
     required: true
@@ -374,25 +361,25 @@ post:
     '201':
       description: ''
       headers:
-        X-Apifier-Pagination-Offset:
+        X-Apify-Pagination-Offset:
           content:
             text/plain:
               schema:
                 type: string
               example: '0'
-        X-Apifier-Pagination-Limit:
+        X-Apify-Pagination-Limit:
           content:
             text/plain:
               schema:
                 type: string
               example: '100'
-        X-Apifier-Pagination-Count:
+        X-Apify-Pagination-Count:
           content:
             text/plain:
               schema:
                 type: string
               example: '100'
-        X-Apifier-Pagination-Total:
+        X-Apify-Pagination-Total:
           content:
             text/plain:
               schema:
@@ -414,14 +401,7 @@ post:
       content:
         application/json:
           schema:
-            allOf:
-              - $ref: ../../components/schemas/RunActorSynchronouslyWithInputAndGetDatasetItemsResponse.yaml
-              - example:
-                  error:
-                    type: run-failed
-                    message: >-
-                      Actor run did not succeed (run ID: 55uatRrZib4xbZs,
-                      status: FAILED)
+            $ref: "../../components/schemas/common/ErrorResponse.yaml"
           example:
             error:
               type: run-failed
@@ -434,14 +414,7 @@ post:
       content:
         application/json:
           schema:
-            allOf:
-              - $ref: ../../components/schemas/RunActorSynchronouslyWithInputAndGetDatasetItemsResponse.yaml
-              - example:
-                  error:
-                    type: run-timeout-exceeded
-                    message: >-
-                      Actor run exceeded timeout of 300 seconds for this API
-                      endpoint
+            $ref: "../../components/schemas/common/ErrorResponse.yaml"
           example:
             error:
               type: run-timeout-exceeded
@@ -486,16 +459,6 @@ get:
       schema:
         type: string
         example: janedoe~my-actor
-    - name: token
-      in: query
-      description: >-
-        API authentication token. Public Actors that are configured to be
-        anonymously runnable do not require token parameter.
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
     - name: timeout
       in: query
       description: >-
@@ -801,25 +764,25 @@ get:
     '201':
       description: ''
       headers:
-        X-Apifier-Pagination-Offset:
+        X-Apify-Pagination-Offset:
           content:
             text/plain:
               schema:
                 type: string
               example: '0'
-        X-Apifier-Pagination-Limit:
+        X-Apify-Pagination-Limit:
           content:
             text/plain:
               schema:
                 type: string
               example: '100'
-        X-Apifier-Pagination-Count:
+        X-Apify-Pagination-Count:
           content:
             text/plain:
               schema:
                 type: string
               example: '100'
-        X-Apifier-Pagination-Total:
+        X-Apify-Pagination-Total:
           content:
             text/plain:
               schema:
@@ -829,9 +792,6 @@ get:
         application/json:
           schema:
             type: object
-            example:
-              - myValue: some value
-                myOtherValue: some other value
           example:
             - myValue: some value
               myOtherValue: some other value
@@ -841,14 +801,7 @@ get:
       content:
         application/json:
           schema:
-            allOf:
-              - $ref: ../../components/schemas/RunActorSynchronouslyWithoutInputAndGetDatasetItemsResponse.yaml
-              - example:
-                  error:
-                    type: run-failed
-                    message: >-
-                      Actor run did not succeed (run ID: 55uatRrZib4xbZs,
-                      status: FAILED)
+            $ref: "../../components/schemas/common/ErrorResponse.yaml"
           example:
             error:
               type: run-failed
@@ -861,14 +814,7 @@ get:
       content:
         application/json:
           schema:
-            allOf:
-              - $ref: ../../components/schemas/RunActorSynchronouslyWithoutInputAndGetDatasetItemsResponse.yaml
-              - example:
-                  error:
-                    type: run-timeout-exceeded
-                    message: >-
-                      Actor run exceeded timeout of 60 seconds for this API
-                      enpoint
+            $ref: "../../components/schemas/common/ErrorResponse.yaml"
           example:
             error:
               type: run-timeout-exceeded

@@ -15,15 +15,6 @@ get:
     parameter.
   operationId: getListOfWebhooks
   parameters:
-    - name: token
-      in: query
-      description: API authentication token.
-      required: true
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
     - name: offset
       in: query
       description: >-
@@ -64,7 +55,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../../components/schemas/webhooks/GetListOfWebhooksResponse2.yaml
+              - $ref: ../../components/schemas/webhooks/GetListOfWebhooksResponse.yaml
               - example:
                   data:
                     total: 2
@@ -239,15 +230,6 @@ post:
     HTTP header.
   operationId: createWebhook
   parameters:
-    - name: token
-      in: query
-      description: API authentication token.
-      required: true
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
     - name: limit
       in: query
       description: ''

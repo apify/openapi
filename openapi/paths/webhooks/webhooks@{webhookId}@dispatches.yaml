@@ -13,15 +13,6 @@ get:
       schema:
         type: string
         example: pVJtoTelgYUq4qJOt
-    - name: token
-      in: query
-      description: API authentication token.
-      required: true
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
   responses:
     '200':
       description: ''

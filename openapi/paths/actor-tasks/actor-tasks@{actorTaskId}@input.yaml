@@ -1,0 +1,105 @@
+get:
+  tags:
+    - Actor tasks
+  summary: Get task input
+  description: Returns the input of a given task.
+  operationId: Gettaskinput
+  parameters:
+    - name: actorTaskId
+      in: path
+      description: Task ID or a tilde-separated owner's username and task's name.
+      required: true
+      style: simple
+      schema:
+        type: string
+        example: janedoe~my-task
+  responses:
+    '200':
+      description: ''
+      headers: {}
+      content:
+        application/json:
+          schema:
+<<<<<<<< HEAD:openapi/paths/actor-tasks/v2@actor-tasks@{actorTaskId}@input.yaml
+            allOf:
+              - $ref: ../../components/schemas/Gettaskinputresponse.yaml
+              - example:
+                  myField1: some-value
+                  myField2: another-value
+                  myField3: 1
+========
+            type: object
+>>>>>>>> origin/main:openapi/paths/actor-tasks/actor-tasks@{actorTaskId}@input.yaml
+          example:
+            myField1: some-value
+            myField2: another-value
+            myField3: 1
+  deprecated: false
+put:
+  tags:
+    - Actor tasks
+  summary: Update task input
+  description: >-
+    Updates the input of a task using values specified by an object passed as
+    JSON in the PUT payload.
+
+    If the object does not define a specific property, its value is not updated.
+
+    The response is the full task input as returned by the
+    [Get task input](#reference/tasks/task-input-object/get-task-input) endpoint.
+
+
+    The request needs to specify the `Content-Type: application/json` HTTP
+    header!
+
+    When providing your API authentication token, we recommend using the
+    request's `Authorization` header, rather than the URL. ([More
+    info](#introduction/authentication)).
+  operationId: Updatetaskinput
+  parameters:
+    - name: actorTaskId
+      in: path
+      description: Task ID or a tilde-separated owner's username and task's name.
+      required: true
+      style: simple
+      schema:
+        type: string
+        example: janedoe~my-task
+  requestBody:
+    description: ''
+    content:
+      application/json:
+        schema:
+<<<<<<<< HEAD:openapi/paths/actor-tasks/v2@actor-tasks@{actorTaskId}@input.yaml
+          allOf:
+            - $ref: ../../components/schemas/Updatetaskinputrequest.yaml
+            - example:
+                myField2: updated-value
+========
+            type: object
+>>>>>>>> origin/main:openapi/paths/actor-tasks/actor-tasks@{actorTaskId}@input.yaml
+        example:
+          myField2: updated-value
+    required: true
+  responses:
+    '200':
+      description: ''
+      headers: {}
+      content:
+        application/json:
+          schema:
+<<<<<<<< HEAD:openapi/paths/actor-tasks/v2@actor-tasks@{actorTaskId}@input.yaml
+            allOf:
+              - $ref: ../../components/schemas/Updatetaskinputresponse.yaml
+              - example:
+                  myField1: some-value
+                  myField2: updated-value
+                  myField3: 1
+========
+            type: object
+>>>>>>>> origin/main:openapi/paths/actor-tasks/actor-tasks@{actorTaskId}@input.yaml
+          example:
+            myField1: some-value
+            myField2: updated-value
+            myField3: 1
+  deprecated: false

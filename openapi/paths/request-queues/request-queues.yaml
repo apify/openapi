@@ -22,15 +22,6 @@ get:
     array elements.
   operationId: getListOfRequestQueues
   parameters:
-    - name: token
-      in: query
-      description: API authentication token.
-      required: true
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
     - name: offset
       in: query
       description: >-
@@ -73,13 +64,6 @@ get:
       schema:
         type: boolean
         example: true
-    - name: name
-      in: query
-      description: ''
-      style: form
-      explode: true
-      schema:
-        type: string
   responses:
     '200':
       description: ''
@@ -115,43 +99,6 @@ post:
       schema:
         type: string
         example: example-com
-    - name: token
-      in: query
-      description: API authentication token.
-      required: true
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
-    - name: limit
-      in: query
-      description: ''
-      style: form
-      explode: true
-      schema:
-        type: string
-    - name: offset
-      in: query
-      description: ''
-      style: form
-      explode: true
-      schema:
-        type: string
-    - name: desc
-      in: query
-      description: ''
-      style: form
-      explode: true
-      schema:
-        type: string
-    - name: unnamed
-      in: query
-      description: ''
-      style: form
-      explode: true
-      schema:
-        type: string
   responses:
     '201':
       description: ''

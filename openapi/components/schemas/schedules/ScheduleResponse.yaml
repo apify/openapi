@@ -1,0 +1,9 @@
+title: CreateScheduleResponse
+required:
+  - data
+type: object
+properties:
+  data:
+    allOf:
+      - $ref: ./ScheduleResponseData.yaml
+      - {}
