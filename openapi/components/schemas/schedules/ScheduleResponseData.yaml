@@ -1,4 +1,4 @@
-title: ScheduleFilters
+title: ScheduleResponseData
 required:
   - total
   - offset
