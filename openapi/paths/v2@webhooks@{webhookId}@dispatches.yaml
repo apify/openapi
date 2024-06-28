@@ -30,7 +30,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Getcollectionresponse.yaml
+              - $ref: ../components/schemas/GetCollectionResponse.yaml
               - example:
                   data:
                     total: 2

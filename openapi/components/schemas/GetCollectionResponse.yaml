@@ -1,4 +1,4 @@
-title: Getcollectionresponse
+title: GetCollectionResponse
 required:
   - data
 type: object
