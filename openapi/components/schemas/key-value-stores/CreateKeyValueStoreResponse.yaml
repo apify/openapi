@@ -4,8 +4,5 @@ required:
 type: object
 properties:
   data:
-    allOf:
-properties:
-  data:
-      $ref: ./KeyValueStore.yaml
-      - {}
+    $ref: ./KeyValueStore.yaml
+
