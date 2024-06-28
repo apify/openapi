@@ -1,7 +1,0 @@
-title: GetCollectionResponse
-required:
-  - data
-type: object
-properties:
-  data:
-    $ref: ./WebhookDispatchList.yaml
