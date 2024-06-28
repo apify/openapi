@@ -1,4 +1,4 @@
-title: ScheduleFilters
+title: GetListOfSchedulesResponseData
 required:
   - total
   - offset
@@ -26,5 +26,5 @@ properties:
   items:
     type: array
     items:
-      $ref: ./ScheduleShort.yaml
+      $ref: ./GetListOfSchedulesResponseDataItems.yaml
     description: ''

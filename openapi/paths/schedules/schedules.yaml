@@ -5,21 +5,17 @@ get:
   description: >-
     Gets the list of schedules that the user created.
 
-
     The endpoint supports pagination using the `limit` and `offset` parameters.
     It will not return more than 1000 records.
 
     By default, the records are sorted by the `createdAt` field in ascending
-    order. To sort the records in descending order, use the `desc=1`
-
-    parameter.
+    order. To sort the records in descending order, use the `desc=1` parameter.
   operationId: GetListOfSchedules
   parameters:
     - name: offset
       in: query
       description: >-
-        Number of records that should be skipped at the start. The default value
-        is `0`.
+        Number of records that should be skipped at the start. The default value is `0`.
       style: form
       explode: true
       schema:
@@ -29,8 +25,7 @@ get:
     - name: limit
       in: query
       description: >-
-        Maximum number of records to return. The default value, as well as the
-        maximum, is `1000`.
+        Maximum number of records to return. The default value, as well as the maximum, is `1000`.
       style: form
       explode: true
       schema:
@@ -66,37 +61,12 @@ post:
 
     The response is the created schedule object.
 
-
-    The request needs to specify the `Content-Type: application/json` HTTP
-    header!
-
+    The request needs to specify the `Content-Type: application/json` HTTP header!
 
     When providing your API authentication token, we recommend using the
     request's `Authorization` header, rather than the URL. ([More
     info](#introduction/authentication)).
   operationId: CreateSchedule
-  parameters:
-    - name: limit
-      in: query
-      description: ''
-      style: form
-      explode: true
-      schema:
-        type: string
-    - name: offset
-      in: query
-      description: ''
-      style: form
-      explode: true
-      schema:
-        type: string
-    - name: desc
-      in: query
-      description: ''
-      style: form
-      explode: true
-      schema:
-        type: string
   requestBody:
     description: ''
     content:
@@ -119,5 +89,5 @@ post:
       content:
         application/json:
           schema:
-            $ref: ../../components/schemas/schedules/CreateScheduleResponse.yaml
+            $ref: ../../components/schemas/schedules/ScheduleResponse.yaml
   deprecated: false
