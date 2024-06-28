@@ -1,4 +1,4 @@
-title: ScheduleResponseDataItems
+title: GetListOfSchedulesResponseDataItems
 required:
   - id
   - userId
@@ -50,5 +50,5 @@ properties:
   actions:
     type: array
     items:
-      $ref: ./ScheduleResponseDataItemsActions.yaml
+      $ref: ./GetListOfSchedulesResponseDataItemsActions.yaml
     description: ''
