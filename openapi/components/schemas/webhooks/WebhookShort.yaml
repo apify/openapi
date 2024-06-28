@@ -49,10 +49,8 @@ properties:
     type: string
     example: 'http://example.com/'
   lastDispatch:
-    oneOf:
-      - nullable: true
-      - $ref: ./ExampleWebhookDispatch.yaml
+    nullable: true
+    $ref: ./ExampleWebhookDispatch.yaml
   stats:
-    oneOf:
-      - nullable: true
-      - $ref: ./WebhookStats.yaml
+    nullable: true
+    $ref: ./WebhookStats.yaml
