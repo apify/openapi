@@ -50,7 +50,9 @@ properties:
     example: 'http://example.com/'
   lastDispatch:
     nullable: true
-    $ref: ./ExampleWebhookDispatch.yaml
+    allOf:
+      - $ref: ./ExampleWebhookDispatch.yaml
   stats:
     nullable: true
-    $ref: ./WebhookStats.yaml
+    allOf:
+      - $ref: ./WebhookStats.yaml

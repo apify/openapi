@@ -62,7 +62,9 @@ properties:
     example: this is webhook description
   lastDispatch:
     nullable: true
-    $ref: ./ExampleWebhookDispatch.yaml
+    allOf: # This allOf is needed to display the nullable properly
+      - $ref: ./ExampleWebhookDispatch.yaml
   stats:
     nullable: true
-    $ref: ./WebhookStats.yaml
+    allOf:
+      - $ref: ./WebhookStats.yaml

@@ -14,8 +14,8 @@ properties:
     example:
       - ACTOR.RUN.SUCCEEDED
   condition:
-    oneOf:
-      - nullable: true
+    nullable: true
+    allOf:
       - $ref: ./WebhookCondition.yaml
   ignoreSslErrors:
     type: boolean
