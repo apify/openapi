@@ -15,14 +15,10 @@ properties:
     type: string
     example: jF8GGEvbEg4Au3NLA
   runInput:
+    nullable: true
     allOf:
-      - oneOf:
-          - nullable: true
-          - $ref: ./ScheduleActionsRunInput.yaml
-      - {}
+      - $ref: ./ScheduleActionsRunInput.yaml
   runOptions:
+    nullable: true
     allOf:
-      - oneOf:
-          - nullable: true
-          - $ref: ./ScheduleActionsRunOptions.yaml
-      - {}
+      - $ref: ./ScheduleActionsRunOptions.yaml
