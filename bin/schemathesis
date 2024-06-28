@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# export .env file variables if the file exists
+# see .env.example in the root of this repo
+if dotenv_path=$(readlink -f .env)
+then
+  if test -f "${dotenv_path}"
+  then
+    export $(cat $dotenv_path | xargs)
+  fi
+fi
+
+export ACTOR_ID=api_contract~my-actor-6
+
+export SCHEMATHESIS_HOOKS=schemathesis_hooks
+st run \
+--report \
+--request-tls-verify=false \
+--set-query "token=$APIFY_STAGING_TOKEN" \
+--set-path "actorId=$ACTOR_ID" \
+--contrib-openapi-fill-missing-examples \
+--hypothesis-phases=generate \
+--checks=all \
+--base-url=https://api-securitybyobscurity.apify.com/ \
+--validate-schema=False \
+--exclude-checks="not_a_server_error" \
+--show-trace \
+--hypothesis-max-examples=10 \
+--rate-limit="25/s" \
+--cassette-path "./vcr" \
+--operation-id="^acts_get$" \
+--hypothesis-seed=28117382055022786765831981020336604324 \
+openapi.yaml
+
+# --output-truncate=false \
+#--sanitize-output=False \
+#--operation-id="^GetActor$" \
+
