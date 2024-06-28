@@ -20,16 +20,7 @@ get:
       content:
         application/json:
           schema:
-<<<<<<<< HEAD:openapi/paths/actor-tasks/v2@actor-tasks@{actorTaskId}@input.yaml
-            allOf:
-              - $ref: ../../components/schemas/Gettaskinputresponse.yaml
-              - example:
-                  myField1: some-value
-                  myField2: another-value
-                  myField3: 1
-========
             type: object
->>>>>>>> origin/main:openapi/paths/actor-tasks/actor-tasks@{actorTaskId}@input.yaml
           example:
             myField1: some-value
             myField2: another-value
@@ -70,14 +61,7 @@ put:
     content:
       application/json:
         schema:
-<<<<<<<< HEAD:openapi/paths/actor-tasks/v2@actor-tasks@{actorTaskId}@input.yaml
-          allOf:
-            - $ref: ../../components/schemas/Updatetaskinputrequest.yaml
-            - example:
-                myField2: updated-value
-========
-            type: object
->>>>>>>> origin/main:openapi/paths/actor-tasks/actor-tasks@{actorTaskId}@input.yaml
+          type: object
         example:
           myField2: updated-value
     required: true
@@ -88,16 +72,7 @@ put:
       content:
         application/json:
           schema:
-<<<<<<<< HEAD:openapi/paths/actor-tasks/v2@actor-tasks@{actorTaskId}@input.yaml
-            allOf:
-              - $ref: ../../components/schemas/Updatetaskinputresponse.yaml
-              - example:
-                  myField1: some-value
-                  myField2: updated-value
-                  myField3: 1
-========
             type: object
->>>>>>>> origin/main:openapi/paths/actor-tasks/actor-tasks@{actorTaskId}@input.yaml
           example:
             myField1: some-value
             myField2: updated-value

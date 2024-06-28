@@ -350,15 +350,7 @@ post:
     content:
       application/json:
         schema:
-<<<<<<<< HEAD:openapi/paths/actor-tasks/v2@actor-tasks@{actorTaskId}@run-sync-get-dataset-items.yaml
-          allOf:
-            - $ref: >-
-                ../../components/schemas/RuntasksynchronouslyandgetdatasetitemsPOSTrequest.yaml
-            - example:
-                foo: bar
-========
           type: object
->>>>>>>> origin/main:openapi/paths/actor-tasks/actor-tasks@{actorTaskId}@run-sync-get-dataset-items.yaml
         example:
           foo: bar
     required: true
@@ -400,25 +392,7 @@ post:
       content:
         application/json:
           schema:
-            allOf:
-<<<<<<<< HEAD:openapi/paths/actor-tasks/v2@actor-tasks@{actorTaskId}@run-sync-get-dataset-items.yaml
-              - $ref: >-
-                  ../../components/schemas/RuntasksynchronouslyandgetdatasetitemsPOSTresponse.yaml
-              - example:
-                  error:
-                    type: run-failed
-                    message: >-
-                      Actor run did not succeed (run ID: 55uatRrZib4xbZs,
-                      status: FAILED)
-          example:
-            error:
-              type: run-failed
-              message: >-
-                Actor run did not succeed (run ID: 55uatRrZib4xbZs, status:
-                FAILED)
-========
-              - $ref: "../../components/schemas/common/ErrorResponse.yaml"
->>>>>>>> origin/main:openapi/paths/actor-tasks/actor-tasks@{actorTaskId}@run-sync-get-dataset-items.yaml
+            $ref: "../../components/schemas/common/ErrorResponse.yaml"
   deprecated: false
 get:
   tags:
@@ -793,46 +767,12 @@ get:
       content:
         application/json:
           schema:
-            allOf:
-<<<<<<<< HEAD:openapi/paths/actor-tasks/v2@actor-tasks@{actorTaskId}@run-sync-get-dataset-items.yaml
-              - $ref: >-
-                  ../../components/schemas/RuntasksynchronouslyandgetdatasetitemsGETresponse.yaml
-              - example:
-                  error:
-                    type: run-failed
-                    message: >-
-                      Actor run did not succeed (run ID: 55uatRrZib4xbZs,
-                      status: FAILED)
-          example:
-            error:
-              type: run-failed
-              message: >-
-                Actor run did not succeed (run ID: 55uatRrZib4xbZs, status:
-                FAILED)
-========
-              - $ref: "../../components/schemas/common/ErrorResponse.yaml"
->>>>>>>> origin/main:openapi/paths/actor-tasks/actor-tasks@{actorTaskId}@run-sync-get-dataset-items.yaml
+            $ref: "../../components/schemas/common/ErrorResponse.yaml"
     '408':
       description: 'Request Timeout: the HTTP request exceeded the 300 second limit'
       headers: {}
       content:
         application/json:
           schema:
-            allOf:
-<<<<<<<< HEAD:openapi/paths/actor-tasks/v2@actor-tasks@{actorTaskId}@run-sync-get-dataset-items.yaml
-              - $ref: >-
-                  ../../components/schemas/RuntasksynchronouslyandgetdatasetitemsGETresponse.yaml
-              - example:
-                  error:
-                    type: run-timeout-exceeded
-                    message: >-
-                      Actor run exceeded timeout of 300 seconds for this API
-                      endpoint
-          example:
-            error:
-              type: run-timeout-exceeded
-              message: Actor run exceeded timeout of 300 seconds for this API endpoint
-========
-              - $ref: "../../components/schemas/common/ErrorResponse.yaml"
->>>>>>>> origin/main:openapi/paths/actor-tasks/actor-tasks@{actorTaskId}@run-sync-get-dataset-items.yaml
+            $ref: "../../components/schemas/common/ErrorResponse.yaml"
   deprecated: false

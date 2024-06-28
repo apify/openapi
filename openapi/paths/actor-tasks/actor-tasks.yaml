@@ -59,11 +59,7 @@ get:
             properties:
               data:
                 allOf:
-<<<<<<<< HEAD:openapi/paths/actor-tasks/v2@actor-tasks.yaml
                   - $ref: ../../components/schemas/common/PaginationResponse.yaml
-========
-                  - $ref: "../../components/schemas/common/PaginationResponse.yaml"
->>>>>>>> origin/main:openapi/paths/actor-tasks/actor-tasks.yaml
                   - type: object
                     required:
                       - items
@@ -71,11 +67,7 @@ get:
                       items:
                         type: array
                         items:
-<<<<<<<< HEAD:openapi/paths/actor-tasks/v2@actor-tasks.yaml
                           $ref: ../../components/schemas/actor-tasks/TaskShort.yaml
-========
-                          $ref: "../../components/schemas/actor-tasks/TaskShort.yaml"
->>>>>>>> origin/main:openapi/paths/actor-tasks/actor-tasks.yaml
           example:
             data:
               total: 2
@@ -130,11 +122,7 @@ post:
       application/json:
         schema:
           allOf:
-<<<<<<<< HEAD:openapi/paths/actor-tasks/v2@actor-tasks.yaml
-            - $ref: ../../components/schemas/TaskCreate.yaml
-========
             - $ref: "../../components/schemas/actor-tasks/CreateTaskRequest.yaml"
->>>>>>>> origin/main:openapi/paths/actor-tasks/actor-tasks.yaml
             - example:
                 actId: asADASadYvn4mBZmm
                 name: my-task
@@ -165,36 +153,12 @@ post:
       content:
         application/json:
           schema:
-<<<<<<<< HEAD:openapi/paths/actor-tasks/v2@actor-tasks.yaml
-            allOf:
-              - $ref: ../../components/schemas/Createtaskresponse.yaml
-              - example:
-                  data:
-                    id: zdc3Pyhyz3m8vjDeM
-                    userId: wRsJZtadYvn4mBZmm
-                    actId: asADASadYvn4mBZmm
-                    name: my-task
-                    username: janedoe
-                    createdAt: '2018-10-26T07:23:14.855Z'
-                    modifiedAt: '2018-10-26T13:30:49.578Z'
-                    removedAt: null
-                    stats:
-                      totalRuns: 15
-                    options:
-                      build: latest
-                      timeoutSecs: 300
-                      memoryMbytes: 128
-                    input:
-                      hello: world
-========
             type: object
             required:
               - data
             properties:
               data:
-                allOf:
-                  - $ref: "../../components/schemas/actor-tasks/Task.yaml"
->>>>>>>> origin/main:openapi/paths/actor-tasks/actor-tasks.yaml
+                $ref: "../../components/schemas/actor-tasks/Task.yaml"
           example:
             data:
               id: zdc3Pyhyz3m8vjDeM
