@@ -42,5 +42,5 @@ properties:
     allOf:
       - oneOf:
           - nullable: true
-          - $ref: ../stats1.yaml
+          - $ref: ./TaskStats.yaml
       - {}

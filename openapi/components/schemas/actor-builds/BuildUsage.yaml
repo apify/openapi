@@ -1,4 +1,4 @@
-title: usage
+title: BuildUsage
 type: object
 properties:
   ACTOR_COMPUTE_UNITS:

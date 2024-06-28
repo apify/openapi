@@ -14,11 +14,11 @@ properties:
     allOf:
       - oneOf:
           - nullable: true
-          - $ref: ../options.yaml
+          - $ref: ./TaskOptions.yaml
       - {}
   input:
     allOf:
       - oneOf:
           - nullable: true
-          - $ref: ../input.yaml
+          - $ref: ./TaskInput.yaml
       - {}

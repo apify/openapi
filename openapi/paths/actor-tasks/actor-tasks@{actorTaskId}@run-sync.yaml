@@ -140,8 +140,7 @@ post:
       content:
         application/json:
           schema:
-            allOf:
-              - $ref: "../../components/schemas/common/ErrorResponse.yaml"
+            $ref: "../../components/schemas/common/ErrorResponse.yaml"
   deprecated: false
 get:
   tags:
@@ -264,14 +263,12 @@ get:
       content:
         application/json:
           schema:
-            allOf:
-              - $ref: "../../components/schemas/common/ErrorResponse.yaml"
+            $ref: "../../components/schemas/common/ErrorResponse.yaml"
     '408':
       description: 'Request Timeout: the HTTP request exceeded the 300 second limit'
       headers: {}
       content:
         application/json:
           schema:
-            allOf:
-              - $ref: "../../components/schemas/common/ErrorResponse.yaml"
+            $ref: "../../components/schemas/common/ErrorResponse.yaml"
   deprecated: false

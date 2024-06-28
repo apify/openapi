@@ -1,4 +1,4 @@
-title: stats1
+title: TaskStats
 required:
   - totalRuns
 type: object

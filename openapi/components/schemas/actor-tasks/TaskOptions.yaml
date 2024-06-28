@@ -1,20 +1,15 @@
-title: options5
-required:
-  - build
-  - timeoutSecs
-  - memoryMbytes
-  - diskMbytes
+title: TaskOptions
 type: object
 properties:
   build:
     type: string
+    nullable: true
     example: latest
   timeoutSecs:
     type: number
+    nullable: true
     example: 300
   memoryMbytes:
     type: number
-    example: 1024
-  diskMbytes:
-    type: number
-    example: 2048
+    nullable: true
+    example: 128

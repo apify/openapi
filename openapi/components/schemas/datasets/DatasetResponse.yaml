@@ -1,4 +1,4 @@
-title: GetDatasetResponse
+title: DatasetResponse
 required:
   - data
 type: object

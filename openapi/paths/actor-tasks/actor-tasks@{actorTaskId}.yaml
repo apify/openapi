@@ -25,8 +25,7 @@ get:
               - data
             properties:
               data:
-                allOf:
-                  - $ref: "../../components/schemas/actor-tasks/Task.yaml"
+                $ref: "../../components/schemas/actor-tasks/Task.yaml"
           example:
             data:
               id: zdc3Pyhyz3m8vjDeM
@@ -80,8 +79,7 @@ put:
     content:
       application/json:
         schema:
-          allOf:
-            - $ref: "../../components/schemas/actor-tasks/UpdateTaskRequest.yaml"
+          $ref: "../../components/schemas/actor-tasks/UpdateTaskRequest.yaml"
         example:
           id: ZxLNxrRaZrSjuhT9y
           userId: BPWZBd7Z9c746JAnF
@@ -112,8 +110,7 @@ put:
               - data
             properties:
               data:
-                allOf:
-                  - $ref: "../../components/schemas/actor-tasks/Task.yaml"
+                $ref: "../../components/schemas/actor-tasks/Task.yaml"
           example:
             data:
               id: zdc3Pyhyz3m8vjDeM
