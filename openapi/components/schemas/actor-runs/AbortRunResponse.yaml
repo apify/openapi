@@ -1,9 +1,9 @@
-title: Rebootrunresponse
+title: AbortRunResponse
 required:
   - data
 type: object
 properties:
   data:
     allOf:
-      - $ref: "./actor-runs/Run.yaml"
+      - $ref: "./Run.yaml"
       - {}

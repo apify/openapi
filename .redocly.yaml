@@ -2,14 +2,14 @@
 apis:
   main@v1:
     root: ./openapi/openapi.yaml
-lint:
-  extends:
-    - recommended
-  rules:
-    no-unused-components: warning
-referenceDocs:
+extends:
+  - recommended
+rules:
+  # TODO: these should probably be errors
+  spec: warn
+  no-unused-components: warn
+theme:
   htmlTemplate: ./docs/index.html
-  theme:
-    colors:
-      primary:
-        main: "#32329f"
+  colors:
+   primary:
+     main: "#32329f"

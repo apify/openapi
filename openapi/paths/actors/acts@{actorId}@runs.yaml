@@ -231,9 +231,6 @@ post:
     received in the response JSON to the [Get
     items](#reference/datasets/item-collection/get-items) API endpoint.
   operationId: RunActor
-  security:
-    - apiKeyActorRuns: []
-    - httpBearerActorRuns: []
   parameters:
     - name: actorId
       in: path

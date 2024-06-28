@@ -34,9 +34,6 @@ post:
     To run the Actor asynchronously, use the [Run
     Actor](#reference/actors/run-collection/run-actor) API endpoint instead.
   operationId: WithInput
-  security:
-    - apiKeyActorRuns: []
-    - httpBearerActorRuns: []
   parameters:
     - name: actorId
       in: path
@@ -210,9 +207,6 @@ get:
     To run the Actor asynchronously, use the [Run
     Actor](#reference/actors/run-collection/run-actor) API endpoint instead.
   operationId: WithoutInput
-  security:
-    - apiKeyActorRuns: []
-    - httpBearerActorRuns: []
   parameters:
     - name: actorId
       in: path

@@ -62,7 +62,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../../components/schemas/GetRunResponse.yaml
+              - $ref: ../../components/schemas/actor-runs/GetRunResponse.yaml
               - example:
                   data:
                     id: HG7ML7M8z78YcAPEB

@@ -1,9 +1,0 @@
-title: GetListOfWebhooksResponse2
-required:
-  - data
-type: object
-properties:
-  data:
-    allOf:
-      - $ref: ./WebhookListShort.yaml
-      - {}
