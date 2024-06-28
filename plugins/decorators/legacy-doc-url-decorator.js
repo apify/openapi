@@ -30,7 +30,7 @@ function prependLegacyUrlAnchor(target) {
                 return fragment;
             })
             .filter(fragment => fragment)
-            .map(fragment => `<div id="${fragment}"></div>`)
+            .map(fragment => `<span id="${fragment}"></span>`)
             .join("");
 
         target.description = `${anchors}${target.description || ""}`;
