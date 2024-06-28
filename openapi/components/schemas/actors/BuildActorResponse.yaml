@@ -4,6 +4,4 @@ required:
 type: object
 properties:
   data:
-    allOf:
-      - $ref: ./actor-builds/Build.yaml
-      - {}
+    $ref: "../actor-builds/Build.yaml"

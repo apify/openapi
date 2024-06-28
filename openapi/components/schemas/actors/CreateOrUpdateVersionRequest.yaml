@@ -1,12 +1,9 @@
-title: Version
-required:
-  - versionNumber
-  - sourceType
-  - buildTag
+title: CreateOrUpdateVersionRequest
 type: object
 properties:
   versionNumber:
     type: string
+    nullable: true
     example: '0.0'
   sourceType:
     allOf:
@@ -17,7 +14,7 @@ properties:
   envVars:
     type: array
     items:
-      $ref: ./EnvVar.yaml
+      $ref: "./EnvVar.yaml"
     description: ''
     nullable: true
   applyEnvVarsToBuild:
@@ -26,6 +23,7 @@ properties:
     example: false
   buildTag:
     type: string
+    nullable: true
     example: latest
   sourceFiles:
     type: array

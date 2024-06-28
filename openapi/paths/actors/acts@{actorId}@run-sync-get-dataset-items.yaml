@@ -353,10 +353,7 @@ post:
     content:
       application/json:
         schema:
-          allOf:
-            - $ref: ../../components/schemas/RunActorSynchronouslyWithInputAndGetDatasetItemsRequest.yaml
-            - example:
-                foo: bar
+          type: object
         example:
           foo: bar
     required: true
@@ -404,14 +401,7 @@ post:
       content:
         application/json:
           schema:
-            allOf:
-              - $ref: ../../components/schemas/RunActorSynchronouslyWithInputAndGetDatasetItemsResponse.yaml
-              - example:
-                  error:
-                    type: run-failed
-                    message: >-
-                      Actor run did not succeed (run ID: 55uatRrZib4xbZs,
-                      status: FAILED)
+            $ref: "../../components/schemas/common/ErrorResponse.yaml"
           example:
             error:
               type: run-failed
@@ -424,14 +414,7 @@ post:
       content:
         application/json:
           schema:
-            allOf:
-              - $ref: ../../components/schemas/RunActorSynchronouslyWithInputAndGetDatasetItemsResponse.yaml
-              - example:
-                  error:
-                    type: run-timeout-exceeded
-                    message: >-
-                      Actor run exceeded timeout of 300 seconds for this API
-                      endpoint
+            $ref: "../../components/schemas/common/ErrorResponse.yaml"
           example:
             error:
               type: run-timeout-exceeded
@@ -809,9 +792,6 @@ get:
         application/json:
           schema:
             type: object
-            example:
-              - myValue: some value
-                myOtherValue: some other value
           example:
             - myValue: some value
               myOtherValue: some other value
@@ -821,14 +801,7 @@ get:
       content:
         application/json:
           schema:
-            allOf:
-              - $ref: ../../components/schemas/RunActorSynchronouslyWithoutInputAndGetDatasetItemsResponse.yaml
-              - example:
-                  error:
-                    type: run-failed
-                    message: >-
-                      Actor run did not succeed (run ID: 55uatRrZib4xbZs,
-                      status: FAILED)
+            $ref: "../../components/schemas/common/ErrorResponse.yaml"
           example:
             error:
               type: run-failed
@@ -841,14 +814,7 @@ get:
       content:
         application/json:
           schema:
-            allOf:
-              - $ref: ../../components/schemas/RunActorSynchronouslyWithoutInputAndGetDatasetItemsResponse.yaml
-              - example:
-                  error:
-                    type: run-timeout-exceeded
-                    message: >-
-                      Actor run exceeded timeout of 60 seconds for this API
-                      enpoint
+            $ref: "../../components/schemas/common/ErrorResponse.yaml"
           example:
             error:
               type: run-timeout-exceeded

@@ -6,7 +6,6 @@ get:
     Gets a [EnvVar object](#reference/actors/environment-variable-object) that
     contains all the details about a specific environment variable of an Actor.
 
-
     If `isSecret` is set to `true`, then `value` will never be returned.
   operationId: GetEnvironmentVariable
   parameters:
@@ -42,7 +41,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../../components/schemas/GetEnvironmentVariableResponse.yaml
+              - $ref: "../../components/schemas/actors/GetEnvVarResponse.yaml"
               - example:
                   data:
                     name: MY_ENV_VAR
@@ -114,12 +113,7 @@ put:
     content:
       application/json:
         schema:
-          allOf:
-            - $ref: ../../components/schemas/EnvVarUpdate.yaml
-            - example:
-                name: MY_ENV_VAR
-                value: my-new-value
-                isSecret: false
+          $ref: "../../components/schemas/actors/CreateOrUpdateEnvVarRequest.yaml"
         example:
           name: MY_ENV_VAR
           value: my-new-value
@@ -132,13 +126,7 @@ put:
       content:
         application/json:
           schema:
-            allOf:
-              - $ref: ../../components/schemas/UpdateEnvironmentVariableResponse.yaml
-              - example:
-                  data:
-                    name: MY_ENV_VAR
-                    value: my-value
-                    isSecret: false
+            $ref: "../../components/schemas/actors/GetEnvVarResponse.yaml"
           example:
             data:
               name: MY_ENV_VAR

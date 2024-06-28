@@ -122,10 +122,7 @@ post:
     content:
       application/json:
         schema:
-          allOf:
-            - $ref: ../../components/schemas/WithInputRequest.yaml
-            - example:
-                foo: bar
+          type: object
         example:
           foo: bar
     required: true
@@ -136,10 +133,7 @@ post:
       content:
         application/json:
           schema:
-            allOf:
-              - $ref: ../../components/schemas/WithInputResponse.yaml
-              - example:
-                  bar: foo
+           type: object
           example:
             bar: foo
     '400':
@@ -148,14 +142,7 @@ post:
       content:
         application/json:
           schema:
-            allOf:
-              - $ref: ../../components/schemas/WithInputResponse1.yaml
-              - example:
-                  error:
-                    type: run-failed
-                    message: >-
-                      Actor run did not succeed (run ID: 55uatRrZib4xbZs,
-                      status: FAILED)
+            $ref: "../../components/schemas/common/ErrorResponse.yaml"
           example:
             error:
               type: run-failed
@@ -168,14 +155,7 @@ post:
       content:
         application/json:
           schema:
-            allOf:
-              - $ref: ../../components/schemas/WithInputResponse1.yaml
-              - example:
-                  error:
-                    type: run-timeout-exceeded
-                    message: >-
-                      Actor run exceeded timeout of 300 seconds for this API
-                      endpoint
+            $ref: "../../components/schemas/common/ErrorResponse.yaml"
           example:
             error:
               type: run-timeout-exceeded
@@ -297,10 +277,7 @@ get:
       content:
         application/json:
           schema:
-            allOf:
-              - $ref: ../../components/schemas/WithoutInputResponse.yaml
-              - example:
-                  foo: bar
+            type: object
           example:
             foo: bar
     '400':
@@ -309,14 +286,7 @@ get:
       content:
         application/json:
           schema:
-            allOf:
-              - $ref: ../../components/schemas/WithoutInputResponse1.yaml
-              - example:
-                  error:
-                    type: run-failed
-                    message: >-
-                      Actor run did not succeed (run ID: 55uatRrZib4xbZs,
-                      status: FAILED)
+            $ref: "../../components/schemas/common/ErrorResponse.yaml"
           example:
             error:
               type: run-failed
@@ -329,14 +299,7 @@ get:
       content:
         application/json:
           schema:
-            allOf:
-              - $ref: ../../components/schemas/WithoutInputResponse1.yaml
-              - example:
-                  error:
-                    type: run-timeout-exceeded
-                    message: >-
-                      Actor run exceeded timeout of 60 seconds for this API
-                      enpoint
+            $ref: "../../components/schemas/common/ErrorResponse.yaml"
           example:
             error:
               type: run-timeout-exceeded

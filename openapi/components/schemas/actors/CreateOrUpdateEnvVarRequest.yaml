@@ -1,4 +1,4 @@
-title: EnvVarUpdate
+title: CreateOrUpdateEnvVarRequest
 required:
   - name
   - value
