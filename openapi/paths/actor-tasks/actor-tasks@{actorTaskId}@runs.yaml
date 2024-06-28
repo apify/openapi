@@ -271,8 +271,7 @@ post:
               - data
             properties:
               data:
-                allOf:
-                  - $ref: "../../components/schemas/actor-runs/Run.yaml"
+                $ref: "../../components/schemas/actor-runs/Run.yaml"
           example:
             data:
               id: HG7ML7M8z78YcAPEB

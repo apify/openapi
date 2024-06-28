@@ -59,7 +59,7 @@ get:
             properties:
               data:
                 allOf:
-                  - $ref: "../../components/schemas/common/PaginationResponse.yaml"
+                  - $ref: ../../components/schemas/common/PaginationResponse.yaml
                   - type: object
                     required:
                       - items
@@ -67,7 +67,7 @@ get:
                       items:
                         type: array
                         items:
-                          $ref: "../../components/schemas/actor-tasks/TaskShort.yaml"
+                          $ref: ../../components/schemas/actor-tasks/TaskShort.yaml
           example:
             data:
               total: 2
@@ -158,8 +158,7 @@ post:
               - data
             properties:
               data:
-                allOf:
-                  - $ref: "../../components/schemas/actor-tasks/Task.yaml"
+                $ref: "../../components/schemas/actor-tasks/Task.yaml"
           example:
             data:
               id: zdc3Pyhyz3m8vjDeM
