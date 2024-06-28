@@ -28,6 +28,6 @@ properties:
   actions:
     type: array
     items:
-      $ref: ./ScheduleActions3.yaml
+      $ref: ./CreateScheduleActions.yaml
     description: ''
     nullable: true

@@ -1,4 +1,4 @@
-title: ScheduleShort1
+title: ScheduleShort
 required:
   - id
   - userId
@@ -50,5 +50,5 @@ properties:
   actions:
     type: array
     items:
-      $ref: ./ScheduleActions2.yaml
+      $ref: ./ShortScheduleActions.yaml
     description: ''
