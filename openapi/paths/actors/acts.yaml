@@ -4,33 +4,23 @@ get:
   summary: Get list of Actors
   description: >-
     Gets the list of all Actors that the user created or used. The response is a
-    list of objects, where each object
-
-    contains a basic information about a single Actor.
+    list of objects, where each object contains a basic information about a single Actor.
 
     To only get Actors created by the user, add the `my=1` query parameter.
-
 
     The endpoint supports pagination using the `limit` and `offset` parameters
     and it will not return more than 1000 records.
 
-
     By default, the records are sorted by the `createdAt` field in ascending
-    order,
+    order, therefore you can use pagination to incrementally fetch all Actors while new
+    ones are still being created. To sort the records in descending order, use the `desc=1` parameter.
 
-    therefore you can use pagination to incrementally fetch all Actors while new
-
-    ones are still being created. To sort the records in descending order, use
-    the `desc=1`
-
-    parameter.
   operationId: acts_get
   parameters:
     - name: my
       in: query
       description: >-
-        If `true` or `1` then the returned list only contains Actors owned by
-        the user. The default value is `false`.
+        If `true` or `1` then the returned list only contains Actors owned by the user. The default value is `false`.
       style: form
       explode: true
       schema:
@@ -113,8 +103,7 @@ post:
 
     The Actor needs to define at least one version of the source code.
 
-    For more information, see [Version
-    object](#reference/actors/version-object).
+    For more information, see [Version object](#reference/actors/version-object).
 
 
     If you want to make your Actor
@@ -124,35 +113,6 @@ post:
     best to use the [constants from our `apify-shared-js`
     package](https://github.com/apify/apify-shared-js/blob/2d43ebc41ece9ad31cd6525bd523fb86939bf860/packages/consts/src/consts.ts#L452-L471).
   operationId: acts_post
-  parameters:
-    - name: offset
-      in: query
-      description: ''
-      style: form
-      explode: true
-      schema:
-        type: string
-    - name: limit
-      in: query
-      description: ''
-      style: form
-      explode: true
-      schema:
-        type: string
-    - name: desc
-      in: query
-      description: ''
-      style: form
-      explode: true
-      schema:
-        type: string
-    - name: my
-      in: query
-      description: ''
-      style: form
-      explode: true
-      schema:
-        type: string
   requestBody:
     description: ''
     content:
