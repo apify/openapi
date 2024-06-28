@@ -222,6 +222,9 @@ Examples:
 - `/requests-queues` Method: GET -> `requestQueues_get`
 - `/requests-queues` Method: POST ->`requestQueues_post`
 - `/requests-queues/{queueId}` Method: PUT -> `requestQueue_put`
+- `/acts/{actorId}/runs` Method: POST -> `act_runs_post`
+- `/acts/{actorId}/runs` Method: GET -> `act_runs_get`
+- `/acts/{actorId}/versions/{versionNumber}/env-vars/{envVarName}` Method: GET -> `act_version_envVar_get`
 
 ### Code samples
 NOTE: We do not use code samples in the OpenAPI definition for now. 
