@@ -1,8 +1,7 @@
 #!/bin/bash
 if dotenv_path=`readlink -f .env`
 then
-  if [ -f $dotenv_path ]
-  echo "booboo"
+  if test -f $dotenv_path
   then
     export $(cat $dotenv_path | xargs)
   fi
@@ -31,7 +30,7 @@ st run \
 --sanitize-output=False \
 --operation-id="^GetListOfActors$" \
 --operation-id="^GetActor$" \
---hypothesis-seed=28117382055022786765831981020336604324
+--hypothesis-seed=28117382055022786765831981020336604324 \
 openapi.yaml
 
 # --output-truncate=false
