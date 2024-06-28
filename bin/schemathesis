@@ -1,9 +1,10 @@
 #!/bin/bash
 
 # export .env file variables if the file exists
-if dotenv_path=`readlink -f .env`
+# see .env.example in the root of this repo
+if dotenv_path=$(readlink -f .env)
 then
-  if test -f $dotenv_path
+  if test -f "${dotenv_path}"
   then
     export $(cat $dotenv_path | xargs)
   fi
