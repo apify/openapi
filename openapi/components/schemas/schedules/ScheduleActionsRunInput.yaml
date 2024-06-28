@@ -1,4 +1,4 @@
-title: runInput
+title: ScheduleActionsRunInput
 type: object
 properties:
   body:

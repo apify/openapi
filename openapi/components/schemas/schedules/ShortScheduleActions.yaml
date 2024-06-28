@@ -1,4 +1,4 @@
-title: actions
+title: ShortScheduleActions
 required:
   - id
   - type

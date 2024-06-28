@@ -1,4 +1,4 @@
-title: calls
+title: WebhookDispatchCalls
 type: object
 properties:
   startedAt:

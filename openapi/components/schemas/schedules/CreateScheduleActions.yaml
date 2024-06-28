@@ -1,4 +1,4 @@
-title: actions2
+title: CreateScheduleActions
 required:
   - type
   - actorId
@@ -14,11 +14,11 @@ properties:
     allOf:
       - oneOf:
           - nullable: true
-          - $ref: ../runInput.yaml
+          - $ref: ./ScheduleActionsRunInput.yaml
       - {}
   runOptions:
     allOf:
       - oneOf:
           - nullable: true
-          - $ref: ../runOptions.yaml
+          - $ref: ./ScheduleActionsRunOptions.yaml
       - {}

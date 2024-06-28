@@ -1,4 +1,4 @@
-title: runOptions
+title: ScheduleActionsRunOptions
 type: object
 properties:
   build:
