@@ -1,0 +1,970 @@
+[
+    {
+        "link": "https://docs.apify.com/api/v2#/introduction/authentication",
+        "text": "Authentication"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/introduction/basic-usage",
+        "text": "Basic usage"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/introduction/response-structure",
+        "text": "Response structure"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/introduction/pagination",
+        "text": "Pagination"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/introduction/pagination/using-offset",
+        "text": "Using offset"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/introduction/pagination/using-key",
+        "text": "Using key"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/introduction/errors",
+        "text": "Errors"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/introduction/rate-limiting",
+        "text": "Rate limiting"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/introduction/rate-limiting/global-rate-limit",
+        "text": "Global rate limit"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/introduction/rate-limiting/per-resource-rate-limit",
+        "text": "Per-resource rate limit"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/introduction/rate-limiting/rate-limit-exceeded-errors",
+        "text": "Rate limit exceeded errors"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/introduction/rate-limiting/retrying-rate-limited-requests-with-exponential-backoff",
+        "text": "Retrying rate-limited requests with exponential backoff"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/introduction/referring-to-resources",
+        "text": "Referring to resources"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors",
+        "text": "Actors"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/actor-collection",
+        "text": "Actor collection"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/actor-object",
+        "text": "Actor object"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/version-collection",
+        "text": "Version collection"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/version-object",
+        "text": "Version object"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/environment-variable-collection",
+        "text": "Environment variable collection"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/environment-variable-object",
+        "text": "Environment variable object"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/webhook-collection",
+        "text": "Webhook collection"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/build-collection",
+        "text": "Build collection"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/build-object",
+        "text": "Build object"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/abort-build",
+        "text": "Abort build"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/run-collection",
+        "text": "Run collection"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/run-actor-synchronously",
+        "text": "Run actor synchronously"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/run-actor-synchronously-and-get-dataset-items",
+        "text": "Run Actor synchronously and get dataset items"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/run-object",
+        "text": "Run object"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/abort-run",
+        "text": "Abort run"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/metamorph-run",
+        "text": "Metamorph run"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/resurrect-run",
+        "text": "Resurrect run"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/last-run-object-and-its-storages",
+        "text": "Last run object and its storages"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-tasks",
+        "text": "Actor tasks"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-tasks/task-collection",
+        "text": "Task collection"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-tasks/task-object",
+        "text": "Task object"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-tasks/task-input-object",
+        "text": "Task input object"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-tasks/webhook-collection",
+        "text": "Webhook collection"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-tasks/run-collection",
+        "text": "Run collection"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-tasks/run-task-synchronously",
+        "text": "Run task synchronously"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-tasks/run-task-synchronously-and-get-dataset-items",
+        "text": "Run task synchronously and get dataset items"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-tasks/last-run-object-and-its-storages",
+        "text": "Last run object and its storages"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-runs",
+        "text": "Actor runs"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-runs/run-collection",
+        "text": "Run collection"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-runs/run-object-and-its-storages",
+        "text": "Run object and its storages"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-runs/delete-run",
+        "text": "Delete run"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-runs/abort-run",
+        "text": "Abort run"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-runs/metamorph-run",
+        "text": "Metamorph run"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-runs/reboot-run",
+        "text": "Reboot run"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-runs/resurrect-run",
+        "text": "Resurrect run"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-runs/update-status-message",
+        "text": "Update status message"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-builds",
+        "text": "Actor builds"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-builds/build-collection",
+        "text": "Build collection"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-builds/build-object",
+        "text": "Build object"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-builds/delete-build",
+        "text": "Delete build"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-builds/abort-build",
+        "text": "Abort build"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-builds/build-log",
+        "text": "Build log"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/key-value-stores",
+        "text": "Key-value stores"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/key-value-stores/store-collection",
+        "text": "Store collection"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/key-value-stores/store-object",
+        "text": "Store object"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/key-value-stores/key-collection",
+        "text": "Key collection"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/key-value-stores/record",
+        "text": "Record"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/datasets",
+        "text": "Datasets"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/datasets/dataset-collection",
+        "text": "Dataset collection"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/datasets/dataset",
+        "text": "Dataset"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/datasets/item-collection",
+        "text": "Item collection"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/request-queues",
+        "text": "Request queues"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/request-queues/queue-collection",
+        "text": "Queue collection"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/request-queues/queue",
+        "text": "Queue"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/request-queues/request-collection",
+        "text": "Request collection"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/request-queues/request",
+        "text": "Request"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/request-queues/request-lock",
+        "text": "Request lock"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/request-queues/queue-head",
+        "text": "Queue head"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/request-queues/queue-head-with-locks",
+        "text": "Queue head with locks"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/request-queues/batch-request-operations",
+        "text": "Batch request operations"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/webhooks",
+        "text": "Webhooks"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/webhooks/webhook-collection",
+        "text": "Webhook collection"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/webhooks/webhook-object",
+        "text": "Webhook object"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/webhooks/webhook-test",
+        "text": "Webhook test"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/webhooks/dispatches-collection",
+        "text": "Dispatches collection"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/webhook-dispatches",
+        "text": "Webhook dispatches"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/webhook-dispatches/webhook-dispatches-collection",
+        "text": "Webhook dispatches collection"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/webhook-dispatches/webhook-dispatch-object",
+        "text": "Webhook dispatch object"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/schedules",
+        "text": "Schedules"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/schedules/schedules-collection",
+        "text": "Schedules collection"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/schedules/schedule-object",
+        "text": "Schedule object"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/schedules/schedule-log",
+        "text": "Schedule log"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/store",
+        "text": "Store"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/store/store-actors-collection",
+        "text": "Store Actors collection"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/logs",
+        "text": "Logs"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/logs/log",
+        "text": "Log"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/users",
+        "text": "Users"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/users/public-data",
+        "text": "Public data"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/users/private-data",
+        "text": "Private data"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/users/monthly-usage",
+        "text": "Monthly usage"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/users/account-and-usage-limits",
+        "text": "Account and usage limits"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/run-collection/run-actor",
+        "text": "Run actor"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/introduction/authentication",
+        "text": "recommended"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-tasks/run-collection/run-task",
+        "text": "Run task"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-runs/run-object-and-its-storages/get-run",
+        "text": "Get run"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/datasets/item-collection/get-items",
+        "text": "Get items"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/key-value-stores/record/get-record",
+        "text": "Get record"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/run-actor-synchronously",
+        "text": "actor"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-tasks/runs-collection/run-task-synchronously",
+        "text": "task"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/actor-collection/get-list-of-actors",
+        "text": "Get list of actors"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/key-value-stores/key-collection/get-list-of-keys",
+        "text": "Get list of keys"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/authentication",
+        "text": "authenticated"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/key-value-stores/record/get-record",
+        "text": "get"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/key-value-stores/record/put-record",
+        "text": "put"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/key-value-stores/record/delete-record",
+        "text": "delete"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-tasks/runs-collection/run-task-asynchronously",
+        "text": "Run actor task asynchronously"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-tasks/runs-collection/run-task-synchronously",
+        "text": "Run actor task synchronously"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/metamorph-run/metamorph-run",
+        "text": "Metamorph actor run"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/datasets/item-collection/put-items",
+        "text": "Push items"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/request-queues/request-collection/add-request",
+        "text": "add"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/request-queues/request-collection/get-request",
+        "text": "get"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/request-queues/request-collection/update-request",
+        "text": "update"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/request-queues/request-collection/delete-request",
+        "text": "delete"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/actor-collection/create-actor",
+        "text": "Create actor"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/actor-object/get-actor",
+        "text": "Get actor"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/actor-object/update-actor",
+        "text": "Update actor"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/introduction/authentication",
+        "text": "More info"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/actor-object/delete-actor",
+        "text": "Delete actor"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/version-collection/get-list-of-versions",
+        "text": "Get list of versions"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/version-object",
+        "text": "Version objects"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/version-collection/create-version",
+        "text": "Create version"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/version-object/get-version",
+        "text": "Get version"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/version-object/update-version",
+        "text": "Update version"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/version-object/delete-version",
+        "text": "Delete version"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/environment-variable-collection/get-list-of-environment-variables",
+        "text": "Get list of environment variables"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/environment-variable-object",
+        "text": "EnvVar objects"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/environment-variable-collection/create-environment-variable",
+        "text": "Create environment variable"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/environment-variable-object",
+        "text": "EnvVar object"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/environment-variable-object/get-environment-variable",
+        "text": "Get environment variable"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/environment-variable-object/update-environment-variable",
+        "text": "Update environment variable"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/environment-variable-object/delete-environment-variable",
+        "text": "Delete environment variable"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/webhook-collection/get-list-of-webhooks",
+        "text": "Get list of webhooks"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/build-collection/get-list-of-builds",
+        "text": "Get list of builds"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/build-collection/build-actor",
+        "text": "Build actor"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/build-object/get-build",
+        "text": "Get build"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-builds",
+        "text": "actor-builds"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/abort-build/abort-build",
+        "text": "Abort build"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/run-collection/get-list-of-runs",
+        "text": "Get list of runs"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/run-actor-synchronously/with-input",
+        "text": "With input"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/run-actor-synchronously/without-input",
+        "text": "Without input"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/run-actor-synchronously-and-get-dataset-items/run-actor-synchronously-with-input-and-get-dataset-items",
+        "text": "Run actor synchronously with input and get dataset items"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/datasets/item-collection/get-items",
+        "text": "Get Dataset Items"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/run-actor-synchronously-and-get-dataset-items/run-actor-synchronously-without-input-and-get-dataset-items",
+        "text": "Run actor synchronously without input and get dataset items"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-runs",
+        "text": "actor-runs"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/run-object/get-run",
+        "text": "Get run"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/abort-run/abort-run",
+        "text": "Abort run"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/metamorph-run/metamorph-run",
+        "text": "Metamorph run"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/resurrect-run/resurrect-run",
+        "text": "Resurrect run"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/key-value-stores/store-object",
+        "text": "Key-value store object"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/request-queues/request",
+        "text": "Request collection"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actors/last-run-object-and-its-storages/get-last-run",
+        "text": "Get last run"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-tasks/task-collection/get-list-of-tasks",
+        "text": "Get list of tasks"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-tasks/task-collection/create-task",
+        "text": "Create task"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/tasks/task-object/get-task",
+        "text": "Get task"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-tasks/task-object/get-task",
+        "text": "Get task"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-tasks/task-object/update-task",
+        "text": "Update task"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-tasks/task-object/delete-task",
+        "text": "Delete task"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-tasks/task-input-object/get-task-input",
+        "text": "Get task input"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-tasks/task-input-object/update-task-input",
+        "text": "Update task input"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/tasks/task-input-object/get-task-input",
+        "text": "Get task"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-tasks/webhook-collection/get-list-of-webhooks",
+        "text": "Get list of webhooks"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-tasks/run-collection/get-list-of-task-runs",
+        "text": "Get list of task runs"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-tasks/run-task-synchronously/run-task-synchronously-(post)",
+        "text": "Run task synchronously (POST)"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-tasks/run-task-synchronously/run-task-synchronously-(get)",
+        "text": "Run task synchronously (GET)"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-tasks/run-collection/run-task",
+        "text": "Run task asynchronously"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-tasks/run-task-synchronously-and-get-dataset-items/run-task-synchronously-and-get-dataset-items-(post)",
+        "text": "Run task synchronously and get dataset items (POST)"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-tasks/run-task-synchronously-and-get-dataset-items/run-task-synchronously-and-get-dataset-items-(get)",
+        "text": "Run task synchronously and get dataset items (GET)"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-tasks/last-run-object-and-its-storages/get-last-run",
+        "text": "Get last run"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-runs/run-collection/get-user-runs-list",
+        "text": "Get user runs list"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/logs",
+        "text": "Log"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-runs/delete-run/delete-run",
+        "text": "Delete run"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-runs/abort-run/abort-run",
+        "text": "Abort run"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-runs/metamorph-run/metamorph-run",
+        "text": "Metamorph run"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-runs/reboot-run/reboot-run",
+        "text": "Reboot run"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-runs/resurrect-run/resurrect-run",
+        "text": "Resurrect run"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-runs/update-status-message/update-status-message",
+        "text": "Update status message"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-builds/build-collection/get-user-builds-list",
+        "text": "Get user builds list"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-builds/build-object/get-build",
+        "text": "Get build"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-builds/delete-build/delete-build",
+        "text": "Delete build"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-builds/abort-build/abort-build",
+        "text": "Abort build"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/actor-builds/build-log/get-log",
+        "text": "Get log"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/key-value-stores/store-collection/get-list-of-key-value-stores",
+        "text": "Get list of key-value stores"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/key-value-stores/store-collection/create-key-value-store",
+        "text": "Create key-value store"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/key-value-stores/store-object/get-store",
+        "text": "Get store"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/key-value-stores/store-object/update-store",
+        "text": "Update store"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/key-value-stores/store-object/delete-store",
+        "text": "Delete store"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/introduction/response-structure",
+        "text": "Pagination"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/key-value-stores/key-collection/put-record",
+        "text": "Put record"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/key-value-stores/record/put-record",
+        "text": "Put record"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/key-value-stores/record/delete-record",
+        "text": "Delete record"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/datasets/dataset-collection/get-list-of-datasets",
+        "text": "Get list of datasets"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/datasets/dataset-collection/create-dataset",
+        "text": "Create dataset"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/datasets/dataset/get-dataset",
+        "text": "Get dataset"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/datasets/dataset/update-dataset",
+        "text": "Update dataset"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/datasets/dataset-collection/get-dataset",
+        "text": "Get dataset"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/datasets/dataset/delete-dataset",
+        "text": "Delete dataset"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/introduction/pagination",
+        "text": "pagination"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/datasets/item-collection/put-items",
+        "text": "Put items"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/request-queues/queue-collection/get-list-of-request-queues",
+        "text": "Get list of request queues"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/request-queues/queue-collection/create-request-queue",
+        "text": "Create request queue"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/request-queues/queue/get-request-queue",
+        "text": "Get request queue"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/request-queues/queue/update-request-queue",
+        "text": "Update request queue"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/request-queues/queue-collection/get-request-queue",
+        "text": "Get request queue"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/request-queues/queue/delete-request-queue",
+        "text": "Delete request queue"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/request-queues/request-collection/list-requests",
+        "text": "List requests"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/request-queues/request-collection/add-request",
+        "text": "Add request"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/request-queues/request/get-request",
+        "text": "Get request"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/request-queues/request/update-request",
+        "text": "Update request"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/request-queues/request/delete-request",
+        "text": "Delete request"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/request-queues/request-lock/prolong-request-lock",
+        "text": "Prolong request lock"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/request-queues/queue-head-with-locks",
+        "text": "Get and lock head operation"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/request-queues/request-lock/delete-request-lock",
+        "text": "Delete request lock"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/request-queues/queue-head/get-head",
+        "text": "Get head"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/request-queues/queue-head-with-locks/get-head-and-lock",
+        "text": "Get head and lock"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/request-queues/batch-request-operations/add-requests",
+        "text": "Add requests"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/request-queues/batch-request-operations/delete-requests",
+        "text": "Delete requests"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/webhooks/webhook-collection/get-list-of-webhooks",
+        "text": "Get list of webhooks"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/webhooks/webhook-collection/create-webhook",
+        "text": "Create webhook"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/webhooks/webhook-object/get-webhook",
+        "text": "Get webhook"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/webhooks/webhook-object/update-webhook",
+        "text": "Update webhook"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/webhooks/webhook-object/delete-webhook",
+        "text": "Delete webhook"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/webhooks/webhook-test/test-webhook",
+        "text": "Test webhook"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/webhooks/dispatches-collection/get-collection",
+        "text": "Get collection"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/webhook-dispatches/webhook-dispatches-collection/get-list-of-webhook-dispatches",
+        "text": "Get list of webhook dispatches"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/webhook-dispatches/webhook-dispatch-object/get-webhook-dispatch",
+        "text": "Get webhook dispatch"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/schedules/schedule-object/get-schedule",
+        "text": "Get schedule"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/schedules/schedules-collection/get-list-of-schedules",
+        "text": "Get list of schedules"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/schedules/schedules-collection/create-schedule",
+        "text": "Create schedule"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/schedules/schedule-object/update-schedule",
+        "text": "Update schedule"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/schedules/schedule-object/delete-schedule",
+        "text": "Delete schedule"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/schedules/schedule-log/get-schedule-log",
+        "text": "Get schedule log"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/store/store-actors-collection/get-list-of-actors-in-store",
+        "text": "Get list of Actors in store"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#//reference/actors/actor-object/get-actor",
+        "text": "Get actor"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/logs/log/get-log",
+        "text": "Get log"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/users/public-data/get-public-user-data",
+        "text": "Get public user data"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/users/private-data/get-private-user-data",
+        "text": "Get private user data"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/users/monthly-usage/get-monthly-usage",
+        "text": "Get monthly usage"
+    },
+    {
+        "link": "https://docs.apify.com/api/v2#/reference/users/account-and-usage-limits/get-limits",
+        "text": "Get limits"
+    }
+]
