@@ -5,7 +5,7 @@ get:
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/logs/log/get-log
   description: ''
-  operationId: Getlog1
+  operationId: log_get
   parameters:
     - name: buildOrRunId
       in: path

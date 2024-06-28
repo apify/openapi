@@ -20,7 +20,7 @@ get:
     parameters and it will not return more than 1000
 
     array elements.
-  operationId: getListOfRequestQueues
+  operationId: requestQueues_get
   parameters:
     - name: offset
       in: query
@@ -88,7 +88,7 @@ post:
     with the given name already exists then the endpoint returns
 
     its object.
-  operationId: createRequestQueue
+  operationId: requestQueues_post
   parameters:
     - name: name
       in: query

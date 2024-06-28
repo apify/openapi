@@ -32,7 +32,7 @@ post:
 
     For more information, see the [Actor
     docs](https://docs.apify.com/platform/actors/development/programming-interface/metamorph).
-  operationId: MetamorphRun
+  operationId: act_run_metamorph_post
   parameters:
     - name: actorId
       in: path
@@ -79,7 +79,7 @@ post:
       content:
         application/json:
           schema:
-            $ref: ../../components/schemas/actor-runs/MetamorphRunResponse.yaml
+            $ref: ../../components/schemas/actor-runs/RunResponse.yaml
           example:
             data:
               id: HG7ML7M8z78YcAPEB

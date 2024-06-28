@@ -10,7 +10,7 @@ get:
     includes the current usage cycle,
 
     a summary of your limits, and your current usage.
-  operationId: Getlimits
+  operationId: users_me_limits_get
   responses:
     '200':
       description: ''

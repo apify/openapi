@@ -13,7 +13,7 @@ get:
 
     The endpoint supports pagination using the `limit` and `offset` parameters.
     It will not return more than 1,000 records.
-  operationId: GetListOfActorsInStore
+  operationId: store_get
   parameters:
     - name: limit
       in: query

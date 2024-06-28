@@ -3,7 +3,7 @@ get:
     - Actor tasks
   summary: Get task
   description: Get an object that contains all the details about a task.
-  operationId: Gettask
+  operationId: actorTask_get
   parameters:
     - name: actorTaskId
       in: path
@@ -64,7 +64,7 @@ put:
     When providing your API authentication token, we recommend using the
     request's `Authorization` header, rather than the URL. ([More
     info](#introduction/authentication)).
-  operationId: Updatetask
+  operationId: actorTask_put
   parameters:
     - name: actorTaskId
       in: path
@@ -135,7 +135,7 @@ delete:
     - Actor tasks
   summary: Delete task
   description: Delete the task specified through the `actorTaskId` parameter.
-  operationId: Deletetask
+  operationId: actorTask_delete
   parameters:
     - name: actorTaskId
       in: path

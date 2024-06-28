@@ -15,7 +15,7 @@ get:
     order. Therefore, you can use pagination to incrementally fetch all builds while
     new ones are still being started. To sort the records in descending order, use
     the `desc=1` parameter.
-  operationId: GetBuildList
+  operationId: actorBuilds_get
   parameters:
     - name: offset
       in: query

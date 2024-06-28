@@ -114,7 +114,7 @@ get:
 
     In order to save new items to the dataset, send HTTP POST request with JSON
     payload to the same URL.
-  operationId: GetLastRun
+  operationId: act_runs_last_get
   parameters:
     - name: actorId
       in: path
@@ -139,7 +139,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: "../../components/schemas/actor-runs/GetRunResponse.yaml"
+            $ref: "../../components/schemas/actor-runs/RunResponse.yaml"
           example:
             data:
               id: HG7ML7M8z78YcAPEB

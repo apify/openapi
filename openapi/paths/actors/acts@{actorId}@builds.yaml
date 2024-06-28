@@ -22,7 +22,7 @@ get:
     the `desc=1`
 
     parameter.
-  operationId: GetListOfBuilds
+  operationId: act_builds_get
   parameters:
     - name: actorId
       in: path
@@ -116,7 +116,7 @@ post:
     Builds an Actor.
     The response is the build object as returned by the
     [Get build](#reference/actors/build-object/get-build) endpoint.
-  operationId: BuildActor
+  operationId: act_builds_post
   parameters:
     - name: actorId
       in: path

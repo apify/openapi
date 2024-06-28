@@ -6,7 +6,7 @@ get:
     Gets the list of environment variables for a specific version of an Actor.
     The response is a JSON object with the list of [EnvVar objects](#reference/actors/environment-variable-object), where
     each contains basic information about a single environment variable.
-  operationId: GetListOfEnvironmentVariables
+  operationId: act_version_envVars_get
   parameters:
     - name: actorId
       in: path
@@ -58,7 +58,7 @@ post:
     object](#reference/actors/environment-variable-object) as returned by the [Get environment
     variable](#reference/actors/environment-variable-object/get-environment-variable)
     endpoint.
-  operationId: CreateEnvironmentVariable
+  operationId: act_version_envVars_post
   parameters:
     - name: actorId
       in: path

@@ -15,7 +15,7 @@ get:
     Most HTTP clients support decompression by default. After using the HTTP
     client with decompression support, the `Accept-Encoding` header is set by
     the client and body is decompressed automatically.
-  operationId: Getrecord
+  operationId: keyValueStore_record_get
   security:
     - apiKeyStoreId: []
     - httpBearerStoreId: []
@@ -89,7 +89,7 @@ put:
 
 
     * Brotli compression: `Content-Encoding: br`
-  operationId: Putrecord
+  operationId: keyValueStore_record_put
   parameters:
     - name: storeId
       in: path
@@ -152,7 +152,7 @@ delete:
     - Key-value stores
   summary: Delete record
   description: Removes a record specified by a key from the key-value store.
-  operationId: Deleterecord
+  operationId: keyValueStore_record_delete
   parameters:
     - name: storeId
       in: path

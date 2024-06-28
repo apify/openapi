@@ -10,7 +10,7 @@ post:
 
     The run's container will be restarted, so any data not persisted in the
     key-value store, dataset, or request queue will be lost.
-  operationId: PostRebootRun
+  operationId: actorRun_reboot_post
   parameters:
     - name: runId
       in: path
@@ -27,7 +27,7 @@ post:
       content:
         application/json:
           schema:
-            $ref: ../../components/schemas/actor-runs/GetRunResponse.yaml
+            $ref: ../../components/schemas/actor-runs/RunResponse.yaml
           example:
             data:
               id: HG7ML7M8z78YcAPEB
