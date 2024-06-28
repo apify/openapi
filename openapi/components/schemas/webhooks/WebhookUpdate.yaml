@@ -11,12 +11,12 @@ properties:
       type: string
     description: ''
     nullable: true
+    example:
+      - ACTOR.RUN.SUCCEEDED
   condition:
+    nullable: true
     allOf:
-      - oneOf:
-          - nullable: true
-          - $ref: ./WebhookCondition.yaml
-      - {}
+      - $ref: ./WebhookCondition.yaml
   ignoreSslErrors:
     type: boolean
     nullable: true

@@ -34,11 +34,10 @@ properties:
     type: array
     items:
       type: string
-    description: ''
+    example:
+      - ACTOR.RUN.SUCCEEDED
   condition:
-    allOf:
-      - $ref: ./WebhookCondition.yaml
-      - {}
+    $ref: ./WebhookCondition.yaml
   ignoreSslErrors:
     type: boolean
     example: false
@@ -62,14 +61,10 @@ properties:
     nullable: true
     example: this is webhook description
   lastDispatch:
-    allOf:
-      - oneOf:
-          - nullable: true
-          - $ref: ./ExampleWebhookDispatch.yaml
-      - {}
+    nullable: true
+    allOf: # This allOf is needed to display the nullable properly
+      - $ref: ./ExampleWebhookDispatch.yaml
   stats:
+    nullable: true
     allOf:
-      - oneOf:
-          - nullable: true
-          - $ref: ./WebhookStats.yaml
-      - {}
+      - $ref: ./WebhookStats.yaml
