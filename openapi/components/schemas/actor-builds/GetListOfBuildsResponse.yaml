@@ -5,5 +5,5 @@ type: object
 properties:
   data:
     allOf:
-      - $ref: ./data4.yaml
+      - $ref: ./BuildsListData.yaml
       - {}

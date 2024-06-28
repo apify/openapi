@@ -1,4 +1,4 @@
-title: data4
+title: BuildsListData
 required:
   - total
   - offset
@@ -26,5 +26,5 @@ properties:
   items:
     type: array
     items:
-      $ref: ./BuildShort1.yaml
+      $ref: ./BuildItems.yaml
     description: ''

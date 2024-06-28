@@ -1,4 +1,4 @@
-title: meta2
+title: RunMeta
 required:
   - origin
 type: object
