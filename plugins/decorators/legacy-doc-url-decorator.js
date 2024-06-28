@@ -8,7 +8,7 @@ const X_LEGACY_DOC_URLS_PROPERTY = "x-legacy-doc-urls";
  *   <div id="/reference/logs/log/get-log"></div>
  *
  * The legacy URLs are stored on a custom property `x-legacy-doc-urls` in the node object (typically an operation
- * or tag). Multiple URLs are supported.
+ * or tag). Multiple URLs per node are supported (we might point multiple URLs to the same tag or operation).
  */
 function prependLegacyUrlAnchor(target) {
     if (X_LEGACY_DOC_URLS_PROPERTY in target) {
