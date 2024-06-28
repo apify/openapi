@@ -37,7 +37,7 @@ post:
 
     To run the Actor asynchronously, use the [Run
     Actor](#reference/actors/run-collection/run-actor) API endpoint instead.
-  operationId: RunActorSynchronouslyWithInputAndGetDatasetItems
+  operationId: act_runSyncGetDatasetItems_post
   parameters:
     - name: actorId
       in: path
@@ -449,7 +449,7 @@ get:
 
     To run the Actor asynchronously, use the [Run
     Actor](#reference/actors/run-collection/run-actor) API endpoint instead.
-  operationId: RunActorSynchronouslyWithoutInputAndGetDatasetItems
+  operationId: act_runSyncGetDatasetItems_get
   parameters:
     - name: actorId
       in: path

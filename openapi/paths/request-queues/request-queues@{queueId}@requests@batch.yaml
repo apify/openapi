@@ -17,7 +17,7 @@ post:
 
     If a request with the same `uniqueKey` was already present in the queue,
     then it returns an ID of the existing request.
-  operationId: addRequests
+  operationId: requestQueue_requests_batch_post
   parameters:
     - name: queueId
       in: path
@@ -122,7 +122,7 @@ delete:
 
     Each request is identified by its ID or uniqueKey parameter. You can use
     either of them to identify the request.
-  operationId: deleteRequests
+  operationId: requestQueue_requests_batch_delete
   parameters:
     - name: queueId
       in: path

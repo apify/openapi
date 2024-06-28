@@ -74,7 +74,7 @@ get:
 
     This endpoint does not require the authentication token. The calls are
     authenticated using a hard-to-guess ID of the run.
-  operationId: Getrun1
+  operationId: actorRun_get
   parameters:
     - name: runId
       in: path
@@ -187,7 +187,7 @@ delete:
   description: >-
     Delete the run. Only finished runs can be deleted. Only the person or
     organization that initiated the run can delete it.
-  operationId: Deleterun
+  operationId: actorRun_delete
   parameters:
     - name: runId
       in: path
@@ -216,7 +216,7 @@ put:
     `isStatusMessageTerminal` property is optional and it indicates if the
     status message is the very last one. In the absence of a status message, the
     platform will try to substitute sensible defaults.
-  operationId: Updatestatusmessage
+  operationId: actorRun_put
   parameters:
     - name: runId
       in: path

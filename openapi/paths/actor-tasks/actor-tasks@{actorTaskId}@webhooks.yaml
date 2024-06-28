@@ -11,7 +11,7 @@ get:
 
     By default, the records are sorted by the `createdAt` field in ascending
     order, to sort the records in descending order, use the `desc=1` parameter.
-  operationId: Getlistofwebhooks1
+  operationId: actorTask_webhooks_get
   parameters:
     - name: actorTaskId
       in: path

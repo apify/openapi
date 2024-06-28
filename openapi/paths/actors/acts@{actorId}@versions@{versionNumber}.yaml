@@ -47,7 +47,7 @@ get:
     in Actors documentation.Gets a [Version
     object](#reference/actors/version-object) that contains all the details
     about a specific version of an Actor.
-  operationId: GetVersion
+  operationId: act_version_get
   parameters:
     - name: actorId
       in: path
@@ -136,7 +136,7 @@ put:
 
     The response is the [Version object](#reference/actors/version-object) as
     returned by the [Get version](#reference/actors/version-object/get-version) endpoint.
-  operationId: UpdateVersion
+  operationId: act_version_put
   parameters:
     - name: actorId
       in: path
@@ -234,7 +234,7 @@ delete:
     For more information about source code and Actor versions, see [Source
     code](https://docs.apify.com/platform/actors/development/actor-definition/source-code)
     in Actors documentation.Deletes a specific version of Actor's source code.
-  operationId: DeleteVersion
+  operationId: act_version_delete
   parameters:
     - name: actorId
       in: path
