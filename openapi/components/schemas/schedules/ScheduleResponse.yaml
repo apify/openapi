@@ -5,5 +5,5 @@ type: object
 properties:
   data:
     allOf:
-      - $ref: ./Schedule.yaml
+      - $ref: ./ScheduleResponseData.yaml
       - {}
