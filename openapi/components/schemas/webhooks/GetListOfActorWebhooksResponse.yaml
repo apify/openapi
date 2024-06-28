@@ -5,5 +5,9 @@ type: object
 properties:
   data:
     allOf:
-      - $ref: ./WebhookList.yaml
-      - {}
+      - $ref: ../common/PaginationResponse.yaml
+      - properties:
+          items:
+            type: array
+            items:
+              $ref: ./Webhook.yaml

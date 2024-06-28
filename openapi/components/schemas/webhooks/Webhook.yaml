@@ -36,9 +36,7 @@ properties:
       type: string
     description: ''
   condition:
-    allOf:
-      - $ref: ./WebhookCondition.yaml
-      - {}
+    $ref: ./WebhookCondition.yaml
   ignoreSslErrors:
     type: boolean
     example: false
@@ -62,14 +60,10 @@ properties:
     nullable: true
     example: this is webhook description
   lastDispatch:
-    allOf:
-      - oneOf:
-          - nullable: true
-          - $ref: ./ExampleWebhookDispatch.yaml
-      - {}
+    oneOf:
+      - nullable: true
+      - $ref: ./ExampleWebhookDispatch.yaml
   stats:
-    allOf:
-      - oneOf:
-          - nullable: true
-          - $ref: ./WebhookStats.yaml
-      - {}
+    oneOf:
+      - nullable: true
+      - $ref: ./WebhookStats.yaml

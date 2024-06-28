@@ -12,11 +12,9 @@ properties:
     description: ''
     nullable: true
   condition:
-    allOf:
-      - oneOf:
-          - nullable: true
-          - $ref: ./WebhookCondition.yaml
-      - {}
+    oneOf:
+      - nullable: true
+      - $ref: ./WebhookCondition.yaml
   ignoreSslErrors:
     type: boolean
     nullable: true
