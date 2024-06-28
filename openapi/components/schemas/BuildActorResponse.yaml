@@ -1,9 +1,0 @@
-title: BuildActorResponse
-required:
-  - data
-type: object
-properties:
-  data:
-    allOf:
-      - $ref: ./actor-builds/Build.yaml
-      - {}
