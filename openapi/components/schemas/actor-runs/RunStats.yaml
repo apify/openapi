@@ -1,4 +1,4 @@
-title: stats7
+title: RunStats
 required:
   - inputBodyLen
   - restartCount

@@ -41,7 +41,7 @@ properties:
     example: 0.0.2
   meta:
     allOf:
-      - $ref: ../meta2.yaml
+      - $ref: ./RunMeta.yaml
       - {}
   usageTotalUsd:
     type: number
