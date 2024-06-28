@@ -28,10 +28,40 @@ properties:
     type: string
     example: ACTOR.RUN.SUCCEEDED
   eventData:
-    $ref: ../eventData.yaml
+    title: eventData
+    type: object
+    required:
+      - actorId
+      - actorRunId
+    properties:
+      actorId:
+        type: string
+        example: vvE7iMKuMc5qTHHsR
+      actorRunId:
+        type: string
+        example: JgwXN9BdwxGcu9MMF
   calls:
-    type: array
-    items:
-      $ref: ../calls.yaml
-    description: ''
-    nullable: true
+    title: calls
+    type: object
+    properties:
+      startedAt:
+        type: string
+        nullable: true
+        example: '2019-12-12T07:34:14.202Z'
+      finishedAt:
+        type: string
+        nullable: true
+        example: '2019-12-12T07:34:14.202Z'
+      errorMessage:
+        type: string
+        nullable: true
+        example: Cannot send request
+      responseStatus:
+        type: number
+        nullable: true
+        example: 200
+      responseBody:
+        type: string
+        nullable: true
+        example:
+          foo: bar
