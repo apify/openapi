@@ -117,6 +117,8 @@ properties:
 
 ```
 
+
+
 ##### Using the `$ref`
 
 Notice in the complex example above the schema definition itself has `$ref` links to other schemas defined.
@@ -145,82 +147,55 @@ You will use `$ref`s to reference schema from your path definitions.
 #### Adding a Path
 
 1. Navigate to the `openapi/paths` folder.
-2. Add a new YAML file named like your URL endpoint except replacing `/` with `@` and putting path parameters into curly braces like `{example}`.
-3. Add the path and a ref to it inside of your `openapi.yaml` file inside of the `openapi` folder.
+2. Add a new YAML file named like your URL endpoint except replacing `/` with `@` into folder named by the collection (example `request-queues`) 
+3. Put path parameters into curly braces like `{example}`.
+4. Add the path and a ref to it inside of your `openapi.yaml` file inside of the `openapi` folder.
 
 Example addition to the `openapi.yaml` file:
 ```yaml
-'/customers/{id}':
-  $ref: './paths/customers@{id}.yaml'
+'/requests-queues':
+  $ref: './paths/request-queues/request-queues.yaml'
+'/requests-queues/{queueId}':
+  $ref: './paths/request-queues/request-queues@{queueId}.yaml'
 ```
 
-Here is an example of a YAML file named `customers@{id}.yaml` in the `paths` folder:
+Here is an example of a YAML file named `request-queues@{queueId}.yaml` in the `paths/request-queues` folder:
 
 ```yaml
 get:
   tags:
-    - Customers
-  summary: Retrieve a list of customers
-  operationId: GetCustomerCollection
+    - Request Queues
+  summary: Get a Request Queue
+  operationId: requestQueues_get
   description: |
     You can have a markdown description here.
   parameters:
-    - $ref: ../components/parameters/collectionLimit.yaml
-    - $ref: ../components/parameters/collectionOffset.yaml
-    - $ref: ../components/parameters/collectionFilter.yaml
-    - $ref: ../components/parameters/collectionQuery.yaml
-    - $ref: ../components/parameters/collectionExpand.yaml
-    - $ref: ../components/parameters/collectionFields.yaml
   responses:
     '200':
-      description: A list of Customers was retrieved successfully
-      headers:
-        Rate-Limit-Limit:
-          $ref: ../components/headers/Rate-Limit-Limit.yaml
-        Rate-Limit-Remaining:
-          $ref: ../components/headers/Rate-Limit-Remaining.yaml
-        Rate-Limit-Reset:
-          $ref: ../components/headers/Rate-Limit-Reset.yaml
-        Pagination-Total:
-          $ref: ../components/headers/Pagination-Total.yaml
-        Pagination-Limit:
-          $ref: ../components/headers/Pagination-Limit.yaml
-        Pagination-Offset:
-          $ref: ../components/headers/Pagination-Offset.yaml
-      content:
-        application/json:
-          schema:
-            type: array
-            items:
-              $ref: ../components/schemas/Customer.yaml
-        text/csv:
-          schema:
-            type: array
-            items:
-              $ref: ../components/schemas/Customer.yaml
     '401':
-      $ref: ../components/responses/AccessForbidden.yaml
   x-code-samples:
     - lang: PHP
       source:
         $ref: ../code_samples/PHP/customers/get.php
+```
+Here is an example of a YAML file named `request-queues.yaml` in the `paths/request-queues` folder:
+    
+```yaml
 post:
   tags:
-    - Customers
-  summary: Create a customer (without an ID)
-  operationId: PostCustomer
+    - Request Queues
+  summary: Create a request queue
+  operationId: requestQueue_post
   description: Another markdown description here.
   requestBody:
-    $ref: ../components/requestBodies/Customer.yaml
   responses:
     '201':
-      $ref: ../components/responses/Customer.yaml
-    '401':
-      $ref: ../components/responses/AccessForbidden.yaml
-    '409':
-      $ref: ../components/responses/Conflict.yaml
-    '422':
-      $ref: ../components/responses/InvalidDataError.yaml
+      description: ''
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: ../../components/schemas/request-queues/CreateRequestQueueResponse.yaml
   x-code-samples:
     - lang: PHP
       source:
@@ -230,6 +205,23 @@ post:
 You'll see extensive usage of `$ref`s in this example to different types of components including schemas.
 
 You'll also notice `$ref`s to code samples.
+
+#### Operation ID
+
+The `operationId` is a unique identifier of the operation. It is used by the Redocly API Reference to generate code samples and link them to the operation from other parts of the documentation.
+
+There is a format for the `operationId`:
+
+- The ID is generated from the path structure and the HTTP method.
+- The object names should be in camelCase.
+- If there is `{id}` in the path, the previous part of the path should be singular, otherwise plural.
+- The divider between the object name and the action should be `_`.
+- The action should be last in the `operationId` defined by the method name in lowercase.
+
+Examples:
+- `/requests-queues` Method: GET -> `requestQueues_get`
+- `/requests-queues` Method: POST ->`requestQueues_post`
+- `/requests-queues/{queueId}` Method: PUT -> `requestQueue_put`
 
 ### Code samples
 NOTE: We do not use code samples in the OpenAPI definition for now. 
