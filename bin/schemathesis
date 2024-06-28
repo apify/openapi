@@ -7,9 +7,7 @@ then
   fi
 fi
 
-echo "ACTOR_ID ENV VAR:"
-echo $ACTOR_ID
-
+export ACTOR_ID=api_contract~my-actor-6
 
 export SCHEMATHESIS_HOOKS=schemathesis_hooks
 st run \

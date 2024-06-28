@@ -2,6 +2,8 @@ name: Check
 on:
   push:
 
+env:
+  APIFY_STAGING_TOKEN: {{ secrets.APIFY_STAGING_TOKEN }}
 jobs:
   build:
     name: Build the specification file
