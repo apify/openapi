@@ -3,12 +3,17 @@ on:
   push:
 
 env:
-  APIFY_STAGING_TOKEN: {{ secrets.APIFY_STAGING_TOKEN }}
+  APIFY_STAGING_TOKEN: ${{ secrets.APIFY_STAGING_TOKEN }}
+
+    
+
 jobs:
   build:
     name: Build the specification file
     runs-on: ubuntu-latest
+    
     steps:
+
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
