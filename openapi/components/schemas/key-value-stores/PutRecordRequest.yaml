@@ -1,4 +1,4 @@
-title: Putrecordrequest
+title: PutRecordRequest
 type: object
 properties:
   foo:

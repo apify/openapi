@@ -1,4 +1,4 @@
-title: KVStoreShort1
+title: KeyValueStore
 required:
   - id
   - name
@@ -36,3 +36,5 @@ properties:
   actRunId:
     type: string
     nullable: true
+  stats:
+    $ref: ./KeyValueStoreStats.yaml

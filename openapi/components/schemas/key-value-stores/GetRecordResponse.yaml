@@ -1,4 +1,4 @@
-title: Getrecordresponse
+title: GetRecordResponse
 required:
   - foo
 type: object

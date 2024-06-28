@@ -1,4 +1,4 @@
-title: Updatestorerequest
+title: UpdateStoreRequest
 required:
   - name
 type: object

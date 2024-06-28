@@ -67,7 +67,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Getlistofkey-valuestoresresponse.yaml
+              - $ref: ../../components/schemas/key-value-stores/GetListOfKeyValueStoresResponse.yaml
               - example:
                   data:
                     total: 2
@@ -161,7 +161,7 @@ post:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Createkey-valuestoreresponse.yaml
+              - $ref: ../../components/schemas/key-value-stores/CreateKeyValueStoreResponse.yaml
               - example:
                   data:
                     id: WkzbQMuFYuamGv3YF

@@ -26,7 +26,7 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Getstoreresponse.yaml
+              - $ref: ../../components/schemas/key-value-stores/GetStoreResponse.yaml
               - example:
                   data:
                     id: WkzbQMuFYuamGv3YF
@@ -75,7 +75,7 @@ put:
       application/json:
         schema:
           allOf:
-            - $ref: ../components/schemas/Updatestorerequest.yaml
+            - $ref: ../../components/schemas/UpdateStoreRequest.yaml
             - example:
                 name: new-store-name
         example:
@@ -89,7 +89,7 @@ put:
         application/json:
           schema:
             allOf:
-              - $ref: ../components/schemas/Updatestoreresponse.yaml
+              - $ref: ../../components/schemas/key-value-stores/UpdateStoreResponse.yaml
               - example:
                   data:
                     id: WkzbQMuFYuamGv3YF
