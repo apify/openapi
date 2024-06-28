@@ -54,10 +54,7 @@ get:
       </tr>
     </table>
 
-
-    Note that CSV, XLSX and HTML tables are limited to 500 columns and the
-    column names cannot be longer than 200 characters.
-
+    Note that CSV, XLSX and HTML tables are limited to 500 columns and the column names cannot be longer than 200 characters.
     JSON, XML and RSS formats do not have such restrictions.
 
 
@@ -65,14 +62,7 @@ get:
 
 
     The top-level fields starting with the `#` character are considered hidden.
-    These are useful to
-
-    store debugging information and can be omitted from the output by providing
-    the `skipHidden=1` or `clean=1`
-
-    query parameters.
-
-
+    These are useful to store debugging information and can be omitted from the output by providing the `skipHidden=1` or `clean=1` query parameters.
     For example, if you store the following object to the dataset:
 
 
@@ -96,20 +86,14 @@ get:
     provide nice cleaned data to end users, while keeping debugging info
     available if needed. The Dataset object
 
-    returned by the API contains the number of such clean items in the
-    `dataset.cleanItemCount` property.
+    returned by the API contains the number of such clean items in the`dataset.cleanItemCount` property.
 
 
     ### XML format extension
-
-
-    When exporting results to XML or RSS formats, the names of object properties
-    become XML tags
-
-    and the corresponding values become tag's children. For example, the
-    following JavaScript object:
-
-
+    
+    
+    When exporting results to XML or RSS formats, the names of object properties become XML tags and the corresponding values become tag's children. For example, the following JavaScript object:
+   
     ```
 
     {
@@ -135,7 +119,6 @@ get:
       <street>21st</street>
       <city>Chicago</city>
     </address>
-
     <address>
       <type>office</type>
       <street/>
@@ -144,20 +127,15 @@ get:
 
     ```
 
-
-    If the JavaScript object contains a property named `@`
-
-    then its sub-properties are exported as attributes of the parent XML
+    If the JavaScript object contains a property named `@` then its sub-properties are exported as attributes of the parent XML
     element.
-
-    If the parent XML element does not have any child elements then its value is
-    taken from a JavaScript object property named `#`.
+    If the parent XML element does not have any child elements then its value is taken from a JavaScript object property named `#`.
 
     For example, the following JavaScript object:
-
-
+    
+    
     ```
-
+    
     {
       "address": [{
         "@": {
@@ -190,42 +168,29 @@ get:
     <address type="office">unknown</address>
 
     ```
+    
+    
+    This feature is also useful to customize your RSS feeds generated for various websites.
 
-
-    This feature is also useful to customize your RSS feeds generated for
-    various websites.
-
-
-    By default the whole result is wrapped in a `<items>` element and each page
-    object is wrapped in a `<item>` element.
-
-    You can change this using <code>xmlRoot</code> and <code>xmlRow</code> url
-    parameters.
-
-
+    
+    By default the whole result is wrapped in a `<items>` element and each page object is wrapped in a `<item>` element.
+    
+    You can change this using <code>xmlRoot</code> and <code>xmlRow</code> url parameters.
+    
+   
     ### Pagination
-
-
+    
+    
     The generated response supports [pagination](#introduction/pagination).
+    The pagination is always performed with the granularity of a single item, regardless whether <code>unwind</code> parameter was provided.
+    By default, the **Items** in the response are sorted by the time they were stored to the database, therefore you can use pagination to incrementally fetch the items as they are being added.
 
-    The pagination is always performed with the granularity of a single item,
-    regardless whether <code>unwind</code> parameter was provided.
+    The maximum number of items that will be returned in a single API call is limited to 250,000. 
+    
+    <!-- GET_ITEMS_LIMIT -->
 
-    By default, the **Items** in the response are sorted by the time they were
-    stored to the database, therefore you can use
-
-    pagination to incrementally fetch the items as they are being added.
-
-    The maximum number of items that will be returned in a single API call is
-    limited to 250,000. <!-- GET_ITEMS_LIMIT -->
-
-    If you specify `desc=1` query paremeter, the results are returned in the
-    reverse order
-
-    than they were stored (i.e. from newest to oldest items).
-
-    Note that only the order of **Items** is reversed, but not the order of the
-    `unwind` array elements.
+    If you specify `desc=1` query parameter, the results are returned in the reverse order than they were stored (i.e. from newest to oldest items).
+    Note that only the order of **Items** is reversed, but not the order of the `unwind` array elements.
   operationId: getItems
   security:
     - apiKeyStoreId: []
@@ -242,8 +207,7 @@ get:
     - name: format
       in: query
       description: >-
-        Format of the results, possible values are: `json`, `jsonl`, `csv`,
-        `html`, `xlsx`, `xml` and `rss`. The default value is `json`.
+        Format of the results, possible values are: `json`, `jsonl`, `csv`, `html`, `xlsx`, `xml` and `rss`. The default value is `json`.
       style: form
       explode: true
       schema:
@@ -252,16 +216,9 @@ get:
     - name: clean
       in: query
       description: >-
-        If `true` or `1` then the API endpoint returns only non-empty items and
-        skips hidden fields
-
-        (i.e. fields starting with the # character).
-
-        The `clean` parameter is just a shortcut for `skipHidden=true` and
-        `skipEmpty=true` parameters.
-
-        Note that since some objects might be skipped from the output, that the
-        result might contain less items than the `limit` value.
+        If `true` or `1` then the API endpoint returns only non-empty items and skips hidden fields (i.e. fields starting with the # character).
+        The `clean` parameter is just a shortcut for `skipHidden=true` and `skipEmpty=true` parameters.
+        Note that since some objects might be skipped from the output, that the result might contain less items than the `limit` value.
       style: form
       explode: true
       schema:
@@ -270,8 +227,7 @@ get:
     - name: offset
       in: query
       description: >-
-        Number of items that should be skipped at the start. The default value
-        is `0`.
+        Number of items that should be skipped at the start. The default value is `0`.
       style: form
       explode: true
       schema:
@@ -290,13 +246,8 @@ get:
     - name: fields
       in: query
       description: >-
-        A comma-separated list of fields which should be picked from the items,
-
-        only these fields will remain in the resulting record objects.
-
-        Note that the fields in the outputted items are sorted the same way as
-        they are specified in the `fields` query parameter.
-
+        A comma-separated list of fields which should be picked from the items, only these fields will remain in the resulting record objects.
+        Note that the fields in the outputted items are sorted the same way as they are specified in the `fields` query parameter.
         You can use this feature to effectively fix the output format.
       style: form
       explode: true
@@ -314,18 +265,9 @@ get:
     - name: unwind
       in: query
       description: >-
-        Name of a field which should be unwound. If the field is an array then
-        every element of
-
-        the array will become a separate record and merged with parent object.
-
-        If the unwound field is an object then it is merged with the parent
-        object
-
-        If the unwound field is missing or its value is neither an array nor an
-        object and therefore cannot be merged with a parent object then the item
-        gets preserved as it is.
-
+        Name of a field which should be unwound. If the field is an array then every element of the array will become a separate record and merged with parent object.
+        If the unwound field is an object then it is merged with the parent object.
+        If the unwound field is missing or its value is neither an array nor an object and therefore cannot be merged with a parent object then the item gets preserved as it is.
         Note that the unwound items ignore the `desc` parameter.
       style: form
       explode: true
@@ -335,14 +277,11 @@ get:
     - name: flatten
       in: query
       description: >-
-        A comma-separated list of fields which should transform nested objects
-        into flat structures.
+        A comma-separated list of fields which should transform nested objects into flat structures.
 
-        For example, with `flatten="foo"` the object `{"foo":{"bar": "hello"}}`
-        is turned into `{"foo.bar": "hello"}`.
+        For example, with `flatten="foo"` the object `{"foo":{"bar": "hello"}}` is turned into `{"foo.bar": "hello"}`.
 
-        The original object with properties is replaced with the flattened
-        object.
+        The original object with properties is replaced with the flattened object.
       style: form
       explode: true
       schema:
@@ -384,13 +323,9 @@ get:
       in: query
       description: >-
         All text responses are encoded in UTF-8 encoding. By default, the
-        `format=csv` files are prefixed with
+        `format=csv` files are prefixed with the UTF-8 Byte Order Mark (BOM), while `json`, `jsonl`, `xml`, `html` and `rss` files are not.
 
-        the UTF-8 Byte Order Mark (BOM), while `json`, `jsonl`, `xml`, `html`
-        and `rss` files are not.
-
-        If you want to override this default behavior, specify `bom=1` query
-        parameter to include the BOM or `bom=0` to skip it.
+        If you want to override this default behavior, specify `bom=1` query parameter to include the BOM or `bom=0` to skip it.
       style: form
       explode: true
       schema:
@@ -399,8 +334,7 @@ get:
     - name: xmlRoot
       in: query
       description: >-
-        Overrides default root element name of `xml` output. By default the root
-        element is `items`.
+        Overrides default root element name of `xml` output. By default the root element is `items`.
       style: form
       explode: true
       schema:
@@ -409,8 +343,7 @@ get:
     - name: xmlRow
       in: query
       description: >-
-        Overrides default element name that wraps each page or page function
-        result object in `xml` output. By default the element name is `item`.
+        Overrides default element name that wraps each page or page function result object in `xml` output. By default the element name is `item`.
       style: form
       explode: true
       schema:
@@ -427,8 +360,7 @@ get:
     - name: skipHidden
       in: query
       description: |-
-        If `true` or `1` then hidden fields are skipped from the output,
-        i.e. fields starting with the `#` character.
+        If `true` or `1` then hidden fields are skipped from the output, i.e. fields starting with the `#` character.
       style: form
       explode: true
       schema:
@@ -439,8 +371,7 @@ get:
       description: >-
         If `true` or `1` then empty items are skipped from the output.
 
-        Note that if used, the results might contain less items than the limit
-        value.
+        Note that if used, the results might contain less items than the limit value.
       style: form
       explode: true
       schema:
@@ -449,14 +380,9 @@ get:
     - name: simplified
       in: query
       description: >-
-        If `true` or `1` then, the endpoint applies the
-        `fields=url,pageFunctionResult,errorInfo`
-
-        and `unwind=pageFunctionResult` query parameters. This feature is used
-        to emulate simplified results provided by the
-
-        legacy Apify Crawler product and it's not recommended to use it in new
-        integrations.
+        If `true` or `1` then, the endpoint applies the `fields=url,pageFunctionResult,errorInfo`
+        and `unwind=pageFunctionResult` query parameters. This feature is used to emulate simplified results provided by the
+        legacy Apify Crawler product and it's not recommended to use it in new integrations.
       style: form
       explode: true
       schema:
@@ -465,12 +391,9 @@ get:
     - name: skipFailedPages
       in: query
       description: >-
-        If `true` or `1` then, the all the items with errorInfo property will be
-        skipped from the output.
+        If `true` or `1` then, the all the items with errorInfo property will be skipped from the output.
 
-        This feature is here to emulate functionality of API version 1 used for
-        the legacy Apify Crawler product and it's not recommended to use it in
-        new integrations.
+        This feature is here to emulate functionality of API version 1 used for the legacy Apify Crawler product and it's not recommended to use it in new integrations.
       style: form
       explode: true
       schema:
@@ -480,25 +403,25 @@ get:
     '200':
       description: ''
       headers:
-        X-Apifier-Pagination-Offset:
+        X-Apify-Pagination-Offset:
           content:
             text/plain:
               schema:
                 type: string
               example: '0'
-        X-Apifier-Pagination-Limit:
+        X-Apify-Pagination-Limit:
           content:
             text/plain:
               schema:
                 type: string
               example: '100'
-        X-Apifier-Pagination-Count:
+        X-Apify-Pagination-Count:
           content:
             text/plain:
               schema:
                 type: string
               example: '100'
-        X-Apifier-Pagination-Total:
+        X-Apify-Pagination-Total:
           content:
             text/plain:
               schema:
@@ -507,7 +430,40 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/datasets/GetItemsResponse.yaml
+            type: array
+            items:
+              type: object
+            example: [
+                {
+                    foo: bar
+                },
+                {
+                  foo2: bar2
+                }
+            ]
+        application/jsonl:
+          schema:
+            type: string
+          example: '{"foo":"bar"}\n{"foo2":"bar2"}\n'
+        text/csv:
+          schema:
+            type: string
+          example: 'foo,bar\nfoo2,bar2\n'
+        text/html:
+            schema:
+              type: string
+            example: '<table><tr><th>foo</th><th>bar</th></tr><tr><td>foo</td><td>bar</td></tr><tr><td>foo2</td><td>bar2</td></tr></table>'
+        'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet':
+            schema:
+                type: string
+        application/rss+xml:
+          schema:
+            type: string
+          example: '<rss><channel><item><foo>bar</foo></item><item><foo2>bar2</foo2></item></channel></rss>'
+        application/xml:
+          schema:
+            type: string
+          example: '<items><item><foo>bar</foo></item><item><foo2>bar2</foo2></item></items>'
   deprecated: false
 post:
   tags:
@@ -516,14 +472,10 @@ post:
   description: >-
     Appends an item or an array of items to the end of the dataset.
 
-    The POST payload is a JSON object or a JSON array of objects to save into
-    the dataset.
+    The POST payload is a JSON object or a JSON array of objects to save into the dataset.
 
 
-    **IMPORTANT:** The limit of request payload size for the dataset is 5 MB. If
-    the array exceeds the size,
-
-    you'll need to split it into a number of smaller arrays.
+    **IMPORTANT:** The limit of request payload size for the dataset is 5 MB. If the array exceeds the size, you'll need to split it into a number of smaller arrays.
   operationId: putItems
   parameters:
     - name: datasetId
@@ -674,7 +626,7 @@ post:
         schema:
           type: array
           items:
-            $ref: ../components/schemas/datasets/PutItemsRequest.yaml
+            $ref: ../../components/schemas/datasets/PutItemsRequest.yaml
           description: ''
           example:
             - foo: bar

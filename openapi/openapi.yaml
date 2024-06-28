@@ -683,11 +683,11 @@ paths:
   '/v2/key-value-stores/{storeId}/records/{recordKey}':
     $ref: 'paths/v2@key-value-stores@{storeId}@records@{recordKey}.yaml'
   /v2/datasets:
-    $ref: paths/datasets.yaml
+    $ref: paths/datasets/datasets.yaml
   '/v2/datasets/{datasetId}':
-    $ref: 'paths/datasets@{datasetId}.yaml'
+    $ref: 'paths/datasets/datasets@{datasetId}.yaml'
   '/v2/datasets/{datasetId}/items':
-    $ref: 'paths/datasets@{datasetId}@items.yaml'
+    $ref: 'paths/datasets/datasets@{datasetId}@items.yaml'
   /v2/request-queues:
     $ref: paths/request-queues/request-queues.yaml
   '/v2/request-queues/{queueId}':
@@ -740,8 +740,6 @@ components:
       $ref: components/securitySchemes/httpBearer.yaml
     httpBearerActorBuilds:
       $ref: components/securitySchemes/httpBearerActorBuilds.yaml
-    httpBearerActorRuns:
-        $ref: components/securitySchemes/httpBearerActorRuns.yaml
     httpBearerStoreId:
       $ref: components/securitySchemes/httpBearerStoreId.yaml
     httpBearerQueueId:
@@ -750,8 +748,6 @@ components:
       $ref: components/securitySchemes/apiKey.yaml
     apiKeyActorBuilds:
       $ref: components/securitySchemes/apiKeyActorBuilds.yaml
-    apiKeyActorRuns:
-      $ref: components/securitySchemes/apiKeyActorRuns.yaml
     apiKeyStoreId:
       $ref: components/securitySchemes/apiKeyStoreId.yaml
     apiKeyQueueId:

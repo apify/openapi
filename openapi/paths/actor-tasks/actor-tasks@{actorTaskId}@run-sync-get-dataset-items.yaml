@@ -358,25 +358,25 @@ post:
     '201':
       description: ''
       headers:
-        X-Apifier-Pagination-Offset:
+        X-Apify-Pagination-Offset:
           content:
             text/plain:
               schema:
                 type: string
               example: '0'
-        X-Apifier-Pagination-Limit:
+        X-Apify-Pagination-Limit:
           content:
             text/plain:
               schema:
                 type: string
               example: '100'
-        X-Apifier-Pagination-Count:
+        X-Apify-Pagination-Count:
           content:
             text/plain:
               schema:
                 type: string
               example: '100'
-        X-Apifier-Pagination-Total:
+        X-Apify-Pagination-Total:
           content:
             text/plain:
               schema:
@@ -734,25 +734,25 @@ get:
     '201':
       description: ''
       headers:
-        X-Apifier-Pagination-Offset:
+        X-Apify-Pagination-Offset:
           content:
             text/plain:
               schema:
                 type: string
               example: '0'
-        X-Apifier-Pagination-Limit:
+        X-Apify-Pagination-Limit:
           content:
             text/plain:
               schema:
                 type: string
               example: '100'
-        X-Apifier-Pagination-Count:
+        X-Apify-Pagination-Count:
           content:
             text/plain:
               schema:
                 type: string
               example: '100'
-        X-Apifier-Pagination-Total:
+        X-Apify-Pagination-Total:
           content:
             text/plain:
               schema:

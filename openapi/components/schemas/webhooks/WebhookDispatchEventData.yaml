@@ -1,4 +1,4 @@
-title: eventData
+title: WebhookDispatchEventData
 required:
   - actorId
   - actorRunId
