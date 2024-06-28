@@ -29,9 +29,7 @@ properties:
     type: string
     example: SUCCEEDED
   meta:
-    allOf:
-      - $ref: ../common/BuildsMeta.yaml
-      - {}
+    $ref: ./BuildsMeta.yaml
   stats:
     allOf:
       - oneOf:

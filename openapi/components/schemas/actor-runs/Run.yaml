@@ -48,17 +48,11 @@ properties:
     nullable: true
     example: false
   meta:
-    allOf:
-      - $ref: ../common/BuildsMeta.yaml
-      - {}
+    $ref: ./RunMeta.yaml
   stats:
-    allOf:
-      - $ref: ./RunStats.yaml
-      - {}
+    $ref: ./RunStats.yaml
   options:
-    allOf:
-      - $ref: ./RunOptions.yaml
-      - {}
+    $ref: ./RunOptions.yaml
   buildId:
     type: string
     example: 7sT5jcggjjA9fNcxF
