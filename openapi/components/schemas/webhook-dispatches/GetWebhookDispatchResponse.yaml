@@ -4,6 +4,4 @@ required:
 type: object
 properties:
   data:
-    allOf:
-      - $ref: ./WebhookDispatch.yaml
-      - {}
+    $ref: ./WebhookDispatch.yaml

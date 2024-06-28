@@ -28,12 +28,10 @@ properties:
     type: string
     example: ACTOR.RUN.SUCCEEDED
   eventData:
-    allOf:
-      - $ref: ./eventData.yaml
-      - {}
+    $ref: ../eventData.yaml
   calls:
     type: array
     items:
-      $ref: ./calls.yaml
+      $ref: ../calls.yaml
     description: ''
     nullable: true
