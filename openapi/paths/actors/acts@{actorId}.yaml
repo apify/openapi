@@ -20,8 +20,7 @@ get:
       content:
         application/json:
           schema:
-            allOf:
-              - $ref: "../../components/schemas/actors/GetActorResponse.yaml"
+            $ref: "../../components/schemas/actors/GetActorResponse.yaml"
           example:
             data:
               id: zdc3Pyhyz3m8vjDeM
@@ -130,8 +129,7 @@ put:
     content:
       application/json:
         schema:
-          allOf:
-            - $ref: "../../components/schemas/actors/UpdateActorRequest.yaml"
+          $ref: "../../components/schemas/actors/UpdateActorRequest.yaml"
         example:
           name: MyActor
           description: My favourite Actor!
@@ -166,8 +164,7 @@ put:
       content:
         application/json:
           schema:
-            allOf:
-              - $ref: "../../components/schemas/actors/UpdateActorResponse.yaml"
+            $ref: "../../components/schemas/actors/UpdateActorResponse.yaml"
           example:
             data:
               id: zdc3Pyhyz3m8vjDeM

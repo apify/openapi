@@ -214,8 +214,7 @@ post:
       content:
         application/json:
           schema:
-            allOf:
-              - $ref: "../../components/schemas/actors/BuildActorResponse.yaml"
+            $ref: "../../components/schemas/actors/BuildActorResponse.yaml"
           example:
             data:
               id: HG7ML7M8z78YcAPEB

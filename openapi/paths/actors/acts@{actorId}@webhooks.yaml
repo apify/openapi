@@ -60,8 +60,7 @@ get:
       content:
         application/json:
           schema:
-            allOf:
-              - $ref: ../../components/schemas/webhooks/GetListOfWebhooksResponse.yaml
+            $ref: ../../components/schemas/webhooks/GetListOfWebhooksResponse.yaml
           example:
             data:
               total: 2

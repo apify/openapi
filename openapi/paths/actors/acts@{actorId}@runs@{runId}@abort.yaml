@@ -45,8 +45,7 @@ post:
       content:
         application/json:
           schema:
-            allOf:
-              - $ref: ../../components/schemas/actor-runs/AbortRunResponse.yaml
+            $ref: ../../components/schemas/actor-runs/AbortRunResponse.yaml
           example:
             data:
               id: HG7ML7M8z78YcAPEB

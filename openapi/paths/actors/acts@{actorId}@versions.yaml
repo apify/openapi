@@ -23,8 +23,7 @@ get:
       content:
         application/json:
           schema:
-            allOf:
-              - $ref: "../../components/schemas/actors/GetVersionListResponse.yaml"
+            $ref: "../../components/schemas/actors/GetVersionListResponse.yaml"
           example:
             data:
               total: 5

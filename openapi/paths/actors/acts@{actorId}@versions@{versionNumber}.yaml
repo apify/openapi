@@ -159,8 +159,7 @@ put:
     content:
       application/json:
         schema:
-          allOf:
-            - $ref: "../../components/schemas/actors/CreateOrUpdateVersionRequest.yaml"
+          $ref: "../../components/schemas/actors/CreateOrUpdateVersionRequest.yaml"
         example:
           versionNumber: '0.0'
           sourceType: SOURCE_FILES
