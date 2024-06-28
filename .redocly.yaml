@@ -5,6 +5,7 @@ apis:
 extends:
   - recommended
 rules:
+  # TODO: these should probably be errors
   spec: warn
   no-unused-components: warn
 theme:
