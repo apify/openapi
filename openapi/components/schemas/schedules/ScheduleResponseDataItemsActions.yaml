@@ -1,4 +1,4 @@
-title: actions
+title: ScheduleResponseDataItemsActions
 required:
   - id
   - type
