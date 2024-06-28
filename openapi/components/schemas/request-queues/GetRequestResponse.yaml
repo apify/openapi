@@ -5,5 +5,5 @@ type: object
 properties:
   data:
     allOf:
-      - $ref: ./Request1.yaml
+      - $ref: ./RequestQueueRequest.yaml
       - {}

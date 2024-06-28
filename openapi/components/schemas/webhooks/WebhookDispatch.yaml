@@ -29,11 +29,11 @@ properties:
     example: ACTOR.RUN.SUCCEEDED
   eventData:
     allOf:
-      - $ref: ./eventData.yaml
+      - $ref: ./WebhookDispatchEventData.yaml
       - {}
   calls:
     type: array
     items:
-      $ref: ./calls.yaml
+      $ref: ./WebhookDispatchCalls.yaml
     description: ''
     nullable: true
