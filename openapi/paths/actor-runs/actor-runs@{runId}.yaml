@@ -216,7 +216,7 @@ put:
     `isStatusMessageTerminal` property is optional and it indicates if the
     status message is the very last one. In the absence of a status message, the
     platform will try to substitute sensible defaults.
-  operationId: Updatestatusmessage
+  operationId: actorRun_put
   requestBody:
     description: ''
     content:
