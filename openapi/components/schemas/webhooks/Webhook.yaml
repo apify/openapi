@@ -34,7 +34,8 @@ properties:
     type: array
     items:
       type: string
-    description: ''
+    example:
+      - ACTOR.RUN.SUCCEEDED
   condition:
     $ref: ./WebhookCondition.yaml
   ignoreSslErrors:

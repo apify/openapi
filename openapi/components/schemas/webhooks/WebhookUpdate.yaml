@@ -11,6 +11,8 @@ properties:
       type: string
     description: ''
     nullable: true
+    example:
+      - ACTOR.RUN.SUCCEEDED
   condition:
     oneOf:
       - nullable: true
