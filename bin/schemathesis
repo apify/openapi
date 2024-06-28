@@ -1,0 +1,31 @@
+#!/bin/bash
+
+if [ ! -f ../.env ]
+then
+  export $(cat .env | xargs)
+fi
+
+export SCHEMATHESIS_HOOKS=schemathesis_hooks
+st run \
+--report \
+--request-tls-verify=false \
+--set-query "token=$APIFY_STAGING_TOKEN" \
+--set-path "actorId=$ACTOR_ID" \
+--contrib-openapi-fill-missing-examples \
+--hypothesis-phases=generate \
+--checks=all \
+--base-url=https://api-securitybyobscurity.apify.com/ \
+--validate-schema=False \
+--exclude-checks="not_a_server_error" \
+--show-trace \
+--hypothesis-max-examples=10 \
+--rate-limit="25/s" \
+--cassette-path "./vcr" \
+--sanitize-output=False \
+--operation-id="^GetListOfActors$" \
+--operation-id="^GetActor$" \
+openapi.yaml
+
+# --output-truncate=false
+
+

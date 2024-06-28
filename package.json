@@ -10,7 +10,7 @@
   "scripts": {
     "start": "redocly preview-docs",
     "build": "redocly bundle -o openapi",
-    "test": "redocly lint"
+    "test": "redocly lint && redocly bundle -o openapi && bin/schemathesis"
   },
   "packageManager": "yarn@1.22.22"
 }
