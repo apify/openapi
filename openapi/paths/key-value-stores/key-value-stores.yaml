@@ -15,7 +15,7 @@ get:
     order, therefore you can use pagination to incrementally fetch all key-value stores
     while new ones are still being created. To sort the records in descending order, use
     the `desc=1` parameter.
-  operationId: Getlistofkey-valuestores
+  operationId: keyValueStores_get
   parameters:
     - name: offset
       in: query
@@ -137,7 +137,7 @@ post:
 
     If there is another store with the same name, the endpoint does not create a
     new one and returns the existing object instead.
-  operationId: Createkey-valuestore
+  operationId: keyValueStores_post
   parameters:
     - name: name
       in: query

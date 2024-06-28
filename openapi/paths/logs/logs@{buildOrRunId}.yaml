@@ -3,7 +3,7 @@ get:
     - Logs
   summary: Get log
   description: ''
-  operationId: Getlog1
+  operationId: log_get
   parameters:
     - name: buildOrRunId
       in: path

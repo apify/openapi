@@ -24,7 +24,7 @@ get:
     the `desc=1`
 
     parameter.
-  operationId: GetListOfActors
+  operationId: acts_get
   parameters:
     - name: my
       in: query
@@ -123,7 +123,7 @@ post:
     under which that Actor will be classified in Apify Store. For this, it's
     best to use the [constants from our `apify-shared-js`
     package](https://github.com/apify/apify-shared-js/blob/2d43ebc41ece9ad31cd6525bd523fb86939bf860/packages/consts/src/consts.ts#L452-L471).
-  operationId: CreateActor
+  operationId: acts_post
   parameters:
     - name: offset
       in: query

@@ -8,7 +8,7 @@ get:
 
     This endpoint is paginated using `exclusiveStartKey` and `limit` parameters
     - see [Pagination](#introduction/response-structure) for more details.
-  operationId: Getlistofkeys
+  operationId: keyValueStore_keys_get
   security:
     - apiKeyStoreId: []
     - httpBearerStoreId: []

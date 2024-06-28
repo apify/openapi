@@ -3,7 +3,7 @@ get:
     - Webhook dispatches
   summary: Get webhook dispatch
   description: Gets webhook dispatch object with all details.
-  operationId: Getwebhookdispatch
+  operationId: webhookDispatche_get
   parameters:
     - name: dispatchId
       in: path

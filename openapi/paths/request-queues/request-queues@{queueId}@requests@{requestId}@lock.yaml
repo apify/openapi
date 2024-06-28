@@ -6,7 +6,7 @@ put:
     Prolongs request lock. The request lock can be prolonged only by the client
     that has locked it using [Get and lock head
     operation](#reference/request-queues/queue-head-with-locks).
-  operationId: prolongRequestLock
+  operationId: requestQueue_request_lock_put
   parameters:
     - name: queueId
       in: path
@@ -81,7 +81,7 @@ delete:
     Deletes a request lock. The request lock can be deleted only by the client
     that has locked it using [Get and lock head
     operation](#reference/request-queues/queue-head-with-locks).
-  operationId: deleteRequestLock
+  operationId: requestQueue_request_lock_delete
   parameters:
     - name: queueId
       in: path

@@ -9,7 +9,7 @@ post:
 
     Only runs that are starting or running are aborted. For runs with status
     `FINISHED`, `FAILED`, `ABORTING` and `TIMED-OUT` this call does nothing.
-  operationId: AbortRun
+  operationId: act_run_abort_post
   parameters:
     - name: actorId
       in: path

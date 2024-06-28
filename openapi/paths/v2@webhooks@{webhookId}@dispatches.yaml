@@ -3,7 +3,7 @@ get:
     - Webhooks
   summary: Get collection
   description: Gets a given webhook's list of dispatches.
-  operationId: Getcollection
+  operationId: webhook_dispatches_get
   parameters:
     - name: webhookId
       in: path

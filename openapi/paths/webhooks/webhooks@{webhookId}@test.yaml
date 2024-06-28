@@ -3,7 +3,7 @@ post:
     - Webhooks
   summary: Test webhook
   description: Tests a webhook. Creates a webhook dispatch with a dummy payload.
-  operationId: TestWebhook
+  operationId: webhook_test_post
   parameters:
     - name: webhookId
       in: path

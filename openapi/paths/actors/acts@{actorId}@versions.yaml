@@ -6,7 +6,7 @@ get:
     Gets the list of versions of a specific Actor. The response is a JSON object
     with the list of [Version objects](#reference/actors/version-object), where each
     contains basic information about a single version.
-  operationId: GetListOfVersions
+  operationId: act_versions_get
   parameters:
     - name: actorId
       in: path
@@ -87,7 +87,7 @@ post:
 
     The response is the [Version object](#reference/actors/version-object) as
     returned by the [Get version](#reference/actors/version-object/get-version) endpoint.
-  operationId: CreateVersion
+  operationId: act_versions_post
   parameters:
     - name: actorId
       in: path

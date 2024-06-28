@@ -13,7 +13,7 @@ get:
     order. To sort the records in descending order, use the `desc=1`
 
     parameter.
-  operationId: Getlistofwebhookdispatches
+  operationId: webhookDispatches_get
   parameters:
     - name: offset
       in: query

@@ -3,7 +3,7 @@ get:
     - Request queues
   summary: Get request queue
   description: Returns queue object for given queue ID.
-  operationId: getRequestQueue
+  operationId: requestQueue_get
   security:
     - apiKeyQueueId: []
     - httpBearerQueueId: []
@@ -64,7 +64,7 @@ put:
     [Get request
     queue](#reference/request-queues/queue-collection/get-request-queue) API
     endpoint.
-  operationId: updateRequestQueue
+  operationId: requestQueue_put
   parameters:
     - name: queueId
       in: path
@@ -125,7 +125,7 @@ delete:
     - Request queues
   summary: Delete request queue
   description: Deletes given queue.
-  operationId: deleteRequestQueue
+  operationId: requestQueue_delete
   parameters:
     - name: queueId
       in: path

@@ -34,7 +34,7 @@ post:
 
     To run the task asynchronously, use the [Run
     task](#reference/actor-tasks/run-collection/run-task) API endpoint instead.
-  operationId: Runtasksynchronouslyandgetdatasetitems(POST)
+  operationId: actorTask_runSyncGetDatasetItems_post
   parameters:
     - name: actorTaskId
       in: path
@@ -419,7 +419,7 @@ get:
     To run the Task asynchronously, use the [Run task
     asynchronously](#reference/actor-tasks/run-collection/run-task) endpoint
     instead.
-  operationId: Runtasksynchronouslyandgetdatasetitems(GET)
+  operationId: actorTask_runSyncGetDatasetItems_get
   parameters:
     - name: actorTaskId
       in: path

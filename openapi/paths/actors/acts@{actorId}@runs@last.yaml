@@ -114,7 +114,7 @@ get:
 
     In order to save new items to the dataset, send HTTP POST request with JSON
     payload to the same URL.
-  operationId: GetLastRun
+  operationId: act_runs_last_get
   parameters:
     - name: actorId
       in: path

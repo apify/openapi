@@ -15,7 +15,7 @@ get:
 
     Using the `date` parameter will show your usage in the usage cycle that
     includes that date.
-  operationId: Getmonthlyusage
+  operationId: users_me_usage_monthly_get
   parameters:
     - name: date
       in: query

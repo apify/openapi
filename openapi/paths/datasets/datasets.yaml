@@ -10,7 +10,7 @@ get:
     ones are still being created. To sort them in descending order, use `desc=1`
     parameter. The endpoint supports pagination using `limit` and `offset`
     parameters and it will not return more than 1000 array elements.
-  operationId: getListOfDatasets
+  operationId: datasets_get
   parameters:
     - name: offset
       in: query
@@ -107,7 +107,7 @@ post:
     Keep in mind that data stored under unnamed dataset follows [data retention period](https://docs.apify.com/platform/storage#data-retention).
     It creates a dataset with the given name if the parameter name is used.
     If a dataset with the given name already exists then returns its object.
-  operationId: createDataset
+  operationId: datasets_post
   parameters:
     - name: name
       in: query

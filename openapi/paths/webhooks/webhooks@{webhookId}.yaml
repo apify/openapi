@@ -3,7 +3,7 @@ get:
     - Webhooks
   summary: Get webhook
   description: Gets webhook object with all details.
-  operationId: GetWebhook
+  operationId: webhook_get
   parameters:
     - name: webhookId
       in: path
@@ -97,7 +97,7 @@ put:
     When providing your API authentication token, we recommend using the
     request's `Authorization` header, rather than the URL. ([More
     info](#introduction/authentication)).
-  operationId: UpdateWebhook
+  operationId: webhook_put
   parameters:
     - name: webhookId
       in: path
@@ -206,7 +206,7 @@ delete:
     - Webhooks
   summary: Delete webhook
   description: Deletes a webhook.
-  operationId: DeleteWebhook
+  operationId: webhook_delete
   parameters:
     - name: webhookId
       in: path

@@ -3,7 +3,7 @@ get:
     - Actor tasks
   summary: Get task input
   description: Returns the input of a given task.
-  operationId: Gettaskinput
+  operationId: actorTask_input_get
   parameters:
     - name: actorTaskId
       in: path
@@ -46,7 +46,7 @@ put:
     When providing your API authentication token, we recommend using the
     request's `Authorization` header, rather than the URL. ([More
     info](#introduction/authentication)).
-  operationId: Updatetaskinput
+  operationId: actorTask_input_put
   parameters:
     - name: actorTaskId
       in: path

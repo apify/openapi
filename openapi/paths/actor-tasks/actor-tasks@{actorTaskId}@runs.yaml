@@ -14,7 +14,7 @@ get:
     new ones are still being created. To sort the records in descending order, use
     the `desc=1` parameter. You can also filter runs by status ([available
     statuses](https://docs.apify.com/platform/actors/running/runs-and-builds#lifecycle)).
-  operationId: Getlistoftaskruns
+  operationId: actorTask_runs_get
   parameters:
     - name: actorTaskId
       in: path
@@ -150,7 +150,7 @@ post:
     dataset, you'll need to pass the ID received in the `defaultDatasetId` field
     received in the response JSON to the 
     [Get items](#reference/datasets/item-collection/get-items) API endpoint.
-  operationId: Runtask
+  operationId: actorTask_runs_post
   parameters:
     - name: actorTaskId
       in: path

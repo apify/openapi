@@ -8,7 +8,7 @@ get:
    
     **NOTE:** Keep in mind that attributes `itemCount` and `cleanItemCount` are not propagated right away after data are pushed into a dataset.
     There is a short period (up to 5 seconds) during which these counters may not match with exact counts in dataset items.
-  operationId: getDataset
+  operationId: dataset_get
   parameters:
     - name: datasetId
       in: path
@@ -56,7 +56,7 @@ put:
   description: >-
     Updates a dataset's name using a value specified by a JSON object passed in the PUT payload.
     The response is the updated dataset object, as returned by the [Get dataset](#reference/datasets/dataset-collection/get-dataset) API endpoint.
-  operationId: updateDataset
+  operationId: dataset_put
   parameters:
     - name: datasetId
       in: path
@@ -102,7 +102,7 @@ delete:
     - Datasets
   summary: Delete dataset
   description: Deletes a specific dataset.
-  operationId: deleteDataset
+  operationId: dataset_delete
   parameters:
     - name: datasetId
       in: path
