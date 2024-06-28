@@ -8,13 +8,9 @@ required:
 type: object
 properties:
   usageCycle:
-    allOf:
-      - $ref: ./UsageCycle.yaml
-      - {}
+    $ref: ./UsageCycle.yaml
   monthlyServiceUsage:
-    allOf:
-      - $ref: ./MonthlyServiceUsage.yaml
-      - {}
+    $ref: ./MonthlyServiceUsage.yaml
   dailyServiceUsages:
     type: array
     items:

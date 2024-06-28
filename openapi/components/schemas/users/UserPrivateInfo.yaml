@@ -15,17 +15,11 @@ properties:
     type: string
     example: myusername
   profile:
-    allOf:
-      - $ref: ./Profile.yaml
-      - {}
+    $ref: ./Profile.yaml
   email:
     type: string
     example: bob@example.com
   proxy:
-    allOf:
-      - $ref: ./Proxy.yaml
-      - {}
+    $ref: ./Proxy.yaml
   plan:
-    allOf:
-      - $ref: ./Plan.yaml
-      - {}
+    $ref: ./Plan.yaml
