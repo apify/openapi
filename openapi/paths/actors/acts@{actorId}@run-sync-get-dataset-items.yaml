@@ -4,39 +4,29 @@ post:
   summary: Run Actor synchronously with input and get dataset items
   description: >-
     Runs a specific Actor and returns its dataset items.
-
-
     The POST payload including its `Content-Type` header is passed as `INPUT` to
     the Actor (usually `application/json`).
 
     The HTTP response contains the Actors dataset items, while the format of
     items depends on specifying dataset items' `format` parameter.
 
-
     You can send all the same options in parameters as the [Get Dataset
     Items](#reference/datasets/item-collection/get-items) API endpoint.
-
 
     The Actor is started with the default options; you can override them using
     URL query parameters.
 
     If the Actor run exceeds 300<!-- MAX_ACTOR_JOB_SYNC_WAIT_SECS --> seconds,
-
     the HTTP response will return the 408 status code (Request Timeout).
 
-
     Beware that it might be impossible to maintain an idle HTTP connection for a
-    long period of time,
-
-    due to client timeout or network conditions. Make sure your HTTP client is
+    long period of time, due to client timeout or network conditions. Make sure your HTTP client is
     configured to have a long enough connection timeout.
 
     If the connection breaks, you will not receive any information about the run
     and its status.
 
-
-    To run the Actor asynchronously, use the [Run
-    Actor](#reference/actors/run-collection/run-actor) API endpoint instead.
+    To run the Actor asynchronously, use the [Run Actor](#reference/actors/run-collection/run-actor) API endpoint instead.
   operationId: act_runSyncGetDatasetItems_post
   parameters:
     - name: actorId
@@ -104,8 +94,7 @@ post:
         e.g. when the Actor finished or failed. The value is a Base64-encoded
         JSON array of objects defining the webhooks. For more information, see
 
-        [Webhooks
-        documenation](https://docs.apify.com/platform/integrations/webhooks).
+        [Webhooks documenation](https://docs.apify.com/platform/integrations/webhooks).
       style: form
       explode: true
       schema:
@@ -125,9 +114,7 @@ post:
       in: query
       description: >-
         If `true` or `1` then the API endpoint returns only non-empty items and
-        skips hidden fields
-
-        (i.e. fields starting with the # character).
+        skips hidden fields (i.e. fields starting with the # character).
 
         The `clean` parameter is just a shortcut for `skipHidden=true` and
         `skipEmpty=true` parameters.
@@ -163,12 +150,10 @@ post:
       in: query
       description: >-
         A comma-separated list of fields which should be picked from the items,
-
         only these fields will remain in the resulting record objects.
 
         Note that the fields in the outputted items are sorted the same way as
         they are specified in the `fields` query parameter.
-
         You can use this feature to effectively fix the output format.
       style: form
       explode: true
@@ -187,9 +172,7 @@ post:
       in: query
       description: >-
         Name of a field which should be unwound. If the field is an array then
-        every element of
-
-        the array will become a separate record and merged with parent object.
+        every element of the array will become a separate record and merged with parent object.
 
         If the unwound field is an object then it is merged with the parent
         object
@@ -426,16 +409,13 @@ get:
   summary: Run actor synchronously without input and get dataset items
   description: >-
     Runs a specific actor and returns its dataset items.
-
     The run must finish in 300<!-- MAX_ACTOR_JOB_SYNC_WAIT_SECS --> seconds
     otherwise the API endpoint returns a timeout error.
 
     The actor is not passed any input.
 
-
     It allows to send all possible options in parameters from [Get Dataset
     Items](#reference/datasets/item-collection/get-items) API endpoint.
-
 
     Beware that it might be impossible to maintain an idle HTTP connection for a
     long period of time,
@@ -445,7 +425,6 @@ get:
 
     If the connection breaks, you will not receive any information about the run
     and its status.
-
 
     To run the Actor asynchronously, use the [Run
     Actor](#reference/actors/run-collection/run-actor) API endpoint instead.
@@ -516,8 +495,7 @@ get:
         e.g. when the Actor finished or failed. The value is a Base64-encoded
         JSON array of objects defining the webhooks. For more information, see
 
-        [Webhooks
-        documenation](https://docs.apify.com/platform/integrations/webhooks).
+        [Webhooks documenation](https://docs.apify.com/platform/integrations/webhooks).
       style: form
       explode: true
       schema:
@@ -537,9 +515,7 @@ get:
       in: query
       description: >-
         If `true` or `1` then the API endpoint returns only non-empty items and
-        skips hidden fields
-
-        (i.e. fields starting with the # character).
+        skips hidden fields (i.e. fields starting with the # character).
 
         The `clean` parameter is just a shortcut for `skipHidden=true` and
         `skipEmpty=true` parameters.
@@ -575,7 +551,6 @@ get:
       in: query
       description: >-
         A comma-separated list of fields which should be picked from the items,
-
         only these fields will remain in the resulting record objects.
 
         Note that the fields in the outputted items are sorted the same way as
@@ -599,12 +574,10 @@ get:
       in: query
       description: >-
         Name of a field which should be unwound. If the field is an array then
-        every element of
-
-        the array will become a separate record and merged with parent object.
+        every element of the array will become a separate record and merged with parent object.
 
         If the unwound field is an object then it is merged with the parent
-        object
+        object.
 
         If the unwound field is missing or its value is neither an array nor an
         object and therefore cannot be merged with a parent object then the item
@@ -734,13 +707,9 @@ get:
       in: query
       description: >-
         If `true` or `1` then, the endpoint applies the
-        `fields=url,pageFunctionResult,errorInfo`
-
-        and `unwind=pageFunctionResult` query parameters. This feature is used
-        to emulate simplified results provided by the
-
-        legacy Apify Crawler product and it's not recommended to use it in new
-        integrations.
+        `fields=url,pageFunctionResult,errorInfo` and `unwind=pageFunctionResult` query parameters. 
+        This feature is used to emulate simplified results provided by the
+        legacy Apify Crawler product and it's not recommended to use it in new integrations.
       style: form
       explode: true
       schema:

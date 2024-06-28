@@ -7,13 +7,11 @@ get:
     under new namespace [`actor-builds`](#reference/actor-builds).Gets an object
     that contains all the details about a specific build of an Actor.
 
-
     By passing the optional `waitForFinish` parameter the API endpoint will
     synchronously wait for the build to finish.
 
     This is useful to avoid periodic polling when waiting for an Actor build to
     finish.
-
 
     This endpoint does not require the authentication token. The calls are
     authenticated using a hard-to-guess ID of the build.
@@ -44,8 +42,8 @@ get:
         The maximum number of seconds the server waits for the build to finish.
         By default it is `0`, the maximum value is `60`. <!--
         MAX_ACTOR_JOB_ASYNC_WAIT_SECS -->
-                                             If the build finishes in time then the returned build object will have a terminal status (e.g. `SUCCEEDED`),
-                                             otherwise it will have a transitional status (e.g. `RUNNING`).
+        If the build finishes in time then the returned build object will have a terminal status (e.g. `SUCCEEDED`),
+        otherwise it will have a transitional status (e.g. `RUNNING`).
       style: form
       explode: true
       schema:

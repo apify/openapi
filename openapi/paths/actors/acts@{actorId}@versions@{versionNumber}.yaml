@@ -192,10 +192,7 @@ delete:
     Actor.
 
     The `sourceType` property indicates where the source code is hosted, and
-    based
-
-    on its value the Version object has the following additional property:
-
+    based on its value the Version object has the following additional property:
 
     <table>
       <tr>
