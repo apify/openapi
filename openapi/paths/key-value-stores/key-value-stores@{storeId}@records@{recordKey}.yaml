@@ -5,7 +5,6 @@ get:
   description: >-
     Gets a value stored in the key-value store under a specific key.
 
-
     The response body has the same `Content-Encoding` header as it was set in
     [Put record](#reference/key-value-stores/key-collection/put-record).
 
