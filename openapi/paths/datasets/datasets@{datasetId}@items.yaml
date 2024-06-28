@@ -10,9 +10,13 @@ get:
 
 
     The format of the response depends on <code>format</code> query parameter.
+
+
     The <code>format</code> parameter can have one of the following values:
+
     <code>json</code>, <code>jsonl</code>, <code>xml</code>, <code>html</code>,
     <code>csv</code>, <code>xlsx</code> and <code>rss</code>.
+
 
     The following table describes how each format is treated.
 
@@ -187,8 +191,10 @@ get:
 
     If you specify `desc=1` query parameter, the results are returned in the reverse order than they were stored (i.e. from newest to oldest items).
     Note that only the order of **Items** is reversed, but not the order of the `unwind` array elements.
-
   operationId: getItems
+  security:
+    - apiKeyStoreId: []
+    - httpBearerStoreId: []
   parameters:
     - name: datasetId
       in: path
@@ -198,15 +204,6 @@ get:
       schema:
         type: string
         example: WkzbQMuFYuamGv3YF
-    - name: token
-      in: query
-      description: >-
-        API authentication token. It is required only when using the `username~dataset-name` format for `datasetId`.
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
     - name: format
       in: query
       description: >-
@@ -489,15 +486,6 @@ post:
       schema:
         type: string
         example: WkzbQMuFYuamGv3YF
-    - name: token
-      in: query
-      description: API authentication token.
-      required: true
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
     - name: format
       in: query
       description: ''

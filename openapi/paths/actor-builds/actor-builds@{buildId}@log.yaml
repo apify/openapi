@@ -14,15 +14,6 @@ get:
       schema:
         type: string
         example: HG7ML7M8z78YcAPEB
-    - name: token
-      in: query
-      description: API authentication token.
-      required: true
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
     - name: stream
       in: query
       description: >-

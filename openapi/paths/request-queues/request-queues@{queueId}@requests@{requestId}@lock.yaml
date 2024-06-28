@@ -24,15 +24,6 @@ put:
       schema:
         type: string
         example: xpsmkDlspokDSmklS
-    - name: token
-      in: query
-      description: API authentication token.
-      required: true
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
     - name: lockSecs
       in: query
       description: For how long second request will be locked.
@@ -108,15 +99,6 @@ delete:
       schema:
         type: string
         example: xpsmkDlspokDSmklS
-    - name: token
-      in: query
-      description: API authentication token.
-      required: true
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
     - name: Content-Type
       in: header
       description: ''
@@ -150,13 +132,6 @@ delete:
       schema:
         type: string
         example: 'false'
-    - name: lockSecs
-      in: query
-      description: ''
-      style: form
-      explode: true
-      schema:
-        type: string
   responses:
     '204':
       description: ''

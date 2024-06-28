@@ -643,29 +643,29 @@ paths:
   '/v2/acts/{actorId}/runs/last':
     $ref: 'paths/actors/acts@{actorId}@runs@last.yaml'
   /v2/actor-tasks:
-    $ref: paths/actor-tasks/v2@actor-tasks.yaml
+    $ref: 'paths/actor-tasks/actor-tasks.yaml'
   '/v2/actor-tasks/{actorTaskId}':
-    $ref: 'paths/actor-tasks/v2@actor-tasks@{actorTaskId}.yaml'
+    $ref: 'paths/actor-tasks/actor-tasks@{actorTaskId}.yaml'
   '/v2/actor-tasks/{actorTaskId}/input':
-    $ref: 'paths/actor-tasks/v2@actor-tasks@{actorTaskId}@input.yaml'
+    $ref: 'paths/actor-tasks/actor-tasks@{actorTaskId}@input.yaml'
   '/v2/actor-tasks/{actorTaskId}/webhooks':
-    $ref: 'paths/actor-tasks/v2@actor-tasks@{actorTaskId}@webhooks.yaml'
+    $ref: 'paths/actor-tasks/actor-tasks@{actorTaskId}@webhooks.yaml'
   '/v2/actor-tasks/{actorTaskId}/runs':
-    $ref: 'paths/actor-tasks/v2@actor-tasks@{actorTaskId}@runs.yaml'
+    $ref: 'paths/actor-tasks/actor-tasks@{actorTaskId}@runs.yaml'
   '/v2/actor-tasks/{actorTaskId}/run-sync':
-    $ref: 'paths/actor-tasks/v2@actor-tasks@{actorTaskId}@run-sync.yaml'
+    $ref: 'paths/actor-tasks/actor-tasks@{actorTaskId}@run-sync.yaml'
   '/v2/actor-tasks/{actorTaskId}/run-sync-get-dataset-items':
-    $ref: 'paths/actor-tasks/v2@actor-tasks@{actorTaskId}@run-sync-get-dataset-items.yaml'
+    $ref: 'paths/actor-tasks/actor-tasks@{actorTaskId}@run-sync-get-dataset-items.yaml'
   /v2/actor-runs:
-    $ref: paths/v2@actor-runs.yaml
+    $ref: paths/actor-runs/actor-runs.yaml
   '/v2/actor-runs/{runId}':
-    $ref: 'paths/v2@actor-runs@{runId}.yaml'
+    $ref: paths/actor-runs/actor-runs@{runId}.yaml
   '/v2/actor-runs/{runId}/abort':
-    $ref: 'paths/v2@actor-runs@{runId}@abort.yaml'
+    $ref: paths/actor-runs/actor-runs@{runId}@abort.yaml
   '/v2/actor-runs/{runId}/metamorph':
-    $ref: 'paths/v2@actor-runs@{runId}@metamorph.yaml'
+    $ref: paths/actor-runs/actor-runs@{runId}@metamorph.yaml
   '/v2/actor-runs/{runId}/reboot':
-    $ref: 'paths/v2@actor-runs@{runId}@reboot.yaml'
+    $ref: paths/actor-runs/actor-runs@{runId}@reboot.yaml
   /v2/actor-builds:
     $ref: paths/actor-builds/actor-builds.yaml
   '/v2/actor-builds/{buildId}':
@@ -723,7 +723,7 @@ paths:
   '/v2/schedules/{scheduleId}/log':
     $ref: 'paths/schedules/schedules@{scheduleId}@log.yaml'
   /v2/store:
-    $ref: paths/store.yaml
+    $ref: paths/store/store.yaml
   '/v2/logs/{buildOrRunId}':
     $ref: 'paths/logs/logs@{buildOrRunId}.yaml'
   '/v2/users/{userId}':
@@ -737,10 +737,28 @@ paths:
 components:
   securitySchemes:
     httpBearer:
-      type: http
-      scheme: bearer
+      $ref: components/securitySchemes/httpBearer.yaml
+    httpBearerActorBuilds:
+      $ref: components/securitySchemes/httpBearerActorBuilds.yaml
+    httpBearerActorRuns:
+        $ref: components/securitySchemes/httpBearerActorRuns.yaml
+    httpBearerStoreId:
+      $ref: components/securitySchemes/httpBearerStoreId.yaml
+    httpBearerQueueId:
+      $ref: components/securitySchemes/httpBearerQueueId.yaml
+    apiKey:
+      $ref: components/securitySchemes/apiKey.yaml
+    apiKeyActorBuilds:
+      $ref: components/securitySchemes/apiKeyActorBuilds.yaml
+    apiKeyActorRuns:
+      $ref: components/securitySchemes/apiKeyActorRuns.yaml
+    apiKeyStoreId:
+      $ref: components/securitySchemes/apiKeyStoreId.yaml
+    apiKeyQueueId:
+      $ref: components/securitySchemes/apiKeyQueueId.yaml
 security:
   - httpBearer: []
+  - apiKey: []
 tags:
   - name: Actors
     description: >-

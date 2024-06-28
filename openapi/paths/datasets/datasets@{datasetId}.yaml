@@ -4,6 +4,8 @@ get:
   summary: Get dataset
   description: >-
     Returns dataset object for given dataset ID.
+   
+   
     **NOTE:** Keep in mind that attributes `itemCount` and `cleanItemCount` are not propagated right away after data are pushed into a dataset.
     There is a short period (up to 5 seconds) during which these counters may not match with exact counts in dataset items.
   operationId: getDataset
@@ -64,15 +66,6 @@ put:
       schema:
         type: string
         example: WkzbQMuFYuamGv3YF
-    - name: token
-      in: query
-      description: API authentication token.
-      required: true
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
   requestBody:
     description: ''
     content:
@@ -119,15 +112,6 @@ delete:
       schema:
         type: string
         example: WkzbQMuFYuamGv3YF
-    - name: token
-      in: query
-      description: API authentication token.
-      required: true
-      style: form
-      explode: true
-      schema:
-        type: string
-        example: soSkq9ekdmfOslopH
   responses:
     '204':
       description: ''
