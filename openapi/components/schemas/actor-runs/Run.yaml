@@ -48,17 +48,11 @@ properties:
     nullable: true
     example: false
   meta:
-    allOf:
-      - $ref: ../meta.yaml
-      - {}
+    $ref: ./RunMeta.yaml
   stats:
-    allOf:
-      - $ref: ../stats7.yaml
-      - {}
+    $ref: ./RunStats.yaml
   options:
-    allOf:
-      - $ref: ../options5.yaml
-      - {}
+    $ref: ./RunOptions.yaml
   buildId:
     type: string
     example: 7sT5jcggjjA9fNcxF
@@ -93,7 +87,7 @@ properties:
     allOf:
       - oneOf:
           - nullable: true
-          - $ref: ../usage2.yaml
+          - $ref: ./RunUsage.yaml
       - {}
   usageTotalUsd:
     type: number
@@ -103,5 +97,5 @@ properties:
     allOf:
       - oneOf:
           - nullable: true
-          - $ref: ../usageUsd2.yaml
+          - $ref: ./RunUsage.yaml
       - {}

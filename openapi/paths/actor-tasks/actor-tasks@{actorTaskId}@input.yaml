@@ -61,7 +61,7 @@ put:
     content:
       application/json:
         schema:
-            type: object
+          type: object
         example:
           myField2: updated-value
     required: true

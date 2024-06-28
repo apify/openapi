@@ -675,13 +675,13 @@ paths:
   '/v2/actor-builds/{buildId}/log':
     $ref: 'paths/actor-builds/actor-builds@{buildId}@log.yaml'
   /v2/key-value-stores:
-    $ref: paths/v2@key-value-stores.yaml
+    $ref: paths/key-value-stores/key-value-stores.yaml
   '/v2/key-value-stores/{storeId}':
-    $ref: 'paths/v2@key-value-stores@{storeId}.yaml'
+    $ref: 'paths/key-value-stores/key-value-stores@{storeId}.yaml'
   '/v2/key-value-stores/{storeId}/keys':
-    $ref: 'paths/v2@key-value-stores@{storeId}@keys.yaml'
+    $ref: 'paths/key-value-stores/key-value-stores@{storeId}@keys.yaml'
   '/v2/key-value-stores/{storeId}/records/{recordKey}':
-    $ref: 'paths/v2@key-value-stores@{storeId}@records@{recordKey}.yaml'
+    $ref: 'paths/key-value-stores/key-value-stores@{storeId}@records@{recordKey}.yaml'
   /v2/datasets:
     $ref: paths/datasets/datasets.yaml
   '/v2/datasets/{datasetId}':
@@ -711,11 +711,11 @@ paths:
   '/v2/webhooks/{webhookId}/test':
     $ref: 'paths/webhooks/webhooks@{webhookId}@test.yaml'
   '/v2/webhooks/{webhookId}/dispatches':
-    $ref: 'paths/v2@webhooks@{webhookId}@dispatches.yaml'
+    $ref: 'paths/webhooks/webhooks@{webhookId}@dispatches.yaml'
   /v2/webhook-dispatches:
-    $ref: paths/v2@webhook-dispatches.yaml
+    $ref: paths/webhook-dispatches/webhook-dispatches.yaml
   '/v2/webhook-dispatches/{dispatchId}':
-    $ref: 'paths/v2@webhook-dispatches@{dispatchId}.yaml'
+    $ref: 'paths/webhook-dispatches/webhook-dispatches@{dispatchId}.yaml'
   /v2/schedules:
     $ref: 'paths/schedules/schedules.yaml'
   '/v2/schedules/{scheduleId}':
