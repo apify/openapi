@@ -1,4 +1,4 @@
-title: RequestQueueRequest
+title: RequestQueueItems
 required:
   - id
   - retryCount

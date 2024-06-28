@@ -9,7 +9,7 @@ properties:
       items:
         type: array
         items:
-          $ref: ./RequestQueueRequest.yaml
+          $ref: ./RequestQueueItems.yaml
         description: ''
       count:
         type: number
