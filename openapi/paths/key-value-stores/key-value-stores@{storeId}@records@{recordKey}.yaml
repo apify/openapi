@@ -72,22 +72,15 @@ put:
     type defined by the `Content-Type` header and with encoding defined by the
     `Content-Encoding` header.
 
-
     To save bandwidth, storage, and speed up your upload, send the request
-    payload compressed with Gzip compression and
-
-    add the `Content-Encoding: gzip` header. It is possible to set up another
-    compression type with `Content-Encoding` request header.
+    payload compressed with Gzip compression and add the `Content-Encoding: gzip` 
+    header. It is possible to set up another compression type with `Content-Encoding` 
+    request header.
 
     Below is a list of supported `Content-Encoding` types.
 
-
     * Gzip compression: `Content-Encoding: gzip`
-
-
     * Deflate compression: `Content-Encoding: deflate`
-
-
     * Brotli compression: `Content-Encoding: br`
   operationId: keyValueStore_record_put
   parameters:
@@ -122,10 +115,7 @@ put:
     content:
       application/json:
         schema:
-          allOf:
-            - $ref: ../../components/schemas/key-value-stores/PutRecordRequest.yaml
-            - example:
-                foo: bar
+          $ref: ../../components/schemas/key-value-stores/PutRecordRequest.yaml
         example:
           foo: bar
     required: true
@@ -144,7 +134,6 @@ put:
         application/json:
           schema:
             type: object
-            example: {}
           example: {}
   deprecated: false
 delete:

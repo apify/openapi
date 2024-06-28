@@ -45,20 +45,7 @@ get:
       content:
         application/json:
           schema:
-            allOf:
-              - $ref: ../../components/schemas/key-value-stores/GetListOfKeysResponse.yaml
-              - example:
-                  data:
-                    items:
-                      - key: second-key
-                        size: 36
-                      - key: third-key
-                        size: 128
-                    count: 2
-                    limit: 2
-                    exclusiveStartKey: some-key
-                    isTruncated: true
-                    nextExclusiveStartKey: third-key
+            $ref: ../../components/schemas/key-value-stores/GetListOfKeysResponse.yaml
           example:
             data:
               items:

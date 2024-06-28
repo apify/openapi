@@ -66,34 +66,7 @@ get:
       content:
         application/json:
           schema:
-            allOf:
-              - $ref: ../../components/schemas/key-value-stores/GetListOfKeyValueStoresResponse.yaml
-              - example:
-                  data:
-                    total: 2
-                    offset: 0
-                    limit: 1000
-                    desc: false
-                    count: 2
-                    items:
-                      - id: WkzbQMuFYuamGv3YF
-                        name: d7b9MDYsbtX5L7XAj
-                        userId: BPWDBd7Z9c746JAnF
-                        username: janedoe
-                        createdAt: '2019-12-12T07:34:14.202Z'
-                        modifiedAt: '2019-12-13T08:36:13.202Z'
-                        accessedAt: '2019-12-14T08:36:13.202Z'
-                        actId: null
-                        actRunId: null
-                      - id: YiKoxjkaS9gjGTqhF
-                        name: eshop-items
-                        userId: BPWDBd7Z9c746JAnF
-                        username: janedoe
-                        createdAt: '2019-12-12T07:34:14.202Z'
-                        modifiedAt: '2019-12-13T08:36:13.202Z'
-                        accessedAt: '2019-12-14T08:36:13.202Z'
-                        actId: null
-                        actRunId: null
+            $ref: ../../components/schemas/key-value-stores/GetListOfKeyValueStoresResponse.yaml
           example:
             data:
               total: 2
@@ -134,7 +107,6 @@ post:
     period](https://docs.apify.com/platform/storage#data-retention).
 
     It creates a store with the given name if the parameter name is used.
-
     If there is another store with the same name, the endpoint does not create a
     new one and returns the existing object instead.
   operationId: keyValueStores_post
@@ -160,18 +132,7 @@ post:
       content:
         application/json:
           schema:
-            allOf:
-              - $ref: ../../components/schemas/key-value-stores/CreateKeyValueStoreResponse.yaml
-              - example:
-                  data:
-                    id: WkzbQMuFYuamGv3YF
-                    name: d7b9MDYsbtX5L7XAj
-                    userId: wRsJZtadYvn4mBZmm
-                    createdAt: '2019-12-12T07:34:14.202Z'
-                    modifiedAt: '2019-12-13T08:36:13.202Z'
-                    accessedAt: '2019-12-14T08:36:13.202Z'
-                    actId: null
-                    actRunId: null
+            $ref: ../../components/schemas/key-value-stores/CreateKeyValueStoreResponse.yaml
           example:
             data:
               id: WkzbQMuFYuamGv3YF

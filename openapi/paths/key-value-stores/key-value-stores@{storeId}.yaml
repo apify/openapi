@@ -25,18 +25,7 @@ get:
       content:
         application/json:
           schema:
-            allOf:
-              - $ref: ../../components/schemas/key-value-stores/GetStoreResponse.yaml
-              - example:
-                  data:
-                    id: WkzbQMuFYuamGv3YF
-                    name: d7b9MDYsbtX5L7XAj
-                    userId: wRsJZtadYvn4mBZmm
-                    createdAt: '2019-12-12T07:34:14.202Z'
-                    modifiedAt: '2019-12-13T08:36:13.202Z'
-                    accessedAt: '2019-12-14T08:36:13.202Z'
-                    actId: null
-                    actRunId: null
+            $ref: ../../components/schemas/key-value-stores/GetStoreResponse.yaml
           example:
             data:
               id: WkzbQMuFYuamGv3YF
@@ -55,7 +44,6 @@ put:
   description: >-
     Updates a key-value store's name using a value specified by a JSON object
     passed in the PUT payload.
-
 
     The response is the updated key-value store object, as returned by the [Get
     store](#reference/key-value-stores/store-object/get-store) API endpoint.
@@ -88,18 +76,7 @@ put:
       content:
         application/json:
           schema:
-            allOf:
-              - $ref: ../../components/schemas/key-value-stores/UpdateStoreResponse.yaml
-              - example:
-                  data:
-                    id: WkzbQMuFYuamGv3YF
-                    name: d7b9MDYsbtX5L7XAj
-                    userId: wRsJZtadYvn4mBZmm
-                    createdAt: '2019-12-12T07:34:14.202Z'
-                    modifiedAt: '2019-12-13T08:36:13.202Z'
-                    accessedAt: '2019-12-14T08:36:13.202Z'
-                    actId: null
-                    actRunId: null
+            $ref: ../../components/schemas/key-value-stores/UpdateStoreResponse.yaml
           example:
             data:
               id: WkzbQMuFYuamGv3YF
