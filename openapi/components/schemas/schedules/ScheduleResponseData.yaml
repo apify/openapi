@@ -26,5 +26,5 @@ properties:
   items:
     type: array
     items:
-      $ref: ./ScheduleShort1.yaml
+      $ref: ./ScheduleResponseDataItems.yaml
     description: ''
