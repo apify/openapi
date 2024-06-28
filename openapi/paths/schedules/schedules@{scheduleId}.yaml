@@ -20,7 +20,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../../components/schemas/schedules/GetScheduleResponse.yaml
+            $ref: ../../components/schemas/schedules/ScheduleResponse.yaml
   deprecated: false
 put:
   tags:
@@ -67,7 +67,7 @@ put:
       content:
         application/json:
           schema:
-            $ref: ../../components/schemas/schedules/UpdateScheduleResponse.yaml
+            $ref: ../../components/schemas/schedules/ScheduleResponse.yaml
   deprecated: false
 delete:
   tags:

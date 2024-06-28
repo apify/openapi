@@ -89,5 +89,5 @@ post:
       content:
         application/json:
           schema:
-            $ref: ../../components/schemas/schedules/CreateScheduleResponse.yaml
+            $ref: ../../components/schemas/schedules/ScheduleResponse.yaml
   deprecated: false
