@@ -9,11 +9,9 @@ properties:
     type: string
     example: '0.0'
   sourceType:
-    allOf:
-      - oneOf:
-          - nullable: true
-          - $ref: ./VersionSourceType.yaml
-      - {}
+    oneOf:
+      - nullable: true
+      - $ref: ./VersionSourceType.yaml
   envVars:
     type: array
     items:

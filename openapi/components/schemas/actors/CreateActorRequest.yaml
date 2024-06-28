@@ -42,8 +42,6 @@ properties:
     description: ''
     nullable: true
   defaultRunOptions:
-    allOf:
-      - oneOf:
-          - nullable: true
-          - $ref: ./DefaultRunOptions.yaml
-      - {}
+    oneOf:
+      - nullable: true
+      - $ref: ./DefaultRunOptions.yaml

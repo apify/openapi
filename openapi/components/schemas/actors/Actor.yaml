@@ -43,9 +43,7 @@ properties:
     type: string
     example: '2019-07-08T14:01:05.546Z'
   stats:
-    allOf:
-      - $ref: ../stats.yaml
-      - {}
+    $ref: ../stats.yaml
   versions:
     type: array
     items:
@@ -54,11 +52,9 @@ properties:
   defaultRunOptions:
       $ref: ./DefaultRunOptions.yaml
   exampleRunInput:
-    allOf:
-      - oneOf:
-          - nullable: true
-          - $ref: ./ExampleRunInput.yaml
-      - {}
+    oneOf:
+      - nullable: true
+      - $ref: ./ExampleRunInput.yaml
   isDeprecated:
     type: boolean
     nullable: true
