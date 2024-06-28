@@ -3,7 +3,7 @@ get:
     - Actors
   summary: Get Actor
   description: Gets an object that contains all the details about a specific Actor.
-  operationId: GetActor
+  operationId: act_get
   parameters:
     - name: actorId
       in: path
@@ -114,7 +114,7 @@ put:
     under which that Actor will be classified in Apify Store. For this, it's
     best to use the [constants from our `apify-shared-js`
     package](https://github.com/apify/apify-shared-js/blob/2d43ebc41ece9ad31cd6525bd523fb86939bf860/packages/consts/src/consts.ts#L452-L471).
-  operationId: UpdateActor
+  operationId: act_put
   parameters:
     - name: actorId
       in: path
@@ -231,7 +231,7 @@ delete:
     - Actors
   summary: Delete Actor
   description: Deletes an Actor.
-  operationId: DeleteActor
+  operationId: act_delete
   parameters:
     - name: actorId
       in: path

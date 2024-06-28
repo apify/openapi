@@ -19,7 +19,7 @@ post:
 
     For more information, see the [Actor
     docs](https://docs.apify.com/platform/actors/running/runs-and-builds#resurrection-of-finished-run).
-  operationId: ResurrectRun
+  operationId: act_run_resurrect_post
   parameters:
     - name: actorId
       in: path

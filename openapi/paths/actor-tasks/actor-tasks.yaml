@@ -14,7 +14,7 @@ get:
     order; therefore you can use pagination to incrementally fetch all tasks while new
     ones are still being created. To sort the records in descending order, use
     the `desc=1` parameter.
-  operationId: Getlistoftasks
+  operationId: actorTasks_get
   parameters:
     - name: offset
       in: query
@@ -115,7 +115,7 @@ post:
     When providing your API authentication token, we recommend using the
     request's `Authorization` header, rather than the URL. ([More
     info](#introduction/authentication)).
-  operationId: Createtask
+  operationId: actorTasks_post
   requestBody:
     description: ''
     content:

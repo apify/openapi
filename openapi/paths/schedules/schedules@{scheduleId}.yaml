@@ -3,7 +3,7 @@ get:
     - Schedules
   summary: Get schedule
   description: Gets the schedule object with all details.
-  operationId: GetSchedule
+  operationId: schedule_get
   parameters:
     - name: scheduleId
       in: path
@@ -41,7 +41,7 @@ put:
     When providing your API authentication token, we recommend using the
     request's `Authorization` header, rather than the URL. ([More
     info](#introduction/authentication)).
-  operationId: UpdateSchedule
+  operationId: schedule_put
   parameters:
     - name: scheduleId
       in: path
@@ -74,7 +74,7 @@ delete:
     - Schedules
   summary: Delete schedule
   description: Deletes a schedule.
-  operationId: DeleteSchedule
+  operationId: schedule_delete
   parameters:
     - name: scheduleId
       in: path

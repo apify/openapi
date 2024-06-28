@@ -20,7 +20,7 @@ post:
 
     For more information, see the [Actor
     docs](https://docs.apify.com/platform/actors/development/programming-interface/metamorph).
-  operationId: PostMetamorphRun
+  operationId: actorRun_metamorph_post
   parameters:
     - name: runId
       in: path

@@ -7,7 +7,7 @@ get:
     contains all the details about a specific environment variable of an Actor.
 
     If `isSecret` is set to `true`, then `value` will never be returned.
-  operationId: GetEnvironmentVariable
+  operationId: act_version_envVar_get
   parameters:
     - name: actorId
       in: path
@@ -76,7 +76,7 @@ put:
     [Get environment
     variable](#reference/actors/environment-variable-object/get-environment-variable)
     endpoint.
-  operationId: UpdateEnvironmentVariable
+  operationId: act_version_envVar_put
   parameters:
     - name: actorId
       in: path
@@ -132,7 +132,7 @@ delete:
     - Actors
   summary: Delete environment variable
   description: Deletes a specific environment variable.
-  operationId: DeleteEnvironmentVariable
+  operationId: act_version_envVar_delete
   parameters:
     - name: actorId
       in: path

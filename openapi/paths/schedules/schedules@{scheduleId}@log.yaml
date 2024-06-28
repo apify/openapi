@@ -5,7 +5,7 @@ get:
   description: >-
     Gets the schedule log as a JSON array containing information about up to a
     1000 invocations of the schedule.
-  operationId: GetScheduleLog
+  operationId: schedule_log_get
   parameters:
     - name: scheduleId
       in: path

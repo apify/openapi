@@ -5,7 +5,7 @@ get:
   description: >-
     Gets an object that contains all the details about a specific key-value
     store.
-  operationId: Getstore
+  operationId: keyValueStore_get
   security:
     - apiKeyStoreId: []
     - httpBearerStoreId: []
@@ -59,7 +59,7 @@ put:
 
     The response is the updated key-value store object, as returned by the [Get
     store](#reference/key-value-stores/store-object/get-store) API endpoint.
-  operationId: Updatestore
+  operationId: keyValueStore_put
   parameters:
     - name: storeId
       in: path
@@ -116,7 +116,7 @@ delete:
     - Key-value stores
   summary: Delete store
   description: Deletes a key-value store.
-  operationId: Deletestore
+  operationId: keyValueStore_delete
   parameters:
     - name: storeId
       in: path

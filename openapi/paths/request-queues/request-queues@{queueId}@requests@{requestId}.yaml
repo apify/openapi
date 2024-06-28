@@ -3,7 +3,7 @@ get:
     - Request queues
   summary: Get request
   description: Returns request from queue.
-  operationId: getRequest
+  operationId: requestQueue_request_get
   security:
     - apiKeyQueueId: []
     - httpBearerQueueId: []
@@ -76,7 +76,7 @@ put:
 
 
     If `handledAt` is set, the request will be removed from head of the queue.
-  operationId: updateRequest
+  operationId: requestQueue_request_put
   parameters:
     - name: queueId
       in: path
@@ -183,7 +183,7 @@ delete:
     - Request queues
   summary: Delete request
   description: Deletes given request from queue.
-  operationId: deleteRequest
+  operationId: requestQueue_request_delete
   parameters:
     - name: queueId
       in: path
