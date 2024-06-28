@@ -1,0 +1,187 @@
+parent,name,parsedAPIReferenceUrl,jsReferenceUrl,doc
+ActorClient,build,https://docs.apify.com/api/v2#/reference/actors/build-collection/build-actor,https://docs.apify.com/api/client/js/reference/class/ActorClient#build,https://docs.apify.com/api/v2#/reference/actors/build-collection/build-actor
+ActorClient,builds,https://docs.apify.com/api/v2#/reference/actors/build-collection,https://docs.apify.com/api/client/js/reference/class/ActorClient#builds,https://docs.apify.com/api/v2#/reference/actors/build-collection
+ActorClient,call,https://docs.apify.com/api/v2#/reference/actors/run-collection/run-actor,https://docs.apify.com/api/client/js/reference/class/ActorClient#call,"Starts an actor and waits for it to finish before returning the Run object.
+It waits indefinitely, unless the  `waitSecs`  option is provided.
+https://docs.apify.com/api/v2#/reference/actors/run-collection/run-actor"
+ActorClient,delete,https://docs.apify.com/api/v2#/reference/actors/actor-object/delete-actor,https://docs.apify.com/api/client/js/reference/class/ActorClient#delete,https://docs.apify.com/api/v2#/reference/actors/actor-object/delete-actor
+ActorClient,get,https://docs.apify.com/api/v2#/reference/actors/actor-object/get-actor,https://docs.apify.com/api/client/js/reference/class/ActorClient#get,https://docs.apify.com/api/v2#/reference/actors/actor-object/get-actor
+ActorClient,lastRun,https://docs.apify.com/api/v2#/reference/actors/last-run-object-and-its-storages,https://docs.apify.com/api/client/js/reference/class/ActorClient#lastRun,https://docs.apify.com/api/v2#/reference/actors/last-run-object-and-its-storages
+ActorClient,runs,https://docs.apify.com/api/v2#/reference/actors/run-collection,https://docs.apify.com/api/client/js/reference/class/ActorClient#runs,https://docs.apify.com/api/v2#/reference/actors/run-collection
+ActorClient,start,https://docs.apify.com/api/v2#/reference/actors/run-collection/run-actor,https://docs.apify.com/api/client/js/reference/class/ActorClient#start,"Starts an actor and immediately returns the Run object.
+https://docs.apify.com/api/v2#/reference/actors/run-collection/run-actor"
+ActorClient,update,https://docs.apify.com/api/v2#/reference/actors/actor-object/update-actor,https://docs.apify.com/api/client/js/reference/class/ActorClient#update,https://docs.apify.com/api/v2#/reference/actors/actor-object/update-actor
+ActorClient,version,https://docs.apify.com/api/v2#/reference/actors/version-object,https://docs.apify.com/api/client/js/reference/class/ActorClient#version,https://docs.apify.com/api/v2#/reference/actors/version-object
+ActorClient,versions,https://docs.apify.com/api/v2#/reference/actors/version-collection,https://docs.apify.com/api/client/js/reference/class/ActorClient#versions,https://docs.apify.com/api/v2#/reference/actors/version-collection
+ActorClient,webhooks,https://docs.apify.com/api/v2#/reference/actors/webhook-collection,https://docs.apify.com/api/client/js/reference/class/ActorClient#webhooks,https://docs.apify.com/api/v2#/reference/actors/webhook-collection
+ActorCollectionClient,create,https://docs.apify.com/api/v2#/reference/actors/actor-collection/create-actor,https://docs.apify.com/api/client/js/reference/class/ActorCollectionClient#create,https://docs.apify.com/api/v2#/reference/actors/actor-collection/create-actor
+ActorCollectionClient,list,https://docs.apify.com/api/v2#/reference/actors/actor-collection/get-list-of-actors,https://docs.apify.com/api/client/js/reference/class/ActorCollectionClient#list,https://docs.apify.com/api/v2#/reference/actors/actor-collection/get-list-of-actors
+ApifyApiError,captureStackTrace,,https://docs.apify.com/api/client/js/reference/class/ApifyApiError#captureStackTrace,Create .stack property on a target object
+ApifyClient,actor,https://docs.apify.com/api/v2#/reference/actors/actor-object,https://docs.apify.com/api/client/js/reference/class/ApifyClient#actor,https://docs.apify.com/api/v2#/reference/actors/actor-object
+ApifyClient,actors,https://docs.apify.com/api/v2#/reference/actors/actor-collection,https://docs.apify.com/api/client/js/reference/class/ApifyClient#actors,https://docs.apify.com/api/v2#/reference/actors/actor-collection
+ApifyClient,build,https://docs.apify.com/api/v2#/reference/actor-builds/build-object,https://docs.apify.com/api/client/js/reference/class/ApifyClient#build,https://docs.apify.com/api/v2#/reference/actor-builds/build-object
+ApifyClient,builds,https://docs.apify.com/api/v2#/reference/actor-builds/build-collection,https://docs.apify.com/api/client/js/reference/class/ApifyClient#builds,https://docs.apify.com/api/v2#/reference/actor-builds/build-collection
+ApifyClient,dataset,https://docs.apify.com/api/v2#/reference/datasets/dataset,https://docs.apify.com/api/client/js/reference/class/ApifyClient#dataset,https://docs.apify.com/api/v2#/reference/datasets/dataset
+ApifyClient,datasets,https://docs.apify.com/api/v2#/reference/datasets/dataset-collection,https://docs.apify.com/api/client/js/reference/class/ApifyClient#datasets,https://docs.apify.com/api/v2#/reference/datasets/dataset-collection
+ApifyClient,keyValueStore,https://docs.apify.com/api/v2#/reference/key-value-stores/store-object,https://docs.apify.com/api/client/js/reference/class/ApifyClient#keyValueStore,https://docs.apify.com/api/v2#/reference/key-value-stores/store-object
+ApifyClient,keyValueStores,https://docs.apify.com/api/v2#/reference/key-value-stores/store-collection,https://docs.apify.com/api/client/js/reference/class/ApifyClient#keyValueStores,https://docs.apify.com/api/v2#/reference/key-value-stores/store-collection
+ApifyClient,log,https://docs.apify.com/api/v2#/reference/logs,https://docs.apify.com/api/client/js/reference/class/ApifyClient#log,https://docs.apify.com/api/v2#/reference/logs
+ApifyClient,requestQueue,https://docs.apify.com/api/v2#/reference/request-queues/queue,https://docs.apify.com/api/client/js/reference/class/ApifyClient#requestQueue,https://docs.apify.com/api/v2#/reference/request-queues/queue
+ApifyClient,requestQueues,https://docs.apify.com/api/v2#/reference/request-queues/queue-collection,https://docs.apify.com/api/client/js/reference/class/ApifyClient#requestQueues,https://docs.apify.com/api/v2#/reference/request-queues/queue-collection
+ApifyClient,run,https://docs.apify.com/api/v2#/reference/actor-runs/run-object-and-its-storages,https://docs.apify.com/api/client/js/reference/class/ApifyClient#run,https://docs.apify.com/api/v2#/reference/actor-runs/run-object-and-its-storages
+ApifyClient,runs,https://docs.apify.com/api/v2#/reference/actor-runs/run-collection,https://docs.apify.com/api/client/js/reference/class/ApifyClient#runs,https://docs.apify.com/api/v2#/reference/actor-runs/run-collection
+ApifyClient,schedule,https://docs.apify.com/api/v2#/reference/schedules/schedule-object,https://docs.apify.com/api/client/js/reference/class/ApifyClient#schedule,https://docs.apify.com/api/v2#/reference/schedules/schedule-object
+ApifyClient,schedules,https://docs.apify.com/api/v2#/reference/schedules/schedules-collection,https://docs.apify.com/api/client/js/reference/class/ApifyClient#schedules,https://docs.apify.com/api/v2#/reference/schedules/schedules-collection
+ApifyClient,setStatusMessage,,https://docs.apify.com/api/client/js/reference/class/ApifyClient#setStatusMessage,
+ApifyClient,store,https://docs.apify.com/api/v2/#/reference/store,https://docs.apify.com/api/client/js/reference/class/ApifyClient#store,https://docs.apify.com/api/v2/#/reference/store
+ApifyClient,task,https://docs.apify.com/api/v2#/reference/actor-tasks/task-object,https://docs.apify.com/api/client/js/reference/class/ApifyClient#task,https://docs.apify.com/api/v2#/reference/actor-tasks/task-object
+ApifyClient,tasks,https://docs.apify.com/api/v2#/reference/actor-tasks/task-collection,https://docs.apify.com/api/client/js/reference/class/ApifyClient#tasks,https://docs.apify.com/api/v2#/reference/actor-tasks/task-collection
+ApifyClient,user,https://docs.apify.com/api/v2#/reference/users,https://docs.apify.com/api/client/js/reference/class/ApifyClient#user,https://docs.apify.com/api/v2#/reference/users
+ApifyClient,webhook,https://docs.apify.com/api/v2#/reference/webhooks/webhook-object,https://docs.apify.com/api/client/js/reference/class/ApifyClient#webhook,https://docs.apify.com/api/v2#/reference/webhooks/webhook-object
+ApifyClient,webhookDispatch,https://docs.apify.com/api/v2#/reference/webhook-dispatches/webhook-dispatch-object,https://docs.apify.com/api/client/js/reference/class/ApifyClient#webhookDispatch,https://docs.apify.com/api/v2#/reference/webhook-dispatches/webhook-dispatch-object
+ApifyClient,webhookDispatches,https://docs.apify.com/api/v2#/reference/webhook-dispatches,https://docs.apify.com/api/client/js/reference/class/ApifyClient#webhookDispatches,https://docs.apify.com/api/v2#/reference/webhook-dispatches
+ApifyClient,webhooks,https://docs.apify.com/api/v2#/reference/webhooks/webhook-collection,https://docs.apify.com/api/client/js/reference/class/ApifyClient#webhooks,https://docs.apify.com/api/v2#/reference/webhooks/webhook-collection
+BuildClient,abort,https://docs.apify.com/api/v2#/reference/actor-builds/abort-build/abort-build,https://docs.apify.com/api/client/js/reference/class/BuildClient#abort,https://docs.apify.com/api/v2#/reference/actor-builds/abort-build/abort-build
+BuildClient,delete,https://docs.apify.com/api/v2#/reference/actor-builds/delete-build/delete-build,https://docs.apify.com/api/client/js/reference/class/BuildClient#delete,https://docs.apify.com/api/v2#/reference/actor-builds/delete-build/delete-build
+BuildClient,get,https://docs.apify.com/api/v2#/reference/actor-builds/build-object/get-build,https://docs.apify.com/api/client/js/reference/class/BuildClient#get,https://docs.apify.com/api/v2#/reference/actor-builds/build-object/get-build
+BuildClient,log,https://docs.apify.com/api/v2#/reference/actor-builds/build-log,https://docs.apify.com/api/client/js/reference/class/BuildClient#log,https://docs.apify.com/api/v2#/reference/actor-builds/build-log
+BuildClient,waitForFinish,,https://docs.apify.com/api/client/js/reference/class/BuildClient#waitForFinish,"Returns a promise that resolves with the finished Build object when the provided actor build finishes
+or with the unfinished Build object when the  `waitSecs`  timeout lapses. The promise is NOT rejected
+based on run status. You can inspect the  `status`  property of the Build object to find out its status.
+
+The difference between this function and the  `waitForFinish`  parameter of the  `get`  method
+is the fact that this function can wait indefinitely. Its use is preferable to the
+ `waitForFinish`  parameter alone, which it uses internally.
+
+This is useful when you need to immediately start a run after a build finishes."
+BuildCollectionClient,list,https://docs.apify.com/api/v2#/reference/actors/build-collection/get-list-of-builds,https://docs.apify.com/api/client/js/reference/class/BuildCollectionClient#list,https://docs.apify.com/api/v2#/reference/actors/build-collection/get-list-of-builds
+DatasetClient,delete,https://docs.apify.com/api/v2#/reference/datasets/dataset/delete-dataset,https://docs.apify.com/api/client/js/reference/class/DatasetClient#delete,https://docs.apify.com/api/v2#/reference/datasets/dataset/delete-dataset
+DatasetClient,downloadItems,https://docs.apify.com/api/v2#/reference/datasets/item-collection/get-items,https://docs.apify.com/api/client/js/reference/class/DatasetClient#downloadItems,"Unlike  `listItems`  which returns a  PaginationList  with an array of individual
+dataset items,  `downloadItems`  returns the items serialized to the provided format.
+https://docs.apify.com/api/v2#/reference/datasets/item-collection/get-items"
+DatasetClient,get,https://docs.apify.com/api/v2#/reference/datasets/dataset/get-dataset,https://docs.apify.com/api/client/js/reference/class/DatasetClient#get,https://docs.apify.com/api/v2#/reference/datasets/dataset/get-dataset
+DatasetClient,listItems,https://docs.apify.com/api/v2#/reference/datasets/item-collection/get-items,https://docs.apify.com/api/client/js/reference/class/DatasetClient#listItems,https://docs.apify.com/api/v2#/reference/datasets/item-collection/get-items
+DatasetClient,pushItems,https://docs.apify.com/api/v2#/reference/datasets/item-collection/put-items,https://docs.apify.com/api/client/js/reference/class/DatasetClient#pushItems,https://docs.apify.com/api/v2#/reference/datasets/item-collection/put-items
+DatasetClient,update,https://docs.apify.com/api/v2#/reference/datasets/dataset/update-dataset,https://docs.apify.com/api/client/js/reference/class/DatasetClient#update,https://docs.apify.com/api/v2#/reference/datasets/dataset/update-dataset
+DatasetCollectionClient,getOrCreate,https://docs.apify.com/api/v2#/reference/datasets/dataset-collection/create-dataset,https://docs.apify.com/api/client/js/reference/class/DatasetCollectionClient#getOrCreate,https://docs.apify.com/api/v2#/reference/datasets/dataset-collection/create-dataset
+DatasetCollectionClient,list,https://docs.apify.com/api/v2#/reference/datasets/dataset-collection/get-list-of-datasets,https://docs.apify.com/api/client/js/reference/class/DatasetCollectionClient#list,https://docs.apify.com/api/v2#/reference/datasets/dataset-collection/get-list-of-datasets
+InvalidResponseBodyError,captureStackTrace,,https://docs.apify.com/api/client/js/reference/class/InvalidResponseBodyError#captureStackTrace,Create .stack property on a target object
+KeyValueStoreClient,delete,https://docs.apify.com/api/v2#/reference/key-value-stores/store-object/delete-store,https://docs.apify.com/api/client/js/reference/class/KeyValueStoreClient#delete,https://docs.apify.com/api/v2#/reference/key-value-stores/store-object/delete-store
+KeyValueStoreClient,deleteRecord,https://docs.apify.com/api/v2#/reference/key-value-stores/record/delete-record,https://docs.apify.com/api/client/js/reference/class/KeyValueStoreClient#deleteRecord,https://docs.apify.com/api/v2#/reference/key-value-stores/record/delete-record
+KeyValueStoreClient,get,https://docs.apify.com/api/v2#/reference/key-value-stores/store-object/get-store,https://docs.apify.com/api/client/js/reference/class/KeyValueStoreClient#get,https://docs.apify.com/api/v2#/reference/key-value-stores/store-object/get-store
+KeyValueStoreClient,getRecord,https://docs.apify.com/api/v2#/reference/key-value-stores/record/get-record,https://docs.apify.com/api/client/js/reference/class/KeyValueStoreClient#getRecord,"You can use the  `buffer`  option to get the value in a Buffer (Node.js)
+or ArrayBuffer (browser) format. In Node.js (not in browser) you can also
+use the  `stream`  option to get a Readable stream.
+
+When the record does not exist, the function resolves to  `undefined` . It does
+NOT resolve to a  `KeyValueStore`  record with an  `undefined`  value.
+https://docs.apify.com/api/v2#/reference/key-value-stores/record/get-record"
+KeyValueStoreClient,listKeys,https://docs.apify.com/api/v2#/reference/key-value-stores/key-collection/get-list-of-keys,https://docs.apify.com/api/client/js/reference/class/KeyValueStoreClient#listKeys,https://docs.apify.com/api/v2#/reference/key-value-stores/key-collection/get-list-of-keys
+KeyValueStoreClient,recordExists,https://docs.apify.com/api/v2#/reference/key-value-stores/record/get-record,https://docs.apify.com/api/client/js/reference/class/KeyValueStoreClient#recordExists,"Tests whether a record with the given key exists in the key-value store without retrieving its value.
+
+https://docs.apify.com/api/v2#/reference/key-value-stores/record/get-record"
+KeyValueStoreClient,setRecord,https://docs.apify.com/api/v2#/reference/key-value-stores/record/put-record,https://docs.apify.com/api/client/js/reference/class/KeyValueStoreClient#setRecord,"The value in the record can be a stream object (detected by having the  `.pipe` 
+and  `.on`  methods). However, note that in that case following redirects or
+retrying the request if it fails (for example due to rate limiting) isn't
+possible. If you want to keep that behavior, you need to collect the whole
+stream contents into a Buffer and then send the full buffer. See [this
+StackOverflow answer](https://stackoverflow.com/a/14269536/7292139) for
+an example how to do that.
+
+https://docs.apify.com/api/v2#/reference/key-value-stores/record/put-record"
+KeyValueStoreClient,update,https://docs.apify.com/api/v2#/reference/key-value-stores/store-object/update-store,https://docs.apify.com/api/client/js/reference/class/KeyValueStoreClient#update,https://docs.apify.com/api/v2#/reference/key-value-stores/store-object/update-store
+KeyValueStoreCollectionClient,getOrCreate,https://docs.apify.com/api/v2#/reference/key-value-stores/store-collection/create-key-value-store,https://docs.apify.com/api/client/js/reference/class/KeyValueStoreCollectionClient#getOrCreate,https://docs.apify.com/api/v2#/reference/key-value-stores/store-collection/create-key-value-store
+KeyValueStoreCollectionClient,list,https://docs.apify.com/api/v2#/reference/key-value-stores/store-collection/get-list-of-key-value-stores,https://docs.apify.com/api/client/js/reference/class/KeyValueStoreCollectionClient#list,https://docs.apify.com/api/v2#/reference/key-value-stores/store-collection/get-list-of-key-value-stores
+LogClient,get,https://docs.apify.com/api/v2#/reference/logs/log/get-log,https://docs.apify.com/api/client/js/reference/class/LogClient#get,https://docs.apify.com/api/v2#/reference/logs/log/get-log
+LogClient,stream,https://docs.apify.com/api/v2#/reference/logs/log/get-log,https://docs.apify.com/api/client/js/reference/class/LogClient#stream,"Gets the log in a Readable stream format. Only works in Node.js.
+https://docs.apify.com/api/v2#/reference/logs/log/get-log"
+RequestQueueClient,addRequest,https://docs.apify.com/api/v2#/reference/request-queues/request-collection/add-request,https://docs.apify.com/api/client/js/reference/class/RequestQueueClient#addRequest,https://docs.apify.com/api/v2#/reference/request-queues/request-collection/add-request
+RequestQueueClient,batchAddRequests,https://docs.apify.com/api/v2#/reference/request-queues/batch-request-operations/add-requests,https://docs.apify.com/api/client/js/reference/class/RequestQueueClient#batchAddRequests,https://docs.apify.com/api/v2#/reference/request-queues/batch-request-operations/add-requests
+RequestQueueClient,batchDeleteRequests,https://docs.apify.com/api/v2#/reference/request-queues/batch-request-operations/delete-requests,https://docs.apify.com/api/client/js/reference/class/RequestQueueClient#batchDeleteRequests,https://docs.apify.com/api/v2#/reference/request-queues/batch-request-operations/delete-requests
+RequestQueueClient,delete,https://docs.apify.com/api/v2#/reference/request-queues/queue/delete-request-queue,https://docs.apify.com/api/client/js/reference/class/RequestQueueClient#delete,https://docs.apify.com/api/v2#/reference/request-queues/queue/delete-request-queue
+RequestQueueClient,deleteRequest,,https://docs.apify.com/api/client/js/reference/class/RequestQueueClient#deleteRequest,
+RequestQueueClient,deleteRequestLock,https://docs.apify.com/api/v2#/reference/request-queues/request-lock/delete-request-lock,https://docs.apify.com/api/client/js/reference/class/RequestQueueClient#deleteRequestLock,https://docs.apify.com/api/v2#/reference/request-queues/request-lock/delete-request-lock
+RequestQueueClient,get,https://docs.apify.com/api/v2#/reference/request-queues/queue/get-request-queue,https://docs.apify.com/api/client/js/reference/class/RequestQueueClient#get,https://docs.apify.com/api/v2#/reference/request-queues/queue/get-request-queue
+RequestQueueClient,getRequest,https://docs.apify.com/api/v2#/reference/request-queues/request/get-request,https://docs.apify.com/api/client/js/reference/class/RequestQueueClient#getRequest,https://docs.apify.com/api/v2#/reference/request-queues/request/get-request
+RequestQueueClient,listAndLockHead,https://docs.apify.com/api/v2#/reference/request-queues/queue-head-with-locks/get-head-and-lock,https://docs.apify.com/api/client/js/reference/class/RequestQueueClient#listAndLockHead,https://docs.apify.com/api/v2#/reference/request-queues/queue-head-with-locks/get-head-and-lock
+RequestQueueClient,listHead,https://docs.apify.com/api/v2#/reference/request-queues/queue-head/get-head,https://docs.apify.com/api/client/js/reference/class/RequestQueueClient#listHead,https://docs.apify.com/api/v2#/reference/request-queues/queue-head/get-head
+RequestQueueClient,listRequests,https://docs.apify.com/api/v2#/reference/request-queues/request-collection/list-requests,https://docs.apify.com/api/client/js/reference/class/RequestQueueClient#listRequests,https://docs.apify.com/api/v2#/reference/request-queues/request-collection/list-requests
+RequestQueueClient,paginateRequests,https://docs.apify.com/api/v2#/reference/request-queues/request-collection/list-requests,https://docs.apify.com/api/client/js/reference/class/RequestQueueClient#paginateRequests,"https://docs.apify.com/api/v2#/reference/request-queues/request-collection/list-requests
+
+Usage:
+for await (const { items } of client.paginateRequests({ limit: 10 })) {
+  items.forEach((request) => console.log(request));
+}"
+RequestQueueClient,prolongRequestLock,https://docs.apify.com/api/v2#/reference/request-queues/request-lock/prolong-request-lock,https://docs.apify.com/api/client/js/reference/class/RequestQueueClient#prolongRequestLock,https://docs.apify.com/api/v2#/reference/request-queues/request-lock/prolong-request-lock
+RequestQueueClient,update,https://docs.apify.com/api/v2#/reference/request-queues/queue/update-request-queue,https://docs.apify.com/api/client/js/reference/class/RequestQueueClient#update,https://docs.apify.com/api/v2#/reference/request-queues/queue/update-request-queue
+RequestQueueClient,updateRequest,https://docs.apify.com/api/v2#/reference/request-queues/request/update-request,https://docs.apify.com/api/client/js/reference/class/RequestQueueClient#updateRequest,https://docs.apify.com/api/v2#/reference/request-queues/request/update-request
+RequestQueueCollectionClient,getOrCreate,https://docs.apify.com/api/v2#/reference/request-queues/queue-collection/create-request-queue,https://docs.apify.com/api/client/js/reference/class/RequestQueueCollectionClient#getOrCreate,https://docs.apify.com/api/v2#/reference/request-queues/queue-collection/create-request-queue
+RequestQueueCollectionClient,list,https://docs.apify.com/api/v2#/reference/request-queues/queue-collection/get-list-of-request-queues,https://docs.apify.com/api/client/js/reference/class/RequestQueueCollectionClient#list,https://docs.apify.com/api/v2#/reference/request-queues/queue-collection/get-list-of-request-queues
+RunClient,abort,https://docs.apify.com/api/v2#/reference/actor-runs/abort-run/abort-run,https://docs.apify.com/api/client/js/reference/class/RunClient#abort,https://docs.apify.com/api/v2#/reference/actor-runs/abort-run/abort-run
+RunClient,dataset,https://docs.apify.com/api/v2#/reference/actor-runs/run-object-and-its-storages,https://docs.apify.com/api/client/js/reference/class/RunClient#dataset,"https://docs.apify.com/api/v2#/reference/actor-runs/run-object-and-its-storages
+
+This also works through  `actorClient.lastRun().dataset()` .
+https://docs.apify.com/api/v2#/reference/actors/last-run-object-and-its-storages"
+RunClient,delete,https://docs.apify.com/api/v2#/reference/actor-runs/delete-run/delete-run,https://docs.apify.com/api/client/js/reference/class/RunClient#delete,https://docs.apify.com/api/v2#/reference/actor-runs/delete-run/delete-run
+RunClient,get,https://docs.apify.com/api/v2#/reference/actor-runs/run-object/get-run,https://docs.apify.com/api/client/js/reference/class/RunClient#get,https://docs.apify.com/api/v2#/reference/actor-runs/run-object/get-run
+RunClient,keyValueStore,https://docs.apify.com/api/v2#/reference/actor-runs/run-object-and-its-storages,https://docs.apify.com/api/client/js/reference/class/RunClient#keyValueStore,"https://docs.apify.com/api/v2#/reference/actor-runs/run-object-and-its-storages
+
+This also works through  `actorClient.lastRun().keyValueStore()` .
+https://docs.apify.com/api/v2#/reference/actors/last-run-object-and-its-storages"
+RunClient,log,https://docs.apify.com/api/v2#/reference/actor-runs/run-object-and-its-storages,https://docs.apify.com/api/client/js/reference/class/RunClient#log,"https://docs.apify.com/api/v2#/reference/actor-runs/run-object-and-its-storages
+
+This also works through  `actorClient.lastRun().log()` .
+https://docs.apify.com/api/v2#/reference/actors/last-run-object-and-its-storages"
+RunClient,metamorph,https://docs.apify.com/api/v2#/reference/actor-runs/metamorph-run/metamorph-run,https://docs.apify.com/api/client/js/reference/class/RunClient#metamorph,https://docs.apify.com/api/v2#/reference/actor-runs/metamorph-run/metamorph-run
+RunClient,reboot,https://docs.apify.com/api/v2#/reference/actor-runs/reboot-run/reboot-run,https://docs.apify.com/api/client/js/reference/class/RunClient#reboot,https://docs.apify.com/api/v2#/reference/actor-runs/reboot-run/reboot-run
+RunClient,requestQueue,https://docs.apify.com/api/v2#/reference/actor-runs/run-object-and-its-storages,https://docs.apify.com/api/client/js/reference/class/RunClient#requestQueue,"https://docs.apify.com/api/v2#/reference/actor-runs/run-object-and-its-storages
+
+This also works through  `actorClient.lastRun().requestQueue()` .
+https://docs.apify.com/api/v2#/reference/actors/last-run-object-and-its-storages"
+RunClient,resurrect,https://docs.apify.com/api/v2#/reference/actor-runs/resurrect-run/resurrect-run,https://docs.apify.com/api/client/js/reference/class/RunClient#resurrect,https://docs.apify.com/api/v2#/reference/actor-runs/resurrect-run/resurrect-run
+RunClient,update,,https://docs.apify.com/api/client/js/reference/class/RunClient#update,
+RunClient,waitForFinish,,https://docs.apify.com/api/client/js/reference/class/RunClient#waitForFinish,"Returns a promise that resolves with the finished Run object when the provided actor run finishes
+or with the unfinished Run object when the  `waitSecs`  timeout lapses. The promise is NOT rejected
+based on run status. You can inspect the  `status`  property of the Run object to find out its status.
+
+The difference between this function and the  `waitForFinish`  parameter of the  `get`  method
+is the fact that this function can wait indefinitely. Its use is preferable to the
+ `waitForFinish`  parameter alone, which it uses internally.
+
+This is useful when you need to chain actor executions. Similar effect can be achieved
+by using webhooks, so be sure to review which technique fits your use-case better."
+RunCollectionClient,list,https://docs.apify.com/api/v2#/reference/actors/run-collection/get-list-of-runs,https://docs.apify.com/api/client/js/reference/class/RunCollectionClient#list,https://docs.apify.com/api/v2#/reference/actors/run-collection/get-list-of-runs
+ScheduleClient,delete,https://docs.apify.com/api/v2#/reference/schedules/schedule-object/delete-schedule,https://docs.apify.com/api/client/js/reference/class/ScheduleClient#delete,https://docs.apify.com/api/v2#/reference/schedules/schedule-object/delete-schedule
+ScheduleClient,get,https://docs.apify.com/api/v2#/reference/schedules/schedule-object/get-schedule,https://docs.apify.com/api/client/js/reference/class/ScheduleClient#get,https://docs.apify.com/api/v2#/reference/schedules/schedule-object/get-schedule
+ScheduleClient,getLog,https://docs.apify.com/api/v2#/reference/schedules/schedule-log/get-schedule-log,https://docs.apify.com/api/client/js/reference/class/ScheduleClient#getLog,https://docs.apify.com/api/v2#/reference/schedules/schedule-log/get-schedule-log
+ScheduleClient,update,https://docs.apify.com/api/v2#/reference/schedules/schedule-object/update-schedule,https://docs.apify.com/api/client/js/reference/class/ScheduleClient#update,https://docs.apify.com/api/v2#/reference/schedules/schedule-object/update-schedule
+ScheduleCollectionClient,create,https://docs.apify.com/api/v2#/reference/schedules/schedules-collection/create-schedule,https://docs.apify.com/api/client/js/reference/class/ScheduleCollectionClient#create,https://docs.apify.com/api/v2#/reference/schedules/schedules-collection/create-schedule
+ScheduleCollectionClient,list,https://docs.apify.com/api/v2#/reference/schedules/schedules-collection/get-list-of-schedules,https://docs.apify.com/api/client/js/reference/class/ScheduleCollectionClient#list,https://docs.apify.com/api/v2#/reference/schedules/schedules-collection/get-list-of-schedules
+StoreCollectionClient,list,https://docs.apify.com/api/v2/#/reference/store/store-actors-collection/get-list-of-actors-in-store,https://docs.apify.com/api/client/js/reference/class/StoreCollectionClient#list,https://docs.apify.com/api/v2/#/reference/store/store-actors-collection/get-list-of-actors-in-store
+TaskClient,call,https://docs.apify.com/api/v2#/reference/actor-tasks/run-collection/run-task,https://docs.apify.com/api/client/js/reference/class/TaskClient#call,"Starts a task and waits for it to finish before returning the Run object.
+It waits indefinitely, unless the  `waitSecs`  option is provided.
+https://docs.apify.com/api/v2#/reference/actor-tasks/run-collection/run-task"
+TaskClient,delete,https://docs.apify.com/api/v2#/reference/actor-tasks/task-object/delete-task,https://docs.apify.com/api/client/js/reference/class/TaskClient#delete,https://docs.apify.com/api/v2#/reference/actor-tasks/task-object/delete-task
+TaskClient,get,https://docs.apify.com/api/v2#/reference/actor-tasks/task-object/get-task,https://docs.apify.com/api/client/js/reference/class/TaskClient#get,https://docs.apify.com/api/v2#/reference/actor-tasks/task-object/get-task
+TaskClient,getInput,https://docs.apify.com/api/v2#/reference/actor-tasks/task-input-object/get-task-input,https://docs.apify.com/api/client/js/reference/class/TaskClient#getInput,https://docs.apify.com/api/v2#/reference/actor-tasks/task-input-object/get-task-input
+TaskClient,lastRun,https://docs.apify.com/api/v2#/reference/actor-tasks/last-run-object-and-its-storages,https://docs.apify.com/api/client/js/reference/class/TaskClient#lastRun,https://docs.apify.com/api/v2#/reference/actor-tasks/last-run-object-and-its-storages
+TaskClient,runs,https://docs.apify.com/api/v2#/reference/actor-tasks/run-collection,https://docs.apify.com/api/client/js/reference/class/TaskClient#runs,https://docs.apify.com/api/v2#/reference/actor-tasks/run-collection
+TaskClient,start,https://docs.apify.com/api/v2#/reference/actor-tasks/run-collection/run-task,https://docs.apify.com/api/client/js/reference/class/TaskClient#start,"Starts a task and immediately returns the Run object.
+https://docs.apify.com/api/v2#/reference/actor-tasks/run-collection/run-task"
+TaskClient,update,https://docs.apify.com/api/v2#/reference/actor-tasks/task-object/update-task,https://docs.apify.com/api/client/js/reference/class/TaskClient#update,https://docs.apify.com/api/v2#/reference/actor-tasks/task-object/update-task
+TaskClient,updateInput,https://docs.apify.com/api/v2#/reference/actor-tasks/task-input-object/update-task-input,https://docs.apify.com/api/client/js/reference/class/TaskClient#updateInput,https://docs.apify.com/api/v2#/reference/actor-tasks/task-input-object/update-task-input
+TaskClient,webhooks,https://docs.apify.com/api/v2#/reference/actor-tasks/webhook-collection,https://docs.apify.com/api/client/js/reference/class/TaskClient#webhooks,https://docs.apify.com/api/v2#/reference/actor-tasks/webhook-collection
+TaskCollectionClient,create,https://docs.apify.com/api/v2#/reference/actor-tasks/task-collection/create-task,https://docs.apify.com/api/client/js/reference/class/TaskCollectionClient#create,https://docs.apify.com/api/v2#/reference/actor-tasks/task-collection/create-task
+TaskCollectionClient,list,https://docs.apify.com/api/v2#/reference/actor-tasks/task-collection/get-list-of-tasks,https://docs.apify.com/api/client/js/reference/class/TaskCollectionClient#list,https://docs.apify.com/api/v2#/reference/actor-tasks/task-collection/get-list-of-tasks
+UserClient,get,https://docs.apify.com/api/v2#/reference/users,https://docs.apify.com/api/client/js/reference/class/UserClient#get,"Depending on whether ApifyClient was created with a token,
+the method will either return public or private user data.
+https://docs.apify.com/api/v2#/reference/users"
+WebhookClient,delete,https://docs.apify.com/api/v2#/reference/webhooks/webhook-object/delete-webhook,https://docs.apify.com/api/client/js/reference/class/WebhookClient#delete,https://docs.apify.com/api/v2#/reference/webhooks/webhook-object/delete-webhook
+WebhookClient,dispatches,https://docs.apify.com/api/v2#/reference/webhooks/dispatches-collection,https://docs.apify.com/api/client/js/reference/class/WebhookClient#dispatches,https://docs.apify.com/api/v2#/reference/webhooks/dispatches-collection
+WebhookClient,get,https://docs.apify.com/api/v2#/reference/webhooks/webhook-object/get-webhook,https://docs.apify.com/api/client/js/reference/class/WebhookClient#get,https://docs.apify.com/api/v2#/reference/webhooks/webhook-object/get-webhook
+WebhookClient,test,https://docs.apify.com/api/v2#/reference/webhooks/webhook-test/test-webhook,https://docs.apify.com/api/client/js/reference/class/WebhookClient#test,https://docs.apify.com/api/v2#/reference/webhooks/webhook-test/test-webhook
+WebhookClient,update,https://docs.apify.com/api/v2#/reference/webhooks/webhook-object/update-webhook,https://docs.apify.com/api/client/js/reference/class/WebhookClient#update,https://docs.apify.com/api/v2#/reference/webhooks/webhook-object/update-webhook
+WebhookCollectionClient,create,https://docs.apify.com/api/v2#/reference/webhooks/webhook-collection/create-webhook,https://docs.apify.com/api/client/js/reference/class/WebhookCollectionClient#create,https://docs.apify.com/api/v2#/reference/webhooks/webhook-collection/create-webhook
+WebhookCollectionClient,list,https://docs.apify.com/api/v2#/reference/webhooks/webhook-collection/get-list-of-webhooks,https://docs.apify.com/api/client/js/reference/class/WebhookCollectionClient#list,https://docs.apify.com/api/v2#/reference/webhooks/webhook-collection/get-list-of-webhooks
+WebhookDispatchClient,get,https://docs.apify.com/api/v2#/reference/webhook-dispatches/webhook-dispatch-object/get-webhook-dispatch,https://docs.apify.com/api/client/js/reference/class/WebhookDispatchClient#get,https://docs.apify.com/api/v2#/reference/webhook-dispatches/webhook-dispatch-object/get-webhook-dispatch
+WebhookDispatchCollectionClient,list,https://docs.apify.com/api/v2#/reference/webhook-dispatches/webhook-dispatches-collection/get-list-of-webhook-dispatches,https://docs.apify.com/api/client/js/reference/class/WebhookDispatchCollectionClient#list,https://docs.apify.com/api/v2#/reference/webhook-dispatches/webhook-dispatches-collection/get-list-of-webhook-dispatches
