@@ -75,7 +75,7 @@ put:
       application/json:
         schema:
           allOf:
-            - $ref: ../../components/schemas/UpdateStoreRequest.yaml
+            - $ref: ../../components/schemas/store/UpdateStoreRequest.yaml
             - example:
                 name: new-store-name
         example:

@@ -1,4 +1,4 @@
-title: input
+title: TaskInput
 type: object
 properties:
   hello:

@@ -1,4 +1,4 @@
-title: options
+title: TaskOptions
 type: object
 properties:
   build:

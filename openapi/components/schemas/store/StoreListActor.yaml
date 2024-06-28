@@ -30,7 +30,7 @@ properties:
     example: My public actor!
   categories:
     type: array
-    items: 
+    items:
       type: string
     example:
       - "MARKETING"
@@ -50,6 +50,6 @@ properties:
     nullable: true
     example: 'https://...'
   stats:
-    $ref: ../stats.yaml
+    $ref: ../actors/ActorStats.yaml
   currentPricingInfo:
     $ref: ./CurrentPricingInfo.yaml
