@@ -24,7 +24,7 @@ function prependLegacyUrlAnchor(target) {
                 const [_, fragment] = url.split("#");
 
                 if (!fragment) {
-                    console.warn(`Invalid legacy doc URL on ${debugId}: ${url}`);
+                    console.warn(`Invalid legacy doc URL on ${debugId}, the URL fragment part (#) is missing: ${url}`);
                 }
 
                 return fragment;
