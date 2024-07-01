@@ -4,6 +4,8 @@ required:
 type: object
 properties:
   SERVICE_USAGE_ITEM:
-    allOf:
-      - $ref: ./UsageItem.yaml
-      - {}
+    $ref: ./UsageItem.yaml
+example:
+  SERVICE_USAGE_ITEM:
+    quantity: 60
+    baseAmountUsd: 0.00030000000000000003

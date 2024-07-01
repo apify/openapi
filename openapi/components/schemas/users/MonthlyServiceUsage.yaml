@@ -4,6 +4,4 @@ required:
 type: object
 properties:
   USAGE_ITEM:
-    allOf:
-      - $ref: ./UsageItem.yaml
-      - {}
+    $ref: ./UsageItem.yaml

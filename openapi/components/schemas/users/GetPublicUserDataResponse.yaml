@@ -4,6 +4,4 @@ required:
 type: object
 properties:
   data:
-    allOf:
-      - $ref: ./UserPublicInfo.yaml
-      - {}
+    $ref: ./UserPublicInfo.yaml

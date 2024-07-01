@@ -45,6 +45,12 @@ properties:
     items:
       type: array
       items: {}
+    example:
+      - - ACTORS
+      - - STORAGE
+      - - PROXY_SERPS
+      - - SCHEDULER
+      - - WEBHOOKS
   maxMonthlyUsageUsd:
     type: number
     example: 9999
@@ -73,9 +79,7 @@ properties:
     type: number
     example: 14
   availableProxyGroups:
-    allOf:
-      - $ref: ./AvailableProxyGroups.yaml
-      - {}
+    $ref: ./AvailableProxyGroups.yaml
   teamAccountSeatCount:
     type: number
     example: 1
@@ -86,4 +90,4 @@ properties:
     type: array
     items:
       type: string
-    description: ''
+    example: []

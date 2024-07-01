@@ -4,14 +4,9 @@ get:
   summary: Get monthly usage
   description: >-
     Returns a complete summary of your usage for the current usage cycle,
-
     an overall sum, as well as a daily breakdown of usage. It is the same
-    information you will see on your account's
-
-    [Billing page](https://console.apify.com/billing#/usage). The information
-
+    information you will see on your account's [Billing page](https://console.apify.com/billing#/usage). The information
     includes your use of storage, data transfer, and request queue usage.
-
 
     Using the `date` parameter will show your usage in the usage cycle that
     includes that date.
@@ -32,58 +27,5 @@ get:
       content:
         application/json:
           schema:
-            allOf:
-              - $ref: ../../components/schemas/users/GetMonthlyUsageResponse.yaml
-              - example:
-                  data:
-                    usageCycle:
-                      startAt: '2022-10-02T00:00:00.000Z'
-                      endAt: '2022-11-01T23:59:59.999Z'
-                    monthlyServiceUsage:
-                      USAGE_ITEM:
-                        quantity: 2.784475
-                        baseAmountUsd: 0.69611875
-                        baseUnitPriceUsd: 0.25
-                        amountAfterVolumeDiscountUsd: 0.69611875
-                        priceTiers:
-                          - quantityAbove: 0
-                            discountPercent: 100
-                            tierQuantity: 0.39
-                            unitPriceUsd: 0
-                            priceUsd: 0
-                    dailyServiceUsages:
-                      - date: '2022-10-02T00:00:00.000Z'
-                        serviceUsage:
-                          SERVICE_USAGE_ITEM:
-                            quantity: 60
-                            baseAmountUsd: 0.00030000000000000003
-                        totalUsageCreditsUsd: 0.04743857919705913
-                    totalUsageCreditsUsdBeforeVolumeDiscount: 0.786143673840067
-                    totalUsageCreditsUsdAfterVolumeDiscount: 0.7861436738400671
-          example:
-            data:
-              usageCycle:
-                startAt: '2022-10-02T00:00:00.000Z'
-                endAt: '2022-11-01T23:59:59.999Z'
-              monthlyServiceUsage:
-                USAGE_ITEM:
-                  quantity: 2.784475
-                  baseAmountUsd: 0.69611875
-                  baseUnitPriceUsd: 0.25
-                  amountAfterVolumeDiscountUsd: 0.69611875
-                  priceTiers:
-                    - quantityAbove: 0
-                      discountPercent: 100
-                      tierQuantity: 0.39
-                      unitPriceUsd: 0
-                      priceUsd: 0
-              dailyServiceUsages:
-                - date: '2022-10-02T00:00:00.000Z'
-                  serviceUsage:
-                    SERVICE_USAGE_ITEM:
-                      quantity: 60
-                      baseAmountUsd: 0.00030000000000000003
-                  totalUsageCreditsUsd: 0.04743857919705913
-              totalUsageCreditsUsdBeforeVolumeDiscount: 0.786143673840067
-              totalUsageCreditsUsdAfterVolumeDiscount: 0.7861436738400671
+            $ref: ../../components/schemas/users/GetMonthlyUsageResponse.yaml
   deprecated: false

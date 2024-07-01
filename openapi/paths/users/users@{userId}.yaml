@@ -24,26 +24,5 @@ get:
       content:
         application/json:
           schema:
-            allOf:
-              - $ref: ../../components/schemas/users/GetPublicUserDataResponse.yaml
-              - example:
-                  data:
-                    username: d7b9MDYsbtX5L7XAj
-                    profile:
-                      bio: I started web scraping in 1985 using Altair BASIC.
-                      name: Jane Doe
-                      pictureUrl: /img/anonymous_user_picture.png
-                      githubUsername: torvalds.
-                      websiteUrl: 'http://www.example.com'
-                      twitterUsername: '@BillGates'
-          example:
-            data:
-              username: d7b9MDYsbtX5L7XAj
-              profile:
-                bio: I started web scraping in 1985 using Altair BASIC.
-                name: Jane Doe
-                pictureUrl: /img/anonymous_user_picture.png
-                githubUsername: torvalds.
-                websiteUrl: 'http://www.example.com'
-                twitterUsername: '@BillGates'
+            $ref: ../../components/schemas/users/GetPublicUserDataResponse.yaml
   deprecated: false
