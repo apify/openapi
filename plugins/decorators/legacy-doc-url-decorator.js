@@ -1,11 +1,11 @@
 const X_LEGACY_DOC_URLS_PROPERTY = "x-legacy-doc-urls";
 
 /**
- * Prepends HTML anchors to the description of each node with a URL fragment from the legacy documentation.
- * This achieves link backward compatibility.
+ * The decorator prepends HTML anchors to the description of each operation with HTML fragments leading to related
+ * legacy documentation pages. This achieves link backward compatibility.
  *
  * For example, if the old URL is https://docs.apify.com/api/v2#/reference/logs/log/get-log, then we prepend:
- *   <div id="/reference/logs/log/get-log"></div>
+ *   <span id="/reference/logs/log/get-log"></span>
  *
  * The legacy URLs are stored on a custom property `x-legacy-doc-urls` in the node object (typically an operation
  * or tag). Multiple URLs per node are supported (we might point multiple URLs to the same tag or operation).
