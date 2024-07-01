@@ -759,6 +759,8 @@ security:
   - apiKey: []
 tags:
   - name: Actors
+    x-legacy-doc-urls:
+      - https://docs.apify.com/api/v2#/reference/actors/actor-collection
     description: >-
       The API endpoints described in this section enable you to manage, build
       and run Apify actors.

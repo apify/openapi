@@ -2,6 +2,8 @@ get:
   tags:
     - Actor builds
   summary: Get user builds list
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/actor-builds
   description: >-
     Gets a list of all builds for a user. The response is a JSON array of
     objects, where each object contains basic information about a single build.
