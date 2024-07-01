@@ -28,9 +28,8 @@ put:
   summary: Update schedule
   description: >-
     Updates a schedule using values specified by a schedule object passed as
-    JSON in the POST payload.
-
-    If the object does not define a specific property, its value will not be updated.
+    JSON in the POST payload. If the object does not define a specific property,
+    its value will not be updated.    
 
     The response is the full schedule object as returned by the
     [Get schedule](#reference/schedules/schedule-object/get-schedule) endpoint.
@@ -56,9 +55,7 @@ put:
     content:
       application/json:
         schema:
-          allOf:
-            - $ref: ../../components/schemas/schedules/ScheduleCreate.yaml
-            - {}
+          $ref: ../../components/schemas/schedules/ScheduleCreate.yaml
     required: true
   responses:
     '200':

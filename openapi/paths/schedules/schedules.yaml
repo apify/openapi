@@ -57,9 +57,7 @@ post:
   summary: Create schedule
   description: >-
     Creates a new schedule with settings provided by the schedule object passed
-    as JSON in the payload.
-
-    The response is the created schedule object.
+    as JSON in the payload. The response is the created schedule object.
 
     The request needs to specify the `Content-Type: application/json` HTTP header!
 
@@ -72,9 +70,7 @@ post:
     content:
       application/json:
         schema:
-          allOf:
-            - $ref: ../../components/schemas/schedules/ScheduleCreate.yaml
-            - {}
+          $ref: ../../components/schemas/schedules/ScheduleCreate.yaml
     required: true
   responses:
     '201':
