@@ -1,0 +1,7 @@
+#!/usr/bin/env -S npx bats
+
+@test "The bundled OAI document should contain Legacy Doc link fragment:" {
+  cat openapi.yaml | grep -F '<span id="/reference/logs/log/get-log">'
+}
+
+
