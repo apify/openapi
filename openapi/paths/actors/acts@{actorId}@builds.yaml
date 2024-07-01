@@ -6,10 +6,8 @@ get:
     Gets the list of builds of a specific Actor. The response is a JSON with the
     list of objects, where each object contains basic information about a single build.
 
-
     The endpoint supports pagination using the `limit` and `offset` parameters
     and it will not return more than 1000 records.
-
 
     By default, the records are sorted by the `startedAt` field in ascending order,
     therefore you can use pagination to incrementally fetch all builds while new
