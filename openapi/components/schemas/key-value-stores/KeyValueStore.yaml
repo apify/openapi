@@ -33,8 +33,10 @@ properties:
   actId:
     type: string
     nullable: true
+    example: null
   actRunId:
     type: string
     nullable: true
+    example: null
   stats:
     $ref: ./KeyValueStoreStats.yaml
