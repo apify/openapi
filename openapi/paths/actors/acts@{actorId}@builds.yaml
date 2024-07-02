@@ -67,7 +67,7 @@ get:
 post:
   tags:
     - Actors
-  summary: Build Actor
+  summary: Build actor
   description: |-
     Builds an Actor.
     The response is the build object as returned by the
