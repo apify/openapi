@@ -759,4 +759,7 @@ security:
   - apiKey: []
 tags:
   $ref: components/tags.yaml
+x-tagGroups:
+  $ref: components/x-tag-groups.yaml
+
 
