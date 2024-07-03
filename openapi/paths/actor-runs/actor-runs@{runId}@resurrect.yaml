@@ -1,6 +1,6 @@
 post:
   tags:
-    - Actor runs
+    - Actor runs/Resurrect run
   summary: Resurrect run
   description: |
     Resurrects a finished actor run and returns an object that contains all the details about the resurrected run.
@@ -123,7 +123,7 @@ post:
   deprecated: false
 delete:
   tags:
-    - Actor runs
+    - Actor runs/Delete run
   summary: Delete run
   description: |
     Delete the run. Only finished runs can be deleted. Only the person or

@@ -1,6 +1,6 @@
 get:
   tags:
-    - Store
+    - Store/Store Actors collection
   summary: Get list of Actors in store
   description: |
     Gets the list of public Actors in Apify Store. You can use `search`

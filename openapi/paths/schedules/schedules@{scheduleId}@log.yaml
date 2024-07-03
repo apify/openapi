@@ -1,6 +1,6 @@
 get:
   tags:
-    - Schedules
+    - Schedules/Schedule log
   summary: Get schedule log
   description: |
     Gets the schedule log as a JSON array containing information about up to a

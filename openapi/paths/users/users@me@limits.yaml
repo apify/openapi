@@ -1,6 +1,6 @@
 get:
   tags:
-    - Users
+    - Users/Account and usage limits
   summary: Get limits
   description: |
     Returns a complete summary of your account's limits. It is the same

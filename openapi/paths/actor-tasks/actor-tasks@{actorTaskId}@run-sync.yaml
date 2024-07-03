@@ -1,6 +1,6 @@
 post:
   tags:
-    - Actor tasks
+    - Actor tasks/Run task synchronously
   summary: Run task synchronously (POST)
   description: |
     Runs an actor task and synchronously returns its output.
@@ -144,7 +144,7 @@ post:
   deprecated: false
 get:
   tags:
-    - Actor tasks
+    - Actor tasks/Run task synchronously
   summary: Run task synchronously (GET)
   description: |
     Run a specific task and return its output.

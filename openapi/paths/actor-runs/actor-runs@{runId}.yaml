@@ -1,6 +1,6 @@
 get:
   tags:
-    - Actor runs
+    - Actor runs/Run object and its storages
   summary: Get run
   description: |
     This is not a single endpoint, but an entire group of endpoints that lets
@@ -8,9 +8,9 @@ get:
 
     The endpoints accept the same HTTP methods and query parameters as
     the respective storage endpoints.
-    
+
     The base path that represents the actor run object is:
-    
+
     `/v2/actor-runs/{runId}{?token}`
 
     In order to access the default storages of the actor run, i.e. log,
@@ -42,7 +42,7 @@ get:
     [Record](#reference/key-value-stores/record)
 
     #### Dataset
-    
+
     * `/v2/actor-runs/{runId}/dataset/items{?token}` [Item
     collection](#reference/datasets/item-collection)
 
@@ -182,7 +182,7 @@ get:
   deprecated: false
 delete:
   tags:
-    - Actor runs
+    - Actor runs/Delete run
   summary: Delete run
   description: |
     Delete the run. Only finished runs can be deleted. Only the person or
@@ -205,7 +205,7 @@ delete:
   deprecated: false
 put:
   tags:
-    - Actor runs
+    - Actor runs/Update status message
   summary: Update status message
   description: |
     You can set a single status message on your run that will be displayed in

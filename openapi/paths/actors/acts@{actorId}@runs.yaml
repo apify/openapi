@@ -1,6 +1,6 @@
 get:
   tags:
-    - Actors
+    - Actors/Run collection
   summary: Get list of runs
   description: |
     Gets the list of runs of a specific actor. The response is a list of
@@ -115,7 +115,7 @@ get:
   deprecated: false
 post:
   tags:
-    - Actors
+    - Actors/Run collection
   summary: Run actor
   description: |
     Runs an Actor and immediately returns without waiting for the run to finish.

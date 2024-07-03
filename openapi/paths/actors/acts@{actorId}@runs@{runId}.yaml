@@ -1,6 +1,6 @@
 get:
   tags:
-    - Actors
+    - Actors/Run object
   summary: Get run
   description: |
     **[DEPRECATED]** API endpoints related to run of the Actor were moved under

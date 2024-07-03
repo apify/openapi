@@ -1,6 +1,6 @@
 get:
   tags:
-    - Webhooks
+    - Webhooks/Webhook collection
   summary: Get list of webhooks
   description: |
     Gets the list of webhooks that the user created.
@@ -58,7 +58,7 @@ get:
   deprecated: false
 post:
   tags:
-    - Webhooks
+    - Webhooks/Webhook collection
   summary: Create webhook
   description: |
     Creates a new webhook with settings provided by the webhook object passed as

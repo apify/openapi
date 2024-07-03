@@ -1,6 +1,6 @@
 get:
   tags:
-    - Actor tasks
+    - Actor tasks/Task collection
   summary: Get list of tasks
   description: |
     Gets the complete list of tasks that a user has created or used. The
@@ -101,7 +101,7 @@ get:
   deprecated: false
 post:
   tags:
-    - Actor tasks
+    - Actor tasks/Task collection
   summary: Create task
   description: |
     Create a new task with settings specified by the object passed as JSON in

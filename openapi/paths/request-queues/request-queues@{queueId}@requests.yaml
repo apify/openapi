@@ -1,6 +1,6 @@
 get:
   tags:
-    - Request queues
+    - Request queues/Request collection
   summary: List requests
   description: |
     Returns a list of requests. This endpoint is paginated using
@@ -128,7 +128,7 @@ get:
   deprecated: false
 post:
   tags:
-    - Request queues
+    - Request queues/Request collection
   summary: Add request
   description: |
     Adds request to the queue. Response contains ID of the request and info if

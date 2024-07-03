@@ -1,6 +1,6 @@
 post:
   tags:
-    - Actor runs
+    - Actor runs/Metamorph run
   summary: Metamorph run
   description: |
     Transforms an actor run into a run of another actor with a new input.

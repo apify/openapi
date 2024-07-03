@@ -1,6 +1,6 @@
 get:
   tags:
-    - Actors
+    - Actors/Actor object
   summary: Get actor
   description: Gets an object that contains all the details about a specific Actor.
   operationId: act_get
@@ -84,7 +84,7 @@ get:
   deprecated: false
 put:
   tags:
-    - Actors
+    - Actors/Actor object
   summary: Update actor
   description: |
     Updates settings of an Actor using values specified by an Actor object
@@ -226,7 +226,7 @@ put:
   deprecated: false
 delete:
   tags:
-    - Actors
+    - Actors/Actor object
   summary: Delete actor
   description: Deletes an Actor.
   operationId: act_delete

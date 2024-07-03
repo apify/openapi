@@ -1,6 +1,6 @@
 get:
   tags:
-    - Actors
+    - Actors/Build object
   summary: Get build
   description: |
     **[DEPRECATED]** API endpoints related to build of the Actor were moved

@@ -1,6 +1,6 @@
 post:
   tags:
-    - Actor tasks
+    - Actor tasks/Run task synchronously and get dataset items
   summary: Run task synchronously and get dataset items (POST)
   description: |
     Runs an actor task and synchronously returns its dataset items.
@@ -396,7 +396,7 @@ post:
   deprecated: false
 get:
   tags:
-    - Actor tasks
+    - Actor tasks/Run task synchronously and get dataset items
   summary: Run task synchronously and get dataset items (GET)
   description: |
     Run a specific task and return its dataset items.

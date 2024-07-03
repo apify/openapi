@@ -1,6 +1,6 @@
 post:
   tags:
-    - Actors
+    - Actors/Metamorph run
   summary: Metamorph run
   description: |
     **[DEPRECATED]** API endpoints related to run of the actor were moved under

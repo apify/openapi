@@ -1,6 +1,6 @@
 get:
   tags:
-    - Datasets
+    - Datasets/Item collection
   summary: Get items
   description: |
     Returns data stored in the dataset in a desired format.
@@ -90,10 +90,10 @@ get:
 
 
     ### XML format extension
-    
-    
+
+
     When exporting results to XML or RSS formats, the names of object properties become XML tags and the corresponding values become tag's children. For example, the following JavaScript object:
-   
+
     ```
 
     {
@@ -132,10 +132,10 @@ get:
     If the parent XML element does not have any child elements then its value is taken from a JavaScript object property named `#`.
 
     For example, the following JavaScript object:
-    
-    
+
+
     ```
-    
+
     {
       "address": [{
         "@": {
@@ -168,25 +168,25 @@ get:
     <address type="office">unknown</address>
 
     ```
-    
-    
+
+
     This feature is also useful to customize your RSS feeds generated for various websites.
 
-    
+
     By default the whole result is wrapped in a `<items>` element and each page object is wrapped in a `<item>` element.
-    
+
     You can change this using <code>xmlRoot</code> and <code>xmlRow</code> url parameters.
-    
-   
+
+
     ### Pagination
-    
-    
+
+
     The generated response supports [pagination](#introduction/pagination).
     The pagination is always performed with the granularity of a single item, regardless whether <code>unwind</code> parameter was provided.
     By default, the **Items** in the response are sorted by the time they were stored to the database, therefore you can use pagination to incrementally fetch the items as they are being added.
 
     The maximum number of items that will be returned in a single API call is limited to 250,000. 
-    
+
     <!-- GET_ITEMS_LIMIT -->
 
     If you specify `desc=1` query parameter, the results are returned in the reverse order than they were stored (i.e. from newest to oldest items).
@@ -433,14 +433,7 @@ get:
             type: array
             items:
               type: object
-            example: [
-                {
-                    foo: bar
-                },
-                {
-                  foo2: bar2
-                }
-            ]
+            example: [foo: bar, foo2: bar2]
         application/jsonl:
           schema:
             type: string
@@ -450,12 +443,12 @@ get:
             type: string
           example: 'foo,bar\nfoo2,bar2\n'
         text/html:
-            schema:
-              type: string
-            example: '<table><tr><th>foo</th><th>bar</th></tr><tr><td>foo</td><td>bar</td></tr><tr><td>foo2</td><td>bar2</td></tr></table>'
+          schema:
+            type: string
+          example: '<table><tr><th>foo</th><th>bar</th></tr><tr><td>foo</td><td>bar</td></tr><tr><td>foo2</td><td>bar2</td></tr></table>'
         'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet':
-            schema:
-                type: string
+          schema:
+            type: string
         application/rss+xml:
           schema:
             type: string
@@ -467,7 +460,7 @@ get:
   deprecated: false
 post:
   tags:
-    - Datasets
+    - Datasets/Item collection
   summary: Put items
   description: |
     Appends an item or an array of items to the end of the dataset.

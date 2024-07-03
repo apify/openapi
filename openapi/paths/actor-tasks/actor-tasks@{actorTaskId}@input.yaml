@@ -1,6 +1,6 @@
 get:
   tags:
-    - Actor tasks
+    - Actor tasks/Task input object
   summary: Get task input
   description: Returns the input of a given task.
   operationId: actorTask_input_get
@@ -28,7 +28,7 @@ get:
   deprecated: false
 put:
   tags:
-    - Actor tasks
+    - Actor tasks/Task input object
   summary: Update task input
   description: |
     Updates the input of a task using values specified by an object passed as

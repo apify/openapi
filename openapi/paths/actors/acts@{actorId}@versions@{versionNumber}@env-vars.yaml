@@ -1,6 +1,6 @@
 get:
   tags:
-    - Actors
+    - Actors/Environment variable collection
   summary: Get list of environment variables
   description: |
     Gets the list of environment variables for a specific version of an Actor.
@@ -35,7 +35,7 @@ get:
   deprecated: false
 post:
   tags:
-    - Actors
+    - Actors/Environment variable collection
   summary: Create environment variable
   description: |
     Creates an environment variable of an Actor using values specified in a

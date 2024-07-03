@@ -1,6 +1,6 @@
 post:
   tags:
-    - Actor runs
+    - Actor runs/Reboot run
   summary: Reboot run
   description: |
     Reboots an actor run and returns an object that contains all the details

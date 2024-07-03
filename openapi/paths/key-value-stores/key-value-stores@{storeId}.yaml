@@ -1,6 +1,6 @@
 get:
   tags:
-    - Key-value stores
+    - Key-value stores/Store object
   summary: Get store
   description: |
     Gets an object that contains all the details about a specific key-value
@@ -29,7 +29,7 @@ get:
   deprecated: false
 put:
   tags:
-    - Key-value stores
+    - Key-value stores/Store object
   summary: Update store
   description: |
     Updates a key-value store's name using a value specified by a JSON object
@@ -67,7 +67,7 @@ put:
   deprecated: false
 delete:
   tags:
-    - Key-value stores
+    - Key-value stores/Store object
   summary: Delete store
   description: Deletes a key-value store.
   operationId: keyValueStore_delete

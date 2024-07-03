@@ -1,6 +1,6 @@
 get:
   tags:
-    - Datasets
+    - Datasets/Dataset collection
   summary: Get list of datasets
   description: |
     Lists all of a user's datasets. The response is a JSON array of objects,
@@ -90,7 +90,7 @@ get:
   deprecated: false
 post:
   tags:
-    - Datasets
+    - Datasets/Dataset collection
   summary: Create dataset
   description: |
     Creates a dataset and returns its object.

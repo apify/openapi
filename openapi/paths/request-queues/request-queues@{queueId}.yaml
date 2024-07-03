@@ -1,6 +1,6 @@
 get:
   tags:
-    - Request queues
+    - Request queues/Queue
   summary: Get request queue
   description: Returns queue object for given queue ID.
   operationId: requestQueue_get
@@ -52,7 +52,7 @@ get:
   deprecated: false
 put:
   tags:
-    - Request queues
+    - Request queues/Queue
   summary: Update request queue
   description: |
     Updates a request queue's name using a value specified by a JSON object
@@ -122,7 +122,7 @@ put:
   deprecated: false
 delete:
   tags:
-    - Request queues
+    - Request queues/Queue
   summary: Delete request queue
   description: Deletes given queue.
   operationId: requestQueue_delete

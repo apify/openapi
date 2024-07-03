@@ -1,6 +1,6 @@
 get:
   tags:
-    - Actors
+    - Actors/Version collection
   summary: Get list of versions
   description: |
     Gets the list of versions of a specific Actor. The response is a JSON object
@@ -55,7 +55,7 @@ get:
   deprecated: false
 post:
   tags:
-    - Actors
+    - Actors/Version collection
   summary: Create version
   description: |
     Creates a version of an Actor using values specified in a [Version

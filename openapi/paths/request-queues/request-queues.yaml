@@ -1,6 +1,6 @@
 get:
   tags:
-    - Request queues
+    - Request queues/Queue collection
   summary: Get list of request queues
   description: |
     Lists all of a user's request queues. The response is a JSON array of
@@ -75,7 +75,7 @@ get:
   deprecated: false
 post:
   tags:
-    - Request queues
+    - Request queues/Queue collection
   summary: Create request queue
   description: |
     Creates a request queue and returns its object.

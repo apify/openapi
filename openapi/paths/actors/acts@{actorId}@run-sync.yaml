@@ -1,6 +1,6 @@
 post:
   tags:
-    - Actors
+    - Actors/Run actor synchronously
   summary: With input
   description: |
     Runs a specific Actor and returns its output.
@@ -130,7 +130,7 @@ post:
       content:
         application/json:
           schema:
-           type: object
+            type: object
           example:
             bar: foo
     '400':
@@ -160,7 +160,7 @@ post:
   deprecated: false
 get:
   tags:
-    - Actors
+    - Actors/Run actor synchronously
   summary: Without input
   description: |
     Runs a specific Actor and returns its output.

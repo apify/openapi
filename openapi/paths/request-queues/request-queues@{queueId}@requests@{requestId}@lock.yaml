@@ -1,6 +1,6 @@
 put:
   tags:
-    - Request queues
+    - Request queues/Request lock
   summary: Prolong request lock
   description: |
     Prolongs request lock. The request lock can be prolonged only by the client
@@ -75,7 +75,7 @@ put:
   deprecated: false
 delete:
   tags:
-    - Request queues
+    - Request queues/Request lock
   summary: Delete request lock
   description: |
     Deletes a request lock. The request lock can be deleted only by the client

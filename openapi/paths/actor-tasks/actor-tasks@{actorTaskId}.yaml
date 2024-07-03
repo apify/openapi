@@ -1,6 +1,6 @@
 get:
   tags:
-    - Actor tasks
+    - Actor tasks/Task object
   summary: Get task
   description: Get an object that contains all the details about a task.
   operationId: actorTask_get
@@ -47,7 +47,7 @@ get:
   deprecated: false
 put:
   tags:
-    - Actor tasks
+    - Actor tasks/Task object
   summary: Update task
   description: |
     Update settings of a task using values specified by an object passed as JSON
@@ -132,7 +132,7 @@ put:
   deprecated: false
 delete:
   tags:
-    - Actor tasks
+    - Actor tasks/Task object
   summary: Delete task
   description: Delete the task specified through the `actorTaskId` parameter.
   operationId: actorTask_delete

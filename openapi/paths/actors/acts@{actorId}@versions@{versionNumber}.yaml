@@ -1,6 +1,6 @@
 get:
   tags:
-    - Actors
+    - Actors/Version object
   summary: Get version
   description: |
     The **Version object** contains the source code of a specific version of an
@@ -76,7 +76,7 @@ get:
   deprecated: false
 put:
   tags:
-    - Actors
+    - Actors/Version object
   summary: Update version
   description: |
     The **Version object** contains the source code of a specific version of an
@@ -185,7 +185,7 @@ put:
   deprecated: false
 delete:
   tags:
-    - Actors
+    - Actors/Version object
   summary: Delete version
   description: |
     The **Version object** contains the source code of a specific version of an

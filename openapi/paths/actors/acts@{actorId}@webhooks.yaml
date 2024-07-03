@@ -1,6 +1,6 @@
 get:
   tags:
-    - Actors
+    - Actors/Webhook collection
   summary: Get list of webhooks
   description: |
     Gets the list of webhooks of a specific Actor. The response is a JSON with

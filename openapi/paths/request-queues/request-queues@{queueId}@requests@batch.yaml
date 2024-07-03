@@ -1,6 +1,6 @@
 post:
   tags:
-    - Request queues
+    - Request queues/Batch request operations
   summary: Add requests
   description: |
     Adds requests to the queue in batch. The maximum requests in batch is limit
@@ -104,7 +104,7 @@ post:
   deprecated: false
 delete:
   tags:
-    - Request queues
+    - Request queues/Batch request operations
   summary: Delete requests
   description: |
     Batch-deletes given requests from the queue. The number of requests in a

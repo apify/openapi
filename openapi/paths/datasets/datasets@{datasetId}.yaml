@@ -1,11 +1,11 @@
 get:
   tags:
-    - Datasets
+    - Datasets/Dataset
   summary: Get dataset
   description: |
     Returns dataset object for given dataset ID.
-   
-   
+
+
     **NOTE:** Keep in mind that attributes `itemCount` and `cleanItemCount` are not propagated right away after data are pushed into a dataset.
     There is a short period (up to 5 seconds) during which these counters may not match with exact counts in dataset items.
   operationId: dataset_get
@@ -51,7 +51,7 @@ get:
   deprecated: false
 put:
   tags:
-    - Datasets
+    - Datasets/Dataset
   summary: Update dataset
   description: |
     Updates a dataset's name using a value specified by a JSON object passed in the PUT payload.
@@ -99,7 +99,7 @@ put:
   deprecated: false
 delete:
   tags:
-    - Datasets
+    - Datasets/Dataset
   summary: Delete dataset
   description: Deletes a specific dataset.
   operationId: dataset_delete

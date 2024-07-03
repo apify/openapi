@@ -1,6 +1,6 @@
 get:
   tags:
-    - Request queues
+    - Request queues/Queue
   summary: Get request
   description: Returns request from queue.
   operationId: requestQueue_request_get
@@ -68,7 +68,7 @@ get:
   deprecated: false
 put:
   tags:
-    - Request queues
+    - Request queues/Queue
   summary: Update request
   description: |
     Updates a request in a queue. Mark request as handled by setting
@@ -180,7 +180,7 @@ put:
   deprecated: false
 delete:
   tags:
-    - Request queues
+    - Request queues/Queue
   summary: Delete request
   description: Deletes given request from queue.
   operationId: requestQueue_request_delete

@@ -1,6 +1,6 @@
 get:
   tags:
-    - Schedules
+    - Schedules/Schedule object
   summary: Get schedule
   description: Gets the schedule object with all details.
   operationId: schedule_get
@@ -24,7 +24,7 @@ get:
   deprecated: false
 put:
   tags:
-    - Schedules
+    - Schedules/Schedule object
   summary: Update schedule
   description: |
     Updates a schedule using values specified by a schedule object passed as
@@ -68,7 +68,7 @@ put:
   deprecated: false
 delete:
   tags:
-    - Schedules
+    - Schedules/Schedule object
   summary: Delete schedule
   description: Deletes a schedule.
   operationId: schedule_delete

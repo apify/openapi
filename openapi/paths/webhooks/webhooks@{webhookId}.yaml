@@ -1,6 +1,6 @@
 get:
   tags:
-    - Webhooks
+    - Webhooks/Webhook object
   summary: Get webhook
   description: Gets webhook object with all details.
   operationId: webhook_get
@@ -24,7 +24,7 @@ get:
   deprecated: false
 put:
   tags:
-    - Webhooks
+    - Webhooks/Webhook object
   summary: Update webhook
   description: |
     Updates a webhook using values specified by a webhook object passed as JSON
@@ -74,7 +74,7 @@ put:
   deprecated: false
 delete:
   tags:
-    - Webhooks
+    - Webhooks/Webhook object
   summary: Delete webhook
   description: Deletes a webhook.
   operationId: webhook_delete

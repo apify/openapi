@@ -1,6 +1,6 @@
 get:
   tags:
-    - Actors
+    - Actors/Environment variable object
   summary: Get environment variable
   description: |
     Gets a [EnvVar object](#reference/actors/environment-variable-object) that
@@ -49,7 +49,7 @@ get:
   deprecated: false
 put:
   tags:
-    - Actors
+    - Actors/Environment variable object
   summary: Update environment variable
   description: |
     Updates Actor environment variable using values specified by a [EnvVar
@@ -129,7 +129,7 @@ put:
   deprecated: false
 delete:
   tags:
-    - Actors
+    - Actors/Environment variable object
   summary: Delete environment variable
   description: Deletes a specific environment variable.
   operationId: act_version_envVar_delete

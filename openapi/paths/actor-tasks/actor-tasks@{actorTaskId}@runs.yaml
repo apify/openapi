@@ -1,6 +1,6 @@
 get:
   tags:
-    - Actor tasks
+    - Actor tasks/Run collection
   summary: Get list of task runs
   description: |
     Get a list of runs of a specific task. The response is a list of objects,
@@ -125,7 +125,7 @@ get:
   deprecated: false
 post:
   tags:
-    - Actor tasks
+    - Actor tasks/Run collection
   summary: Run task
   description: |
     Runs an actor task and immediately returns without waiting for the run to

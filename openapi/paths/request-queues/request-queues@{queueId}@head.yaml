@@ -1,6 +1,6 @@
 get:
   tags:
-    - Request queues
+    - Request queues/Queue head
   summary: Get head
   description: |
     Returns given number of first requests from the queue.
