@@ -1,0 +1,129 @@
+Group Count,Resource Group,Resource,Action Name,Url,Action Method
+1,Actors,Actor collection,Get list of actors,"/v2/acts{?token,offset,limit,desc,my}",GET
+1,Actors,Actor collection,Create actor,"/v2/acts{?token,offset,limit,desc,my}",POST
+1,Actors,Actor object,Get actor,"/v2/acts/{actorId}{?token}",GET
+1,Actors,Actor object,Update actor,"/v2/acts/{actorId}{?token}",PUT
+1,Actors,Actor object,Delete actor,"/v2/acts/{actorId}{?token}",DELETE
+1,Actors,Version collection,Get list of versions,"/v2/acts/{actorId}/versions{?token}",GET
+1,Actors,Version collection,Create version,"/v2/acts/{actorId}/versions{?token}",POST
+1,Actors,Version object,Get version,"/v2/acts/{actorId}/versions/{versionNumber}{?token}",GET
+1,Actors,Version object,Update version,"/v2/acts/{actorId}/versions/{versionNumber}{?token}",PUT
+1,Actors,Version object,Delete version,"/v2/acts/{actorId}/versions/{versionNumber}{?token}",DELETE
+1,Actors,Environment variable collection,Get list of environment variables,"/v2/acts/{actorId}/versions/{versionNumber}/env-vars{?token}",GET
+1,Actors,Environment variable collection,Create environment variable,"/v2/acts/{actorId}/versions/{versionNumber}/env-vars{?token}",POST
+1,Actors,Environment variable object,Get environment variable,"/v2/acts/{actorId}/versions/{versionNumber}/env-vars/{envVarName}{?token}",GET
+1,Actors,Environment variable object,Update environment variable,"/v2/acts/{actorId}/versions/{versionNumber}/env-vars/{envVarName}{?token}",PUT
+1,Actors,Environment variable object,Delete environment variable,"/v2/acts/{actorId}/versions/{versionNumber}/env-vars/{envVarName}{?token}",DELETE
+1,Actors,Webhook collection,Get list of webhooks,"/v2/acts/{actorId}/webhooks{?token,offset,limit,desc}",GET
+1,Actors,Build collection,Get list of builds,"/v2/acts/{actorId}/builds{?token,offset,limit,desc,waitForFinish,version,useCache,betaPackages,tag}",GET
+1,Actors,Build collection,Build actor,"/v2/acts/{actorId}/builds{?token,offset,limit,desc,waitForFinish,version,useCache,betaPackages,tag}",POST
+1,Actors,Build object,Get build,"/v2/acts/{actorId}/builds/{buildId}{?token,waitForFinish}",GET
+1,Actors,Abort build,Abort build,"/v2/acts/{actorId}/builds/{buildId}/abort{?token}",POST
+1,Actors,Run collection,Get list of runs,"/v2/acts/{actorId}/runs{?token,offset,limit,desc,waitForFinish,timeout,memory,build,webhooks,status}",GET
+1,Actors,Run collection,Run actor,"/v2/acts/{actorId}/runs{?token,offset,limit,desc,waitForFinish,timeout,memory,build,webhooks,status}",POST
+1,Actors,Run actor synchronously,With input,"/v2/acts/{actorId}/run-sync{?token,outputRecordKey,timeout,memory,build,webhooks}",POST
+2,Actors,Run actor synchronously,With input,"/v2/acts/{actorId}/run-sync{?token,outputRecordKey,timeout,memory,build,webhooks}",POST
+3,Actors,Run actor synchronously,With input,"/v2/acts/{actorId}/run-sync{?token,outputRecordKey,timeout,memory,build,webhooks}",POST
+1,Actors,Run actor synchronously,Without input,"/v2/acts/{actorId}/run-sync{?token,outputRecordKey,timeout,memory,build,webhooks}",GET
+2,Actors,Run actor synchronously,Without input,"/v2/acts/{actorId}/run-sync{?token,outputRecordKey,timeout,memory,build,webhooks}",GET
+3,Actors,Run actor synchronously,Without input,"/v2/acts/{actorId}/run-sync{?token,outputRecordKey,timeout,memory,build,webhooks}",GET
+1,Actors,Run Actor synchronously and get dataset items,Run actor synchronously with input and get dataset items,"/v2/acts/{actorId}/run-sync-get-dataset-items{?token,timeout,memory,build,webhooks,format,offset,limit,attachment,delimiter,bom,desc,xmlRoot,xmlRow,fields,omit,unwind,flatten,skipHeaderRow,token,clean,skipHidden,skipEmpty,simplified,skipFailedPages}",POST
+2,Actors,Run Actor synchronously and get dataset items,Run actor synchronously with input and get dataset items,"/v2/acts/{actorId}/run-sync-get-dataset-items{?token,timeout,memory,build,webhooks,format,offset,limit,attachment,delimiter,bom,desc,xmlRoot,xmlRow,fields,omit,unwind,flatten,skipHeaderRow,token,clean,skipHidden,skipEmpty,simplified,skipFailedPages}",POST
+3,Actors,Run Actor synchronously and get dataset items,Run actor synchronously with input and get dataset items,"/v2/acts/{actorId}/run-sync-get-dataset-items{?token,timeout,memory,build,webhooks,format,offset,limit,attachment,delimiter,bom,desc,xmlRoot,xmlRow,fields,omit,unwind,flatten,skipHeaderRow,token,clean,skipHidden,skipEmpty,simplified,skipFailedPages}",POST
+1,Actors,Run Actor synchronously and get dataset items,Run actor synchronously without input and get dataset items,"/v2/acts/{actorId}/run-sync-get-dataset-items{?token,timeout,memory,build,webhooks,format,offset,limit,attachment,delimiter,bom,desc,xmlRoot,xmlRow,fields,omit,unwind,flatten,skipHeaderRow,token,clean,skipHidden,skipEmpty,simplified,skipFailedPages}",GET
+2,Actors,Run Actor synchronously and get dataset items,Run actor synchronously without input and get dataset items,"/v2/acts/{actorId}/run-sync-get-dataset-items{?token,timeout,memory,build,webhooks,format,offset,limit,attachment,delimiter,bom,desc,xmlRoot,xmlRow,fields,omit,unwind,flatten,skipHeaderRow,token,clean,skipHidden,skipEmpty,simplified,skipFailedPages}",GET
+3,Actors,Run Actor synchronously and get dataset items,Run actor synchronously without input and get dataset items,"/v2/acts/{actorId}/run-sync-get-dataset-items{?token,timeout,memory,build,webhooks,format,offset,limit,attachment,delimiter,bom,desc,xmlRoot,xmlRow,fields,omit,unwind,flatten,skipHeaderRow,token,clean,skipHidden,skipEmpty,simplified,skipFailedPages}",GET
+1,Actors,Run object,Get run,"/v2/acts/{actorId}/runs/{runId}{?token,waitForFinish}",GET
+1,Actors,Abort run,Abort run,"/v2/acts/{actorId}/runs/{runId}/abort{?token,gracefully}",POST
+1,Actors,Metamorph run,Metamorph run,"/v2/acts/{actorId}/runs/{runId}/metamorph{?token,build,targetActorId}",POST
+1,Actors,Resurrect run,Resurrect run,"/v2/acts/{actorId}/runs/{runId}/resurrect{?token,build,timeout,memory}",POST
+1,Actors,Last run object and its storages,Get last run,"/v2/acts/{actorId}/runs/last/{?token,status}",GET
+1,Actor tasks,Task collection,Get list of tasks,"/v2/actor-tasks{?token,offset,limit,desc}",GET
+1,Actor tasks,Task collection,Create task,"/v2/actor-tasks{?token,offset,limit,desc}",POST
+1,Actor tasks,Task object,Get task,"/v2/actor-tasks/{actorTaskId}{?token}",GET
+1,Actor tasks,Task object,Update task,"/v2/actor-tasks/{actorTaskId}{?token}",PUT
+1,Actor tasks,Task object,Delete task,"/v2/actor-tasks/{actorTaskId}{?token}",DELETE
+1,Actor tasks,Task input object,Get task input,"/v2/actor-tasks/{actorTaskId}/input{?token}",GET
+1,Actor tasks,Task input object,Update task input,"/v2/actor-tasks/{actorTaskId}/input{?token}",PUT
+1,Actor tasks,Webhook collection,Get list of webhooks,"/v2/actor-tasks/{actorTaskId}/webhooks{?token,offset,limit,desc}",GET
+1,Actor tasks,Run collection,Get list of task runs,"/v2/actor-tasks/{actorTaskId}/runs{?token,offset,limit,desc,waitForFinish,webhooks,timeout,memory,build,status}",GET
+1,Actor tasks,Run collection,Run task,"/v2/actor-tasks/{actorTaskId}/runs{?token,offset,limit,desc,waitForFinish,webhooks,timeout,memory,build,status}",POST
+1,Actor tasks,Run task synchronously,Run task synchronously (POST),"/v2/actor-tasks/{actorTaskId}/run-sync{?token,outputRecordKey,webhooks,timeout,memory,build}",POST
+2,Actor tasks,Run task synchronously,Run task synchronously (POST),"/v2/actor-tasks/{actorTaskId}/run-sync{?token,outputRecordKey,webhooks,timeout,memory,build}",POST
+1,Actor tasks,Run task synchronously,Run task synchronously (GET),"/v2/actor-tasks/{actorTaskId}/run-sync{?token,outputRecordKey,webhooks,timeout,memory,build}",GET
+2,Actor tasks,Run task synchronously,Run task synchronously (GET),"/v2/actor-tasks/{actorTaskId}/run-sync{?token,outputRecordKey,webhooks,timeout,memory,build}",GET
+3,Actor tasks,Run task synchronously,Run task synchronously (GET),"/v2/actor-tasks/{actorTaskId}/run-sync{?token,outputRecordKey,webhooks,timeout,memory,build}",GET
+1,Actor tasks,Run task synchronously and get dataset items,Run task synchronously and get dataset items (POST),"/v2/actor-tasks/{actorTaskId}/run-sync-get-dataset-items{?token,webhooks,timeout,memory,build,format,offset,limit,attachment,delimiter,bom,desc,xmlRoot,xmlRow,fields,omit,unwind,flatten,skipHeaderRow,token,clean,skipHidden,skipEmpty,simplified,skipFailedPages}",POST
+2,Actor tasks,Run task synchronously and get dataset items,Run task synchronously and get dataset items (POST),"/v2/actor-tasks/{actorTaskId}/run-sync-get-dataset-items{?token,webhooks,timeout,memory,build,format,offset,limit,attachment,delimiter,bom,desc,xmlRoot,xmlRow,fields,omit,unwind,flatten,skipHeaderRow,token,clean,skipHidden,skipEmpty,simplified,skipFailedPages}",POST
+1,Actor tasks,Run task synchronously and get dataset items,Run task synchronously and get dataset items (GET),"/v2/actor-tasks/{actorTaskId}/run-sync-get-dataset-items{?token,webhooks,timeout,memory,build,format,offset,limit,attachment,delimiter,bom,desc,xmlRoot,xmlRow,fields,omit,unwind,flatten,skipHeaderRow,token,clean,skipHidden,skipEmpty,simplified,skipFailedPages}",GET
+2,Actor tasks,Run task synchronously and get dataset items,Run task synchronously and get dataset items (GET),"/v2/actor-tasks/{actorTaskId}/run-sync-get-dataset-items{?token,webhooks,timeout,memory,build,format,offset,limit,attachment,delimiter,bom,desc,xmlRoot,xmlRow,fields,omit,unwind,flatten,skipHeaderRow,token,clean,skipHidden,skipEmpty,simplified,skipFailedPages}",GET
+3,Actor tasks,Run task synchronously and get dataset items,Run task synchronously and get dataset items (GET),"/v2/actor-tasks/{actorTaskId}/run-sync-get-dataset-items{?token,webhooks,timeout,memory,build,format,offset,limit,attachment,delimiter,bom,desc,xmlRoot,xmlRow,fields,omit,unwind,flatten,skipHeaderRow,token,clean,skipHidden,skipEmpty,simplified,skipFailedPages}",GET
+1,Actor tasks,Last run object and its storages,Get last run,"/v2/acts/{actorId}/runs/last/{?token,status,actorTaskId}",GET
+1,Actor runs,Run collection,Get user runs list,"/v2/actor-runs{?token,offset,limit,desc,status}",GET
+1,Actor runs,Run object and its storages,Get run,"/v2/actor-runs/{runId}{?token,waitForFinish}",GET
+1,Actor runs,Delete run,Delete run,"/v2/actor-runs/{runId}{?token}",DELETE
+1,Actor runs,Abort run,Abort run,"/v2/actor-runs/{runId}/abort{?token,gracefully}",POST
+1,Actor runs,Metamorph run,Metamorph run,"/v2/actor-runs/{runId}/metamorph{?token,build,targetActorId}",POST
+1,Actor runs,Reboot run,Reboot run,"/v2/actor-runs/{runId}/reboot{?token}",POST
+1,Actor runs,Resurrect run,Resurrect run,"/v2/acts/{actorId}/runs/{runId}/resurrect{?token,build,timeout,memory}",POST
+1,Actor runs,Update status message,Update status message,"/v2/actor-runs/{runId}{?token,statusMessage,isTerminal}",PUT
+1,Actor builds,Build collection,Get user builds list,"/v2/actor-builds{?token,offset,limit,desc}",GET
+1,Actor builds,Build object,Get build,"/v2/actor-builds/{buildId}{?token,waitForFinish}",GET
+1,Actor builds,Delete build,Delete build,"/v2/actor-builds/{buildId}{?token}",DELETE
+1,Actor builds,Abort build,Abort build,"/v2/actor-builds/{buildId}/abort{?token}",POST
+1,Actor builds,Build log,Get log,"/v2/actor-builds/{buildId}/log{?token,stream,download}",GET
+1,Key-value stores,Store collection,Get list of key-value stores,"/v2/key-value-stores{?token,limit,offset,desc,name,unnamed}",GET
+1,Key-value stores,Store collection,Create key-value store,"/v2/key-value-stores{?token,limit,offset,desc,name,unnamed}",POST
+1,Key-value stores,Store object,Get store,"/v2/key-value-stores/{storeId}{?token}",GET
+1,Key-value stores,Store object,Update store,"/v2/key-value-stores/{storeId}{?token}",PUT
+1,Key-value stores,Store object,Delete store,"/v2/key-value-stores/{storeId}{?token}",DELETE
+1,Key-value stores,Key collection,Get list of keys,"/v2/key-value-stores/{storeId}/keys{?exclusiveStartKey,limit,token}",GET
+1,Key-value stores,Record,Get record,"/v2/key-value-stores/{storeId}/records/{recordKey}{?token}",GET
+2,Key-value stores,Record,Get record,"/v2/key-value-stores/{storeId}/records/{recordKey}{?token}",GET
+1,Key-value stores,Record,Put record,"/v2/key-value-stores/{storeId}/records/{recordKey}{?token}",PUT
+2,Key-value stores,Record,Put record,"/v2/key-value-stores/{storeId}/records/{recordKey}{?token}",PUT
+1,Key-value stores,Record,Delete record,"/v2/key-value-stores/{storeId}/records/{recordKey}{?token}",DELETE
+1,Datasets,Dataset collection,Get list of datasets,"/v2/datasets{?token,limit,offset,desc,name,unnamed}",GET
+1,Datasets,Dataset collection,Create dataset,"/v2/datasets{?token,limit,offset,desc,name,unnamed}",POST
+1,Datasets,Dataset,Get dataset,"/v2/datasets/{datasetId}{?token}",GET
+1,Datasets,Dataset,Update dataset,"/v2/datasets/{datasetId}{?token}",PUT
+1,Datasets,Dataset,Delete dataset,"/v2/datasets/{datasetId}{?token}",DELETE
+1,Datasets,Item collection,Get items,"/v2/datasets/{datasetId}/items{?format,offset,limit,attachment,delimiter,bom,desc,xmlRoot,xmlRow,fields,omit,unwind,flatten,skipHeaderRow,token,clean,skipHidden,skipEmpty,simplified,skipFailedPages}",GET
+1,Datasets,Item collection,Put items,"/v2/datasets/{datasetId}/items{?format,offset,limit,attachment,delimiter,bom,desc,xmlRoot,xmlRow,fields,omit,unwind,flatten,skipHeaderRow,token,clean,skipHidden,skipEmpty,simplified,skipFailedPages}",POST
+1,Request queues,Queue collection,Get list of request queues,"/v2/request-queues{?token,limit,offset,desc,name,unnamed}",GET
+1,Request queues,Queue collection,Create request queue,"/v2/request-queues{?token,limit,offset,desc,name,unnamed}",POST
+1,Request queues,Queue,Get request queue,"/v2/request-queues/{queueId}{?token}",GET
+1,Request queues,Queue,Update request queue,"/v2/request-queues/{queueId}{?token}",PUT
+1,Request queues,Queue,Delete request queue,"/v2/request-queues/{queueId}{?token}",DELETE
+1,Request queues,Request collection,List requests,"/v2/request-queues/{queueId}/requests{?forefront,token,clientKey,limit,exclusiveStartId}",GET
+1,Request queues,Request collection,Add request,"/v2/request-queues/{queueId}/requests{?forefront,token,clientKey,limit,exclusiveStartId}",POST
+1,Request queues,Request,Get request,"/v2/request-queues/{queueId}/requests/{requestId}{?forefront,token,clientKey}",GET
+1,Request queues,Request,Update request,"/v2/request-queues/{queueId}/requests/{requestId}{?forefront,token,clientKey}",PUT
+1,Request queues,Request,Delete request,"/v2/request-queues/{queueId}/requests/{requestId}{?forefront,token,clientKey}",DELETE
+1,Request queues,Request lock,Prolong request lock,"/v2/request-queues/{queueId}/requests/{requestId}/lock{?lockSecs,forefront,token,clientKey}",PUT
+1,Request queues,Request lock,Delete request lock,"/v2/request-queues/{queueId}/requests/{requestId}/lock{?lockSecs,forefront,token,clientKey}",DELETE
+1,Request queues,Queue head,Get head,"/v2/request-queues/{queueId}/head{?limit,token,clientKey}",GET
+1,Request queues,Queue head with locks,Get head and lock,"/v2/request-queues/{queueId}/head/lock{?limit,lockSecs,token,clientKey}",POST
+1,Request queues,Batch request operations,Add requests,"/v2/request-queues/{queueId}/requests/batch{?forefront,token,clientKey}",POST
+1,Request queues,Batch request operations,Delete requests,"/v2/request-queues/{queueId}/requests/batch{?forefront,token,clientKey}",DELETE
+1,Webhooks,Webhook collection,Get list of webhooks,"/v2/webhooks{?token,limit,offset,desc}",GET
+1,Webhooks,Webhook collection,Create webhook,"/v2/webhooks{?token,limit,offset,desc}",POST
+1,Webhooks,Webhook object,Get webhook,"/v2/webhooks/{webhookId}{?token}",GET
+1,Webhooks,Webhook object,Update webhook,"/v2/webhooks/{webhookId}{?token}",PUT
+1,Webhooks,Webhook object,Delete webhook,"/v2/webhooks/{webhookId}{?token}",DELETE
+1,Webhooks,Webhook test,Test webhook,"/v2/webhooks/{webhookId}/test{?token}",POST
+1,Webhooks,Dispatches collection,Get collection,"/v2/webhooks/{webhookId}/dispatches{?token}",GET
+1,Webhook dispatches,Webhook dispatches collection,Get list of webhook dispatches,"/v2/webhook-dispatches{?token,limit,offset,desc}",GET
+1,Webhook dispatches,Webhook dispatch object,Get webhook dispatch,"/v2/webhook-dispatches/{dispatchId}{?token}",GET
+1,Schedules,Schedules collection,Get list of schedules,"/v2/schedules{?token,limit,offset,desc}",GET
+1,Schedules,Schedules collection,Create schedule,"/v2/schedules{?token,limit,offset,desc}",POST
+1,Schedules,Schedule object,Get schedule,"/v2/schedules/{scheduleId}{?token}",GET
+1,Schedules,Schedule object,Update schedule,"/v2/schedules/{scheduleId}{?token}",PUT
+1,Schedules,Schedule object,Delete schedule,"/v2/schedules/{scheduleId}{?token}",DELETE
+1,Schedules,Schedule log,Get schedule log,"/v2/schedules/{scheduleId}/log{?token}",GET
+1,Store,Store Actors collection,Get list of Actors in store,"/v2/store{?limit,offset,search,sortBy,category,username,pricingModel}",GET
+1,Logs,Log,Get log,"/v2/logs/{buildOrRunId}{?stream,download}",GET
+1,Users,Public data,Get public user data,"/v2/users/{userId}",GET
+1,Users,Private data,Get private user data,"/v2/users/me{?token}",GET
+1,Users,Monthly usage,Get monthly usage,"/v2/users/me/usage/monthly{?token,date}",GET
+1,Users,Account and usage limits,Get limits,"/v2/users/me/limits{?token}",GET
