@@ -142,6 +142,8 @@ post:
           schema:
             $ref: "../../components/schemas/common/ErrorResponse.yaml"
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/actor-tasks/run-task-synchronously/run-task-synchronously-post
 get:
   tags:
     - Actor tasks/Run task synchronously
@@ -272,3 +274,5 @@ get:
           schema:
             $ref: "../../components/schemas/common/ErrorResponse.yaml"
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/actor-tasks/run-task-synchronously/run-task-synchronously-get

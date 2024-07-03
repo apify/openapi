@@ -34,3 +34,5 @@ get:
                 level: ERROR
                 createdAt: '2019-03-26T12:30:00.325Z'
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/schedules/schedule-log/get-schedule-log

@@ -99,6 +99,8 @@ get:
                   stats:
                     totalRuns: 4
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/actor-tasks/task-collection/get-list-of-tasks
 post:
   tags:
     - Actor tasks/Task collection
@@ -178,3 +180,5 @@ post:
               input:
                 hello: world
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/actor-tasks/task-collection/create-task

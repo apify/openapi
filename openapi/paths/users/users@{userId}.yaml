@@ -26,3 +26,5 @@ get:
           schema:
             $ref: ../../components/schemas/users/GetPublicUserDataResponse.yaml
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/users/public-data/get-public-user-data

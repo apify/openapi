@@ -50,6 +50,8 @@ get:
               pendingRequestCount: 670
               hadMultipleClients: true
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/request-queues/queue/get-request-queue
 put:
   tags:
     - Request queues/Queue
@@ -120,6 +122,8 @@ put:
               pendingRequestCount: 670
               hadMultipleClients: true
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/request-queues/queue/update-request-queue
 delete:
   tags:
     - Request queues/Queue
@@ -141,3 +145,5 @@ delete:
       headers: {}
       content: {}
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/request-queues/queue/delete-request-queue

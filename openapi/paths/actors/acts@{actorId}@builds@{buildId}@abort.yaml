@@ -59,3 +59,5 @@ post:
               usageUsd:
                 ACTOR_COMPUTE_UNITS: 0.02
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/actors/abort-build/abort-build

@@ -102,6 +102,8 @@ post:
                   url: 'http://example.com/2'
                   method: GET
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/request-queues/batch-request-operations/add-requests
 delete:
   tags:
     - Request queues/Batch request operations
@@ -179,3 +181,5 @@ delete:
               unprocessedRequests:
                 - id: sbJ7klsdf7ujN9l
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/request-queues/batch-request-operations/delete-requests

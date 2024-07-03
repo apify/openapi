@@ -59,3 +59,5 @@ get:
               isTruncated: true
               nextExclusiveStartKey: third-key
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/key-value-stores/key-collection/get-list-of-keys

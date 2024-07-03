@@ -420,6 +420,8 @@ post:
               type: run-timeout-exceeded
               message: Actor run exceeded timeout of 300 seconds for this API endpoint
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/actors/run-actor-synchronously-and-get-dataset-items/run-actor-synchronously-with-input-and-get-dataset-items
 get:
   tags:
     - Actors/Run Actor synchronously and get dataset items
@@ -820,3 +822,5 @@ get:
               type: run-timeout-exceeded
               message: Actor run exceeded timeout of 60 seconds for this API enpoint
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/actors/run-actor-synchronously-and-get-dataset-items/run-actor-synchronously-without-input-and-get-dataset-items

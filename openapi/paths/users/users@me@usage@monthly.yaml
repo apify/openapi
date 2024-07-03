@@ -29,3 +29,5 @@ get:
           schema:
             $ref: ../../components/schemas/users/GetMonthlyUsageResponse.yaml
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/users/monthly-usage/get-monthly-usage

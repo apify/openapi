@@ -130,3 +130,5 @@ get:
                   stats:
                     totalDispatches: 1
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/actor-tasks/webhook-collection/get-list-of-webhooks

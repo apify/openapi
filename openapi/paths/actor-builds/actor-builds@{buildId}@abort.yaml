@@ -28,3 +28,5 @@ post:
             allOf:
               - $ref: ../../components/schemas/actor-builds/PostAbortBuildResponse.yaml
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/actor-builds/abort-build/abort-build

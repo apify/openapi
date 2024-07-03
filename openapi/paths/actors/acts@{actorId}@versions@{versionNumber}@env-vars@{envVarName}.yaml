@@ -47,6 +47,8 @@ get:
               value: my-value
               isSecret: false
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/actors/environment-variable-object/get-environment-variable
 put:
   tags:
     - Actors/Environment variable object
@@ -127,6 +129,8 @@ put:
               value: my-value
               isSecret: false
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/actors/environment-variable-object/update-environment-variable
 delete:
   tags:
     - Actors/Environment variable object
@@ -169,3 +173,5 @@ delete:
             example: {}
           example: {}
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/actors/environment-variable-object/delete-environment-variable

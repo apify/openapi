@@ -22,3 +22,5 @@ post:
           schema:
             $ref: ../../components/schemas/webhooks/TestWebhookResponse.yaml
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/webhooks/webhook-test/test-webhook

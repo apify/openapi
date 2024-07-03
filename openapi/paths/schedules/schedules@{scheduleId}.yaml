@@ -22,6 +22,8 @@ get:
           schema:
             $ref: ../../components/schemas/schedules/ScheduleResponse.yaml
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/schedules/schedule-object/get-schedule
 put:
   tags:
     - Schedules/Schedule object
@@ -66,6 +68,8 @@ put:
           schema:
             $ref: ../../components/schemas/schedules/ScheduleResponse.yaml
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/schedules/schedule-object/update-schedule
 delete:
   tags:
     - Schedules/Schedule object
@@ -92,3 +96,5 @@ delete:
             example: {}
           example: {}
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/schedules/schedule-object/delete-schedule

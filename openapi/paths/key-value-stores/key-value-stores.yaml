@@ -68,6 +68,8 @@ get:
           schema:
             $ref: ../../components/schemas/key-value-stores/GetListOfKeyValueStoresResponse.yaml
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/key-value-stores/store-collection/get-list-of-key-value-stores
 post:
   tags:
     - Key-value stores/Store collection
@@ -118,3 +120,5 @@ post:
               actId: null
               actRunId: null
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/key-value-stores/store-collection/create-key-value-store

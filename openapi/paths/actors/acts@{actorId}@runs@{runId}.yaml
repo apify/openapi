@@ -135,3 +135,5 @@ get:
                 PROXY_RESIDENTIAL_TRANSFER_GBYTES: 0.16
                 PROXY_SERPS: 0.0006
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/actors/run-object/get-run

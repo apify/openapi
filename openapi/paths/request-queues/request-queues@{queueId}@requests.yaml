@@ -126,6 +126,8 @@ get:
               limit: 2
               exclusiveStartId: Ihnsp8YrvJ8102Kj
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/request-queues/request-collection/list-requests
 post:
   tags:
     - Request queues/Request collection
@@ -209,3 +211,5 @@ post:
               wasAlreadyPresent: true
               wasAlreadyHandled: false
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/request-queues/request-collection/add-request

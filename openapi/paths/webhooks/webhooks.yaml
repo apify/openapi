@@ -56,6 +56,8 @@ get:
           schema:
             $ref: ../../components/schemas/webhooks/GetListOfWebhooksResponse.yaml
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/webhooks/webhook-collection/get-list-of-webhooks
 post:
   tags:
     - Webhooks/Webhook collection
@@ -176,3 +178,5 @@ post:
           schema:
             $ref: ../../components/schemas/webhooks/CreateWebhookResponse.yaml
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/webhooks/webhook-collection/create-webhook

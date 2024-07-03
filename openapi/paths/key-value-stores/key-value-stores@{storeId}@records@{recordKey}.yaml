@@ -60,6 +60,8 @@ get:
                 https://apifier-key-value-store-prod.s3.amazonaws.com/tqx6jeMia43gYY6eE/INPUT?AWSAccessKeyId=NKDOUN&Expires=1502720992&Signature=DKLVPI4lDDKC
       content: {}
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/key-value-stores/record/get-record
 put:
   tags:
     - Key-value stores/Record
@@ -135,6 +137,8 @@ put:
             type: object
           example: {}
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/key-value-stores/record/put-record
 delete:
   tags:
     - Key-value stores/Record
@@ -164,3 +168,5 @@ delete:
       headers: {}
       content: {}
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/key-value-stores/record/delete-record
