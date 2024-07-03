@@ -51,6 +51,8 @@ get:
           schema:
             $ref: ../../components/schemas/schedules/GetListOfSchedulesResponse.yaml
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/schedules/schedules-collection/get-list-of-schedules
 post:
   tags:
     - Schedules/Schedules collection
@@ -87,3 +89,5 @@ post:
           schema:
             $ref: ../../components/schemas/schedules/ScheduleResponse.yaml
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/schedules/schedules-collection/create-schedule

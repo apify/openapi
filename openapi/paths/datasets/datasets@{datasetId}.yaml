@@ -49,6 +49,8 @@ get:
               actRunId: null
               fields: []
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/datasets/dataset/get-dataset
 put:
   tags:
     - Datasets/Dataset
@@ -97,6 +99,8 @@ put:
               actRunId: null
               fields: []
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/datasets/dataset/update-dataset
 delete:
   tags:
     - Datasets/Dataset
@@ -118,3 +122,5 @@ delete:
       headers: {}
       content: {}
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/datasets/dataset/delete-dataset

@@ -62,3 +62,5 @@ get:
           schema:
             $ref: ../../components/schemas/webhooks/GetListOfWebhooksResponse.yaml
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/actors/webhook-collection/get-list-of-webhooks

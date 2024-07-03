@@ -180,6 +180,8 @@ get:
                 PROXY_RESIDENTIAL_TRANSFER_GBYTES: 0.16
                 PROXY_SERPS: 0.0006
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/actor-runs/run-object-and-its-storages/get-run
 delete:
   tags:
     - Actor runs/Delete run
@@ -203,6 +205,8 @@ delete:
       headers: {}
       content: {}
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/actor-runs/delete-run/delete-run
 put:
   tags:
     - Actor runs/Update status message
@@ -323,3 +327,5 @@ put:
                 PROXY_RESIDENTIAL_TRANSFER_GBYTES: 0.16
                 PROXY_SERPS: 0.0006
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/actor-runs/update-status-message/update-status-message

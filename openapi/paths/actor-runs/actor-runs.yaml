@@ -105,3 +105,5 @@ get:
                   defaultDatasetId: CFGggdjQDsyE7Moyw
                   defaultRequestQueueId: soowucklrmDzKpA8x
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/actor-runs/run-collection/get-user-runs-list

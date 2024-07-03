@@ -56,3 +56,5 @@ get:
           schema:
             $ref: ../../components/schemas/webhook-dispatches/WebhookDispatchList.yaml
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/webhook-dispatches/webhook-dispatches-collection/get-list-of-webhook-dispatches

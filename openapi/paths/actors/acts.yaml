@@ -85,6 +85,8 @@ get:
                   name: MySecondAct
                   username: janedoe
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/actors/actor-collection/get-list-of-actors
 post:
   tags:
     - Actors/Actor collection
@@ -221,3 +223,5 @@ post:
                   buldNumber: 0.0.2
                   finishedAt: '2019-06-10T11:15:49.286Z'
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/actors/actor-collection/create-actor

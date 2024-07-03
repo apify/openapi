@@ -26,6 +26,8 @@ get:
             myField2: another-value
             myField3: 1
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/actor-tasks/task-input-object/get-task-input
 put:
   tags:
     - Actor tasks/Task input object
@@ -78,3 +80,5 @@ put:
             myField2: updated-value
             myField3: 1
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/actor-tasks/task-input-object/update-task-input

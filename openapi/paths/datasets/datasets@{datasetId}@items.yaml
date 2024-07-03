@@ -458,6 +458,8 @@ get:
             type: string
           example: '<items><item><foo>bar</foo></item><item><foo2>bar2</foo2></item></items>'
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/datasets/item-collection/get-items
 post:
   tags:
     - Datasets/Item collection
@@ -514,3 +516,5 @@ post:
             example: {}
           example: {}
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/datasets/item-collection/put-items

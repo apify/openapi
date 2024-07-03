@@ -90,3 +90,5 @@ get:
               readme: '# Magic Actor\nThis Actor is magic.'
               buildNumber: 0.1.1
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/actors/build-object/get-build

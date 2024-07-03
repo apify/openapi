@@ -53,6 +53,8 @@ get:
                   buildTag: latest
                   gitHubGistUrl: 'https://gist.github.com/jane35/e51feb784yu89'
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/actors/version-collection/get-list-of-versions
 post:
   tags:
     - Actors/Version collection
@@ -123,3 +125,5 @@ post:
           schema:
             $ref: "../../components/schemas/actors/GetVersionResponse.yaml"
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/actors/version-collection/create-version

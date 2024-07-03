@@ -158,6 +158,8 @@ post:
               type: run-timeout-exceeded
               message: Actor run exceeded timeout of 300 seconds for this API endpoint
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/actors/run-actor-synchronously/with-input
 get:
   tags:
     - Actors/Run actor synchronously
@@ -302,3 +304,5 @@ get:
               type: run-timeout-exceeded
               message: Actor run exceeded timeout of 60 seconds for this API enpoint
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/actors/run-actor-synchronously/without-input

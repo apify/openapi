@@ -66,6 +66,8 @@ get:
                 image: 'https://picserver1.eu'
               handledAt: '2019-06-16T10:23:31.607Z'
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/request-queues/queue/get-request
 put:
   tags:
     - Request queues/Queue
@@ -178,6 +180,8 @@ put:
               wasAlreadyPresent: true
               wasAlreadyHandled: false
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/request-queues/queue/update-request
 delete:
   tags:
     - Request queues/Queue
@@ -223,3 +227,5 @@ delete:
       headers: {}
       content: {}
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/request-queues/queue/delete-request

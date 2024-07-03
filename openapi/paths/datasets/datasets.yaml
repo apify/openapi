@@ -88,6 +88,8 @@ get:
                   actId: null
                   actRunId: null
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/datasets/dataset-collection/get-list-of-datasets
 post:
   tags:
     - Datasets/Dataset collection
@@ -135,3 +137,5 @@ post:
               actRunId: null
               fields: []
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/datasets/dataset-collection/create-dataset

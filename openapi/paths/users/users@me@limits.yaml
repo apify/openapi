@@ -16,3 +16,5 @@ get:
           schema:
             $ref: ../../components/schemas/users/GetLimitsResponse.yaml
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/users/account-and-usage-limits/get-limits

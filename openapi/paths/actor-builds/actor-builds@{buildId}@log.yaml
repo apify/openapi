@@ -53,3 +53,5 @@ get:
             2017-07-14T06:00:49.741Z Input: { test: 123 }
             2017-07-14T06:00:49.752Z Some useful debug information follows.
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/actor-builds/build-log/get-log

@@ -142,3 +142,5 @@ get:
                   currentPricingInfo:
                     pricingModel: FREE
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/store/store-actors-collection/get-list-of-actors-in-store

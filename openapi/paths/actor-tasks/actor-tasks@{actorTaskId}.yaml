@@ -45,6 +45,8 @@ get:
               input:
                 hello: world
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/actor-tasks/task-object/get-task
 put:
   tags:
     - Actor tasks/Task object
@@ -130,6 +132,8 @@ put:
               input:
                 hello: world
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/actor-tasks/task-object/update-task
 delete:
   tags:
     - Actor tasks/Task object
@@ -155,3 +159,5 @@ delete:
             type: object
           example: {}
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/actor-tasks/task-object/delete-task

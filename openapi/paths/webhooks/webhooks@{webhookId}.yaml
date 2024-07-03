@@ -22,6 +22,8 @@ get:
           schema:
             $ref: ../../components/schemas/webhooks/GetWebhookResponse.yaml
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/webhooks/webhook-object/get-webhook
 put:
   tags:
     - Webhooks/Webhook object
@@ -72,6 +74,8 @@ put:
           schema:
             $ref: ../../components/schemas/webhooks/UpdateWebhookResponse.yaml
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/webhooks/webhook-object/update-webhook
 delete:
   tags:
     - Webhooks/Webhook object
@@ -97,3 +101,5 @@ delete:
             type: object
           example: {}
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/webhooks/webhook-object/delete-webhook

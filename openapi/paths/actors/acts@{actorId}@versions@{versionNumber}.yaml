@@ -74,6 +74,8 @@ get:
           schema:
             $ref: "../../components/schemas/actors/GetVersionResponse.yaml"
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/actors/version-object/get-version
 put:
   tags:
     - Actors/Version object
@@ -183,6 +185,8 @@ put:
           schema:
             $ref: "../../components/schemas/actors/GetVersionResponse.yaml"
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/actors/version-object/update-version
 delete:
   tags:
     - Actors/Version object
@@ -263,3 +267,5 @@ delete:
             example: {}
           example: {}
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/actors/version-object/delete-version
