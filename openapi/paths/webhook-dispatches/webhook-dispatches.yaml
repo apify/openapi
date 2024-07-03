@@ -2,7 +2,7 @@ get:
   tags:
     - Webhook dispatches
   summary: Get list of webhook dispatches
-  description: >-
+  description: |
     Gets the list of webhook dispatches that the user have.
 
 
@@ -17,7 +17,7 @@ get:
   parameters:
     - name: offset
       in: query
-      description: >-
+      description: |
         Number of records that should be skipped at the start. The default value
         is `0`.
       style: form
@@ -28,7 +28,7 @@ get:
         example: 10
     - name: limit
       in: query
-      description: >-
+      description: |
         Maximum number of records to return. The default value as well as the
         maximum is `1000`.
       style: form
@@ -39,7 +39,7 @@ get:
         example: 99
     - name: desc
       in: query
-      description: >-
+      description: |
         If `true` or `1` then the objects are sorted by the `createdAt` field in
         descending order. By default, they are sorted in ascending order.
       style: form

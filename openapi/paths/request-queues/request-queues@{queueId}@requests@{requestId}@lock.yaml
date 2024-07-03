@@ -2,7 +2,7 @@ put:
   tags:
     - Request queues
   summary: Prolong request lock
-  description: >-
+  description: |
     Prolongs request lock. The request lock can be prolonged only by the client
     that has locked it using [Get and lock head
     operation](#reference/request-queues/queue-head-with-locks).
@@ -36,7 +36,7 @@ put:
         example: 60
     - name: clientKey
       in: query
-      description: >-
+      description: |
         A unique identifier of the client accessing the request queue. It must
         be a string between 1 and 32 characters long. This identifier is used to
         ensure one client is not to able delete or prolong
@@ -49,7 +49,7 @@ put:
         example: client-abc
     - name: forefront
       in: query
-      description: >-
+      description: |
         Determines if request should be added to the head of the queue or to the
         end after lock expires.
       style: form
@@ -77,7 +77,7 @@ delete:
   tags:
     - Request queues
   summary: Delete request lock
-  description: >-
+  description: |
     Deletes a request lock. The request lock can be deleted only by the client
     that has locked it using [Get and lock head
     operation](#reference/request-queues/queue-head-with-locks).
@@ -111,7 +111,7 @@ delete:
         example: application/json
     - name: clientKey
       in: query
-      description: >-
+      description: |
         A unique identifier of the client accessing the request queue. It must
         be a string between 1 and 32 characters long. This identifier is used to
         ensure one client is not to able delete or prolong
@@ -124,7 +124,7 @@ delete:
         example: client-abc
     - name: forefront
       in: query
-      description: >-
+      description: |
         Determines if request should be added to the head of the queue or to the
         end after lock was removed.
       style: form

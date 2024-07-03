@@ -2,7 +2,7 @@ post:
   tags:
     - Actor runs
   summary: Resurrect run
-  description: >-
+  description: |
     Resurrects a finished actor run and returns an object that contains all the details about the resurrected run.
     Only finished runs, i.e. runs with status `FINISHED`, `FAILED`, `ABORTED` and `TIMED-OUT` can be resurrected.
     Run status will be updated to RUNNING and its container will be restarted with the same storages
@@ -125,7 +125,7 @@ delete:
   tags:
     - Actor runs
   summary: Delete run
-  description: >-
+  description: |
     Delete the run. Only finished runs can be deleted. Only the person or
     organization that initiated the run can delete it.
   operationId: Deleterun

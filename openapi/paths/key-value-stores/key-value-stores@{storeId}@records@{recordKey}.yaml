@@ -2,7 +2,7 @@ get:
   tags:
     - Key-value stores
   summary: Get record
-  description: >-
+  description: |
     Gets a value stored in the key-value store under a specific key.
 
     The response body has the same `Content-Encoding` header as it was set in
@@ -64,7 +64,7 @@ put:
   tags:
     - Key-value stores
   summary: Put record
-  description: >-
+  description: |
     Stores a value under a specific key to the key-value store.
 
     The value is passed as the PUT payload and it is stored with a MIME content

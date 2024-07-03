@@ -2,7 +2,7 @@ get:
   tags:
     - Actors
   summary: Get version
-  description: >-
+  description: |
     The **Version object** contains the source code of a specific version of an
     Actor.
 
@@ -78,7 +78,7 @@ put:
   tags:
     - Actors
   summary: Update version
-  description: >-
+  description: |
     The **Version object** contains the source code of a specific version of an
     Actor.
 
@@ -187,7 +187,7 @@ delete:
   tags:
     - Actors
   summary: Delete version
-  description: >-
+  description: |
     The **Version object** contains the source code of a specific version of an
     Actor.
 

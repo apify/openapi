@@ -26,7 +26,7 @@ put:
   tags:
     - Schedules
   summary: Update schedule
-  description: >-
+  description: |
     Updates a schedule using values specified by a schedule object passed as
     JSON in the POST payload. If the object does not define a specific property,
     its value will not be updated.    

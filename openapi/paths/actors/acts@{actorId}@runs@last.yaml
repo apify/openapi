@@ -2,7 +2,7 @@ get:
   tags:
     - Actors
   summary: Get last run
-  description: >-
+  description: |
     This is not a single endpoint, but an entire group of endpoints that lets
     you to
 

@@ -2,7 +2,7 @@ get:
   tags:
     - Request queues
   summary: Get head
-  description: >-
+  description: |
     Returns given number of first requests from the queue.
 
 
@@ -34,7 +34,7 @@ get:
         example: 100
     - name: clientKey
       in: query
-      description: >-
+      description: |
         A unique identifier of the client accessing the request queue. It must
         be a string between 1 and 32 characters long. This identifier is used to
         determine whether the queue was accessed by multiple clients. If

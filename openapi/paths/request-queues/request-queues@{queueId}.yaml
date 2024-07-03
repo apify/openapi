@@ -54,7 +54,7 @@ put:
   tags:
     - Request queues
   summary: Update request queue
-  description: >-
+  description: |
     Updates a request queue's name using a value specified by a JSON object
     passed in the PUT payload.
 

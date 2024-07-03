@@ -26,7 +26,7 @@ put:
   tags:
     - Webhooks
   summary: Update webhook
-  description: >-
+  description: |
     Updates a webhook using values specified by a webhook object passed as JSON
     in the POST payload.
 

@@ -2,7 +2,7 @@ get:
   tags:
     - Key-value stores
   summary: Get store
-  description: >-
+  description: |
     Gets an object that contains all the details about a specific key-value
     store.
   operationId: keyValueStore_get
@@ -31,7 +31,7 @@ put:
   tags:
     - Key-value stores
   summary: Update store
-  description: >-
+  description: |
     Updates a key-value store's name using a value specified by a JSON object
     passed in the PUT payload.
 

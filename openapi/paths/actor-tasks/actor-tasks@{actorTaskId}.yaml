@@ -49,7 +49,7 @@ put:
   tags:
     - Actor tasks
   summary: Update task
-  description: >-
+  description: |
     Update settings of a task using values specified by an object passed as JSON
     in the POST payload.
 

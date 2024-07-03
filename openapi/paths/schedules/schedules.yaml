@@ -2,7 +2,7 @@ get:
   tags:
     - Schedules
   summary: Get list of schedules
-  description: >-
+  description: |
     Gets the list of schedules that the user created.
 
     The endpoint supports pagination using the `limit` and `offset` parameters.
@@ -14,7 +14,7 @@ get:
   parameters:
     - name: offset
       in: query
-      description: >-
+      description: |
         Number of records that should be skipped at the start. The default value is `0`.
       style: form
       explode: true
@@ -24,7 +24,7 @@ get:
         example: 10
     - name: limit
       in: query
-      description: >-
+      description: |
         Maximum number of records to return. The default value, as well as the maximum, is `1000`.
       style: form
       explode: true
@@ -34,7 +34,7 @@ get:
         example: 99
     - name: desc
       in: query
-      description: >-
+      description: |
         If `true` or `1`, the objects are sorted by the `createdAt` field in
         descending order. By default, they are sorted in ascending order.
       style: form
@@ -55,7 +55,7 @@ post:
   tags:
     - Schedules
   summary: Create schedule
-  description: >-
+  description: |
     Creates a new schedule with settings provided by the schedule object passed
     as JSON in the payload. The response is the created schedule object.
 

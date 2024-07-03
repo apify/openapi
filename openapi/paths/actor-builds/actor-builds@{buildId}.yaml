@@ -2,7 +2,7 @@ get:
   tags:
     - Actor builds
   summary: Get build
-  description: >-
+  description: |
     Gets an object that contains all the details about a specific build of an
     Actor.
 
@@ -27,7 +27,7 @@ get:
         example: soSkq9ekdmfOslopH
     - name: waitForFinish
       in: query
-      description: >-
+      description: |
         The maximum number of seconds the server waits for the build to finish.
         By default it is `0`, the maximum value is `60`. 
         
@@ -55,7 +55,7 @@ delete:
   tags:
     - Actor builds
   summary: Delete build
-  description: >-
+  description: |
     Delete the build. The build that is the current default build for the Actor
     cannot be deleted.
 

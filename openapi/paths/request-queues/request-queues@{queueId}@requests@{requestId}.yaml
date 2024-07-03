@@ -70,7 +70,7 @@ put:
   tags:
     - Request queues
   summary: Update request
-  description: >-
+  description: |
     Updates a request in a queue. Mark request as handled by setting
     `request.handledAt = new Date()`.
 
@@ -96,7 +96,7 @@ put:
         example: xpsmkDlspokDSmklS
     - name: forefront
       in: query
-      description: >-
+      description: |
         Determines if request should be added to the head of the queue or to the
         end. Default value is `false` (end of queue).
       style: form
@@ -106,7 +106,7 @@ put:
         example: 'false'
     - name: clientKey
       in: query
-      description: >-
+      description: |
         A unique identifier of the client accessing the request queue. It must
         be a string between 1 and 32 characters long. This identifier is used to
         determine whether the queue was accessed by multiple clients. If
@@ -203,7 +203,7 @@ delete:
         example: xpsmkDlspokDSmklS
     - name: clientKey
       in: query
-      description: >-
+      description: |
         A unique identifier of the client accessing the request queue. It must
         be a string between 1 and 32 characters long. This identifier is used to
         determine whether the queue was accessed by multiple clients. If

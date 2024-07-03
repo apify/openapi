@@ -2,7 +2,7 @@ get:
   tags:
     - Store
   summary: Get list of Actors in store
-  description: >-
+  description: |
     Gets the list of public Actors in Apify Store. You can use `search`
     parameter to search Actors by string in title, name, description, username
     and readme.
@@ -17,7 +17,7 @@ get:
   parameters:
     - name: limit
       in: query
-      description: >-
+      description: |
         Maximum number of elements to return. The default and maximum value is
         `1,000`.
       style: form
@@ -28,7 +28,7 @@ get:
         example: 99
     - name: offset
       in: query
-      description: >-
+      description: |
         Number of elements that should be skipped at the start. The default
         value is `0`.
       style: form
@@ -39,7 +39,7 @@ get:
         example: 10
     - name: search
       in: query
-      description: >-
+      description: |
         String to search by. The search runs on the following fields: `title`,
         `name`, `description`, `username`, `readme`.
       style: form
@@ -49,7 +49,7 @@ get:
         example: web scraper
     - name: sortBy
       in: query
-      description: >-
+      description: |
         Specifies the field by which to sort the results. The supported values
         are `relevance` (default), `popularity`, `newest` and `lastUpdate`.
       style: form
@@ -75,7 +75,7 @@ get:
         example: '''apify'''
     - name: pricingModel
       in: query
-      description: >-
+      description: |
         Filters the results by the specified pricing model. The supported values
         are `FREE`, `FLAT_PRICE_PER_MONTH` and `PRICE_PER_DATASET_ITEM`.
       style: form

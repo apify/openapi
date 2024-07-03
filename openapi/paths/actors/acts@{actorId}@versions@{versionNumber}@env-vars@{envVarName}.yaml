@@ -2,7 +2,7 @@ get:
   tags:
     - Actors
   summary: Get environment variable
-  description: >-
+  description: |
     Gets a [EnvVar object](#reference/actors/environment-variable-object) that
     contains all the details about a specific environment variable of an Actor.
 
@@ -51,7 +51,7 @@ put:
   tags:
     - Actors
   summary: Update environment variable
-  description: >-
+  description: |
     Updates Actor environment variable using values specified by a [EnvVar
     object](#reference/actors/environment-variable-object)
 

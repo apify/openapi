@@ -2,7 +2,7 @@ post:
   tags:
     - Actor runs
   summary: Abort run
-  description: >-
+  description: |
     Aborts an actor run and returns an object that contains all the details
     about the run.
 

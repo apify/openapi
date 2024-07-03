@@ -30,7 +30,7 @@ put:
   tags:
     - Actor tasks
   summary: Update task input
-  description: >-
+  description: |
     Updates the input of a task using values specified by an object passed as
     JSON in the PUT payload.
 

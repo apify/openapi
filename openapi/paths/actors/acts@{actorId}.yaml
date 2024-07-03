@@ -86,7 +86,7 @@ put:
   tags:
     - Actors
   summary: Update actor
-  description: >-
+  description: |
     Updates settings of an Actor using values specified by an Actor object
     passed as JSON in the POST payload.
 

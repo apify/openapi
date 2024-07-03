@@ -2,7 +2,7 @@ get:
   tags:
     - Users
   summary: Get public user data
-  description: >-
+  description: |
     Returns public information about a specific user account, similar to what
     can be seen on public profile pages (e.g. https://apify.com/apify).
 

@@ -2,7 +2,7 @@ post:
   tags:
     - Request queues
   summary: Add requests
-  description: >-
+  description: |
     Adds requests to the queue in batch. The maximum requests in batch is limit
     to 25. The response contains an array of unprocessed and processed requests.
 
@@ -29,7 +29,7 @@ post:
         example: WkzbQMuFYuamGv3YF
     - name: clientKey
       in: query
-      description: >-
+      description: |
         A unique identifier of the client accessing the request queue. It must
         be a string between 1 and 32 characters long
       style: form
@@ -39,7 +39,7 @@ post:
         example: client-abc
     - name: forefront
       in: query
-      description: >-
+      description: |
         Determines if request should be added to the head of the queue or to the
         end. Default value is `false` (end of queue).
       style: form
@@ -106,7 +106,7 @@ delete:
   tags:
     - Request queues
   summary: Delete requests
-  description: >-
+  description: |
     Batch-deletes given requests from the queue. The number of requests in a
     batch is limited to 25. The response contains an array of unprocessed and
     processed requests.
@@ -144,7 +144,7 @@ delete:
         example: application/json
     - name: clientKey
       in: query
-      description: >-
+      description: |
         A unique identifier of the client accessing the request queue. It must
         be a string between 1 and 32 characters long
       style: form

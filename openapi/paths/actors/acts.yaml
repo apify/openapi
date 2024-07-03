@@ -2,7 +2,7 @@ get:
   tags:
     - Actors
   summary: Get list of actors
-  description: >-
+  description: |
     Gets the list of all Actors that the user created or used. The response is a
     list of objects, where each object contains a basic information about a single Actor.
 
@@ -19,7 +19,7 @@ get:
   parameters:
     - name: my
       in: query
-      description: >-
+      description: |
         If `true` or `1` then the returned list only contains Actors owned by the user. The default value is `false`.
       style: form
       explode: true
@@ -28,7 +28,7 @@ get:
         example: true
     - name: offset
       in: query
-      description: >-
+      description: |
         Number of records that should be skipped at the start. The default value
         is `0`.
       style: form
@@ -39,7 +39,7 @@ get:
         example: 10
     - name: limit
       in: query
-      description: >-
+      description: |
         Maximum number of records to return. The default value as well as the
         maximum is `1000`.
       style: form
@@ -50,7 +50,7 @@ get:
         example: 99
     - name: desc
       in: query
-      description: >-
+      description: |
         If `true` or `1` then the objects are sorted by the `createdAt` field in
         descending order. By default, they are sorted in ascending order.
       style: form
@@ -89,7 +89,7 @@ post:
   tags:
     - Actors
   summary: Create actor
-  description: >-
+  description: |
     Creates a new Actor with settings specified in an Actor object passed as
     JSON in the POST payload.
 

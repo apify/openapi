@@ -2,7 +2,7 @@ get:
   tags:
     - Datasets
   summary: Get dataset
-  description: >-
+  description: |
     Returns dataset object for given dataset ID.
    
    
@@ -20,7 +20,7 @@ get:
         example: WkzbQMuFYuamGv3YF
     - name: token
       in: query
-      description: >-
+      description: |
         API authentication token. It is required only when using the `username~dataset-name` format for `datasetId`.
       style: form
       explode: true
@@ -53,7 +53,7 @@ put:
   tags:
     - Datasets
   summary: Update dataset
-  description: >-
+  description: |
     Updates a dataset's name using a value specified by a JSON object passed in the PUT payload.
     The response is the updated dataset object, as returned by the [Get dataset](#reference/datasets/dataset-collection/get-dataset) API endpoint.
   operationId: dataset_put
