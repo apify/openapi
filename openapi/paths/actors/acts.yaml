@@ -1,7 +1,7 @@
 get:
   tags:
     - Actors
-  summary: Get list of Actors
+  summary: Get list of actors
   description: >-
     Gets the list of all Actors that the user created or used. The response is a
     list of objects, where each object contains a basic information about a single Actor.

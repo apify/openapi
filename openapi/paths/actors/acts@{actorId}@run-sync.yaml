@@ -1,7 +1,7 @@
 post:
   tags:
     - Actors
-  summary: Run Actor with input
+  summary: With input
   description: >-
     Runs a specific Actor and returns its output.
 
@@ -161,7 +161,7 @@ post:
 get:
   tags:
     - Actors
-  summary: Run Actor without input
+  summary: Without input
   description: >-
     Runs a specific Actor and returns its output.
 

@@ -116,7 +116,7 @@ get:
 post:
   tags:
     - Actors
-  summary: Run Actor
+  summary: Run actor
   description: >-
     Runs an Actor and immediately returns without waiting for the run to finish.
 

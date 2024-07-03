@@ -59,7 +59,7 @@ get:
 post:
   tags:
     - Webhooks
-  summary: Create a webhook
+  summary: Create webhook
   description: >-
     Creates a new webhook with settings provided by the webhook object passed as
     JSON in the payload.
