@@ -1,8 +1,8 @@
 get:
   tags:
-    - Key-value stores
+    - Key-value stores/Store collection
   summary: Get list of key-value stores
-  description: >-
+  description: |
     Gets the list of key-value stores owned by the user.
 
     The response is a list of objects, where each objects contains a basic
@@ -19,7 +19,7 @@ get:
   parameters:
     - name: offset
       in: query
-      description: >-
+      description: |
         Number of records that should be skipped at the start. The default value
         is `0`.
       style: form
@@ -30,7 +30,7 @@ get:
         example: 10
     - name: limit
       in: query
-      description: >-
+      description: |
         Maximum number of records to return. The default value as well as the
         maximum is `1000`.
       style: form
@@ -41,7 +41,7 @@ get:
         example: 99
     - name: desc
       in: query
-      description: >-
+      description: |
         If `true` or `1` then the objects are sorted by the `startedAt` field in
         descending order. By default, they are sorted in ascending order.
       style: form
@@ -51,7 +51,7 @@ get:
         example: true
     - name: unnamed
       in: query
-      description: >-
+      description: |
         If `true` or `1` then all the stores are returned. By default, only
         named key-value stores are returned.
       style: form
@@ -70,9 +70,9 @@ get:
   deprecated: false
 post:
   tags:
-    - Key-value stores
+    - Key-value stores/Store collection
   summary: Create key-value store
-  description: >-
+  description: |
     Creates a key-value store and returns its object. The response is the same
     object as returned by the [Get store](#reference/key-value-stores/store-object/get-store)
     endpoint.

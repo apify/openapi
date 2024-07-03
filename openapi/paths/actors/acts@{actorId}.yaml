@@ -1,7 +1,7 @@
 get:
   tags:
-    - Actors
-  summary: Get Actor
+    - Actors/Actor object
+  summary: Get actor
   description: Gets an object that contains all the details about a specific Actor.
   operationId: act_get
   parameters:
@@ -84,9 +84,9 @@ get:
   deprecated: false
 put:
   tags:
-    - Actors
-  summary: Update Actor
-  description: >-
+    - Actors/Actor object
+  summary: Update actor
+  description: |
     Updates settings of an Actor using values specified by an Actor object
     passed as JSON in the POST payload.
 
@@ -226,8 +226,8 @@ put:
   deprecated: false
 delete:
   tags:
-    - Actors
-  summary: Delete Actor
+    - Actors/Actor object
+  summary: Delete actor
   description: Deletes an Actor.
   operationId: act_delete
   parameters:

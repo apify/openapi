@@ -1,6 +1,6 @@
 get:
   tags:
-    - Actor builds
+    - Actor builds/Build log
   summary: Get log
   # TODO: Fix description once /logs is cleaned up as well
   description: 'Check out [Logs](#reference/logs) for full reference.'
@@ -16,7 +16,7 @@ get:
         example: HG7ML7M8z78YcAPEB
     - name: stream
       in: query
-      description: >-
+      description: |
         If `true` or `1` then the logs will be streamed as long as the run or
         build is running.
       required: true
@@ -27,7 +27,7 @@ get:
         example: false
     - name: download
       in: query
-      description: >-
+      description: |
         If `true` or `1` then the web browser will download the log file rather
         than open it in a tab.
       required: true

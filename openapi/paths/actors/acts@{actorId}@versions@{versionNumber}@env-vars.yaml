@@ -1,8 +1,8 @@
 get:
   tags:
-    - Actors
+    - Actors/Environment variable collection
   summary: Get list of environment variables
-  description: >-
+  description: |
     Gets the list of environment variables for a specific version of an Actor.
     The response is a JSON object with the list of [EnvVar objects](#reference/actors/environment-variable-object), where
     each contains basic information about a single environment variable.
@@ -35,9 +35,9 @@ get:
   deprecated: false
 post:
   tags:
-    - Actors
+    - Actors/Environment variable collection
   summary: Create environment variable
-  description: >-
+  description: |
     Creates an environment variable of an Actor using values specified in a
     [EnvVar object](#reference/actors/environment-variable-object) passed as
     JSON in the POST payload.

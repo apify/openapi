@@ -1,8 +1,8 @@
 get:
   tags:
-    - Schedules
+    - Schedules/Schedule log
   summary: Get schedule log
-  description: >-
+  description: |
     Gets the schedule log as a JSON array containing information about up to a
     1000 invocations of the schedule.
   operationId: schedule_log_get

@@ -1,8 +1,8 @@
 get:
   tags:
-    - Users
+    - Users/Monthly usage
   summary: Get monthly usage
-  description: >-
+  description: |
     Returns a complete summary of your usage for the current usage cycle,
     an overall sum, as well as a daily breakdown of usage. It is the same
     information you will see on your account's [Billing page](https://console.apify.com/billing#/usage). The information

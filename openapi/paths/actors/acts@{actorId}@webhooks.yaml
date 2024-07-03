@@ -1,8 +1,8 @@
 get:
   tags:
-    - Actors
+    - Actors/Webhook collection
   summary: Get list of webhooks
-  description: >-
+  description: |
     Gets the list of webhooks of a specific Actor. The response is a JSON with
     the list of objects, where each object contains basic information about a single webhook.
 
@@ -23,7 +23,7 @@ get:
         example: janedoe~my-actor
     - name: offset
       in: query
-      description: >-
+      description: |
         Number of array elements that should be skipped at the start. The
         default value is `0`.
       style: form
@@ -34,7 +34,7 @@ get:
         example: 10
     - name: limit
       in: query
-      description: >-
+      description: |
         Maximum number of array elements to return. The default value as well as
         the maximum is `1000`.
       style: form
@@ -45,7 +45,7 @@ get:
         example: 99
     - name: desc
       in: query
-      description: >-
+      description: |
         If `true` or `1` then the objects are sorted by the `createdAt` field in
         descending order. By default, they are sorted in ascending order.
       style: form

@@ -1,8 +1,8 @@
 get:
   tags:
-    - Actors
+    - Actors/Run object
   summary: Get run
-  description: >-
+  description: |
     **[DEPRECATED]** API endpoints related to run of the Actor were moved under
     new namespace [`actor-runs`](#reference/actor-runs).**[DEPRECATED]** API
     endpoints related to run of the Actor were moved under new namespace
@@ -42,7 +42,7 @@ get:
         example: 3KH8gEpp4d8uQSe8T
     - name: waitForFinish
       in: query
-      description: >-
+      description: |
         The maximum number of seconds the server waits for the run to finish. By
         default it is `0`, the maximum value is `60`. <!--
         MAX_ACTOR_JOB_ASYNC_WAIT_SECS -->

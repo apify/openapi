@@ -1,8 +1,8 @@
 get:
   tags:
-    - Datasets
+    - Datasets/Item collection
   summary: Get items
-  description: >-
+  description: |
     Returns data stored in the dataset in a desired format.
 
 
@@ -90,10 +90,10 @@ get:
 
 
     ### XML format extension
-    
-    
+
+
     When exporting results to XML or RSS formats, the names of object properties become XML tags and the corresponding values become tag's children. For example, the following JavaScript object:
-   
+
     ```
 
     {
@@ -132,10 +132,10 @@ get:
     If the parent XML element does not have any child elements then its value is taken from a JavaScript object property named `#`.
 
     For example, the following JavaScript object:
-    
-    
+
+
     ```
-    
+
     {
       "address": [{
         "@": {
@@ -168,25 +168,25 @@ get:
     <address type="office">unknown</address>
 
     ```
-    
-    
+
+
     This feature is also useful to customize your RSS feeds generated for various websites.
 
-    
+
     By default the whole result is wrapped in a `<items>` element and each page object is wrapped in a `<item>` element.
-    
+
     You can change this using <code>xmlRoot</code> and <code>xmlRow</code> url parameters.
-    
-   
+
+
     ### Pagination
-    
-    
+
+
     The generated response supports [pagination](#introduction/pagination).
     The pagination is always performed with the granularity of a single item, regardless whether <code>unwind</code> parameter was provided.
     By default, the **Items** in the response are sorted by the time they were stored to the database, therefore you can use pagination to incrementally fetch the items as they are being added.
 
     The maximum number of items that will be returned in a single API call is limited to 250,000. 
-    
+
     <!-- GET_ITEMS_LIMIT -->
 
     If you specify `desc=1` query parameter, the results are returned in the reverse order than they were stored (i.e. from newest to oldest items).
@@ -206,7 +206,7 @@ get:
         example: WkzbQMuFYuamGv3YF
     - name: format
       in: query
-      description: >-
+      description: |
         Format of the results, possible values are: `json`, `jsonl`, `csv`, `html`, `xlsx`, `xml` and `rss`. The default value is `json`.
       style: form
       explode: true
@@ -215,7 +215,7 @@ get:
         example: json
     - name: clean
       in: query
-      description: >-
+      description: |
         If `true` or `1` then the API endpoint returns only non-empty items and skips hidden fields (i.e. fields starting with the # character).
         The `clean` parameter is just a shortcut for `skipHidden=true` and `skipEmpty=true` parameters.
         Note that since some objects might be skipped from the output, that the result might contain less items than the `limit` value.
@@ -226,7 +226,7 @@ get:
         example: false
     - name: offset
       in: query
-      description: >-
+      description: |
         Number of items that should be skipped at the start. The default value is `0`.
       style: form
       explode: true
@@ -245,7 +245,7 @@ get:
         example: 99
     - name: fields
       in: query
-      description: >-
+      description: |
         A comma-separated list of fields which should be picked from the items, only these fields will remain in the resulting record objects.
         Note that the fields in the outputted items are sorted the same way as they are specified in the `fields` query parameter.
         You can use this feature to effectively fix the output format.
@@ -264,7 +264,7 @@ get:
         example: 'myValue,myOtherValue'
     - name: unwind
       in: query
-      description: >-
+      description: |
         Name of a field which should be unwound. If the field is an array then every element of the array will become a separate record and merged with parent object.
         If the unwound field is an object then it is merged with the parent object.
         If the unwound field is missing or its value is neither an array nor an object and therefore cannot be merged with a parent object then the item gets preserved as it is.
@@ -276,7 +276,7 @@ get:
         example: myValue
     - name: flatten
       in: query
-      description: >-
+      description: |
         A comma-separated list of fields which should transform nested objects into flat structures.
 
         For example, with `flatten="foo"` the object `{"foo":{"bar": "hello"}}` is turned into `{"foo.bar": "hello"}`.
@@ -289,7 +289,7 @@ get:
         example: myValue
     - name: desc
       in: query
-      description: >-
+      description: |
         By default, results are returned in the same order as they were stored.
         To reverse the order, set this parameter to `true` or `1`.
       style: form
@@ -299,7 +299,7 @@ get:
         example: true
     - name: attachment
       in: query
-      description: >-
+      description: |
         If `true` or `1` then the response will define the `Content-Disposition:
         attachment` header, forcing a web browser to download the file rather
         than to display it. By default this header is not present.
@@ -310,7 +310,7 @@ get:
         example: true
     - name: delimiter
       in: query
-      description: >-
+      description: |
         A delimiter character for CSV files, only used if `format=csv`. You
         might need to URL-encode the character (e.g. use `%09` for tab or `%3B`
         for semicolon). The default delimiter is a simple comma (`,`).
@@ -321,7 +321,7 @@ get:
         example: ;
     - name: bom
       in: query
-      description: >-
+      description: |
         All text responses are encoded in UTF-8 encoding. By default, the
         `format=csv` files are prefixed with the UTF-8 Byte Order Mark (BOM), while `json`, `jsonl`, `xml`, `html` and `rss` files are not.
 
@@ -333,7 +333,7 @@ get:
         example: false
     - name: xmlRoot
       in: query
-      description: >-
+      description: |
         Overrides default root element name of `xml` output. By default the root element is `items`.
       style: form
       explode: true
@@ -342,7 +342,7 @@ get:
         example: items
     - name: xmlRow
       in: query
-      description: >-
+      description: |
         Overrides default element name that wraps each page or page function result object in `xml` output. By default the element name is `item`.
       style: form
       explode: true
@@ -368,7 +368,7 @@ get:
         example: false
     - name: skipEmpty
       in: query
-      description: >-
+      description: |
         If `true` or `1` then empty items are skipped from the output.
 
         Note that if used, the results might contain less items than the limit value.
@@ -379,7 +379,7 @@ get:
         example: false
     - name: simplified
       in: query
-      description: >-
+      description: |
         If `true` or `1` then, the endpoint applies the `fields=url,pageFunctionResult,errorInfo`
         and `unwind=pageFunctionResult` query parameters. This feature is used to emulate simplified results provided by the
         legacy Apify Crawler product and it's not recommended to use it in new integrations.
@@ -390,7 +390,7 @@ get:
         example: false
     - name: skipFailedPages
       in: query
-      description: >-
+      description: |
         If `true` or `1` then, the all the items with errorInfo property will be skipped from the output.
 
         This feature is here to emulate functionality of API version 1 used for the legacy Apify Crawler product and it's not recommended to use it in new integrations.
@@ -433,14 +433,7 @@ get:
             type: array
             items:
               type: object
-            example: [
-                {
-                    foo: bar
-                },
-                {
-                  foo2: bar2
-                }
-            ]
+            example: [foo: bar, foo2: bar2]
         application/jsonl:
           schema:
             type: string
@@ -450,12 +443,12 @@ get:
             type: string
           example: 'foo,bar\nfoo2,bar2\n'
         text/html:
-            schema:
-              type: string
-            example: '<table><tr><th>foo</th><th>bar</th></tr><tr><td>foo</td><td>bar</td></tr><tr><td>foo2</td><td>bar2</td></tr></table>'
+          schema:
+            type: string
+          example: '<table><tr><th>foo</th><th>bar</th></tr><tr><td>foo</td><td>bar</td></tr><tr><td>foo2</td><td>bar2</td></tr></table>'
         'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet':
-            schema:
-                type: string
+          schema:
+            type: string
         application/rss+xml:
           schema:
             type: string
@@ -467,9 +460,9 @@ get:
   deprecated: false
 post:
   tags:
-    - Datasets
+    - Datasets/Item collection
   summary: Put items
-  description: >-
+  description: |
     Appends an item or an array of items to the end of the dataset.
 
     The POST payload is a JSON object or a JSON array of objects to save into the dataset.

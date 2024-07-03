@@ -1,8 +1,8 @@
 post:
   tags:
-    - Request queues
+    - Request queues/Queue head with locks
   summary: Get head and lock
-  description: >-
+  description: |
     Returns the given number of first requests from the queue and locks them for
     the given time.
 
@@ -44,7 +44,7 @@ post:
         example: 100
     - name: clientKey
       in: query
-      description: >-
+      description: |
         A unique identifier of the client accessing the request queue. It must
         be a string between 1 and 32 characters long.
       style: form

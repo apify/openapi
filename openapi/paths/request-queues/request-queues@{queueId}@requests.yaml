@@ -1,8 +1,8 @@
 get:
   tags:
-    - Request queues
+    - Request queues/Request collection
   summary: List requests
-  description: >-
+  description: |
     Returns a list of requests. This endpoint is paginated using
     exclusiveStartId and limit parameters.
   operationId: requestQueue_requests_get
@@ -17,7 +17,7 @@ get:
         example: WkzbQMuFYuamGv3YF
     - name: clientKey
       in: query
-      description: >-
+      description: |
         A unique identifier of the client accessing the request queue. It must
         be a string between 1 and 32 characters long. This identifier is used to
         determine whether the queue was accessed by multiple clients. If
@@ -128,9 +128,9 @@ get:
   deprecated: false
 post:
   tags:
-    - Request queues
+    - Request queues/Request collection
   summary: Add request
-  description: >-
+  description: |
     Adds request to the queue. Response contains ID of the request and info if
     request was already present in the queue or handled.
 
@@ -149,7 +149,7 @@ post:
         example: WkzbQMuFYuamGv3YF
     - name: clientKey
       in: query
-      description: >-
+      description: |
         A unique identifier of the client accessing the request queue. It must
         be a string between 1 and 32 characters long. This identifier is used to
         determine whether the queue was accessed by multiple clients. If
@@ -165,7 +165,7 @@ post:
         example: client-abc
     - name: forefront
       in: query
-      description: >-
+      description: |
         Determines if request should be added to the head of the queue or to the
         end. Default value is `false` (end of queue).
       style: form

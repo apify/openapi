@@ -1,8 +1,8 @@
 post:
   tags:
-    - Actor runs
+    - Actor runs/Metamorph run
   summary: Metamorph run
-  description: >-
+  description: |
     Transforms an actor run into a run of another actor with a new input.
 
     This is useful if you want to use another actor to finish the work
@@ -41,7 +41,7 @@ post:
         example: HDSasDasz78YcAPEB
     - name: build
       in: query
-      description: >-
+      description: |
         Optional build of the target actor.
 
         It can be either a build tag or build number. By default, the run uses

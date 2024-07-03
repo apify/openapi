@@ -1,8 +1,8 @@
 post:
   tags:
-    - Actors
-  summary: Run Actor synchronously with input and get dataset items
-  description: >-
+    - Actors/Run Actor synchronously and get dataset items
+  summary: Run actor synchronously with input and get dataset items
+  description: |
     Runs a specific Actor and returns its dataset items.
 
 
@@ -49,7 +49,7 @@ post:
         example: janedoe~my-actor
     - name: timeout
       in: query
-      description: >-
+      description: |
         Optional timeout for the run, in seconds. By default, the run uses a
         timeout specified in the default run configuration for the Actor.
       style: form
@@ -60,7 +60,7 @@ post:
         example: 60
     - name: memory
       in: query
-      description: >-
+      description: |
         Memory limit for the run, in megabytes. The amount of memory can be set
         to a power of 2 with a minimum of 128. By default, the run uses a memory
         limit specified in the default run configuration for the Actor.
@@ -72,7 +72,7 @@ post:
         example: 256
     - name: maxItems
       in: query
-      description: >-
+      description: |
         The maximum number of items that the Actor run should return. This is
         useful for pay-per-result Actors, as it allows you to limit the number
         of results that will be charged to your subscription. You can access the
@@ -86,7 +86,7 @@ post:
         example: 1000
     - name: build
       in: query
-      description: >-
+      description: |
         Specifies the Actor build to run. It can be either a build tag or build
         number. By default, the run uses the build specified in the default run
         configuration for the Actor (typically `latest`).
@@ -97,7 +97,7 @@ post:
         example: 0.1.234
     - name: webhooks
       in: query
-      description: >-
+      description: |
         Specifies optional webhooks associated with the Actor run, which can be
         used to receive a notification
 
@@ -113,7 +113,7 @@ post:
         example: dGhpcyBpcyBqdXN0IGV4YW1wbGUK...
     - name: format
       in: query
-      description: >-
+      description: |
         Format of the results, possible values are: `json`, `jsonl`, `csv`,
         `html`, `xlsx`, `xml` and `rss`. The default value is `json`.
       style: form
@@ -123,7 +123,7 @@ post:
         example: json
     - name: clean
       in: query
-      description: >-
+      description: |
         If `true` or `1` then the API endpoint returns only non-empty items and
         skips hidden fields
 
@@ -141,7 +141,7 @@ post:
         example: false
     - name: offset
       in: query
-      description: >-
+      description: |
         Number of items that should be skipped at the start. The default value
         is `0`.
       style: form
@@ -161,7 +161,7 @@ post:
         example: 99
     - name: fields
       in: query
-      description: >-
+      description: |
         A comma-separated list of fields which should be picked from the items,
 
         only these fields will remain in the resulting record objects.
@@ -185,7 +185,7 @@ post:
         example: 'myValue,myOtherValue'
     - name: unwind
       in: query
-      description: >-
+      description: |
         Name of a field which should be unwound. If the field is an array then
         every element of
 
@@ -206,7 +206,7 @@ post:
         example: myValue
     - name: flatten
       in: query
-      description: >-
+      description: |
         A comma-separated list of fields which should transform nested objects
         into flat structures.
 
@@ -222,7 +222,7 @@ post:
         example: myValue
     - name: desc
       in: query
-      description: >-
+      description: |
         By default, results are returned in the same order as they were stored.
         To reverse the order, set this parameter to `true` or `1`.
       style: form
@@ -232,7 +232,7 @@ post:
         example: true
     - name: attachment
       in: query
-      description: >-
+      description: |
         If `true` or `1` then the response will define the `Content-Disposition:
         attachment` header, forcing a web browser to download the file rather
         than to display it. By default this header is not present.
@@ -243,7 +243,7 @@ post:
         example: true
     - name: delimiter
       in: query
-      description: >-
+      description: |
         A delimiter character for CSV files, only used if `format=csv`. You
         might need to URL-encode the character (e.g. use `%09` for tab or `%3B`
         for semicolon). The default delimiter is a simple comma (`,`).
@@ -254,7 +254,7 @@ post:
         example: ;
     - name: bom
       in: query
-      description: >-
+      description: |
         All text responses are encoded in UTF-8 encoding. By default, the
         `format=csv` files are prefixed with
 
@@ -270,7 +270,7 @@ post:
         example: false
     - name: xmlRoot
       in: query
-      description: >-
+      description: |
         Overrides default root element name of `xml` output. By default the root
         element is `items`.
       style: form
@@ -280,7 +280,7 @@ post:
         example: items
     - name: xmlRow
       in: query
-      description: >-
+      description: |
         Overrides default element name that wraps each page or page function
         result object in `xml` output. By default the element name is `item`.
       style: form
@@ -308,7 +308,7 @@ post:
         example: false
     - name: skipEmpty
       in: query
-      description: >-
+      description: |
         If `true` or `1` then empty items are skipped from the output.
 
         Note that if used, the results might contain less items than the limit
@@ -320,7 +320,7 @@ post:
         example: false
     - name: simplified
       in: query
-      description: >-
+      description: |
         If `true` or `1` then, the endpoint applies the
         `fields=url,pageFunctionResult,errorInfo`
 
@@ -336,7 +336,7 @@ post:
         example: false
     - name: skipFailedPages
       in: query
-      description: >-
+      description: |
         If `true` or `1` then, the all the items with errorInfo property will be
         skipped from the output.
 
@@ -422,9 +422,9 @@ post:
   deprecated: false
 get:
   tags:
-    - Actors
+    - Actors/Run Actor synchronously and get dataset items
   summary: Run actor synchronously without input and get dataset items
-  description: >-
+  description: |
     Runs a specific actor and returns its dataset items.
 
     The run must finish in 300<!-- MAX_ACTOR_JOB_SYNC_WAIT_SECS --> seconds
@@ -461,7 +461,7 @@ get:
         example: janedoe~my-actor
     - name: timeout
       in: query
-      description: >-
+      description: |
         Optional timeout for the run, in seconds. By default, the run uses a
         timeout specified in the default run configuration for the Actor.
       style: form
@@ -472,7 +472,7 @@ get:
         example: 60
     - name: memory
       in: query
-      description: >-
+      description: |
         Memory limit for the run, in megabytes. The amount of memory can be set
         to a power of 2 with a minimum of 128. By default, the run uses a memory
         limit specified in the default run configuration for the Actor.
@@ -484,7 +484,7 @@ get:
         example: 256
     - name: maxItems
       in: query
-      description: >-
+      description: |
         The maximum number of items that the Actor run should return. This is
         useful for pay-per-result Actors, as it allows you to limit the number
         of results that will be charged to your subscription. You can access the
@@ -498,7 +498,7 @@ get:
         example: 1000
     - name: build
       in: query
-      description: >-
+      description: |
         Specifies the Actor build to run. It can be either a build tag or build
         number. By default, the run uses the build specified in the default run
         configuration for the Actor (typically `latest`).
@@ -509,7 +509,7 @@ get:
         example: 0.1.234
     - name: webhooks
       in: query
-      description: >-
+      description: |
         Specifies optional webhooks associated with the Actor run, which can be
         used to receive a notification
 
@@ -525,7 +525,7 @@ get:
         example: dGhpcyBpcyBqdXN0IGV4YW1wbGUK...
     - name: format
       in: query
-      description: >-
+      description: |
         Format of the results, possible values are: `json`, `jsonl`, `csv`,
         `html`, `xlsx`, `xml` and `rss`. The default value is `json`.
       style: form
@@ -535,7 +535,7 @@ get:
         example: json
     - name: clean
       in: query
-      description: >-
+      description: |
         If `true` or `1` then the API endpoint returns only non-empty items and
         skips hidden fields
 
@@ -553,7 +553,7 @@ get:
         example: false
     - name: offset
       in: query
-      description: >-
+      description: |
         Number of items that should be skipped at the start. The default value
         is `0`.
       style: form
@@ -573,7 +573,7 @@ get:
         example: 99
     - name: fields
       in: query
-      description: >-
+      description: |
         A comma-separated list of fields which should be picked from the items,
 
         only these fields will remain in the resulting record objects.
@@ -597,7 +597,7 @@ get:
         example: 'myValue,myOtherValue'
     - name: unwind
       in: query
-      description: >-
+      description: |
         Name of a field which should be unwound. If the field is an array then
         every element of
 
@@ -618,7 +618,7 @@ get:
         example: myValue
     - name: flatten
       in: query
-      description: >-
+      description: |
         A comma-separated list of fields which should transform nested objects
         into flat structures.
 
@@ -634,7 +634,7 @@ get:
         example: myValue
     - name: desc
       in: query
-      description: >-
+      description: |
         By default, results are returned in the same order as they were stored.
         To reverse the order, set this parameter to `true` or `1`.
       style: form
@@ -644,7 +644,7 @@ get:
         example: true
     - name: attachment
       in: query
-      description: >-
+      description: |
         If `true` or `1` then the response will define the `Content-Disposition:
         attachment` header, forcing a web browser to download the file rather
         than to display it. By default this header is not present.
@@ -655,7 +655,7 @@ get:
         example: true
     - name: delimiter
       in: query
-      description: >-
+      description: |
         A delimiter character for CSV files, only used if `format=csv`. You
         might need to URL-encode the character (e.g. use `%09` for tab or `%3B`
         for semicolon). The default delimiter is a simple comma (`,`).
@@ -666,7 +666,7 @@ get:
         example: ;
     - name: bom
       in: query
-      description: >-
+      description: |
         All text responses are encoded in UTF-8 encoding. By default, the
         `format=csv` files are prefixed with
 
@@ -682,7 +682,7 @@ get:
         example: false
     - name: xmlRoot
       in: query
-      description: >-
+      description: |
         Overrides default root element name of `xml` output. By default the root
         element is `items`.
       style: form
@@ -692,7 +692,7 @@ get:
         example: items
     - name: xmlRow
       in: query
-      description: >-
+      description: |
         Overrides default element name that wraps each page or page function
         result object in `xml` output. By default the element name is `item`.
       style: form
@@ -720,7 +720,7 @@ get:
         example: false
     - name: skipEmpty
       in: query
-      description: >-
+      description: |
         If `true` or `1` then empty items are skipped from the output.
 
         Note that if used, the results might contain less items than the limit
@@ -732,7 +732,7 @@ get:
         example: false
     - name: simplified
       in: query
-      description: >-
+      description: |
         If `true` or `1` then, the endpoint applies the
         `fields=url,pageFunctionResult,errorInfo`
 
@@ -748,7 +748,7 @@ get:
         example: false
     - name: skipFailedPages
       in: query
-      description: >-
+      description: |
         If `true` or `1` then, the all the items with errorInfo property will be
         skipped from the output.
 

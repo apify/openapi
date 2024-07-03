@@ -1,8 +1,8 @@
 get:
   tags:
-    - Users
+    - Users/Private data
   summary: Get private user data
-  description: >-
+  description: |
     Returns information about the current user account, including both public
     and private information.
 

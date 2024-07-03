@@ -1,16 +1,16 @@
 get:
   tags:
-    - Actor runs
+    - Actor runs/Run object and its storages
   summary: Get run
-  description: >-
+  description: |
     This is not a single endpoint, but an entire group of endpoints that lets
     you retrieve the run or any of its default storages.
 
     The endpoints accept the same HTTP methods and query parameters as
     the respective storage endpoints.
-    
+
     The base path that represents the actor run object is:
-    
+
     `/v2/actor-runs/{runId}{?token}`
 
     In order to access the default storages of the actor run, i.e. log,
@@ -42,7 +42,7 @@ get:
     [Record](#reference/key-value-stores/record)
 
     #### Dataset
-    
+
     * `/v2/actor-runs/{runId}/dataset/items{?token}` [Item
     collection](#reference/datasets/item-collection)
 
@@ -86,7 +86,7 @@ get:
         example: 3KH8gEpp4d8uQSe8T
     - name: waitForFinish
       in: query
-      description: >-
+      description: |
         The maximum number of seconds the server waits for the run to finish. By
         default it is `0`, the maximum value is `60`. <!--
         MAX_ACTOR_JOB_ASYNC_WAIT_SECS -->
@@ -182,9 +182,9 @@ get:
   deprecated: false
 delete:
   tags:
-    - Actor runs
+    - Actor runs/Delete run
   summary: Delete run
-  description: >-
+  description: |
     Delete the run. Only finished runs can be deleted. Only the person or
     organization that initiated the run can delete it.
   operationId: actorRun_delete
@@ -205,9 +205,9 @@ delete:
   deprecated: false
 put:
   tags:
-    - Actor runs
+    - Actor runs/Update status message
   summary: Update status message
-  description: >-
+  description: |
     You can set a single status message on your run that will be displayed in
     the Apify Console UI. During an actor run, you will typically do this in order 
     to inform users of your actor about the actor's progress.

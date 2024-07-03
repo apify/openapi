@@ -1,8 +1,8 @@
 post:
   tags:
-    - Actor builds
+    - Actor builds/Abort build
   summary: Abort build
-  description: >-
+  description: |
     Aborts an Actor build and returns an object that contains all the details
     about the build.
 

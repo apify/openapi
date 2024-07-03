@@ -1,8 +1,8 @@
 get:
   tags:
-    - Actor tasks
+    - Actor tasks/Task collection
   summary: Get list of tasks
-  description: >-
+  description: |
     Gets the complete list of tasks that a user has created or used. The
     response is a list of objects in which each object contains essential
     information about a single task.
@@ -18,7 +18,7 @@ get:
   parameters:
     - name: offset
       in: query
-      description: >-
+      description: |
         Number of records that should be skipped at the start. The default value is `0`.
       style: form
       explode: true
@@ -28,7 +28,7 @@ get:
         example: 10
     - name: limit
       in: query
-      description: >-
+      description: |
         Maximum number of records to return. The default value as well as the maximum is `1000`.
       style: form
       explode: true
@@ -38,7 +38,7 @@ get:
         example: 99
     - name: desc
       in: query
-      description: >-
+      description: |
         If `true` or `1` then the objects are sorted by the `createdAt` field in
         descending order. By default, they are sorted in ascending order.
       style: form
@@ -101,9 +101,9 @@ get:
   deprecated: false
 post:
   tags:
-    - Actor tasks
+    - Actor tasks/Task collection
   summary: Create task
-  description: >-
+  description: |
     Create a new task with settings specified by the object passed as JSON in
     the POST payload.
 

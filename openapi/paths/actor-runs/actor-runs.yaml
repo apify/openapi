@@ -1,8 +1,8 @@
 get:
   tags:
-    - Actor runs
+    - Actor runs/Run collection
   summary: Get user runs list
-  description: >-
+  description: |
     Gets a list of all runs for a user. The response is a list of objects, where
     each object contains basic information about a single actor run.
 
@@ -18,7 +18,7 @@ get:
   parameters:
     - name: offset
       in: query
-      description: >-
+      description: |
         Number of array elements that should be skipped at the start. The
         default value is `0`.
       style: form
@@ -29,7 +29,7 @@ get:
         example: 10
     - name: limit
       in: query
-      description: >-
+      description: |
         Maximum number of array elements to return. The default value (as well
         as the maximum) is `1000`.
       style: form
@@ -40,7 +40,7 @@ get:
         example: 99
     - name: desc
       in: query
-      description: >-
+      description: |
         If `true` or `1` then the objects are sorted by the `startedAt` field in
         descending order. By default, they are sorted in ascending order.
       style: form
@@ -50,7 +50,7 @@ get:
         example: true
     - name: status
       in: query
-      description: >-
+      description: |
         Return only runs with the provided status ([available
         statuses](https://docs.apify.com/platform/actors/running/runs-and-builds#lifecycle))
       style: form

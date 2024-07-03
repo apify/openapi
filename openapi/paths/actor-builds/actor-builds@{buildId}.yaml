@@ -1,8 +1,8 @@
 get:
   tags:
-    - Actor builds
+    - Actor builds/Build object
   summary: Get build
-  description: >-
+  description: |
     Gets an object that contains all the details about a specific build of an
     Actor.
 
@@ -27,12 +27,12 @@ get:
         example: soSkq9ekdmfOslopH
     - name: waitForFinish
       in: query
-      description: >-
+      description: |
         The maximum number of seconds the server waits for the build to finish.
         By default it is `0`, the maximum value is `60`. 
-        
+
         <!-- MAX_ACTOR_JOB_ASYNC_WAIT_SECS -->
-        
+
         If the build finishes in time then the returned build object will have a 
         terminal status (e.g. `SUCCEEDED`), otherwise it will have a transitional status (e.g. `RUNNING`).
       style: form
@@ -53,9 +53,9 @@ get:
   deprecated: false
 delete:
   tags:
-    - Actor builds
+    - Actor builds/Delete build
   summary: Delete build
-  description: >-
+  description: |
     Delete the build. The build that is the current default build for the Actor
     cannot be deleted.
 
