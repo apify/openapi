@@ -41,7 +41,7 @@ function ClientReferencesLinksDecorator(target) {
     let prepend = `<span style="float: right;">`
     //let prepend = ""
     if(pyLink) {
-      prepend += `<a href="${pyLink}" target="_blank" rel="noopener noreferrer">Python doc</a>`
+      prepend += `<a href="${pyLink}" target="_blank" rel="noopener noreferrer">Python doc</a>`;
     }
 
     if(pyLink && jsLink) {
