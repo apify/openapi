@@ -39,7 +39,7 @@ function ClientReferencesLinksDecorator(target) {
     // Purposedly using `span` element here instead of `div`
     // Due to how redoc works, when `div` used, the markdown rendering in of `description` ceased to work.
     let prepend = `<span style="float: right;">`;
-    if(pyLink) {
+    if (pyLink) {
       prepend += `<a href="${pyLink}" target="_blank" rel="noopener noreferrer">Python doc</a>`;
     }
 
