@@ -5,7 +5,7 @@ const X_JS_DOC_URLS_PROPERTY = "x-js-doc-url";
 /**
  * This decorator adds links to the Apify API Client libraries Python and JS references.
  *
- * The Apify API OpenAPI specufication has been enriched with several vendor extensions 
+ * The Apify API OpenAPI specfication has been enriched with Apify specifc vendor extensions 
  * on `operation` and `tag` level to link the Apify Client functionality e.g. for `actorBuild_get`:
  * ```
  * x-js-parent: BuildClient
@@ -27,6 +27,8 @@ const X_JS_DOC_URLS_PROPERTY = "x-js-doc-url";
  *     JS doc
  *   </a>
  * </span>
+ *
+ * TODO: The HTML/CSS above will be subject of further design development, placeholder for now.
  * ```
  *
  */
