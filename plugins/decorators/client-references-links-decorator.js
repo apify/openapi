@@ -53,7 +53,6 @@ function ClientReferencesLinksDecorator(target) {
     prepend += `</span>`;
 
     target.description = `${prepend}${target.description || ""}`;
-
 }
 
 module.exports = () => ({
