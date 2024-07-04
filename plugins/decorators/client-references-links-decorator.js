@@ -43,7 +43,7 @@ function ClientReferencesLinksDecorator(target) {
       prepend += `<a href="${pyLink}" target="_blank" rel="noopener noreferrer">Python doc</a>`;
     }
 
-    if(pyLink && jsLink) {
+    if (pyLink && jsLink) {
       prepend += "&nbsp;|&nbsp;";
     }
 
