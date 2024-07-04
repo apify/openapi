@@ -45,7 +45,7 @@ function ClientReferencesLinksDecorator(target) {
     }
 
     if(pyLink && jsLink) {
-      prepend += "&nbsp;|&nbsp;"
+      prepend += "&nbsp;|&nbsp;";
     }
 
     if(jsLink) {
