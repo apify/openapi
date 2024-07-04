@@ -51,7 +51,7 @@ function ClientReferencesLinksDecorator(target) {
     if(jsLink) {
       prepend += `<a href="${jsLink}" target="_blank" rel="noopener noreferrer">JS doc</a>`
     }
-    prepend += `</span>`
+    prepend += `</span>`;
 
     target.description = `${prepend}${target.description || ""}`;
 
