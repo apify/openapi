@@ -24,6 +24,12 @@ get:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/webhooks/webhook-object/get-webhook
+  x-js-parent: WebhookClient
+  x-js-name: get
+  x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/WebhookClient#get
+  x-py-parent: WebhookClientAsync
+  x-py-name: get
+  x-py-doc-url: https://docs.apify.com/api/client/python/reference/class/WebhookClientAsync#get
 put:
   tags:
     - Webhooks/Webhook object
@@ -76,6 +82,12 @@ put:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/webhooks/webhook-object/update-webhook
+  x-js-parent: WebhookClient
+  x-js-name: update
+  x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/WebhookClient#update
+  x-py-parent: WebhookClientAsync
+  x-py-name: update
+  x-py-doc-url: https://docs.apify.com/api/client/python/reference/class/WebhookClientAsync#update
 delete:
   tags:
     - Webhooks/Webhook object
@@ -103,3 +115,6 @@ delete:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/webhooks/webhook-object/delete-webhook
+  x-js-parent: WebhookClient
+  x-js-name: delete
+  x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/WebhookClient#delete

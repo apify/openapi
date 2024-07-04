@@ -138,3 +138,9 @@ post:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/actor-runs/metamorph-run/metamorph-run
+  x-js-parent: RunClient
+  x-js-name: metamorph
+  x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/RunClient#metamorph
+  x-py-parent: RunClientAsync
+  x-py-name: metamorph
+  x-py-doc-url: https://docs.apify.com/api/client/python/reference/class/RunClientAsync#metamorph

@@ -47,6 +47,12 @@ get:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/actor-tasks/task-object/get-task
+  x-js-parent: TaskClient
+  x-js-name: get
+  x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/TaskClient#get
+  x-py-parent: TaskClientAsync
+  x-py-name: get
+  x-py-doc-url: https://docs.apify.com/api/client/python/reference/class/TaskClientAsync#get
 put:
   tags:
     - Actor tasks/Task object
@@ -134,6 +140,12 @@ put:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/actor-tasks/task-object/update-task
+  x-js-parent: TaskClient
+  x-js-name: update
+  x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/TaskClient#update
+  x-py-parent: TaskClientAsync
+  x-py-name: update
+  x-py-doc-url: https://docs.apify.com/api/client/python/reference/class/TaskClientAsync#update
 delete:
   tags:
     - Actor tasks/Task object
@@ -161,3 +173,6 @@ delete:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/actor-tasks/task-object/delete-task
+  x-js-parent: TaskClient
+  x-js-name: delete
+  x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/TaskClient#delete

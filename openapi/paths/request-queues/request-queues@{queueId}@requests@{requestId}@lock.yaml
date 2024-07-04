@@ -75,6 +75,12 @@ put:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/request-queues/request-lock/prolong-request-lock
+  x-js-parent: RequestQueueClient
+  x-js-name: prolongRequestLock
+  x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/RequestQueueClient#prolongRequestLock
+  x-py-parent: RequestQueueClientAsync
+  x-py-name: prolong_request_lock
+  x-py-doc-url: https://docs.apify.com/api/client/python/reference/class/RequestQueueClientAsync#prolong_request_lock
 delete:
   tags:
     - Request queues/Request lock
@@ -142,3 +148,9 @@ delete:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/request-queues/request-lock/delete-request-lock
+  x-js-parent: RequestQueueClient
+  x-js-name: deleteRequestLock
+  x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/RequestQueueClient#deleteRequestLock
+  x-py-parent: RequestQueueClientAsync
+  x-py-name: delete_request_lock
+  x-py-doc-url: https://docs.apify.com/api/client/python/reference/class/RequestQueueClientAsync#delete_request_lock

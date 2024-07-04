@@ -24,6 +24,12 @@ get:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/schedules/schedule-object/get-schedule
+  x-js-parent: ScheduleClient
+  x-js-name: get
+  x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/ScheduleClient#get
+  x-py-parent: ScheduleClientAsync
+  x-py-name: get
+  x-py-doc-url: https://docs.apify.com/api/client/python/reference/class/ScheduleClientAsync#get
 put:
   tags:
     - Schedules/Schedule object
@@ -70,6 +76,12 @@ put:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/schedules/schedule-object/update-schedule
+  x-js-parent: ScheduleClient
+  x-js-name: update
+  x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/ScheduleClient#update
+  x-py-parent: ScheduleClientAsync
+  x-py-name: update
+  x-py-doc-url: https://docs.apify.com/api/client/python/reference/class/ScheduleClientAsync#update
 delete:
   tags:
     - Schedules/Schedule object
@@ -98,3 +110,6 @@ delete:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/schedules/schedule-object/delete-schedule
+  x-js-parent: ScheduleClient
+  x-js-name: delete
+  x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/ScheduleClient#delete

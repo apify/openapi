@@ -34,7 +34,7 @@ function ClientReferencesLinksDecorator(target) {
     const pyLink = target[X_PY_DOC_URLS_PROPERTY]
     const jsLink = target[X_JS_DOC_URLS_PROPERTY]
 
-    //console.log(pyLink)
+    console.log(pyLink)
     //TODO add only if link found
   
     // Purposedly using `span` element here instead of `div`

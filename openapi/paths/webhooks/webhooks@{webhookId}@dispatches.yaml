@@ -24,3 +24,6 @@ get:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/webhooks/dispatches-collection/get-collection
+  x-py-parent: WebhookClientAsync
+  x-py-name: dispatches
+  x-py-doc-url: https://docs.apify.com/api/client/python/reference/class/WebhookClientAsync#dispatches

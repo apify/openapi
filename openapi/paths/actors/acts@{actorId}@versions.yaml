@@ -55,6 +55,9 @@ get:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/actors/version-collection/get-list-of-versions
+  x-py-parent: ActorVersionCollectionClientAsync
+  x-py-name: list
+  x-py-doc-url: https://docs.apify.com/api/client/python/reference/class/ActorVersionCollectionClientAsync#list
 post:
   tags:
     - Actors/Version collection
@@ -127,3 +130,6 @@ post:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/actors/version-collection/create-version
+  x-py-parent: ActorVersionCollectionClientAsync
+  x-py-name: create
+  x-py-doc-url: https://docs.apify.com/api/client/python/reference/class/ActorVersionCollectionClientAsync#create

@@ -66,6 +66,12 @@ get:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/actors/build-collection/get-list-of-builds
+  x-js-parent: BuildCollectionClient
+  x-js-name: list
+  x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/BuildCollectionClient#list
+  x-py-parent: BuildCollectionClientAsync
+  x-py-name: list
+  x-py-doc-url: https://docs.apify.com/api/client/python/reference/class/BuildCollectionClientAsync#list
 post:
   tags:
     - Actors/Build collection
@@ -184,3 +190,9 @@ post:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/actors/build-collection/build-actor
+  x-js-parent: ActorClient
+  x-js-name: build
+  x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/ActorClient#build
+  x-py-parent: ActorClientAsync
+  x-py-name: build
+  x-py-doc-url: https://docs.apify.com/api/client/python/reference/class/ActorClientAsync#build
