@@ -34,7 +34,7 @@ const X_JS_DOC_URLS_PROPERTY = "x-js-doc-url";
  */
 function ClientReferencesLinksDecorator(target) {
     const pyLink = target[X_PY_DOC_URLS_PROPERTY];
-    const jsLink = target[X_JS_DOC_URLS_PROPERTY]
+    const jsLink = target[X_JS_DOC_URLS_PROPERTY];
  
     // Purposedly using `span` element here instead of `div`
     // Due to how redoc works, when `div` used, the markdown rendering in of `description` ceased to work.
