@@ -351,3 +351,9 @@ post:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/actor-tasks/run-collection/run-task
+  x-js-parent: TaskClient
+  x-js-name: start
+  x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/TaskClient#start
+  x-py-parent: TaskClientAsync
+  x-py-name: call
+  x-py-doc-url: https://docs.apify.com/api/client/python/reference/class/TaskClientAsync#call

@@ -17,3 +17,4 @@ plugins:
   - plugins/apify.js
 decorators:
   apify/legacy-doc-url-decorator: on
+  apify/client-references-links-decorator: on

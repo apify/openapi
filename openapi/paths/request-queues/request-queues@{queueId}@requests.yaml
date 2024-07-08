@@ -128,6 +128,12 @@ get:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/request-queues/request-collection/list-requests
+  x-js-parent: RequestQueueClient
+  x-js-name: paginateRequests
+  x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/RequestQueueClient#paginateRequests
+  x-py-parent: RequestQueueClientAsync
+  x-py-name: list_requests
+  x-py-doc-url: https://docs.apify.com/api/client/python/reference/class/RequestQueueClientAsync#list_requests
 post:
   tags:
     - Request queues/Request collection
@@ -213,3 +219,9 @@ post:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/request-queues/request-collection/add-request
+  x-js-parent: RequestQueueClient
+  x-js-name: addRequest
+  x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/RequestQueueClient#addRequest
+  x-py-parent: RequestQueueClientAsync
+  x-py-name: add_request
+  x-py-doc-url: https://docs.apify.com/api/client/python/reference/class/RequestQueueClientAsync#add_request

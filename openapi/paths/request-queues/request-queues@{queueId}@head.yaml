@@ -102,3 +102,9 @@ get:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/request-queues/queue-head/get-head
+  x-js-parent: RequestQueueClient
+  x-js-name: listHead
+  x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/RequestQueueClient#listHead
+  x-py-parent: RequestQueueClientAsync
+  x-py-name: list_head
+  x-py-doc-url: https://docs.apify.com/api/client/python/reference/class/RequestQueueClientAsync#list_head

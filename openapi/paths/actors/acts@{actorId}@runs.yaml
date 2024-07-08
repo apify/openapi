@@ -115,6 +115,12 @@ get:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/actors/run-collection/get-list-of-runs
+  x-js-parent: RunCollectionClient
+  x-js-name: list
+  x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/RunCollectionClient#list
+  x-py-parent: RunCollectionClientAsync
+  x-py-name: list
+  x-py-doc-url: https://docs.apify.com/api/client/python/reference/class/RunCollectionClientAsync#list
 post:
   tags:
     - Actors/Run collection
@@ -324,3 +330,9 @@ post:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/actors/run-collection/run-actor
+  x-js-parent: ActorClient
+  x-js-name: start
+  x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/ActorClient#start
+  x-py-parent: ActorClientAsync
+  x-py-name: call
+  x-py-doc-url: https://docs.apify.com/api/client/python/reference/class/ActorClientAsync#call

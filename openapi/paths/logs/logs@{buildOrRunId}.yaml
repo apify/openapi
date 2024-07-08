@@ -54,3 +54,9 @@ get:
             2017-07-14T06:00:49.741Z Input: { test: 123 }
             2017-07-14T06:00:49.752Z Some useful debug information follows.
   deprecated: false
+  x-js-parent: LogClient
+  x-js-name: stream
+  x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/LogClient#stream
+  x-py-parent: LogClientAsync
+  x-py-name: stream
+  x-py-doc-url: https://docs.apify.com/api/client/python/reference/class/LogClientAsync#stream

@@ -53,6 +53,12 @@ get:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/schedules/schedules-collection/get-list-of-schedules
+  x-js-parent: ScheduleCollectionClient
+  x-js-name: list
+  x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/ScheduleCollectionClient#list
+  x-py-parent: ScheduleCollectionClientAsync
+  x-py-name: list
+  x-py-doc-url: https://docs.apify.com/api/client/python/reference/class/ScheduleCollectionClientAsync#list
 post:
   tags:
     - Schedules/Schedules collection
@@ -91,3 +97,9 @@ post:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/schedules/schedules-collection/create-schedule
+  x-js-parent: ScheduleCollectionClient
+  x-js-name: create
+  x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/ScheduleCollectionClient#create
+  x-py-parent: ScheduleCollectionClientAsync
+  x-py-name: create
+  x-py-doc-url: https://docs.apify.com/api/client/python/reference/class/ScheduleCollectionClientAsync#create

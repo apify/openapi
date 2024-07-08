@@ -36,3 +36,9 @@ get:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/schedules/schedule-log/get-schedule-log
+  x-js-parent: ScheduleClient
+  x-js-name: getLog
+  x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/ScheduleClient#getLog
+  x-py-parent: ScheduleClientAsync
+  x-py-name: get_log
+  x-py-doc-url: https://docs.apify.com/api/client/python/reference/class/ScheduleClientAsync#get_log

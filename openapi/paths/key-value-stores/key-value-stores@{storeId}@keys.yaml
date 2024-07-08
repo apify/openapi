@@ -61,3 +61,9 @@ get:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/key-value-stores/key-collection/get-list-of-keys
+  x-js-parent: KeyValueStoreClient
+  x-js-name: listKeys
+  x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/KeyValueStoreClient#listKeys
+  x-py-parent: KeyValueStoreClientAsync
+  x-py-name: list_keys
+  x-py-doc-url: https://docs.apify.com/api/client/python/reference/class/KeyValueStoreClientAsync#list_keys

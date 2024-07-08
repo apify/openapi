@@ -103,3 +103,9 @@ post:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/actor-runs/reboot-run/reboot-run
+  x-js-parent: RunClient
+  x-js-name: reboot
+  x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/RunClient#reboot
+  x-py-parent: RunClientAsync
+  x-py-name: reboot
+  x-py-doc-url: https://docs.apify.com/api/client/python/reference/class/RunClientAsync#reboot

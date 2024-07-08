@@ -90,6 +90,12 @@ get:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/datasets/dataset-collection/get-list-of-datasets
+  x-js-parent: DatasetCollectionClient
+  x-js-name: list
+  x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/DatasetCollectionClient#list
+  x-py-parent: DatasetCollectionClientAsync
+  x-py-name: list
+  x-py-doc-url: https://docs.apify.com/api/client/python/reference/class/DatasetCollectionClientAsync#list
 post:
   tags:
     - Datasets/Dataset collection
@@ -139,3 +145,9 @@ post:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/datasets/dataset-collection/create-dataset
+  x-js-parent: DatasetCollectionClient
+  x-js-name: getOrCreate
+  x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/DatasetCollectionClient#getOrCreate
+  x-py-parent: DatasetCollectionClientAsync
+  x-py-name: get_or_create
+  x-py-doc-url: https://docs.apify.com/api/client/python/reference/class/DatasetCollectionClientAsync#get_or_create

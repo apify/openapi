@@ -101,6 +101,12 @@ get:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/actor-tasks/task-collection/get-list-of-tasks
+  x-js-parent: TaskCollectionClient
+  x-js-name: list
+  x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/TaskCollectionClient#list
+  x-py-parent: TaskCollectionClientAsync
+  x-py-name: list
+  x-py-doc-url: https://docs.apify.com/api/client/python/reference/class/TaskCollectionClientAsync#list
 post:
   tags:
     - Actor tasks/Task collection
@@ -182,3 +188,9 @@ post:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/actor-tasks/task-collection/create-task
+  x-js-parent: TaskCollectionClient
+  x-js-name: create
+  x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/TaskCollectionClient#create
+  x-py-parent: TaskCollectionClientAsync
+  x-py-name: create
+  x-py-doc-url: https://docs.apify.com/api/client/python/reference/class/TaskCollectionClientAsync#create
