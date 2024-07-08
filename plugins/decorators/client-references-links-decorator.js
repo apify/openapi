@@ -40,7 +40,7 @@ function ClientReferencesLinksDecorator(target) {
     // Due to how redoc works, when `div` used, the markdown rendering in of `description` ceased to work.
     let prepend = `<span style="float: right;">`;
     if (pyLink) {
-      prepend += `<a href="${pyLink}" target="_blank" rel="noopener noreferrer">Python doc</a>`;
+      prepend += `<a href="${pyLink}" target="_blank">Python doc</a>`;
     }
 
     if (pyLink && jsLink) {
@@ -48,7 +48,7 @@ function ClientReferencesLinksDecorator(target) {
     }
 
     if (jsLink) {
-      prepend += `<a href="${jsLink}" target="_blank" rel="noopener noreferrer">JS doc</a>`;
+      prepend += `<a href="${jsLink}" target="_blank">JS doc</a>`;
     }
     prepend += `</span>`;
 
