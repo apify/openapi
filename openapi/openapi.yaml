@@ -34,7 +34,6 @@ info:
     **Note:** All requests with JSON payloads need to specify the `Content-Type:
     application/json` HTTP header!
 
-
     All API endpoints support the `method` query parameter that can override the
     HTTP method.
 
@@ -49,6 +48,7 @@ info:
 
     ## Authentication
 
+    <span id="/introduction/authentication"></span>
 
     You can find your API token on the
 
@@ -90,6 +90,7 @@ info:
 
     ## Basic usage
 
+    <span id="/introduction/basic-usage"></span>
 
     To run an actor, send a POST request to the [Run
     actor](#reference/actors/run-collection/run-actor) endpoint using either the
@@ -156,6 +157,7 @@ info:
 
     ## Response structure
 
+    <span id="/introduction/response-structure"></span>
 
     Most API endpoints return a JSON object with the `data` property:
 
@@ -204,6 +206,7 @@ info:
 
     ## Pagination
 
+    <span id="/introduction/pagination"></span>
 
     All API endpoints that return a list of records
 
@@ -234,6 +237,7 @@ info:
 
     ### Using offset
 
+    <span id="/introduction/pagination/using-offset"></span>
 
     Most API endpoints that return a list of records enable pagination using the
     following query parameters:
@@ -325,6 +329,7 @@ info:
 
     ### Using key
 
+    <span id="/introduction/pagination/using-key"></span>
 
     The records in the [key-value
     store](https://docs.apify.com/platform/storage/key-value-store)
@@ -407,6 +412,7 @@ info:
 
     ## Errors
 
+    <span id="/introduction/errors"></span>
 
     The Apify API uses common HTTP status codes: `2xx` range for success, `4xx`
     range for errors caused by the caller
@@ -484,108 +490,88 @@ info:
 
     ## Rate limiting
 
+    <span id="/introduction/rate-limiting"></span>
 
-    All API endpoints limit the rate of requests in order to prevent overloading
-    of Apify servers by misbehaving clients.
+    All API endpoints limit the rate of requests in order to prevent overloading of Apify servers by misbehaving clients.
 
-    The default rate limit is 30 requests per second and is applied to every API
-    endpoint except the following list
+    There are two kinds of rate limits - a global rate limit and a per-resource rate limit.
 
-    of endpoints that are rate limited to 200 requests per second:
+    ### Global rate limit
 
+    <span id="/introduction/rate-limiting/global-rate-limit"></span>
 
+    The global rate limit is set to _250 000 requests per minute_.
+    For [authenticated](#authentication) requests, it is counted per user,
+    and for unauthenticated requests, it is counted per IP address.
+
+    ### Per-resource rate limit
+
+    <span id="/introduction/rate-limiting/per-resource-rate-limit"></span>
+
+    The default per-resource rate limit is _30 requests per second per resource_, which in this context means a single Actor, a single Actor run, a single dataset, single key-value store etc.
+    The default rate limit is applied to every API endpoint except a few select ones, which have higher rate limits.
+    Each API endpoint returns its rate limit in `X-RateLimit-Limit` header.
+
+    These endpoints have a rate limit of _100 requests per second per resource_:
+    * CRUD ([get](#reference/key-value-stores/record/get-record),
+      [put](#reference/key-value-stores/record/put-record),
+      [delete](#reference/key-value-stores/record/delete-record))
+    operations on key-value store records
+
+    These endpoints have a rate limit of _200 requests per second per resource_:
     * [Run actor](#reference/actors/run-collection/run-actor)
-
-
-    * [Run actor task
-    asynchronously](#reference/actor-tasks/runs-collection/run-task-asynchronously)
-
-
-    * [Run actor task
-    synchronously](#reference/actor-tasks/runs-collection/run-task-synchronously)
-
-
+    * [Run actor task asynchronously](#reference/actor-tasks/runs-collection/run-task-asynchronously)
+    * [Run actor task synchronously](#reference/actor-tasks/runs-collection/run-task-synchronously)
     * [Metamorph actor run](#reference/actors/metamorph-run/metamorph-run)
-
-
     * [Push items](#reference/datasets/item-collection/put-items) to dataset
-
-
     * CRUD
       ([add](#reference/request-queues/request-collection/add-request),
       [get](#reference/request-queues/request-collection/get-request),
       [update](#reference/request-queues/request-collection/update-request),
       [delete](#reference/request-queues/request-collection/delete-request))
-      operations of request queue requests
+      operations on requests in request queues
 
-    > For authenticated API endpoints (if you use an [authentication
-    token](#authentication)), the limit is counted per user.
+    ### Rate limit exceeded errors
+    <span id="/introduction/rate-limiting/rate-limit-exceeded-errors"></span>
 
-    Storage API endpoints (when a token isn't used) count the limit per store
-    ID.
-
-    Anonymous API endpoints count the limit per client IP adress. Each API
-    endpoint returns its rate limit in `X-RateLimit-Limit` header.
-
-
-    If the client is sending too many requests, the API endpoints respond with
-    the HTTP status code `429 Too Many Requests`
-
+    If the client is sending too many requests, the API endpoints respond with the HTTP status code `429 Too Many Requests`
     and the following body:
 
-
     ```
-
     {
         "error": {
             "type": "rate-limit-exceeded",
             "message": "You have exceeded the rate limit of ... requests per second"
         }
     }
-
     ```
 
+    ### Retrying rate-limited requests with exponential backoff
 
-    If the client receives the rate limit error, it should wait a certain period
-    of time and then retry the request.
-
-    If the error happens again, the client should double the wait period and
-    retry the request,
-
+    <span id="/introduction/rate-limiting/retrying-rate-limited-requests-with-exponential-backoff"></span>
+    
+    If the client receives the rate limit error, it should wait a certain period of time and then retry the request.
+    If the error happens again, the client should double the wait period and retry the request,
     and so on. This algorithm is known as _exponential backoff_
-
     and it can be described using the following pseudo-code:
 
-
     1. Define a variable `DELAY=500`
-
-
     2. Send the HTTP request to the API endpoint
-
-
-    3. If the response has status code not equal to `429` then you are done.
-    Otherwise:
+    3. If the response has status code not equal to `429` then you are done. Otherwise:
        * Wait for a period of time chosen randomly from the interval `DELAY` to `2*DELAY` milliseconds
        * Double the future wait period by setting `DELAY = 2*DELAY`
        * Continue with step 2
 
     If all requests sent by the client implement the above steps,
+    the client will automatically use the maximum available bandwidth for its requests.
 
-    the client will automatically use the maximum available bandwidth for its
-    requests.
-
-
-    Note that the Apify API clients [for
-    JavaScript](https://docs.apify.com/api/client/js)
-
+    Note that the Apify API clients [for JavaScript](https://docs.apify.com/api/client/js)
     and [for Python](https://docs.apify.com/api/client/python)
-
-    use the exponential backoff algorithm transparently, so that you do not need
-    to worry about it.
-
+    use the exponential backoff algorithm transparently, so that you do not need to worry about it.
 
     ## Referring to resources
 
+    <span id="/introduction/referring-to-resources"></span>
 
     There are three main ways to refer to a resource you're accessing via API.
 
