@@ -70,7 +70,7 @@ put:
     The response is the updated request queue object, as returned by the
 
     [Get request
-    queue](#reference/request-queues/queue-collection/get-request-queue) API
+    queue](#/reference/request-queues/queue-collection/get-request-queue) API
     endpoint.
   operationId: requestQueue_put
   parameters:

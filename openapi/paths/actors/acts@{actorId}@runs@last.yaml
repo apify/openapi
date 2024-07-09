@@ -28,7 +28,7 @@ get:
     (e.g. `status=SUCCEEDED`). The output of this endpoint and other query
     parameters
 
-    are the same as in the [Run object](#reference/actors/run-object) endpoint.
+    are the same as in the [Run object](#/reference/actors/run-object) endpoint.
 
 
     In order to access the default storages of the last Actor run, i.e. log,
@@ -56,7 +56,7 @@ get:
     `/v2/acts/{actorId}/runs/last/key-value-store` has the same HTTP method and
     parameters as the
 
-    [Key-value store object](#reference/key-value-stores/store-object) endpoint.
+    [Key-value store object](#/reference/key-value-stores/store-object) endpoint.
 
 
     Additionally, each of the above API endpoints supports all sub-endpoints
@@ -68,35 +68,35 @@ get:
 
 
     * `/v2/acts/{actorId}/runs/last/key-value-store/keys{?token,status}` [Key
-    collection](#reference/key-value-stores/key-collection)
+    collection](#/reference/key-value-stores/key-collection)
 
 
     *
     `/v2/acts/{actorId}/runs/last/key-value-store/records/{recordKey}{?token,status}`
-    [Record](#reference/key-value-stores/record)
+    [Record](#/reference/key-value-stores/record)
 
 
     #### Dataset
 
 
     * `/v2/acts/{actorId}/runs/last/dataset/items{?token,status}` [Item
-    collection](#reference/datasets/item-collection)
+    collection](#/reference/datasets/item-collection)
 
 
     #### Request queue
 
 
     * `/v2/acts/{actorId}/runs/last/request-queue/requests{?token,status}`
-    [Request collection](#reference/request-queues/request-collection)
+    [Request collection](#/reference/request-queues/request-collection)
 
 
     *
     `/v2/acts/{actorId}/runs/last/request-queue/requests/{requestId}{?token,status}`
-    [Request collection](#reference/request-queues/request)
+    [Request collection](#/reference/request-queues/request)
 
 
     * `/v2/acts/{actorId}/runs/last/request-queue/head{?token,status}` [Queue
-    head](#reference/request-queues/queue-head)
+    head](#/reference/request-queues/queue-head)
 
 
     For example, to download data from a dataset of the last succeeded Actor run

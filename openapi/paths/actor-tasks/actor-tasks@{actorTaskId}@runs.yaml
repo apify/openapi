@@ -141,17 +141,17 @@ post:
     schema if not defined by the task).
 
     The response is the actor Run object as returned by the [Get
-    run](#reference/actor-runs/run-object-and-its-storages/get-run) endpoint.
+    run](#/reference/actor-runs/run-object-and-its-storages/get-run) endpoint.
 
     If you want to wait for the run to finish and receive the actual output of
     the actor run as the response, use one of the [Run task
-    synchronously](#reference/actor-tasks/run-task-synchronously) API endpoints
+    synchronously](#/reference/actor-tasks/run-task-synchronously) API endpoints
     instead.
 
     To fetch the actor run results that are typically stored in the default
     dataset, you'll need to pass the ID received in the `defaultDatasetId` field
     received in the response JSON to the 
-    [Get items](#reference/datasets/item-collection/get-items) API endpoint.
+    [Get items](#/reference/datasets/item-collection/get-items) API endpoint.
   operationId: actorTask_runs_post
   parameters:
     - name: actorTaskId

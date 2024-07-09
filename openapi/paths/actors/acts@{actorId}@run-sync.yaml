@@ -29,7 +29,7 @@ post:
 
 
     To run the Actor asynchronously, use the [Run
-    Actor](#reference/actors/run-collection/run-actor) API endpoint instead.
+    Actor](#/reference/actors/run-collection/run-actor) API endpoint instead.
   operationId: act_runSync_post
   parameters:
     - name: actorId
@@ -184,7 +184,7 @@ get:
 
 
     To run the Actor asynchronously, use the [Run
-    Actor](#reference/actors/run-collection/run-actor) API endpoint instead.
+    Actor](#/reference/actors/run-collection/run-actor) API endpoint instead.
   operationId: act_runSync_get
   parameters:
     - name: actorId

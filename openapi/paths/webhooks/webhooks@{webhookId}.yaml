@@ -44,7 +44,7 @@ put:
 
     The response is the full webhook object as returned by the
 
-    [Get webhook](#reference/webhooks/webhook-object/get-webhook) endpoint.
+    [Get webhook](#/reference/webhooks/webhook-object/get-webhook) endpoint.
 
 
     The request needs to specify the `Content-Type: application/json` HTTP
@@ -53,7 +53,7 @@ put:
 
     When providing your API authentication token, we recommend using the
     request's `Authorization` header, rather than the URL. ([More
-    info](#introduction/authentication)).
+    info](#/introduction/authentication)).
   operationId: webhook_put
   parameters:
     - name: webhookId

@@ -17,7 +17,7 @@ post:
     input schema if not defined by the task).
 
     You can send all the same options in parameters as the [Get Dataset
-    Items](#reference/datasets/item-collection/get-items) API endpoint.
+    Items](#/reference/datasets/item-collection/get-items) API endpoint.
 
     Beware that it might be impossible to maintain an idle HTTP connection for
     an extended period, due to client timeout or network conditions. Make sure your HTTP client is
@@ -33,7 +33,7 @@ post:
     and that the input is an object.
 
     To run the task asynchronously, use the [Run
-    task](#reference/actor-tasks/run-collection/run-task) API endpoint instead.
+    task](#/reference/actor-tasks/run-collection/run-task) API endpoint instead.
   operationId: actorTask_runSyncGetDatasetItems_post
   parameters:
     - name: actorTaskId
@@ -408,7 +408,7 @@ get:
     the run itself).
 
     You can send all the same options in parameters as the [Get Dataset
-    Items](#reference/datasets/item-collection/get-items) API endpoint.
+    Items](#/reference/datasets/item-collection/get-items) API endpoint.
 
     Beware that it might be impossible to maintain an idle HTTP connection for
     an extended period, due to client timeout or network conditions. Make sure your HTTP client is
@@ -418,7 +418,7 @@ get:
     and its status.
 
     To run the Task asynchronously, use the [Run task
-    asynchronously](#reference/actor-tasks/run-collection/run-task) endpoint
+    asynchronously](#/reference/actor-tasks/run-collection/run-task) endpoint
     instead.
   operationId: actorTask_runSyncGetDatasetItems_get
   parameters:

@@ -129,7 +129,7 @@
   - '#/reference/actors/build-object'
   x-trait: 'true'
   description: '**[DEPRECATED]** API endpoints related to build of the actor were
-    moved under new namespace [`actor-builds`](#reference/actor-builds).'
+    moved under new namespace [`actor-builds`](#/reference/actor-builds).'
 - name: Actors/Abort build
   x-displayName: Abort build
   x-parent-tag-name: Actors
@@ -137,7 +137,7 @@
   - '#/reference/actors/abort-build'
   x-trait: 'true'
   description: '**[DEPRECATED]** API endpoints related to build of the actor were
-    moved under new namespace [`actor-builds`](#reference/actor-builds).'
+    moved under new namespace [`actor-builds`](#/reference/actor-builds).'
 - name: Actors/Run collection
   x-displayName: Run collection
   x-parent-tag-name: Actors
@@ -163,7 +163,7 @@
   - '#/reference/actors/run-object'
   x-trait: 'true'
   description: '**[DEPRECATED]** API endpoints related to run of the actor were moved
-    under new namespace [`actor-runs`](#reference/actor-runs).'
+    under new namespace [`actor-runs`](#/reference/actor-runs).'
 - name: Actors/Abort run
   x-displayName: Abort run
   x-parent-tag-name: Actors
@@ -171,7 +171,7 @@
   - '#/reference/actors/abort-run'
   x-trait: 'true'
   description: '**[DEPRECATED]** API endpoints related to run of the actor were moved
-    under new namespace [`actor-runs`](#reference/actor-runs).'
+    under new namespace [`actor-runs`](#/reference/actor-runs).'
 - name: Actors/Metamorph run
   x-displayName: Metamorph run
   x-parent-tag-name: Actors
@@ -179,7 +179,7 @@
   - '#/reference/actors/metamorph-run'
   x-trait: 'true'
   description: '**[DEPRECATED]** API endpoints related to run of the actor were moved
-    under new namespace [`actor-runs`](#reference/actor-runs).'
+    under new namespace [`actor-runs`](#/reference/actor-runs).'
 - name: Actors/Resurrect run
   x-displayName: Resurrect run
   x-parent-tag-name: Actors
@@ -187,7 +187,7 @@
   - '#/reference/actors/resurrect-run'
   x-trait: 'true'
   description: '**[DEPRECATED]** API endpoints related to run of the actor were moved
-    under new namespace [`actor-runs`](#reference/actor-runs).'
+    under new namespace [`actor-runs`](#/reference/actor-runs).'
 - name: Actors/Last run object and its storages
   x-displayName: Last run object and its storages
   x-parent-tag-name: Actors
@@ -218,7 +218,7 @@
 
     (e.g. `status=SUCCEEDED`). The output of this endpoint and other query parameters
 
-    are the same as in the [Run object](#reference/actors/run-object) endpoint.
+    are the same as in the [Run object](#/reference/actors/run-object) endpoint.
 
 
     In order to access the default storages of the last actor run, i.e. log, key-value
@@ -246,7 +246,7 @@
     `/v2/acts/{actorId}/runs/last/key-value-store` has the same HTTP method and parameters
     as the
 
-    [Key-value store object](#reference/key-value-stores/store-object) endpoint.
+    [Key-value store object](#/reference/key-value-stores/store-object) endpoint.
 
 
     Additionally, each of the above API endpoints supports all sub-endpoints
@@ -257,31 +257,31 @@
     #### Key-value store
 
 
-    * `/v2/acts/{actorId}/runs/last/key-value-store/keys{?token,status}` [Key collection](#reference/key-value-stores/key-collection)
+    * `/v2/acts/{actorId}/runs/last/key-value-store/keys{?token,status}` [Key collection](#/reference/key-value-stores/key-collection)
 
 
     * `/v2/acts/{actorId}/runs/last/key-value-store/records/{recordKey}{?token,status}`
-    [Record](#reference/key-value-stores/record)
+    [Record](#/reference/key-value-stores/record)
 
 
     #### Dataset
 
 
-    * `/v2/acts/{actorId}/runs/last/dataset/items{?token,status}` [Item collection](#reference/datasets/item-collection)
+    * `/v2/acts/{actorId}/runs/last/dataset/items{?token,status}` [Item collection](#/reference/datasets/item-collection)
 
 
     #### Request queue
 
 
     * `/v2/acts/{actorId}/runs/last/request-queue/requests{?token,status}` [Request
-    collection](#reference/request-queues/request-collection)
+    collection](#/reference/request-queues/request-collection)
 
 
     * `/v2/acts/{actorId}/runs/last/request-queue/requests/{requestId}{?token,status}`
-    [Request collection](#reference/request-queues/request)
+    [Request collection](#/reference/request-queues/request)
 
 
-    * `/v2/acts/{actorId}/runs/last/request-queue/head{?token,status}` [Queue head](#reference/request-queues/queue-head)
+    * `/v2/acts/{actorId}/runs/last/request-queue/head{?token,status}` [Queue head](#/reference/request-queues/queue-head)
 
 
     For example, to download data from a dataset of the last succeeded actor run in
@@ -398,7 +398,7 @@
 
     (e.g. `status=SUCCEEDED`). The output of this endpoint and other query parameters
 
-    are the same as in the [Run object](#reference/actors/run-object) endpoint.
+    are the same as in the [Run object](#/reference/actors/run-object) endpoint.
 
 
     In order to access the default storages of the last actor task run, i.e. log,
@@ -426,7 +426,7 @@
     `/v2/actor-tasks/{actorTaskId}/runs/last/key-value-store` has the same HTTP method
     and parameters as the
 
-    [Key-value store object](#reference/key-value-stores/store-object) endpoint.
+    [Key-value store object](#/reference/key-value-stores/store-object) endpoint.
 
 
     Additionally, each of the above API endpoints supports all sub-endpoints
@@ -438,33 +438,33 @@
 
 
     * `/v2/actor-tasks/{actorTaskId}/runs/last/key-value-store/keys{?token,status}`
-    [Key collection](#reference/key-value-stores/key-collection)
+    [Key collection](#/reference/key-value-stores/key-collection)
 
 
     * `/v2/actor-tasks/{actorTaskId}/runs/last/key-value-store/records/{recordKey}{?token,status}`
-    [Record](#reference/key-value-stores/record)
+    [Record](#/reference/key-value-stores/record)
 
 
     #### Dataset
 
 
     * `/v2/actor-tasks/{actorTaskId}/runs/last/dataset/items{?token,status}` [Item
-    collection](#reference/datasets/item-collection)
+    collection](#/reference/datasets/item-collection)
 
 
     #### Request queue
 
 
     * `/v2/actor-tasks/{actorTaskId}/runs/last/request-queue/requests{?token,status}`
-    [Request collection](#reference/request-queues/request-collection)
+    [Request collection](#/reference/request-queues/request-collection)
 
 
     * `/v2/actor-tasks/{actorTaskId}/runs/last/request-queue/requests/{requestId}{?token,status}`
-    [Request collection](#reference/request-queues/request)
+    [Request collection](#/reference/request-queues/request)
 
 
     * `/v2/actor-tasks/{actorTaskId}/runs/last/request-queue/head{?token,status}`
-    [Queue head](#reference/request-queues/queue-head)
+    [Queue head](#/reference/request-queues/queue-head)
 
 
     For example, to download data from a dataset of the last succeeded actor task
@@ -550,7 +550,7 @@
     `/v2/actor-runs/{runId}/key-value-store` has the same HTTP method and parameters
     as the
 
-    [Key-value store object](#reference/key-value-stores/store-object) endpoint.
+    [Key-value store object](#/reference/key-value-stores/store-object) endpoint.
 
 
     Additionally, each of the above API endpoints supports all sub-endpoints
@@ -561,35 +561,35 @@
     #### Log
 
 
-    * `/v2/actor-runs/{runId}/log` [Log](#reference/logs)
+    * `/v2/actor-runs/{runId}/log` [Log](#/reference/logs)
 
 
     #### Key-value store
 
 
-    * `/v2/actor-runs/{runId}/key-value-store/keys{?token}` [Key collection](#reference/key-value-stores/key-collection)
+    * `/v2/actor-runs/{runId}/key-value-store/keys{?token}` [Key collection](#/reference/key-value-stores/key-collection)
 
 
-    * `/v2/actor-runs/{runId}/key-value-store/records/{recordKey}{?token}` [Record](#reference/key-value-stores/record)
+    * `/v2/actor-runs/{runId}/key-value-store/records/{recordKey}{?token}` [Record](#/reference/key-value-stores/record)
 
 
     #### Dataset
 
 
-    * `/v2/actor-runs/{runId}/dataset/items{?token}` [Item collection](#reference/datasets/item-collection)
+    * `/v2/actor-runs/{runId}/dataset/items{?token}` [Item collection](#/reference/datasets/item-collection)
 
 
     #### Request queue
 
 
-    * `/v2/actor-runs/{runId}/request-queue/requests{?token}` [Request collection](#reference/request-queues/request-collection)
+    * `/v2/actor-runs/{runId}/request-queue/requests{?token}` [Request collection](#/reference/request-queues/request-collection)
 
 
     * `/v2/actor-runs/{runId}/request-queue/requests/{requestId}{?token}` [Request
-    collection](#reference/request-queues/request)
+    collection](#/reference/request-queues/request)
 
 
-    * `/v2/actor-runs/{runId}/request-queue/head{?token}` [Queue head](#reference/request-queues/queue-head)
+    * `/v2/actor-runs/{runId}/request-queue/head{?token}` [Queue head](#/reference/request-queues/queue-head)
 
 
     For example, to download data from a dataset of the actor run in XML format,
@@ -687,7 +687,7 @@
   x-legacy-doc-urls:
   - '#/reference/actor-builds/build-log'
   x-trait: 'true'
-  description: Check out [Logs](#reference/logs) for full reference.
+  description: Check out [Logs](#/reference/logs) for full reference.
 - name: Key-value stores
   x-displayName: Key-value stores
   x-legacy-doc-urls:
@@ -929,7 +929,7 @@
     Each schedule is assigned actions for it to perform. Actions can be of two types
     - `RUN_ACTOR` and `RUN_ACTOR_TASK`. For details, see the documentation of the
 
-    [Get schedule](#reference/schedules/schedule-object/get-schedule) endpoint.
+    [Get schedule](#/reference/schedules/schedule-object/get-schedule) endpoint.
 - name: Schedules/Schedules collection
   x-displayName: Schedules collection
   x-parent-tag-name: Schedules

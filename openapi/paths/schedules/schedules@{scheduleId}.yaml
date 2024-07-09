@@ -40,14 +40,14 @@ put:
     its value will not be updated.    
 
     The response is the full schedule object as returned by the
-    [Get schedule](#reference/schedules/schedule-object/get-schedule) endpoint.
+    [Get schedule](#/reference/schedules/schedule-object/get-schedule) endpoint.
 
     **The request needs to specify the `Content-Type: application/json` HTTP
     header!**
 
     When providing your API authentication token, we recommend using the
     request's `Authorization` header, rather than the URL. ([More
-    info](#introduction/authentication)).
+    info](#/introduction/authentication)).
   operationId: schedule_put
   parameters:
     - name: scheduleId

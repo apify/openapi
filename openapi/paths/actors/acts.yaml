@@ -103,7 +103,7 @@ post:
 
     The response is the full Actor object as returned by the
 
-    [Get Actor](#reference/actors/actor-object/get-actor) endpoint.
+    [Get Actor](#/reference/actors/actor-object/get-actor) endpoint.
 
 
     The HTTP request must have the `Content-Type: application/json` HTTP header!
@@ -111,7 +111,7 @@ post:
 
     The Actor needs to define at least one version of the source code.
 
-    For more information, see [Version object](#reference/actors/version-object).
+    For more information, see [Version object](#/reference/actors/version-object).
 
 
     If you want to make your Actor

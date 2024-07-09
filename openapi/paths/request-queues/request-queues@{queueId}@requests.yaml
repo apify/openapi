@@ -25,7 +25,7 @@ get:
 
         the system considers this API call to come from a new client. For
         details, see the `hadMultipleClients` field returned by the [Get
-        head](#reference/request-queues/queue-head) operation.
+        head](#/reference/request-queues/queue-head) operation.
       style: form
       explode: true
       schema:
@@ -165,7 +165,7 @@ post:
 
         the system considers this API call to come from a new client. For
         details, see the `hadMultipleClients` field returned by the [Get
-        head](#reference/request-queues/queue-head) operation.
+        head](#/reference/request-queues/queue-head) operation.
       style: form
       explode: true
       schema:

@@ -3,7 +3,7 @@ get:
     - Actors/Environment variable object
   summary: Get environment variable
   description: |
-    Gets a [EnvVar object](#reference/actors/environment-variable-object) that
+    Gets a [EnvVar object](#/reference/actors/environment-variable-object) that
     contains all the details about a specific environment variable of an Actor.
 
     If `isSecret` is set to `true`, then `value` will never be returned.
@@ -58,7 +58,7 @@ put:
   summary: Update environment variable
   description: |
     Updates Actor environment variable using values specified by a [EnvVar
-    object](#reference/actors/environment-variable-object)
+    object](#/reference/actors/environment-variable-object)
 
     passed as JSON in the POST payload.
 
@@ -72,14 +72,14 @@ put:
 
     When providing your API authentication token, we recommend using the
     request's `Authorization` header, rather than the URL. ([More
-    info](#introduction/authentication)).
+    info](#/introduction/authentication)).
 
 
     The response is the [EnvVar
-    object](#reference/actors/environment-variable-object) as returned by the
+    object](#/reference/actors/environment-variable-object) as returned by the
 
     [Get environment
-    variable](#reference/actors/environment-variable-object/get-environment-variable)
+    variable](#/reference/actors/environment-variable-object/get-environment-variable)
     endpoint.
   operationId: act_version_envVar_put
   parameters:
