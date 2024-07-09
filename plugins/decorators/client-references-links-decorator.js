@@ -47,15 +47,15 @@ function ClientReferencesLinksDecorator(target) {
     let prepend = `<span style="display: block; float: right; padding-left: 6px;">`;
     
     if (pyLink || jsLink) {
-      prepend += `<span style="display: inline-block; font-family: 'San Francisco', Helvetica, Arial, sans-serif; color: #6C7590;font-style: normal; font-weight: 700; font-size: 14px; line-height: 20px; text-transform: uppercase; padding-bottom: 6px;">References</span>`
+        prepend += `<span style="display: inline-block; font-family: 'San Francisco', Helvetica, Arial, sans-serif; color: #6C7590;font-style: normal; font-weight: 700; font-size: 14px; line-height: 20px; text-transform: uppercase; padding-bottom: 6px;">References</span>`
     }
 
     if (pyLink) {
-      prepend += `<a href="${pyLink}" target="_blank"><img src="${pyImgUrl}" style="padding-bottom: 6px; display: block;" alt="${pyAlt}"/></a>`;
+        prepend += `<a href="${pyLink}" target="_blank"><img src="${pyImgUrl}" style="padding-bottom: 6px; display: block;" alt="${pyAlt}"/></a>`;
     }
- 
-   if (jsLink) {
-      prepend += `<a href="${jsLink}" target="_blank"><img src="${jsImgUrl}" style="padding-bottom: 6px; display: block;" alt="${jsAlt}" /></a>`;
+
+    if (jsLink) {
+        prepend += `<a href="${jsLink}" target="_blank"><img src="${jsImgUrl}" style="padding-bottom: 6px; display: block;" alt="${jsAlt}" /></a>`;
     }
 
     prepend += `</span>`;
