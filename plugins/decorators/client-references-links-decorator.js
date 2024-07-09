@@ -36,21 +36,25 @@ function ClientReferencesLinksDecorator(target) {
     const pyLink = target[X_PY_DOC_URLS_PROPERTY];
     const jsLink = target[X_JS_DOC_URLS_PROPERTY];
  
+    const jsImgUrl = "https://raw.githubusercontent.com/apify/openapi/e0ea0891cab5cde56545c799e913b7bc07f83649/assets/javascript.svg";
+    const pyImgUrl = "https://raw.githubusercontent.com/apify/openapi/e0ea0891cab5cde56545c799e913b7bc07f83649/assets/python.svg";
+
+    const jsAlt = "Apify API JavaScript Client Reference";
+    const pyAlt = "Apify API Python Client Reference";
+
     // Purposedly using `span` element here instead of `div`
     // Due to how redoc works, when `div` used, the markdown rendering in of `description` ceased to work.
-    let prepend = `<span style="float: right;">`;
+    let prepend = `<div style="float: right; ">`;
+ 
     if (pyLink) {
-      prepend += `<a href="${pyLink}" target="_blank">Python doc</a>`;
+      prepend += `<a href="${pyLink}" target="_blank"><img src="${pyImgUrl}" style="padding-bottom: 6px; display: block;" alt="${pyAlt}"/></a>`;
+    }
+ 
+   if (jsLink) {
+      prepend += `<a href="${jsLink}" target="_blank"><img src="${jsImgUrl}" style="padding-bottom: 6px; display: block;" alt="${jsAlt}" /></a>`;
     }
 
-    if (pyLink && jsLink) {
-      prepend += "&nbsp;|&nbsp;";
-    }
-
-    if (jsLink) {
-      prepend += `<a href="${jsLink}" target="_blank">JS doc</a>`;
-    }
-    prepend += `</span>`;
+    prepend += `</div>`;
 
     target.description = `${prepend}${target.description || ""}`;
 }
