@@ -47,7 +47,7 @@ function ClientReferencesLinksDecorator(target) {
     let prepend = `<span style="display: block; float: right; padding-left: 6px;">`;
     
     if (pyLink || jsLink) {
-        prepend += `<span style="display: inline-block; font-family: 'San Francisco', Helvetica, Arial, sans-serif; color: #6C7590;font-style: normal; font-weight: 700; font-size: 14px; line-height: 20px; text-transform: uppercase; padding-bottom: 6px;">References</span>`
+        prepend += `<span style="display: inline-block; font-family: 'San Francisco', Helvetica, Arial, sans-serif; color: #6C7590;font-style: normal; font-weight: 700; font-size: 14px; line-height: 20px; text-transform: uppercase; padding-bottom: 6px;">Clients</span>`
     }
 
     if (pyLink) {
