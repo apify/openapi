@@ -10,11 +10,22 @@ rules:
   no-unused-components: warn
 theme:
   htmlTemplate: ./docs/index.html
+
+  openapi:
+    expandDefaultResponse: true
+    expandDefaultRequest: true
+    expandResponses: all
+    schemaExpansionLevel: 2
+    jsonSampleExpandLevel: 2
+
   colors:
     primary:
       main: "#32329f"
 plugins:
   - plugins/apify.js
+
+expandResponses: all
+
 decorators:
   apify/legacy-doc-url-decorator: on
   apify/client-references-links-decorator: on

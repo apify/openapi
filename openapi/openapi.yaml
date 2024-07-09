@@ -2,6 +2,13 @@ openapi: 3.0.0
 info:
   title: Apify API
   description: >-
+
+    <blockquote>
+      <strong>UPDATE 07/09/2024:</strong> 
+      We have rolled out this new Apify API Documentation. In case of any issues, please <a href="https://github.com/apify/openapi/issues">report here</a>.
+      The old API Documenatation is still <a href="https://docs.apify.com/api/v2-old">available here</a>.
+    </blockquote>
+
     The Apify API (version 2) provides programmatic access to the [Apify
     platform](https://docs.apify.com).
 
