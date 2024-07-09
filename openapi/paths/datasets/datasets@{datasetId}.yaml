@@ -63,7 +63,7 @@ put:
   summary: Update dataset
   description: |
     Updates a dataset's name using a value specified by a JSON object passed in the PUT payload.
-    The response is the updated dataset object, as returned by the [Get dataset](#reference/datasets/dataset-collection/get-dataset) API endpoint.
+    The response is the updated dataset object, as returned by the [Get dataset](#/reference/datasets/dataset-collection/get-dataset) API endpoint.
   operationId: dataset_put
   parameters:
     - name: datasetId

@@ -44,7 +44,7 @@ put:
     passed in the PUT payload.
 
     The response is the updated key-value store object, as returned by the [Get
-    store](#reference/key-value-stores/store-object/get-store) API endpoint.
+    store](#/reference/key-value-stores/store-object/get-store) API endpoint.
   operationId: keyValueStore_put
   parameters:
     - name: storeId

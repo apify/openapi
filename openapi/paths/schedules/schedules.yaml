@@ -71,7 +71,7 @@ post:
 
     When providing your API authentication token, we recommend using the
     request's `Authorization` header, rather than the URL. ([More
-    info](#introduction/authentication)).
+    info](#/introduction/authentication)).
   operationId: schedules_post
   requestBody:
     description: ''

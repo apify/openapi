@@ -25,35 +25,35 @@ get:
     These API endpoints have the same usage as the equivalent storage endpoints.
 
     For example, `/v2/actor-runs/{runId}/key-value-store` has the same HTTP method and
-    parameters as the [Key-value store object](#reference/key-value-stores/store-object) endpoint.
+    parameters as the [Key-value store object](#/reference/key-value-stores/store-object) endpoint.
 
     Additionally, each of the above API endpoints supports all sub-endpoints
     of the original one:
 
     #### Log
 
-    * `/v2/actor-runs/{runId}/log` [Log](#reference/logs)
+    * `/v2/actor-runs/{runId}/log` [Log](#/reference/logs)
 
     #### Key-value store
 
     * `/v2/actor-runs/{runId}/key-value-store/keys{?token}` [Key
-    collection](#reference/key-value-stores/key-collection)
+    collection](#/reference/key-value-stores/key-collection)
     * `/v2/actor-runs/{runId}/key-value-store/records/{recordKey}{?token}`
-    [Record](#reference/key-value-stores/record)
+    [Record](#/reference/key-value-stores/record)
 
     #### Dataset
 
     * `/v2/actor-runs/{runId}/dataset/items{?token}` [Item
-    collection](#reference/datasets/item-collection)
+    collection](#/reference/datasets/item-collection)
 
     #### Request queue
 
     * `/v2/actor-runs/{runId}/request-queue/requests{?token}` [Request
-    collection](#reference/request-queues/request-collection)
+    collection](#/reference/request-queues/request-collection)
     * `/v2/actor-runs/{runId}/request-queue/requests/{requestId}{?token}`
-    [Request collection](#reference/request-queues/request)
+    [Request collection](#/reference/request-queues/request)
     * `/v2/actor-runs/{runId}/request-queue/head{?token}` [Queue
-    head](#reference/request-queues/queue-head)
+    head](#/reference/request-queues/queue-head)
 
     For example, to download data from a dataset of the actor run in XML format,
     send HTTP GET request to the following URL:

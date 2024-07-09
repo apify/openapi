@@ -45,7 +45,7 @@ get:
     For more information about source code and Actor versions, see [Source
     code](https://docs.apify.com/platform/actors/development/actor-definition/source-code)
     in Actors documentation.Gets a [Version
-    object](#reference/actors/version-object) that contains all the details
+    object](#/reference/actors/version-object) that contains all the details
     about a specific version of an Actor.
   operationId: act_version_get
   parameters:
@@ -127,7 +127,7 @@ put:
     For more information about source code and Actor versions, see [Source
     code](https://docs.apify.com/platform/actors/development/actor-definition/source-code)
     in Actors documentation.Updates Actor version using values specified by a
-    [Version object](#reference/actors/version-object) passed as JSON in the POST payload.
+    [Version object](#/reference/actors/version-object) passed as JSON in the POST payload.
 
     If the object does not define a specific property, its value will not be
     updated.
@@ -137,10 +137,10 @@ put:
 
     When providing your API authentication token, we recommend using the
     request's `Authorization` header, rather than the URL. ([More
-    info](#introduction/authentication)).
+    info](#/introduction/authentication)).
 
-    The response is the [Version object](#reference/actors/version-object) as
-    returned by the [Get version](#reference/actors/version-object/get-version) endpoint.
+    The response is the [Version object](#/reference/actors/version-object) as
+    returned by the [Get version](#/reference/actors/version-object/get-version) endpoint.
   operationId: act_version_put
   parameters:
     - name: actorId

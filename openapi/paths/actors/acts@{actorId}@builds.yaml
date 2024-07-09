@@ -79,7 +79,7 @@ post:
   description: |-
     Builds an Actor.
     The response is the build object as returned by the
-    [Get build](#reference/actors/build-object/get-build) endpoint.
+    [Get build](#/reference/actors/build-object/get-build) endpoint.
   operationId: act_builds_post
   parameters:
     - name: actorId

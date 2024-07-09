@@ -4,7 +4,7 @@ get:
   summary: Get list of environment variables
   description: |
     Gets the list of environment variables for a specific version of an Actor.
-    The response is a JSON object with the list of [EnvVar objects](#reference/actors/environment-variable-object), where
+    The response is a JSON object with the list of [EnvVar objects](#/reference/actors/environment-variable-object), where
     each contains basic information about a single environment variable.
   operationId: act_version_envVars_get
   parameters:
@@ -44,7 +44,7 @@ post:
   summary: Create environment variable
   description: |
     Creates an environment variable of an Actor using values specified in a
-    [EnvVar object](#reference/actors/environment-variable-object) passed as
+    [EnvVar object](#/reference/actors/environment-variable-object) passed as
     JSON in the POST payload.
 
     The request must specify `name` and `value` parameters (as strings) in the
@@ -60,8 +60,8 @@ post:
     ```
 
     The response is the [EnvVar
-    object](#reference/actors/environment-variable-object) as returned by the [Get environment
-    variable](#reference/actors/environment-variable-object/get-environment-variable)
+    object](#/reference/actors/environment-variable-object) as returned by the [Get environment
+    variable](#/reference/actors/environment-variable-object/get-environment-variable)
     endpoint.
   operationId: act_version_envVars_post
   parameters:
