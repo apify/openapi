@@ -28,10 +28,10 @@ items:
         type: "string"
         example: "src/placeholder"
       folder:
-        type: "string"
+        type: boolean
         enum:
           - true
-        example: "true"
+        example: true
     required:
     - "name"
     - "folder"
