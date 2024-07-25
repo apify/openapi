@@ -3,6 +3,7 @@ type: "array"
 items:
   anyOf:
   - type: "object"
+    title: SourceCodeFile
     properties:
       format:
         type: "string"
@@ -16,8 +17,22 @@ items:
       name:
         type: "string"
         example: "src/main.js"
-
     required:
     - "format"
     - "content"
     - "name"
+  - type: "object"
+    title: SourceCodeFolder
+    properties:
+      name:
+        type: "string"
+        example: "src/placeholder"
+      folder:
+        type: "string"
+        enum:
+          - true
+        example: "true"
+    required:
+    - "name"
+    - "folder"
+
