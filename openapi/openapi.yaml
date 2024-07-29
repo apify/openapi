@@ -601,7 +601,7 @@ info:
     - `~resourcename` - for this, you need to use an API token, and the
     `resourcename` refers to a resource in the API token owner's account.
   contact: {}
-  version: '1.0'
+  version: ''
 servers:
   - url: 'https://api.apify.com'
     variables: {}
