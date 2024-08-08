@@ -4,9 +4,9 @@ info:
   description: >-
 
     <blockquote>
-      <strong>UPDATE 2024-07-09:</strong> 
+      <strong>UPDATE 2024-07-09:</strong>
       We have rolled out this new Apify API Documentation. In case of any issues, please <a href="https://github.com/apify/openapi/issues">report here</a>.
-      The old API Documenatation is still <a href="https://docs.apify.com/api/v2-old">available here</a>.
+      The old API Documentation is still <a href="https://docs.apify.com/api/v2-old">available here</a>.
     </blockquote>
 
 
@@ -521,7 +521,7 @@ info:
     Each API endpoint returns its rate limit in `X-RateLimit-Limit` header.
 
     These endpoints have a rate limit of _100 requests per second per resource_:
-      
+
     * CRUD ([get](#/reference/key-value-stores/record/get-record),
       [put](#/reference/key-value-stores/record/put-record),
       [delete](#/reference/key-value-stores/record/delete-record))
@@ -563,7 +563,7 @@ info:
     ### Retrying rate-limited requests with exponential backoff
 
     <span id="/introduction/rate-limiting/retrying-rate-limited-requests-with-exponential-backoff"></span>
-    
+
     If the client receives the rate limit error, it should wait a certain period of time and then retry the request.
     If the error happens again, the client should double the wait period and retry the request,
     and so on. This algorithm is known as _exponential backoff_

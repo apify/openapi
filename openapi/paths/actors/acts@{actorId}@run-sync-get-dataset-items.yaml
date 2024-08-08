@@ -105,7 +105,7 @@ post:
         JSON array of objects defining the webhooks. For more information, see
 
         [Webhooks
-        documenation](https://docs.apify.com/platform/integrations/webhooks).
+        documentation](https://docs.apify.com/platform/integrations/webhooks).
       style: form
       explode: true
       schema:
@@ -519,7 +519,7 @@ get:
         JSON array of objects defining the webhooks. For more information, see
 
         [Webhooks
-        documenation](https://docs.apify.com/platform/integrations/webhooks).
+        documentation](https://docs.apify.com/platform/integrations/webhooks).
       style: form
       explode: true
       schema:
@@ -820,7 +820,7 @@ get:
           example:
             error:
               type: run-timeout-exceeded
-              message: Actor run exceeded timeout of 60 seconds for this API enpoint
+              message: Actor run exceeded timeout of 60 seconds for this API endpoint
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/actors/run-actor-synchronously-and-get-dataset-items/run-actor-synchronously-without-input-and-get-dataset-items

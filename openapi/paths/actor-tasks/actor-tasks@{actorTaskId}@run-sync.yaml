@@ -109,7 +109,7 @@ post:
         JSON array of objects defining the webhooks. For more information, see
 
         [Webhooks
-        documenation](https://docs.apify.com/platform/integrations/webhooks).
+        documentation](https://docs.apify.com/platform/integrations/webhooks).
       style: form
       explode: true
       schema:
@@ -162,8 +162,8 @@ get:
     If the connection breaks, you will not receive any information about the run
     and its status.
 
-    To run the Task asynchronously, use the 
-    [Run task asynchronously](#/reference/actor-tasks/run-collection/run-task) 
+    To run the Task asynchronously, use the
+    [Run task asynchronously](#/reference/actor-tasks/run-collection/run-task)
     endpoint instead.
   operationId: actorTask_runSync_get
   parameters:
@@ -243,7 +243,7 @@ get:
         JSON array of objects defining the webhooks. For more information, see
 
         [Webhooks
-        documenation](https://docs.apify.com/platform/integrations/webhooks).
+        documentation](https://docs.apify.com/platform/integrations/webhooks).
       style: form
       explode: true
       schema:

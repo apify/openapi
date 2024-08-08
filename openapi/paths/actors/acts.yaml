@@ -226,7 +226,7 @@ post:
               taggedBuilds:
                 latest:
                   buildId: z2EryhbfhgSyqj6Hn
-                  buldNumber: 0.0.2
+                  buildNumber: 0.0.2
                   finishedAt: '2019-06-10T11:15:49.286Z'
   deprecated: false
   x-legacy-doc-urls:
