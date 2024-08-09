@@ -183,8 +183,10 @@ post:
     - name: unwind
       in: query
       description: |
-        Name of a field which should be unwound. If the field is an array then
-        every element of
+        A comma-separated list of fields which should be unwound, in order which
+        they should be processed. Each field should be either an array or an object.
+
+        If the field is an array then every element of
 
         the array will become a separate record and merged with parent object.
 
@@ -200,7 +202,7 @@ post:
       explode: true
       schema:
         type: string
-        example: myValue
+        example: 'myValue,myOtherValue'
     - name: flatten
       in: query
       description: |
@@ -569,8 +571,10 @@ get:
     - name: unwind
       in: query
       description: |
-        Name of a field which should be unwound. If the field is an array then
-        every element of
+        A comma-separated list of fields which should be unwound, in order which
+        they should be processed. Each field should be either an array or an object.
+
+        If the field is an array then every element of
 
         the array will become a separate record and merged with parent object.
 
@@ -586,7 +590,7 @@ get:
       explode: true
       schema:
         type: string
-        example: myValue
+        example: 'myValue,myOtherValue'
     - name: flatten
       in: query
       description: |
