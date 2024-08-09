@@ -102,7 +102,7 @@ post:
         JSON array of objects defining the webhooks. For more information, see
 
         [Webhooks
-        documenation](https://docs.apify.com/platform/integrations/webhooks).
+        documentation](https://docs.apify.com/platform/integrations/webhooks).
       style: form
       explode: true
       schema:
@@ -488,7 +488,7 @@ get:
         JSON array of objects defining the webhooks. For more information, see
 
         [Webhooks
-        documenation](https://docs.apify.com/platform/integrations/webhooks).
+        documentation](https://docs.apify.com/platform/integrations/webhooks).
       style: form
       explode: true
       schema:

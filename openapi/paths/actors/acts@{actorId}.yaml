@@ -102,7 +102,7 @@ put:
     updated.
 
 
-    The response is the full Actor object as returned by the 
+    The response is the full Actor object as returned by the
     [Get Actor](#/reference/actors/actor-object/get-actor) endpoint.
 
 
@@ -229,7 +229,7 @@ put:
               taggedBuilds:
                 latest:
                   buildId: z2EryhbfhgSyqj6Hn
-                  buldNumber: 0.0.2
+                  buildNumber: 0.0.2
                   finishedAt: '2019-06-10T11:15:49.286Z'
   deprecated: false
   x-legacy-doc-urls:
