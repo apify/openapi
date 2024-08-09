@@ -185,7 +185,7 @@ get:
     The pagination is always performed with the granularity of a single item, regardless whether <code>unwind</code> parameter was provided.
     By default, the **Items** in the response are sorted by the time they were stored to the database, therefore you can use pagination to incrementally fetch the items as they are being added.
 
-    The maximum number of items that will be returned in a single API call is limited to 250,000. 
+    The maximum number of items that will be returned in a single API call is limited to 250,000.
 
     <!-- GET_ITEMS_LIMIT -->
 
@@ -265,7 +265,8 @@ get:
     - name: unwind
       in: query
       description: |
-        Name of a field which should be unwound. If the field is an array then every element of the array will become a separate record and merged with parent object.
+        A comma-separated list of fields which should be unwound, in order which they should be processed. Each field should be either an array or an object.
+        If the field is an array then every element of the array will become a separate record and merged with parent object.
         If the unwound field is an object then it is merged with the parent object.
         If the unwound field is missing or its value is neither an array nor an object and therefore cannot be merged with a parent object then the item gets preserved as it is.
         Note that the unwound items ignore the `desc` parameter.
@@ -273,7 +274,7 @@ get:
       explode: true
       schema:
         type: string
-        example: myValue
+        example: 'myValue,myOtherValue'
     - name: flatten
       in: query
       description: |
