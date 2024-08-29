@@ -3,17 +3,6 @@ required:
   - inputBodyLen
   - restartCount
   - resurrectCount
-  - memAvgBytes
-  - memMaxBytes
-  - memCurrentBytes
-  - cpuAvgUsage
-  - cpuMaxUsage
-  - cpuCurrentUsage
-  - netRxBytes
-  - netTxBytes
-  - durationMillis
-  - runTimeSecs
-  - metamorph
   - computeUnits
 type: object
 properties:
