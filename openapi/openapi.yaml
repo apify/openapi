@@ -528,6 +528,7 @@ info:
     operations on key-value store records
 
     These endpoints have a rate limit of _200 requests per second per resource_:
+
     * [Run actor](#/reference/actors/run-collection/run-actor)
 
     * [Run actor task asynchronously](#/reference/actor-tasks/runs-collection/run-task-asynchronously)
