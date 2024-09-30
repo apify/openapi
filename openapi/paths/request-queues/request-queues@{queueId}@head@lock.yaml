@@ -25,7 +25,7 @@ post:
         example: WkzbQMuFYuamGv3YF
     - name: lockSecs
       in: query
-      description: How long the second request will be locked for.
+      description: How long the requests will be locked for (in seconds).
       required: true
       style: form
       explode: true
@@ -41,7 +41,8 @@ post:
       schema:
         type: number
         format: double
-        example: 100
+        example: 25
+        maximum: 25
     - name: clientKey
       in: query
       description: |
@@ -63,7 +64,7 @@ post:
               - $ref: ../../components/schemas/request-queues/GetHeadAndLockResponse.yaml
               - example:
                   data:
-                    limit: 1000
+                    limit: 3
                     queueModifiedAt: '2018-03-14T23:00:00.000Z'
                     hadMultipleClients: true
                     lockSecs: 60
@@ -88,7 +89,7 @@ post:
                         lockExpiresAt: '2022-06-14T23:00:00.000Z'
           example:
             data:
-              limit: 1000
+              limit: 3
               queueModifiedAt: '2018-03-14T23:00:00.000Z'
               hadMultipleClients: true
               lockSecs: 60
