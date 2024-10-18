@@ -129,31 +129,3 @@ post:
   x-py-parent: RunClientAsync
   x-py-name: resurrect
   x-py-doc-url: https://docs.apify.com/api/client/python/reference/class/RunClientAsync#resurrect
-delete:
-  tags:
-    - Actor runs/Delete run
-  summary: Delete run
-  description: |
-    Delete the run. Only finished runs can be deleted. Only the person or
-    organization that initiated the run can delete it.
-  operationId: Deleterun
-  parameters:
-    - name: runId
-      in: path
-      description: Run ID.
-      required: true
-      style: simple
-      schema:
-        type: string
-        example: 3KH8gEpp4d8uQSe8T
-  responses:
-    '204':
-      description: ''
-      headers: {}
-      content: {}
-  deprecated: false
-  x-legacy-doc-urls:
-    - https://docs.apify.com/api/v2#/reference/actor-runs/delete-run/delete-run
-  x-js-parent: RunClient
-  x-js-name: delete
-  x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/RunClient#delete
