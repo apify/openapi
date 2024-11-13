@@ -6,7 +6,7 @@ get:
     Gets a value stored in the key-value store under a specific key.
 
     The response body has the same `Content-Encoding` header as it was set in
-    [Put record](#/reference/key-value-stores/key-collection/put-record).
+    [Put record](#tag/Key-value-storesRecord/operation/keyValueStore_record_put).
 
     If the request does not define the `Accept-Encoding` HTTP header with the
     right encoding, the record will be decompressed.
