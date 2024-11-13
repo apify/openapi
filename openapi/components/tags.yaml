@@ -133,8 +133,6 @@
 - name: Actors/Abort build
   x-displayName: Abort build
   x-parent-tag-name: Actors
-  x-legacy-doc-urls:
-  - '#/reference/actors/abort-build'
   x-trait: 'true'
   description: '**[DEPRECATED]** API endpoints related to build of the actor were
     moved under new namespace [`actor-builds`](#/reference/actor-builds).'
@@ -167,24 +165,18 @@
 - name: Actors/Abort run
   x-displayName: Abort run
   x-parent-tag-name: Actors
-  x-legacy-doc-urls:
-  - '#/reference/actors/abort-run'
   x-trait: 'true'
   description: '**[DEPRECATED]** API endpoints related to run of the actor were moved
     under new namespace [`actor-runs`](#/reference/actor-runs).'
 - name: Actors/Metamorph run
   x-displayName: Metamorph run
   x-parent-tag-name: Actors
-  x-legacy-doc-urls:
-  - '#/reference/actors/metamorph-run'
   x-trait: 'true'
   description: '**[DEPRECATED]** API endpoints related to run of the actor were moved
     under new namespace [`actor-runs`](#/reference/actor-runs).'
 - name: Actors/Resurrect run
   x-displayName: Resurrect run
   x-parent-tag-name: Actors
-  x-legacy-doc-urls:
-  - '#/reference/actors/resurrect-run'
   x-trait: 'true'
   description: '**[DEPRECATED]** API endpoints related to run of the actor were moved
     under new namespace [`actor-runs`](#/reference/actor-runs).'
@@ -609,38 +601,26 @@
 - name: Actor runs/Delete run
   x-displayName: Delete run
   x-parent-tag-name: Actor runs
-  x-legacy-doc-urls:
-  - '#/reference/actor-runs/delete-run'
   x-trait: 'true'
 - name: Actor runs/Abort run
   x-displayName: Abort run
   x-parent-tag-name: Actor runs
-  x-legacy-doc-urls:
-  - '#/reference/actor-runs/abort-run'
   x-trait: 'true'
 - name: Actor runs/Metamorph run
   x-displayName: Metamorph run
   x-parent-tag-name: Actor runs
-  x-legacy-doc-urls:
-  - '#/reference/actor-runs/metamorph-run'
   x-trait: 'true'
 - name: Actor runs/Reboot run
   x-displayName: Reboot run
   x-parent-tag-name: Actor runs
-  x-legacy-doc-urls:
-  - '#/reference/actor-runs/reboot-run'
   x-trait: 'true'
 - name: Actor runs/Resurrect run
   x-displayName: Resurrect run
   x-parent-tag-name: Actor runs
-  x-legacy-doc-urls:
-  - '#/reference/actor-runs/resurrect-run'
   x-trait: 'true'
 - name: Actor runs/Update status message
   x-displayName: Update status message
   x-parent-tag-name: Actor runs
-  x-legacy-doc-urls:
-  - '#/reference/actor-runs/update-status-message'
   x-trait: 'true'
 - name: Actor builds
   x-displayName: Actor builds
@@ -672,14 +652,10 @@
 - name: Actor builds/Delete build
   x-displayName: Delete build
   x-parent-tag-name: Actor builds
-  x-legacy-doc-urls:
-  - '#/reference/actor-builds/delete-build'
   x-trait: 'true'
 - name: Actor builds/Abort build
   x-displayName: Abort build
   x-parent-tag-name: Actor builds
-  x-legacy-doc-urls:
-  - '#/reference/actor-builds/abort-build'
   x-trait: 'true'
 - name: Actor builds/Build log
   x-displayName: Build log
