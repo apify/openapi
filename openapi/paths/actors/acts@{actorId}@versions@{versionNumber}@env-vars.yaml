@@ -35,6 +35,7 @@ get:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/actors/environment-variable-collection/get-list-of-environment-variables
+    - https://docs.apify.com/api/v2#/reference/actors/get-list-of-environment-variables
   x-py-parent: ActorEnvVarCollectionClientAsync
   x-py-name: list
   x-py-doc-url: https://docs.apify.com/api/client/python/reference/class/ActorEnvVarCollectionClientAsync#list
@@ -114,6 +115,7 @@ post:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/actors/environment-variable-collection/create-environment-variable
+    - https://docs.apify.com/api/v2#/reference/actors/create-environment-variable
   x-py-parent: ActorEnvVarCollectionClientAsync
   x-py-name: create
   x-py-doc-url: https://docs.apify.com/api/client/python/reference/class/ActorEnvVarCollectionClientAsync#create

@@ -29,6 +29,7 @@ get:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/key-value-stores/store-object/get-store
+    - https://docs.apify.com/api/v2#/reference/key-value-stores/get-store
   x-js-parent: KeyValueStoreClient
   x-js-name: get
   x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/KeyValueStoreClient#get
@@ -75,6 +76,7 @@ put:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/key-value-stores/store-object/update-store
+    - https://docs.apify.com/api/v2#/reference/key-value-stores/update-store
   x-js-parent: KeyValueStoreClient
   x-js-name: update
   x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/KeyValueStoreClient#update
@@ -104,6 +106,7 @@ delete:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/key-value-stores/store-object/delete-store
+    - https://docs.apify.com/api/v2#/reference/key-value-stores/delete-store
   x-js-parent: KeyValueStoreClient
   x-js-name: delete
   x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/KeyValueStoreClient#delete

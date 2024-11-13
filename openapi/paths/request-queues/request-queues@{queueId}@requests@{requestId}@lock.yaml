@@ -75,6 +75,7 @@ put:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/request-queues/request-lock/prolong-request-lock
+    - https://docs.apify.com/api/v2#/reference/request-queues/prolong-request-lock
   x-js-parent: RequestQueueClient
   x-js-name: prolongRequestLock
   x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/RequestQueueClient#prolongRequestLock
@@ -148,6 +149,7 @@ delete:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/request-queues/request-lock/delete-request-lock
+    - https://docs.apify.com/api/v2#/reference/request-queues/delete-request-lock
   x-js-parent: RequestQueueClient
   x-js-name: deleteRequestLock
   x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/RequestQueueClient#deleteRequestLock

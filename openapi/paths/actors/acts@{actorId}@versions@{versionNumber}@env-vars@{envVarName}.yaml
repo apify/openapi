@@ -49,6 +49,7 @@ get:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/actors/environment-variable-object/get-environment-variable
+    - https://docs.apify.com/api/v2#/reference/actors/get-environment-variable
   x-py-parent: ActorEnvVarClientAsync
   x-py-name: get
   x-py-doc-url: https://docs.apify.com/api/client/python/reference/class/ActorEnvVarClientAsync#get
@@ -134,6 +135,7 @@ put:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/actors/environment-variable-object/update-environment-variable
+    - https://docs.apify.com/api/v2#/reference/actors/update-environment-variable
   x-py-parent: ActorEnvVarClientAsync
   x-py-name: update
   x-py-doc-url: https://docs.apify.com/api/client/python/reference/class/ActorEnvVarClientAsync#update
@@ -181,3 +183,4 @@ delete:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/actors/environment-variable-object/delete-environment-variable
+    - https://docs.apify.com/api/v2#/reference/actors/delete-environment-variable

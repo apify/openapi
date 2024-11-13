@@ -461,6 +461,7 @@ get:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/datasets/item-collection/get-items
+    - https://docs.apify.com/api/v2#/reference/datasets/get-items
   x-js-parent: DatasetClient
   x-js-name: listItems
   x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/DatasetClient#listItems
@@ -525,6 +526,7 @@ post:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/datasets/item-collection/put-items
+    - https://docs.apify.com/api/v2#/reference/datasets/put-items
   x-js-parent: DatasetClient
   x-js-name: pushItems
   x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/DatasetClient#pushItems

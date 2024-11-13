@@ -18,6 +18,7 @@ get:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/users/account-and-usage-limits/get-limits
+    - https://docs.apify.com/api/v2#/reference/users/get-limits
 put:
   tags:
     - Users/Account and usage limits
@@ -37,7 +38,10 @@ put:
       description: ''
       headers: {}
       content:
-          application/json:
-            schema:
-              type: object
+        application/json:
+          schema:
+            type: object
   deprecated: false
+  x-legacy-doc-urls:
+    - https://docs.apify.com/api/v2#/reference/users/account-and-usage-limits/update-limits
+    - https://docs.apify.com/api/v2#/reference/users/update-limits

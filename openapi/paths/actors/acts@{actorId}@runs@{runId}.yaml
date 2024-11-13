@@ -137,3 +137,4 @@ get:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/actors/run-object/get-run
+    - https://docs.apify.com/api/v2#/reference/actors/get-run

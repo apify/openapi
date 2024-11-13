@@ -92,3 +92,4 @@ get:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/actors/build-object/get-build
+    - https://docs.apify.com/api/v2#/reference/actors/get-build

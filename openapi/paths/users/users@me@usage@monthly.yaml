@@ -31,3 +31,4 @@ get:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/users/monthly-usage/get-monthly-usage
+    - https://docs.apify.com/api/v2#/reference/users/get-monthly-usage
