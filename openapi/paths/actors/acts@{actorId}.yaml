@@ -84,6 +84,7 @@ get:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/actors/actor-object/get-actor
+    - https://docs.apify.com/api/v2#/reference/actors/get-actor
   x-js-parent: ActorClient
   x-js-name: get
   x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/ActorClient#get
@@ -234,6 +235,7 @@ put:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/actors/actor-object/update-actor
+    - https://docs.apify.com/api/v2#/reference/actors/update-actor
   x-js-parent: ActorClient
   x-js-name: update
   x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/ActorClient#update
@@ -268,6 +270,7 @@ delete:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/actors/actor-object/delete-actor
+    - https://docs.apify.com/api/v2#/reference/actors/delete-actor
   x-js-parent: ActorClient
   x-js-name: delete
   x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/ActorClient#delete

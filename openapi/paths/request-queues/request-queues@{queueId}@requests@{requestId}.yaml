@@ -68,6 +68,7 @@ get:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/request-queues/queue/get-request
+    - https://docs.apify.com/api/v2#/reference/request-queues/get-request
   x-js-parent: RequestQueueClient
   x-js-name: get
   x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/RequestQueueClient#get
@@ -188,6 +189,7 @@ put:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/request-queues/queue/update-request
+    - https://docs.apify.com/api/v2#/reference/request-queues/update-request
   x-js-parent: RequestQueueClient
   x-js-name: update
   x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/RequestQueueClient#update
@@ -241,6 +243,7 @@ delete:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/request-queues/queue/delete-request
+    - https://docs.apify.com/api/v2#/reference/request-queues/delete-request
   x-js-parent: RequestQueueClient
   x-js-name: delete
   x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/RequestQueueClient#delete

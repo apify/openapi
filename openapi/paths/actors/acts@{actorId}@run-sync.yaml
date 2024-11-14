@@ -160,6 +160,7 @@ post:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/actors/run-actor-synchronously/with-input
+    - https://docs.apify.com/api/v2#/reference/actors/with-input
 get:
   tags:
     - Actors/Run actor synchronously
@@ -306,3 +307,4 @@ get:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/actors/run-actor-synchronously/without-input
+    - https://docs.apify.com/api/v2#/reference/actors/without-input

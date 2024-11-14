@@ -24,6 +24,7 @@ get:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/webhooks/webhook-object/get-webhook
+    - https://docs.apify.com/api/v2#/reference/webhooks/get-webhook
   x-js-parent: WebhookClient
   x-js-name: get
   x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/WebhookClient#get
@@ -82,6 +83,7 @@ put:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/webhooks/webhook-object/update-webhook
+    - https://docs.apify.com/api/v2#/reference/webhooks/update-webhook
   x-js-parent: WebhookClient
   x-js-name: update
   x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/WebhookClient#update
@@ -115,6 +117,7 @@ delete:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/webhooks/webhook-object/delete-webhook
+    - https://docs.apify.com/api/v2#/reference/webhooks/delete-webhook
   x-js-parent: WebhookClient
   x-js-name: delete
   x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/WebhookClient#delete

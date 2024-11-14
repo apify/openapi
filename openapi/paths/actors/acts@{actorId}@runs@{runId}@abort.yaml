@@ -119,3 +119,4 @@ post:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/actors/abort-run/abort-run
+    - https://docs.apify.com/api/v2#/reference/actors/abort-run

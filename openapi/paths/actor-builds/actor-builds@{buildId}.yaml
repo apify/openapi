@@ -53,6 +53,7 @@ get:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/actor-builds/build-object/get-build
+    - https://docs.apify.com/api/v2#/reference/actor-builds/get-build
   x-js-parent: BuildClient
   x-js-name: get
   x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/BuildClient#get
@@ -61,7 +62,8 @@ get:
   x-py-doc-url: https://docs.apify.com/api/client/python/reference/class/BuildClientAsync#get
 delete:
   tags:
-    - Actor builds/Delete build
+    #- Actor builds/Delete build
+    - Actor builds
   summary: Delete build
   description: |
     Delete the build. The build that is the current default build for the Actor
@@ -86,6 +88,7 @@ delete:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/actor-builds/delete-build/delete-build
+    - https://docs.apify.com/api/v2#/reference/actor-builds/delete-build
   x-js-parent: BuildClient
   x-js-name: delete
   x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/BuildClient#delete

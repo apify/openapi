@@ -158,3 +158,4 @@ post:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/actors/metamorph-run/metamorph-run
+    - https://docs.apify.com/api/v2#/reference/actors/metamorph-run

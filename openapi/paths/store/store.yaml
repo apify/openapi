@@ -144,3 +144,4 @@ get:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/store/store-actors-collection/get-list-of-actors-in-store
+    - https://docs.apify.com/api/v2#/reference/store/get-list-of-actors-in-store

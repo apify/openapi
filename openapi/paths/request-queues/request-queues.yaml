@@ -75,6 +75,7 @@ get:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/request-queues/queue-collection/get-list-of-request-queues
+    - https://docs.apify.com/api/v2#/reference/request-queues/get-list-of-request-queues
   x-js-parent: RequestQueueCollectionClient
   x-js-name: list
   x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/RequestQueueCollectionClient#list
@@ -149,6 +150,7 @@ post:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/request-queues/queue-collection/create-request-queue
+    - https://docs.apify.com/api/v2#/reference/request-queues/create-request-queue
   x-js-parent: RequestQueueCollectionClient
   x-js-name: getOrCreate
   x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/RequestQueueCollectionClient#getOrCreate

@@ -104,6 +104,7 @@ post:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/request-queues/batch-request-operations/add-requests
+    - https://docs.apify.com/api/v2#/reference/request-queues/add-requests
   x-js-parent: RequestQueueClient
   x-js-name: batchAddRequests
   x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/RequestQueueClient#batchAddRequests
@@ -189,6 +190,7 @@ delete:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/request-queues/batch-request-operations/delete-requests
+    - https://docs.apify.com/api/v2#/reference/request-queues/delete-requests
   x-js-parent: RequestQueueClient
   x-js-name: batchDeleteRequests
   x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/RequestQueueClient#batchDeleteRequests

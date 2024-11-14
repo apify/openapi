@@ -62,6 +62,7 @@ get:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/key-value-stores/record/get-record
+    - https://docs.apify.com/api/v2#/reference/key-value-stores/get-record
   x-js-parent: KeyValueStoreClient
   x-js-name: recordExists
   x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/KeyValueStoreClient#recordExists
@@ -145,6 +146,7 @@ put:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/key-value-stores/record/put-record
+    - https://docs.apify.com/api/v2#/reference/key-value-stores/put-record
   x-js-parent: KeyValueStoreClient
   x-js-name: setRecord
   x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/KeyValueStoreClient#setRecord
@@ -182,6 +184,7 @@ delete:
   deprecated: false
   x-legacy-doc-urls:
     - https://docs.apify.com/api/v2#/reference/key-value-stores/record/delete-record
+    - https://docs.apify.com/api/v2#/reference/key-value-stores/delete-record
   x-js-parent: KeyValueStoreClient
   x-js-name: deleteRecord
   x-js-doc-url: https://docs.apify.com/api/client/js/reference/class/KeyValueStoreClient#deleteRecord
