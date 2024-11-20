@@ -5,7 +5,7 @@ const X_JS_DOC_URLS_PROPERTY = "x-js-doc-url";
 /**
  * This decorator adds links to the Apify API Client libraries Python and JS references.
  *
- * The Apify API OpenAPI specfication has been enriched with Apify specifc vendor extensions 
+ * The Apify API OpenAPI specification has been enriched with Apify specific vendor extensions
  * on `operation` and `tag` level to link the Apify Client functionality e.g. for `actorBuild_get`:
  * ```
  * x-js-parent: BuildClient
@@ -15,7 +15,7 @@ const X_JS_DOC_URLS_PROPERTY = "x-js-doc-url";
  * x-py-name: get
  * x-py-doc-url: https://docs.apify.com/api/client/python/reference/class/BuildClientAsync#get
  * ```
- * 
+ *
  * The prepended HTML example:
  * ```
  * <span style="float: right;">
@@ -35,27 +35,27 @@ const X_JS_DOC_URLS_PROPERTY = "x-js-doc-url";
 function ClientReferencesLinksDecorator(target) {
     const pyLink = target[X_PY_DOC_URLS_PROPERTY];
     const jsLink = target[X_JS_DOC_URLS_PROPERTY];
- 
-    const jsImgUrl = "https://raw.githubusercontent.com/apify/openapi/b1206ac2adf8f39b05e5a09bf32c2802af58d851/assets/javascript.svg";    
+
+    const jsImgUrl = "https://raw.githubusercontent.com/apify/openapi/b1206ac2adf8f39b05e5a09bf32c2802af58d851/assets/javascript.svg";
     const pyImgUrl = "https://raw.githubusercontent.com/apify/openapi/b1206ac2adf8f39b05e5a09bf32c2802af58d851/assets/python.svg";
 
     const jsAlt = "Apify API JavaScript Client Reference";
     const pyAlt = "Apify API Python Client Reference";
 
-    // Purposedly using `span` element here instead of `div`
+    // Purposely using `span` element here instead of `div`
     // Due to how redoc works, when `div` used, the markdown rendering in of `description` ceased to work.
-    let prepend = `<span style="display: block; float: right; padding-left: 6px;">`;
-    
+    let prepend = `<span class="openapi-clients-box">`;
+
     if (pyLink || jsLink) {
-        prepend += `<span style="display: inline-block; font-family: 'San Francisco', Helvetica, Arial, sans-serif; color: #6C7590;font-style: normal; font-weight: 700; font-size: 14px; line-height: 20px; text-transform: uppercase; padding-bottom: 6px;">Clients</span>`
+        prepend += `<span class="openapi-clients-box-heading">Clients</span>`
     }
 
     if (pyLink) {
-        prepend += `<a href="${pyLink}" target="_blank"><img src="${pyImgUrl}" style="padding-bottom: 6px; display: block;" alt="${pyAlt}"/></a>`;
+        prepend += `<a href="${pyLink}" target="_blank"><img src="${pyImgUrl}" class="openapi-clients-box-icon" alt="${pyAlt}"/></a>`;
     }
 
     if (jsLink) {
-        prepend += `<a href="${jsLink}" target="_blank"><img src="${jsImgUrl}" style="padding-bottom: 6px; display: block;" alt="${jsAlt}" /></a>`;
+        prepend += `<a href="${jsLink}" target="_blank"><img src="${jsImgUrl}" class="openapi-clients-box-icon" alt="${jsAlt}" /></a>`;
     }
 
     prepend += `</span>`;

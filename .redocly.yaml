@@ -15,8 +15,8 @@ theme:
     expandDefaultResponse: true
     expandDefaultRequest: true
     expandResponses: all
-    schemaExpansionLevel: 2
-    jsonSampleExpandLevel: 2
+    schemasExpansionLevel: 2
+    jsonSamplesExpandLevel: 2
 
   colors:
     primary:

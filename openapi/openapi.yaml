@@ -3,41 +3,33 @@ info:
   title: Apify API
   description: >-
 
-    <blockquote>
-      <strong>UPDATE 2024-07-09:</strong>
-      We have rolled out this new Apify API Documentation. In case of any issues, please <a href="https://github.com/apify/openapi/issues">report here</a>.
-      The old API Documentation is still <a href="https://docs.apify.com/api/v2-old">available here</a>.
-    </blockquote>
-
+    > **UPDATE 2024-07-09:**
+    > We have rolled out this new Apify API Documentation. In case of any issues, please [report here](https://github.com/apify/openapi/issues).
+    > The old API Documentation is still [available here](https://docs.apify.com/api/v2-old).
 
     The Apify API (version 2) provides programmatic access to the [Apify
     platform](https://docs.apify.com).
 
     The API is organized around
     [RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer)
-
     HTTP endpoints.
 
     All requests and responses (including errors) are encoded in
     [JSON](http://www.json.org/) format with UTF-8 encoding,
-
     with a few exceptions that are explicitly described in the reference.
 
 
     To access the API using [Node.js](https://nodejs.org/en/), we recommend the
-
     [`apify-client`](https://docs.apify.com/api/client/js) [NPM
     package](https://www.npmjs.com/package/apify-client).
 
     To access the API using [Python](https://www.python.org/), we recommend the
-
     [`apify-client`](https://docs.apify.com/api/client/python) [PyPI
     package](https://pypi.org/project/apify-client/).
 
     The clients' functions correspond to the API endpoints and have the same
     parameters. This simplifies development of apps that depend on the Apify
     platform.
-
 
     **Note:** All requests with JSON payloads need to specify the `Content-Type:
     application/json` HTTP header!
@@ -262,7 +254,8 @@ info:
       </tr>
       <tr>
         <td><code>desc</code></td>
-        <td>By default, items are sorted in the order in which they were created or added to the list.
+        <td>
+        By default, items are sorted in the order in which they were created or added to the list.
         This feature is useful when fetching all the items, because it ensures that items
         created after the client started the pagination will not be skipped.
         If you specify the <code>desc=1</code> parameter, the items will be returned in the reverse order,
