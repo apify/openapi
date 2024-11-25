@@ -61,14 +61,20 @@ properties:
   inputSchema:
     type: string
     nullable: true
+    deprecated: true # Marked as deprecated in favor of actorDefinition.
     example: '{\n  \"title\": \"Schema for ... }'
   readme:
     type: string
     nullable: true
+    deprecated: true # Marked as deprecated in favor of actorDefinition.
     example: '# Magic Actor\nThis Actor is magic.'
   buildNumber:
     type: string
     example: 0.1.1
+  actorDefinition:
+      oneOf:
+        - $ref: "../actors/ActorDefinition.yaml"
+        - type: "null"
 example:
   id: HG7ML7M8z78YcAPEB
   actId: janedoe~my-actor
@@ -97,3 +103,5 @@ example:
   inputSchema: '{\n  \"title\": \"Schema for ... }'
   readme: '# Magic Actor\nThis Actor is magic.'
   buildNumber: 0.1.1
+  actorDefinition: null
+
