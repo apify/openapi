@@ -1,11 +1,11 @@
 title: ActorDefinition
-description: The main configuration of the Actor, the full specification can be found in [Apify docs](https://docs.apify.com/platform/actors/development/actor-definition/actor-json)
+description: The definition of the Actor, the full specification of this field can be found in [Apify docs](https://docs.apify.com/platform/actors/development/actor-definition/actor-json)
 type: object
 properties:
     actorSpecification:
         type: integer
         enum: [1]
-        description: The version of the Actor specification. This property must be set to 1.
+        description: The Actor specification version that this Actor follows. This property must be set to 1.
     name:
         type: string
         description: The name of the Actor.
