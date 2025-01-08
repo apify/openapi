@@ -1,3 +1,9 @@
+# DEPRECATED!
+
+This repository is no longer used, the specification is now moved to the apify-docs repository:
+
+https://github.com/apify/apify-docs/tree/master/apify-api
+
 # Apify API v2 OpenAPI Definition
 
 ## Working on OpenAPI Definition
